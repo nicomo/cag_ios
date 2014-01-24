@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PartViewController.h"
 
 @implementation AppDelegate
 
@@ -14,8 +15,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    PartViewController *partViewController = [[PartViewController alloc] init];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:partViewController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    self.window.rootViewController = navController;
+    
     return YES;
 }
 

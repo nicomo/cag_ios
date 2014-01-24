@@ -19,6 +19,8 @@
 		208C98151892A6160008749C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FD1892A6160008749C /* UIKit.framework */; };
 		208C981D1892A6160008749C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 208C981B1892A6160008749C /* InfoPlist.strings */; };
 		208C981F1892A6160008749C /* Rouen2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C981E1892A6160008749C /* Rouen2Tests.m */; };
+		208C982D1892A73C0008749C /* PartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C982C1892A73C0008749C /* PartViewController.m */; };
+		208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C98301892A8340008749C /* CSLinearLayoutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,11 @@
 		208C981A1892A6160008749C /* Rouen2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rouen2Tests-Info.plist"; sourceTree = "<group>"; };
 		208C981C1892A6160008749C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		208C981E1892A6160008749C /* Rouen2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rouen2Tests.m; sourceTree = "<group>"; };
+		208C982B1892A73C0008749C /* PartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartViewController.h; sourceTree = "<group>"; };
+		208C982C1892A73C0008749C /* PartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartViewController.m; sourceTree = "<group>"; };
+		208C982F1892A8340008749C /* CSLinearLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLinearLayoutView.h; sourceTree = "<group>"; };
+		208C98301892A8340008749C /* CSLinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLinearLayoutView.m; sourceTree = "<group>"; };
+		208C9833189326E20008749C /* SuperClarendon_7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperClarendon_7.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 		208C97ED1892A6160008749C = {
 			isa = PBXGroup;
 			children = (
+				208C982E1892A8340008749C /* CSLinearLayoutView */,
 				208C97FF1892A6160008749C /* Rouen2 */,
 				208C98181892A6160008749C /* Rouen2Tests */,
 				208C97F81892A6160008749C /* Frameworks */,
@@ -111,6 +119,9 @@
 				208C98091892A6160008749C /* AppDelegate.m */,
 				208C980B1892A6160008749C /* Images.xcassets */,
 				208C98001892A6160008749C /* Supporting Files */,
+				208C982B1892A73C0008749C /* PartViewController.h */,
+				208C982C1892A73C0008749C /* PartViewController.m */,
+				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 			);
 			path = Rouen2;
 			sourceTree = "<group>";
@@ -142,6 +153,15 @@
 				208C981B1892A6160008749C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		208C982E1892A8340008749C /* CSLinearLayoutView */ = {
+			isa = PBXGroup;
+			children = (
+				208C982F1892A8340008749C /* CSLinearLayoutView.h */,
+				208C98301892A8340008749C /* CSLinearLayoutView.m */,
+			);
+			path = CSLinearLayoutView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				208C980A1892A6160008749C /* AppDelegate.m in Sources */,
+				208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */,
+				208C982D1892A73C0008749C /* PartViewController.m in Sources */,
 				208C98061892A6160008749C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
