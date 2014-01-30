@@ -1,15 +1,15 @@
 //
-//  PartViewController.m
+//  EpisodeViewController.m
 //  Rouen2
 //
 //  Created by Jean-André Santoni on 24/01/14.
 //  Copyright (c) 2014 Jean-André Santoni. All rights reserved.
 //
 
-#import "PartViewController.h"
+#import "EpisodeViewController.h"
 #import "CSLinearLayoutView.h"
 
-@interface PartViewController ()
+@interface EpisodeViewController ()
 - (void) addHeader:(int)partNumber title:(NSString*)titleText subtitle:(NSString*)subtitleText;
 - (void) addParagraph:(NSString*)text;
 - (void) addNextButton:(int)partNumber title:(NSString*)titleText;
@@ -17,7 +17,7 @@
 
 CSLinearLayoutView *mainLinearLayout;
 
-@implementation PartViewController
+@implementation EpisodeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

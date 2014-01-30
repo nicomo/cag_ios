@@ -1,5 +1,5 @@
 //
-//  PartViewController.h
+//  EpisodeViewController.h
 //  Rouen2
 //
 //  Created by Jean-André Santoni on 24/01/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PartViewController : UIViewController
+@interface EpisodeViewController : UIViewController
 
 @end
