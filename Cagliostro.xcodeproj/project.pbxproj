@@ -29,24 +29,24 @@
 			containerPortal = 208C97EE1892A6160008749C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 208C97F51892A6160008749C;
-			remoteInfo = Rouen2;
+			remoteInfo = Cagliostro;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		200085CB189A796B008FE968 /* episode1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = episode1.plist; path = Rouen2Tests/episode1.plist; sourceTree = SOURCE_ROOT; };
-		208C97F61892A6160008749C /* Rouen2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rouen2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200085CB189A796B008FE968 /* episode1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = episode1.plist; path = CagliostroTests/episode1.plist; sourceTree = SOURCE_ROOT; };
+		208C97F61892A6160008749C /* La comtesse de Cagliostro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "La comtesse de Cagliostro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		208C97F91892A6160008749C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		208C97FB1892A6160008749C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		208C97FD1892A6160008749C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		208C98011892A6160008749C /* Rouen2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rouen2-Info.plist"; sourceTree = "<group>"; };
+		208C98011892A6160008749C /* Cagliostro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cagliostro-Info.plist"; sourceTree = "<group>"; };
 		208C98031892A6160008749C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		208C98051892A6160008749C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		208C98071892A6160008749C /* Rouen2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rouen2-Prefix.pch"; sourceTree = "<group>"; };
+		208C98071892A6160008749C /* Cagliostro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cagliostro-Prefix.pch"; sourceTree = "<group>"; };
 		208C98081892A6160008749C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		208C98091892A6160008749C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		208C980B1892A6160008749C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		208C98111892A6160008749C /* Rouen2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rouen2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		208C98111892A6160008749C /* CagliostroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CagliostroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		208C98121892A6160008749C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		208C982B1892A73C0008749C /* EpisodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeViewController.h; sourceTree = "<group>"; };
 		208C982C1892A73C0008749C /* EpisodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeViewController.m; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				208C982E1892A8340008749C /* CSLinearLayoutView */,
-				208C97FF1892A6160008749C /* Rouen2 */,
+				208C97FF1892A6160008749C /* Cagliostro */,
 				208C97F81892A6160008749C /* Frameworks */,
 				208C97F71892A6160008749C /* Products */,
 			);
@@ -92,8 +92,8 @@
 		208C97F71892A6160008749C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				208C97F61892A6160008749C /* Rouen2.app */,
-				208C98111892A6160008749C /* Rouen2Tests.xctest */,
+				208C97F61892A6160008749C /* La comtesse de Cagliostro.app */,
+				208C98111892A6160008749C /* CagliostroTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +109,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		208C97FF1892A6160008749C /* Rouen2 */ = {
+		208C97FF1892A6160008749C /* Cagliostro */ = {
 			isa = PBXGroup;
 			children = (
 				208C98081892A6160008749C /* AppDelegate.h */,
@@ -120,16 +120,16 @@
 				208C982C1892A73C0008749C /* EpisodeViewController.m */,
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 			);
-			path = Rouen2;
+			path = Cagliostro;
 			sourceTree = "<group>";
 		};
 		208C98001892A6160008749C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				208C98011892A6160008749C /* Rouen2-Info.plist */,
+				208C98011892A6160008749C /* Cagliostro-Info.plist */,
 				208C98021892A6160008749C /* InfoPlist.strings */,
 				208C98051892A6160008749C /* main.m */,
-				208C98071892A6160008749C /* Rouen2-Prefix.pch */,
+				208C98071892A6160008749C /* Cagliostro-Prefix.pch */,
 				200085CB189A796B008FE968 /* episode1.plist */,
 			);
 			name = "Supporting Files";
@@ -147,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		208C97F51892A6160008749C /* Rouen2 */ = {
+		208C97F51892A6160008749C /* Cagliostro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 208C98221892A6160008749C /* Build configuration list for PBXNativeTarget "Rouen2" */;
+			buildConfigurationList = 208C98221892A6160008749C /* Build configuration list for PBXNativeTarget "Cagliostro" */;
 			buildPhases = (
 				208C97F21892A6160008749C /* Sources */,
 				208C97F31892A6160008749C /* Frameworks */,
@@ -159,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = Rouen2;
-			productName = Rouen2;
-			productReference = 208C97F61892A6160008749C /* Rouen2.app */;
+			name = Cagliostro;
+			productName = Cagliostro;
+			productReference = 208C97F61892A6160008749C /* La comtesse de Cagliostro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		208C98101892A6160008749C /* Rouen2Tests */ = {
+		208C98101892A6160008749C /* CagliostroTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 208C98251892A6160008749C /* Build configuration list for PBXNativeTarget "Rouen2Tests" */;
+			buildConfigurationList = 208C98251892A6160008749C /* Build configuration list for PBXNativeTarget "CagliostroTests" */;
 			buildPhases = (
 				208C980D1892A6160008749C /* Sources */,
 				208C980E1892A6160008749C /* Frameworks */,
@@ -177,9 +177,9 @@
 			dependencies = (
 				208C98171892A6160008749C /* PBXTargetDependency */,
 			);
-			name = Rouen2Tests;
-			productName = Rouen2Tests;
-			productReference = 208C98111892A6160008749C /* Rouen2Tests.xctest */;
+			name = CagliostroTests;
+			productName = CagliostroTests;
+			productReference = 208C98111892A6160008749C /* CagliostroTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +196,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 208C97F11892A6160008749C /* Build configuration list for PBXProject "Rouen2" */;
+			buildConfigurationList = 208C97F11892A6160008749C /* Build configuration list for PBXProject "Cagliostro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -208,8 +208,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				208C97F51892A6160008749C /* Rouen2 */,
-				208C98101892A6160008749C /* Rouen2Tests */,
+				208C97F51892A6160008749C /* Cagliostro */,
+				208C98101892A6160008749C /* CagliostroTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +259,7 @@
 /* Begin PBXTargetDependency section */
 		208C98171892A6160008749C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 208C97F51892A6160008749C /* Rouen2 */;
+			target = 208C97F51892A6160008749C /* Cagliostro */;
 			targetProxy = 208C98161892A6160008749C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -356,9 +356,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rouen2/Rouen2-Prefix.pch";
-				INFOPLIST_FILE = "Rouen2/Rouen2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Cagliostro/Cagliostro-Prefix.pch";
+				INFOPLIST_FILE = "Cagliostro/Cagliostro-Info.plist";
+				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -369,9 +369,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rouen2/Rouen2-Prefix.pch";
-				INFOPLIST_FILE = "Rouen2/Rouen2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Cagliostro/Cagliostro-Prefix.pch";
+				INFOPLIST_FILE = "Cagliostro/Cagliostro-Info.plist";
+				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -380,19 +380,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rouen2.app/Rouen2";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cagliostro.app/Cagliostro";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rouen2/Rouen2-Prefix.pch";
+				GCC_PREFIX_HEADER = "Cagliostro/Cagliostro-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Rouen2Tests/Rouen2Tests-Info.plist";
+				INFOPLIST_FILE = "CagliostroTests/CagliostroTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -403,15 +403,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rouen2.app/Rouen2";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cagliostro.app/Cagliostro";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rouen2/Rouen2-Prefix.pch";
-				INFOPLIST_FILE = "Rouen2Tests/Rouen2Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Cagliostro/Cagliostro-Prefix.pch";
+				INFOPLIST_FILE = "CagliostroTests/CagliostroTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -421,7 +421,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		208C97F11892A6160008749C /* Build configuration list for PBXProject "Rouen2" */ = {
+		208C97F11892A6160008749C /* Build configuration list for PBXProject "Cagliostro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				208C98201892A6160008749C /* Debug */,
@@ -430,7 +430,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		208C98221892A6160008749C /* Build configuration list for PBXNativeTarget "Rouen2" */ = {
+		208C98221892A6160008749C /* Build configuration list for PBXNativeTarget "Cagliostro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				208C98231892A6160008749C /* Debug */,
@@ -439,7 +439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		208C98251892A6160008749C /* Build configuration list for PBXNativeTarget "Rouen2Tests" */ = {
+		208C98251892A6160008749C /* Build configuration list for PBXNativeTarget "CagliostroTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				208C98261892A6160008749C /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "208C97F51892A6160008749C"
-               BuildableName = "Rouen2.app"
-               BlueprintName = "Rouen2"
-               ReferencedContainer = "container:Rouen2.xcodeproj">
+               BuildableName = "Cagliostro.app"
+               BlueprintName = "Cagliostro"
+               ReferencedContainer = "container:Cagliostro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "208C98101892A6160008749C"
-               BuildableName = "Rouen2Tests.xctest"
-               BlueprintName = "Rouen2Tests"
-               ReferencedContainer = "container:Rouen2.xcodeproj">
+               BuildableName = "CagliostroTests.xctest"
+               BlueprintName = "CagliostroTests"
+               ReferencedContainer = "container:Cagliostro.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "208C97F51892A6160008749C"
-            BuildableName = "Rouen2.app"
-            BlueprintName = "Rouen2"
-            ReferencedContainer = "container:Rouen2.xcodeproj">
+            BuildableName = "Cagliostro.app"
+            BlueprintName = "Cagliostro"
+            ReferencedContainer = "container:Cagliostro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "208C97F51892A6160008749C"
-            BuildableName = "Rouen2.app"
-            BlueprintName = "Rouen2"
-            ReferencedContainer = "container:Rouen2.xcodeproj">
+            BuildableName = "Cagliostro.app"
+            BlueprintName = "Cagliostro"
+            ReferencedContainer = "container:Cagliostro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "208C97F51892A6160008749C"
-            BuildableName = "Rouen2.app"
-            BlueprintName = "Rouen2"
-            ReferencedContainer = "container:Rouen2.xcodeproj">
+            BuildableName = "Cagliostro.app"
+            BlueprintName = "Cagliostro"
+            ReferencedContainer = "container:Cagliostro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

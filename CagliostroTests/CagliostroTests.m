@@ -1,6 +1,6 @@
 //
-//  Rouen2Tests.m
-//  Rouen2Tests
+//  CagliostroTests.m
+//  CagliostroTests
 //
 //  Created by Jean-André Santoni on 24/01/14.
 //  Copyright (c) 2014 Jean-André Santoni. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface Rouen2Tests : XCTestCase
+@interface CagliostroTests : XCTestCase
 
 @end
 
-@implementation Rouen2Tests
+@implementation CagliostroTests
 
 - (void)setUp
 {
