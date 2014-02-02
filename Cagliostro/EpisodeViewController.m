@@ -19,12 +19,17 @@ CSLinearLayoutView *mainLinearLayout;
 
 @implementation EpisodeViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+    self = [super init];
+    self.epid = 1;
+    return self;
+}
+
+- (id)initWithEpid:(int) epid
+{
+    self = [super init];
+    self.epid = epid;
     return self;
 }
 
@@ -41,17 +46,19 @@ CSLinearLayoutView *mainLinearLayout;
     mainLinearLayout.orientation = CSLinearLayoutViewOrientationVertical;
     [self.view addSubview:mainLinearLayout];
 
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"episode1" ofType:@"plist"];
-    //NSArray *paragraphs = [NSArray arrayWithContentsOfFile:path];
+    NSString *resourcename = [NSString stringWithFormat:@"episode%d", self.epid];
+    NSString *path = [[NSBundle mainBundle] pathForResource:resourcename ofType:@"plist"];
     NSDictionary *data = [NSDictionary dictionaryWithContentsOfFile:path];
 
-    [self addHeader:1 title:[data objectForKey:@"title"] subtitle:[data objectForKey:@"subtitle"]];
+    [self addHeader:self.epid title:[data objectForKey:@"title"] subtitle:[data objectForKey:@"subtitle"]];
+    
+    self.navigationItem.title = [data objectForKey:@"title"];
     
     for (NSString *p in [data objectForKey:@"paragraphs"]) {
         [self addParagraph:p];
     }
     
-    [self addNextButton:2 title:@"Des heures s’écoulèrent"];
+    [self addNextButton:self.epid+1 title:[data objectForKey:@"nexttitle"]];
 }
 
 - (void)addHeader:(int)partNumber title:(NSString *)titleText subtitle:(NSString *)subtitleText
@@ -137,7 +144,16 @@ CSLinearLayoutView *mainLinearLayout;
     item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
     item.fillMode = CSLinearLayoutItemFillModeNormal;
     
+    
+    [nextButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
+    
     [mainLinearLayout addItem:item];
+}
+
+- (void)didPressButton:(UIButton *)sender
+{
+    EpisodeViewController *nextEpisodeController = [[EpisodeViewController alloc] initWithEpid:self.epid+1];
+    [self.navigationController pushViewController:nextEpisodeController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

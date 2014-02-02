@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface EpisodeViewController : UIViewController
-
+@property (nonatomic) int epid;
 @end
