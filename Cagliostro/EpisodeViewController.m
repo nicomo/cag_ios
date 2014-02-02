@@ -63,28 +63,32 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)addHeader:(int)partNumber title:(NSString *)titleText subtitle:(NSString *)subtitleText
 {
-    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 500)];
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 0)];
     header.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0];
     
-    UITextView *title = [[UITextView alloc] initWithFrame:CGRectMake(85, 85*1.5, 768-85, 0)];
+    UITextView *title = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 768, 0)];
     title.text = [NSString stringWithFormat:@"%d. %@", partNumber, titleText];
     title.font = [UIFont fontWithName:@"SuperClarendon-Black" size:50];
     title.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
     title.backgroundColor = [UIColor clearColor];
     title.userInteractionEnabled = NO;
     title.scrollEnabled = NO;
+    title.textContainerInset = UIEdgeInsetsMake(85*2, 85, 0, 0);
     [title sizeToFit];
     [header addSubview:title];
     
-    UITextView *subtitle = [[UITextView alloc] initWithFrame:CGRectMake(85, 85*3.5, 768-85, 0)];
+    UITextView *subtitle = [[UITextView alloc] initWithFrame:CGRectMake(0, title.frame.size.height, 768, 0)];
     subtitle.text = subtitleText;
     subtitle.font = [UIFont fontWithName:@"SuperClarendon-Black" size:30];
     subtitle.textColor = [UIColor colorWithRed:0.24 green:0.24 blue:0.22 alpha:1.0];
     subtitle.backgroundColor = [UIColor clearColor];
     subtitle.userInteractionEnabled = NO;
     subtitle.scrollEnabled = NO;
+    subtitle.textContainerInset = UIEdgeInsetsMake(85/2, 85, 85/2, 0);
     [subtitle sizeToFit];
     [header addSubview:subtitle];
+    
+    header.frame = CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height);
 
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:header];
     item.padding = CSLinearLayoutMakePadding(0, 0, 85, 0);
