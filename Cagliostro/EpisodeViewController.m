@@ -102,9 +102,17 @@ CSLinearLayoutView *mainLinearLayout;
     tv.textAlignment = NSTextAlignmentJustified;
     tv.userInteractionEnabled = NO;
     tv.scrollEnabled = NO;
-    [tv sizeToFit];
     tv.backgroundColor = [UIColor clearColor];
     tv.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
+    tv.textContainerInset = UIEdgeInsetsMake(0, 0, 25, 50);
+    [tv sizeToFit];
+    
+    tv.frame = CGRectMake(0, 0, 512, tv.frame.size.height);
+    
+    CALayer *border = [CALayer layer];
+    border.frame = CGRectMake(tv.frame.size.width-1, 0, 1, tv.frame.size.height);
+    border.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0].CGColor;
+    [tv.layer addSublayer:border];
 
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:tv];
     item.padding = CSLinearLayoutMakePadding(0, 85, 0, 0);
