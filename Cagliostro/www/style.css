@@ -1,0 +1,35 @@
+@font-face {
+   font-family: 'SuperClarendon';
+   src: url('file:///android_asset/fonts/SuperClarendon_7.otf');
+}
+
+@font-face {
+   font-family: 'Georgia';
+   src: url('file:///android_asset/fonts/georgia.ttf');
+}
+
+body {
+    background-color: #f5efe2;
+    margin: 0;
+
+    border-right: solid 1px #beb2b0;
+    width: 499px;
+}
+
+p {
+    font-family: "Georgia" Serif;
+    font-size: 1.2em;
+    word-break: break-word; /* hyphenation */
+    -webkit-hyphens: auto; /* hyphenation */
+    -webkit-hyphenate-before: 2; /* hyphenation : minimum number of letters before break */
+    -webkit-hyphenate-after: 3; /* hyphenation : minimum number of letters after break */
+    hyphenate-lines: 3;  /* hyphenation : max numer of consecutive lines w/ hyphenation */
+    -webkit-font-feature-settings: "liga", "dlig"; /* ligature */
+    font-feature-settings: "liga", "dlig";
+    text-align: justify;
+    margin-right: 10%;
+}
+
+img {
+    width: 450px;
+}

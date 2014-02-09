@@ -53,12 +53,26 @@ CSLinearLayoutView *mainLinearLayout;
     [self addHeader:self.epid title:[data objectForKey:@"title"] subtitle:[data objectForKey:@"subtitle"]];
     
     self.navigationItem.title = [data objectForKey:@"title"];
-    
-    for (NSString *p in [data objectForKey:@"paragraphs"]) {
-        [self addParagraph:p];
-    }
+
+    UIWebView *wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 500, 768)];
+    wv.delegate = self;
+    wv.scrollView.scrollEnabled = NO;
+    wv.scrollView.bounces = NO;
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.epid] ofType:@"html"]];
+    [wv loadRequest:[NSURLRequest requestWithURL:url]];
+    CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:wv];
+    item.padding = CSLinearLayoutMakePadding(0, 85, 0, 0);
+    item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
+    item.fillMode = CSLinearLayoutItemFillModeNormal;
+    [mainLinearLayout addItem:item];
     
     [self addNextButton:self.epid+1 title:[data objectForKey:@"nexttitle"]];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    CGRect newBounds = webView.bounds;
+    newBounds.size.height = webView.scrollView.contentSize.height;
+    webView.bounds = newBounds;
 }
 
 - (void)addHeader:(int)partNumber title:(NSString *)titleText subtitle:(NSString *)subtitleText
@@ -95,34 +109,6 @@ CSLinearLayoutView *mainLinearLayout;
     item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
     item.fillMode = CSLinearLayoutItemFillModeNormal;
 
-    [mainLinearLayout addItem:item];
-}
-
-- (void)addParagraph:(NSString *)text
-{
-    UITextView *tv = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 512, 0)];
-    tv.text = text;
-    tv.font = [UIFont fontWithName:@"Georgia" size:18];
-    tv.textAlignment = NSTextAlignmentJustified;
-    tv.userInteractionEnabled = NO;
-    tv.scrollEnabled = NO;
-    tv.backgroundColor = [UIColor clearColor];
-    tv.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
-    tv.textContainerInset = UIEdgeInsetsMake(0, 0, 25, 50);
-    [tv sizeToFit];
-    
-    tv.frame = CGRectMake(0, 0, 512, tv.frame.size.height);
-    
-    CALayer *border = [CALayer layer];
-    border.frame = CGRectMake(tv.frame.size.width-1, 0, 1, tv.frame.size.height);
-    border.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0].CGColor;
-    [tv.layer addSublayer:border];
-
-    CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:tv];
-    item.padding = CSLinearLayoutMakePadding(0, 85, 0, 0);
-    item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
-    item.fillMode = CSLinearLayoutItemFillModeNormal;
-    
     [mainLinearLayout addItem:item];
 }
 
