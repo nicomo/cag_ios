@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Jean-André Santoni. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "EpisodeViewController.h"
 #import "CSLinearLayoutView.h"
 
@@ -137,13 +138,18 @@ CSLinearLayoutView *mainLinearLayout;
     [title sizeToFit];
     [nextButton addSubview:title];
     
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    if (self.epid > minElapsed) {
+        title.text = @"A paraitre";
+        [title sizeToFit];
+    } else {
+        [nextButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:nextButton];
     item.padding = CSLinearLayoutMakePadding(85, 0, 0, 0);
     item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
     item.fillMode = CSLinearLayoutItemFillModeNormal;
-    
-    
-    [nextButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [mainLinearLayout addItem:item];
 }

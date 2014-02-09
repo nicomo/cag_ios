@@ -13,6 +13,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSDate *fld = [prefs objectForKey:@"firstLaunchDate"];
+    if (fld) {
+        firstLaunchDate = fld;
+    } else {
+        firstLaunchDate = [NSDate date];
+        [prefs setObject:firstLaunchDate forKey:@"firstLaunchDate"];
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
