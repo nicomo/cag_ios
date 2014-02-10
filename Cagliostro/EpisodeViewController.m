@@ -49,11 +49,11 @@ CSLinearLayoutView *mainLinearLayout;
 
     NSString *resourcename = [NSString stringWithFormat:@"episode%d", self.epid];
     NSString *path = [[NSBundle mainBundle] pathForResource:resourcename ofType:@"plist"];
-    NSDictionary *data = [NSDictionary dictionaryWithContentsOfFile:path];
+    self.data = [NSDictionary dictionaryWithContentsOfFile:path];
 
-    [self addHeader:self.epid title:[data objectForKey:@"title"] subtitle:[data objectForKey:@"subtitle"]];
+    [self addHeader:self.epid title:[self.data objectForKey:@"title"] subtitle:[self.data objectForKey:@"subtitle"]];
     
-    self.navigationItem.title = [data objectForKey:@"title"];
+    self.navigationItem.title = [self.data objectForKey:@"title"];
 
     UIWebView *wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 500, 768)];
     wv.delegate = self;
@@ -67,7 +67,23 @@ CSLinearLayoutView *mainLinearLayout;
     item.fillMode = CSLinearLayoutItemFillModeNormal;
     [mainLinearLayout addItem:item];
     
-    [self addNextButton:self.epid+1 title:[data objectForKey:@"nexttitle"]];
+    [self addNextButton:self.epid+1 title:[self.data objectForKey:@"nexttitle"]];
+    
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
+}
+
+-(void)updateButton:(NSTimer *)timer  {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    bool delayedEps = [prefs boolForKey:@"delayedEps"];
+
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    if (self.epid > minElapsed && delayedEps) {
+        self.nextButtonTitle.text = [NSString stringWithFormat:@"A paraitre dans %5.2f minutes", self.epid - minElapsed];
+        [self.nextButtonTitle sizeToFit];
+    } else {
+        self.nextButtonTitle.text = [self.data objectForKey:@"nexttitle"];
+        [self.nextButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
@@ -115,8 +131,8 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)addNextButton:(int)partNumber title:(NSString *)titleText
 {
-    UIButton *nextButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 768, 300)];
-    nextButton.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0];
+    self.nextButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 768, 300)];
+    self.nextButton.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0];
 
     UITextView *nextPartLabel = [[UITextView alloc] initWithFrame:CGRectMake(85, 100, 768-85, 0)];
     nextPartLabel.text = [NSString stringWithFormat:@"Episode %d.", partNumber];
@@ -126,27 +142,19 @@ CSLinearLayoutView *mainLinearLayout;
     nextPartLabel.userInteractionEnabled = NO;
     nextPartLabel.scrollEnabled = NO;
     [nextPartLabel sizeToFit];
-    [nextButton addSubview:nextPartLabel];
+    [self.nextButton addSubview:nextPartLabel];
     
-    UITextView *title = [[UITextView alloc] initWithFrame:CGRectMake(85, 150, 768-85, 0)];
-    title.text = titleText;
-    title.font = [UIFont fontWithName:@"SuperClarendon-Black" size:30];
-    title.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
-    title.backgroundColor = [UIColor clearColor];
-    title.userInteractionEnabled = NO;
-    title.scrollEnabled = NO;
-    [title sizeToFit];
-    [nextButton addSubview:title];
+    self.nextButtonTitle = [[UITextView alloc] initWithFrame:CGRectMake(85, 150, 768-85, 0)];
+    self.nextButtonTitle.text = titleText;
+    self.nextButtonTitle.font = [UIFont fontWithName:@"SuperClarendon-Black" size:30];
+    self.nextButtonTitle.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
+    self.nextButtonTitle.backgroundColor = [UIColor clearColor];
+    self.nextButtonTitle.userInteractionEnabled = NO;
+    self.nextButtonTitle.scrollEnabled = NO;
+    [self.nextButtonTitle sizeToFit];
+    [self.nextButton addSubview:self.nextButtonTitle];
     
-    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
-    if (self.epid > minElapsed) {
-        title.text = @"A paraitre";
-        [title sizeToFit];
-    } else {
-        [nextButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    
-    CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:nextButton];
+    CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:self.nextButton];
     item.padding = CSLinearLayoutMakePadding(85, 0, 0, 0);
     item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
     item.fillMode = CSLinearLayoutItemFillModeNormal;

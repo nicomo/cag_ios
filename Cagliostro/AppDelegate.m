@@ -17,9 +17,12 @@
     NSDate *fld = [prefs objectForKey:@"firstLaunchDate"];
     if (fld) {
         firstLaunchDate = fld;
+        NSLog(@"Date de premier lancement trouvée.");
     } else {
         firstLaunchDate = [NSDate date];
         [prefs setObject:firstLaunchDate forKey:@"firstLaunchDate"];
+        [prefs setBool:YES forKey:@"delayedEps"];
+        NSLog(@"App lancée pour la première fois. Enregistrement de la date de premier lancement.");
     }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
