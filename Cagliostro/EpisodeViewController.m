@@ -59,7 +59,7 @@ CSLinearLayoutView *mainLinearLayout;
     wv.delegate = self;
     wv.scrollView.scrollEnabled = NO;
     wv.scrollView.bounces = NO;
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.epid] ofType:@"html"]];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.epid] ofType:@"html" inDirectory:@"www"]];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:wv];
     item.padding = CSLinearLayoutMakePadding(0, 85, 0, 0);

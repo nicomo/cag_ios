@@ -7,18 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		200085CD189A7B87008FE968 /* episode2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 200085CB189A796B008FE968 /* episode2.plist */; };
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
 		2022461618A23A0500FEBB7D /* Episode1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2022461518A23A0500FEBB7D /* Episode1.xib */; };
-		203727ED18A794B9008409C3 /* 1.html in Resources */ = {isa = PBXBuildFile; fileRef = 203727E618A794B9008409C3 /* 1.html */; };
-		203727EE18A794B9008409C3 /* 2.html in Resources */ = {isa = PBXBuildFile; fileRef = 203727E718A794B9008409C3 /* 2.html */; };
-		203727EF18A794B9008409C3 /* 3.html in Resources */ = {isa = PBXBuildFile; fileRef = 203727E818A794B9008409C3 /* 3.html */; };
-		203727F018A794B9008409C3 /* jquery-2.1.0.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 203727E918A794B9008409C3 /* jquery-2.1.0.min.js */; };
-		203727F118A794B9008409C3 /* pub.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 203727EA18A794B9008409C3 /* pub.jpg */; };
-		203727F218A794B9008409C3 /* small.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 203727EB18A794B9008409C3 /* small.mp4 */; };
-		203727F318A794B9008409C3 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 203727EC18A794B9008409C3 /* style.css */; };
-		204FB199189E677B0067A49B /* episode1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 204FB198189E677B0067A49B /* episode1.plist */; };
-		204FB19B189E67F30067A49B /* episode3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 204FB19A189E67F30067A49B /* episode3.plist */; };
+		20325BB718A921C0001FDBFF /* episode1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB418A921C0001FDBFF /* episode1.plist */; };
+		20325BB818A921C0001FDBFF /* episode2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB518A921C0001FDBFF /* episode2.plist */; };
+		20325BB918A921C0001FDBFF /* episode3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB618A921C0001FDBFF /* episode3.plist */; };
+		20325BBB18A9225A001FDBFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 20325BBA18A9225A001FDBFF /* www */; };
 		208C97FA1892A6160008749C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97F91892A6160008749C /* Foundation.framework */; };
 		208C97FC1892A6160008749C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FB1892A6160008749C /* CoreGraphics.framework */; };
 		208C97FE1892A6160008749C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FD1892A6160008749C /* UIKit.framework */; };
@@ -44,18 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		200085CB189A796B008FE968 /* episode2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = episode2.plist; path = CagliostroTests/episode2.plist; sourceTree = SOURCE_ROOT; };
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2022461518A23A0500FEBB7D /* Episode1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Episode1.xib; sourceTree = "<group>"; };
-		203727E618A794B9008409C3 /* 1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 1.html; sourceTree = "<group>"; };
-		203727E718A794B9008409C3 /* 2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 2.html; sourceTree = "<group>"; };
-		203727E818A794B9008409C3 /* 3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 3.html; sourceTree = "<group>"; };
-		203727E918A794B9008409C3 /* jquery-2.1.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.0.min.js"; sourceTree = "<group>"; };
-		203727EA18A794B9008409C3 /* pub.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pub.jpg; sourceTree = "<group>"; };
-		203727EB18A794B9008409C3 /* small.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = small.mp4; sourceTree = "<group>"; };
-		203727EC18A794B9008409C3 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		204FB198189E677B0067A49B /* episode1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = episode1.plist; path = CagliostroTests/episode1.plist; sourceTree = SOURCE_ROOT; };
-		204FB19A189E67F30067A49B /* episode3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = episode3.plist; path = CagliostroTests/episode3.plist; sourceTree = SOURCE_ROOT; };
+		20325BB418A921C0001FDBFF /* episode1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode1.plist; sourceTree = "<group>"; };
+		20325BB518A921C0001FDBFF /* episode2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode2.plist; sourceTree = "<group>"; };
+		20325BB618A921C0001FDBFF /* episode3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode3.plist; sourceTree = "<group>"; };
+		20325BBA18A9225A001FDBFF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		208C97F61892A6160008749C /* Cagliostro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cagliostro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208C97F91892A6160008749C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		208C97FB1892A6160008749C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,23 +88,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		203727E518A794B9008409C3 /* www */ = {
-			isa = PBXGroup;
-			children = (
-				203727E618A794B9008409C3 /* 1.html */,
-				203727E718A794B9008409C3 /* 2.html */,
-				203727E818A794B9008409C3 /* 3.html */,
-				203727E918A794B9008409C3 /* jquery-2.1.0.min.js */,
-				203727EA18A794B9008409C3 /* pub.jpg */,
-				203727EB18A794B9008409C3 /* small.mp4 */,
-				203727EC18A794B9008409C3 /* style.css */,
-			);
-			path = www;
-			sourceTree = "<group>";
-		};
 		208C97ED1892A6160008749C = {
 			isa = PBXGroup;
 			children = (
+				20325BBA18A9225A001FDBFF /* www */,
 				200D2BEB18A90E7500D5C53D /* Settings.bundle */,
 				208C982E1892A8340008749C /* CSLinearLayoutView */,
 				208C97FF1892A6160008749C /* Cagliostro */,
@@ -148,7 +123,6 @@
 		208C97FF1892A6160008749C /* Cagliostro */ = {
 			isa = PBXGroup;
 			children = (
-				203727E518A794B9008409C3 /* www */,
 				208C98081892A6160008749C /* AppDelegate.h */,
 				208C98091892A6160008749C /* AppDelegate.m */,
 				208C982B1892A73C0008749C /* EpisodeViewController.h */,
@@ -168,9 +142,9 @@
 				208C98021892A6160008749C /* InfoPlist.strings */,
 				208C98051892A6160008749C /* main.m */,
 				208C98071892A6160008749C /* Cagliostro-Prefix.pch */,
-				204FB198189E677B0067A49B /* episode1.plist */,
-				200085CB189A796B008FE968 /* episode2.plist */,
-				204FB19A189E67F30067A49B /* episode3.plist */,
+				20325BB418A921C0001FDBFF /* episode1.plist */,
+				20325BB518A921C0001FDBFF /* episode2.plist */,
+				20325BB618A921C0001FDBFF /* episode3.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,19 +233,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				203727EF18A794B9008409C3 /* 3.html in Resources */,
-				203727F318A794B9008409C3 /* style.css in Resources */,
+				20325BBB18A9225A001FDBFF /* www in Resources */,
 				200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */,
-				203727F118A794B9008409C3 /* pub.jpg in Resources */,
-				203727ED18A794B9008409C3 /* 1.html in Resources */,
-				200085CD189A7B87008FE968 /* episode2.plist in Resources */,
+				20325BB918A921C0001FDBFF /* episode3.plist in Resources */,
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
-				203727F218A794B9008409C3 /* small.mp4 in Resources */,
-				203727EE18A794B9008409C3 /* 2.html in Resources */,
-				204FB19B189E67F30067A49B /* episode3.plist in Resources */,
 				208C980C1892A6160008749C /* Images.xcassets in Resources */,
-				204FB199189E677B0067A49B /* episode1.plist in Resources */,
 				2022461618A23A0500FEBB7D /* Episode1.xib in Resources */,
+				20325BB718A921C0001FDBFF /* episode1.plist in Resources */,
+				20325BB818A921C0001FDBFF /* episode2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +261,6 @@
 				208C980A1892A6160008749C /* AppDelegate.m in Sources */,
 				208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */,
 				208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */,
-				203727F018A794B9008409C3 /* jquery-2.1.0.min.js in Sources */,
 				208C98061892A6160008749C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

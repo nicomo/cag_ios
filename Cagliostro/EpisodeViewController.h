@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EpisodeViewController : UIViewController
+@interface EpisodeViewController : UIViewController <UIWebViewDelegate>
 @property (nonatomic) int epid;
 @property (strong, nonatomic) NSDictionary *data;
 @property (strong, nonatomic) UIButton *nextButton;
