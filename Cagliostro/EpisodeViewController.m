@@ -12,7 +12,6 @@
 
 @interface EpisodeViewController ()
 - (void) addHeader:(int)partNumber title:(NSString*)titleText subtitle:(NSString*)subtitleText;
-- (void) addParagraph:(NSString*)text;
 - (void) addNextButton:(int)partNumber title:(NSString*)titleText;
 @end
 
@@ -45,6 +44,7 @@ CSLinearLayoutView *mainLinearLayout;
     mainLinearLayout = [[CSLinearLayoutView alloc] initWithFrame:self.view.bounds];
     mainLinearLayout.backgroundColor = [UIColor clearColor];
     mainLinearLayout.orientation = CSLinearLayoutViewOrientationVertical;
+    mainLinearLayout.delegate = self;
     [self.view addSubview:mainLinearLayout];
 
     NSString *resourcename = [NSString stringWithFormat:@"episode%d", self.epid];
@@ -72,7 +72,11 @@ CSLinearLayoutView *mainLinearLayout;
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
 }
 
--(void)updateButton:(NSTimer *)timer  {
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    self.player.view.alpha = 1 - (scrollView.contentOffset.y + 64) / self.player.view.frame.size.height;
+}
+
+-(void)updateButton:(NSTimer *)timer {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
 

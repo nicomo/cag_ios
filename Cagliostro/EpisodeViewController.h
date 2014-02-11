@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 
-@interface EpisodeViewController : UIViewController <UIWebViewDelegate, MPMediaPickerControllerDelegate>
+@interface EpisodeViewController : UIViewController <UIWebViewDelegate, MPMediaPickerControllerDelegate, UIScrollViewDelegate>
 @property (nonatomic) int epid;
 @property (strong, nonatomic) NSDictionary *data;
 @property (strong, nonatomic) UIButton *nextButton;
