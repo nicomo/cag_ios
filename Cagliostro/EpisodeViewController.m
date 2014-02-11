@@ -97,6 +97,14 @@ CSLinearLayoutView *mainLinearLayout;
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 0)];
     header.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0];
     
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"bg" ofType:@"mp4" inDirectory:@"www"]];
+    
+    self.player = [[MPMoviePlayerController alloc] initWithContentURL: url];
+    [self.player prepareToPlay];
+    self.player.controlStyle = MPMovieControlStyleNone;
+    self.player.scalingMode=MPMovieScalingModeFill;
+    [header addSubview: self.player.view];
+    
     UITextView *title = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 768, 0)];
     title.text = [NSString stringWithFormat:@"%d. %@", partNumber, titleText];
     title.font = [UIFont fontWithName:@"SuperClarendon-Black" size:50];
@@ -120,6 +128,8 @@ CSLinearLayoutView *mainLinearLayout;
     [header addSubview:subtitle];
     
     header.frame = CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height);
+    [self.player.view setFrame: header.frame];
+    [self.player play];
 
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:header];
     item.padding = CSLinearLayoutMakePadding(0, 0, 85, 0);
