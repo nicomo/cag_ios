@@ -13,6 +13,7 @@
 @interface EpisodeViewController ()
 - (void) addHeader:(int)partNumber title:(NSString*)titleText subtitle:(NSString*)subtitleText;
 - (void) addNextButton:(int)partNumber title:(NSString*)titleText;
+- (void) updatePins;
 @end
 
 CSLinearLayoutView *mainLinearLayout;
@@ -22,7 +23,7 @@ CSLinearLayoutView *mainLinearLayout;
 - (id)init
 {
     self = [super init];
-    self.epid = 1;
+    self.epid = 0;
     return self;
 }
 
@@ -47,7 +48,7 @@ CSLinearLayoutView *mainLinearLayout;
     mainLinearLayout.delegate = self;
     [self.view addSubview:mainLinearLayout];
 
-    [self addHeader:self.epid title:[data[self.epid] objectForKey:@"title"] subtitle:[data[self.epid] objectForKey:@"subtitle"]];
+    [self addHeader:self.epid+1 title:[data[self.epid] objectForKey:@"title"] subtitle:[data[self.epid] objectForKey:@"subtitle"]];
     
     self.navigationItem.title = [data[self.epid] objectForKey:@"title"];
 
@@ -57,23 +58,65 @@ CSLinearLayoutView *mainLinearLayout;
     wv.opaque = NO;
     wv.scrollView.scrollEnabled = NO;
     wv.scrollView.bounces = NO;
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.epid] ofType:@"html" inDirectory:@"www"]];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.epid+1] ofType:@"html" inDirectory:@"www"]];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:wv];
     [mainLinearLayout addItem:item];
-    
+
     [self addNextButton:self.epid+1 title:[data[self.epid+1] objectForKey:@"title"]];
-    
-    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     self.player.view.alpha = 1 - (scrollView.contentOffset.y + 64) / self.player.view.frame.size.height;
     [self.player.view setFrame: CGRectMake(0, (scrollView.contentOffset.y + 64) / 3, 768, self.player.view.frame.size.height)];
+    self.updatePins;
+}
+
+-(void)updatePins
+{
+    CGRect visibleRect;
+    visibleRect.size = mainLinearLayout.bounds.size;
+    visibleRect.origin = mainLinearLayout.contentOffset;
+    
+    for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
+        UIImageView *anon = [pin objectForKey:@"imageView"];
+        
+        if (CGRectContainsRect(visibleRect, anon.frame) && ![[pin objectForKey:@"state"] isEqual: @"flipped"] ) {
+            [pin setValue:@"flipped" forKey:@"state"];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void){
+                [UIView transitionWithView:anon
+                                  duration:1.0
+                                   options:UIViewAnimationOptionTransitionFlipFromRight
+                                animations:^{
+                                    NSString *anonImageName = [NSString stringWithFormat:@"character%d", 1];
+                                    anon.image = [UIImage imageNamed:anonImageName];
+                                } completion:^(BOOL finished) {}];
+            });
+            
+
+            
+        }
+    }
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
     [webView sizeToFit];
+    
+    for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
+        NSString *js = [NSString stringWithFormat:@"document.getElementsByTagName('p')[%d].getBoundingClientRect().top", [[pin objectForKey:@"pid"] intValue] - 1];
+        NSString *jsresult = [webView stringByEvaluatingJavaScriptFromString:js];
+        NSString *anonImageName = [NSString stringWithFormat:@"anon%@", [pin objectForKey:@"gender"]];
+        UIImageView *anon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:anonImageName]];
+        anon.frame = CGRectMake(768 - 130, [jsresult intValue] + webView.frame.origin.y, 70, 70);
+        [mainLinearLayout addSubview:anon];
+        [pin setObject:anon forKey:@"imageView"];
+        [pin setObject:@"anon" forKey:@"state"];
+    }
+
+    [self performSelector:@selector(updatePins) withObject:nil afterDelay:1.0];
+    
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
 }
 
 -(void)updateButton:(NSTimer *)timer {

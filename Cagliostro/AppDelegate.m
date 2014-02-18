@@ -26,7 +26,7 @@
     }
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"episodes" ofType:@"plist"];
-    data = [NSArray arrayWithContentsOfFile:path];
+    data = [NSMutableArray arrayWithContentsOfFile:path];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

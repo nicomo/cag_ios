@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
+		200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200FA79E18B393CC00AAD523 /* pins.xcassets */; };
 		20325BB718A921C0001FDBFF /* episodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB418A921C0001FDBFF /* episodes.plist */; };
 		20325BBB18A9225A001FDBFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 20325BBA18A9225A001FDBFF /* www */; };
 		208C97FA1892A6160008749C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97F91892A6160008749C /* Foundation.framework */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		200FA79E18B393CC00AAD523 /* pins.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pins.xcassets; sourceTree = "<group>"; };
 		20325BB418A921C0001FDBFF /* episodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episodes.plist; sourceTree = "<group>"; };
 		20325BBA18A9225A001FDBFF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		208C97F61892A6160008749C /* Cagliostro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cagliostro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 				208C982C1892A73C0008749C /* EpisodeViewController.m */,
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 				208C980B1892A6160008749C /* Images.xcassets */,
+				200FA79E18B393CC00AAD523 /* pins.xcassets */,
 				208C98001892A6160008749C /* Supporting Files */,
 			);
 			path = Cagliostro;
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20325BBB18A9225A001FDBFF /* www in Resources */,
+				200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */,
 				200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */,
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				208C980C1892A6160008749C /* Images.xcassets in Resources */,

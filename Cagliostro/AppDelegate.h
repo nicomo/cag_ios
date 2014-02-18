@@ -11,8 +11,8 @@
 extern NSDate *firstLaunchDate;
 NSDate *firstLaunchDate;
 
-extern NSArray *data;
-NSArray *data;
+extern NSMutableArray *data;
+NSMutableArray *data;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
