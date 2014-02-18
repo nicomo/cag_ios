@@ -10,7 +10,7 @@
 			<key>Key</key>
 			<string>delayedEps</string>
 			<key>Title</key>
-			<string>Episodes différés</string>
+			<string>Episodes en différé</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>

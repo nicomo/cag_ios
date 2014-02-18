@@ -55,16 +55,15 @@ CSLinearLayoutView *mainLinearLayout;
     
     self.navigationItem.title = [self.data objectForKey:@"title"];
 
-    UIWebView *wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 500, 768)];
+    UIWebView *wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 768, 768)];
+    wv.backgroundColor = self.view.backgroundColor;
     wv.delegate = self;
+    wv.opaque = NO;
     wv.scrollView.scrollEnabled = NO;
     wv.scrollView.bounces = NO;
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.epid] ofType:@"html" inDirectory:@"www"]];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:wv];
-    item.padding = CSLinearLayoutMakePadding(0, 85, 0, 0);
-    item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
-    item.fillMode = CSLinearLayoutItemFillModeNormal;
     [mainLinearLayout addItem:item];
     
     [self addNextButton:self.epid+1 title:[self.data objectForKey:@"nexttitle"]];
@@ -74,6 +73,11 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     self.player.view.alpha = 1 - (scrollView.contentOffset.y + 64) / self.player.view.frame.size.height;
+    [self.player.view setFrame: CGRectMake(0, (scrollView.contentOffset.y + 64) / 3, 768, self.player.view.frame.size.height)];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    [webView sizeToFit];
 }
 
 -(void)updateButton:(NSTimer *)timer {
@@ -88,12 +92,6 @@ CSLinearLayoutView *mainLinearLayout;
         self.nextButtonTitle.text = [self.data objectForKey:@"nexttitle"];
         [self.nextButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
     }
-}
-
--(void)webViewDidFinishLoad:(UIWebView *)webView {
-    CGRect newBounds = webView.bounds;
-    newBounds.size.height = webView.scrollView.contentSize.height;
-    webView.bounds = newBounds;
 }
 
 - (void)addHeader:(int)partNumber title:(NSString *)titleText subtitle:(NSString *)subtitleText
@@ -132,14 +130,10 @@ CSLinearLayoutView *mainLinearLayout;
     [header addSubview:subtitle];
     
     header.frame = CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height);
-    [self.player.view setFrame: header.frame];
+    [self.player.view setFrame: CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height + 100)];
     [self.player play];
-
+    
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:header];
-    item.padding = CSLinearLayoutMakePadding(0, 0, 85, 0);
-    item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
-    item.fillMode = CSLinearLayoutItemFillModeNormal;
-
     [mainLinearLayout addItem:item];
 }
 
@@ -169,10 +163,6 @@ CSLinearLayoutView *mainLinearLayout;
     [self.nextButton addSubview:self.nextButtonTitle];
     
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:self.nextButton];
-    item.padding = CSLinearLayoutMakePadding(85, 0, 0, 0);
-    item.horizontalAlignment = CSLinearLayoutItemHorizontalAlignmentLeft;
-    item.fillMode = CSLinearLayoutItemFillModeNormal;
-    
     [mainLinearLayout addItem:item];
 }
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
-		2022461618A23A0500FEBB7D /* Episode1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2022461518A23A0500FEBB7D /* Episode1.xib */; };
 		20325BB718A921C0001FDBFF /* episode1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB418A921C0001FDBFF /* episode1.plist */; };
 		20325BB818A921C0001FDBFF /* episode2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB518A921C0001FDBFF /* episode2.plist */; };
 		20325BB918A921C0001FDBFF /* episode3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB618A921C0001FDBFF /* episode3.plist */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		2022461518A23A0500FEBB7D /* Episode1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Episode1.xib; sourceTree = "<group>"; };
 		20325BB418A921C0001FDBFF /* episode1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode1.plist; sourceTree = "<group>"; };
 		20325BB518A921C0001FDBFF /* episode2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode2.plist; sourceTree = "<group>"; };
 		20325BB618A921C0001FDBFF /* episode3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode3.plist; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				208C982B1892A73C0008749C /* EpisodeViewController.h */,
 				208C982C1892A73C0008749C /* EpisodeViewController.m */,
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
-				2022461518A23A0500FEBB7D /* Episode1.xib */,
 				208C980B1892A6160008749C /* Images.xcassets */,
 				208C98001892A6160008749C /* Supporting Files */,
 			);
@@ -238,7 +235,6 @@
 				20325BB918A921C0001FDBFF /* episode3.plist in Resources */,
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				208C980C1892A6160008749C /* Images.xcassets in Resources */,
-				2022461618A23A0500FEBB7D /* Episode1.xib in Resources */,
 				20325BB718A921C0001FDBFF /* episode1.plist in Resources */,
 				20325BB818A921C0001FDBFF /* episode2.plist in Resources */,
 			);
