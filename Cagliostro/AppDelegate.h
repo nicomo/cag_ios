@@ -11,6 +11,9 @@
 extern NSDate *firstLaunchDate;
 NSDate *firstLaunchDate;
 
+extern NSArray *data;
+NSArray *data;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

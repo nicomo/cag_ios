@@ -25,6 +25,9 @@
         NSLog(@"App lancée pour la première fois. Enregistrement de la date de premier lancement.");
     }
     
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"episodes" ofType:@"plist"];
+    data = [NSArray arrayWithContentsOfFile:path];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     

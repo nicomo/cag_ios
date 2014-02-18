@@ -47,13 +47,9 @@ CSLinearLayoutView *mainLinearLayout;
     mainLinearLayout.delegate = self;
     [self.view addSubview:mainLinearLayout];
 
-    NSString *resourcename = [NSString stringWithFormat:@"episode%d", self.epid];
-    NSString *path = [[NSBundle mainBundle] pathForResource:resourcename ofType:@"plist"];
-    self.data = [NSDictionary dictionaryWithContentsOfFile:path];
-
-    [self addHeader:self.epid title:[self.data objectForKey:@"title"] subtitle:[self.data objectForKey:@"subtitle"]];
+    [self addHeader:self.epid title:[data[self.epid] objectForKey:@"title"] subtitle:[data[self.epid] objectForKey:@"subtitle"]];
     
-    self.navigationItem.title = [self.data objectForKey:@"title"];
+    self.navigationItem.title = [data[self.epid] objectForKey:@"title"];
 
     UIWebView *wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 768, 768)];
     wv.backgroundColor = self.view.backgroundColor;
@@ -66,7 +62,7 @@ CSLinearLayoutView *mainLinearLayout;
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:wv];
     [mainLinearLayout addItem:item];
     
-    [self addNextButton:self.epid+1 title:[self.data objectForKey:@"nexttitle"]];
+    [self addNextButton:self.epid+1 title:[data[self.epid+1] objectForKey:@"title"]];
     
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
 }
@@ -89,7 +85,7 @@ CSLinearLayoutView *mainLinearLayout;
         self.nextButtonTitle.text = [NSString stringWithFormat:@"A paraitre dans %5.2f minutes", self.epid - minElapsed];
         [self.nextButtonTitle sizeToFit];
     } else {
-        self.nextButtonTitle.text = [self.data objectForKey:@"nexttitle"];
+        self.nextButtonTitle.text = [data[self.epid + 1] objectForKey:@"title"];
         [self.nextButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
     }
 }

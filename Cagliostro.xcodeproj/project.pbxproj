@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
-		20325BB718A921C0001FDBFF /* episode1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB418A921C0001FDBFF /* episode1.plist */; };
-		20325BB818A921C0001FDBFF /* episode2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB518A921C0001FDBFF /* episode2.plist */; };
-		20325BB918A921C0001FDBFF /* episode3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB618A921C0001FDBFF /* episode3.plist */; };
+		20325BB718A921C0001FDBFF /* episodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB418A921C0001FDBFF /* episodes.plist */; };
 		20325BBB18A9225A001FDBFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 20325BBA18A9225A001FDBFF /* www */; };
 		208C97FA1892A6160008749C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97F91892A6160008749C /* Foundation.framework */; };
 		208C97FC1892A6160008749C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FB1892A6160008749C /* CoreGraphics.framework */; };
@@ -38,9 +36,7 @@
 
 /* Begin PBXFileReference section */
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		20325BB418A921C0001FDBFF /* episode1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode1.plist; sourceTree = "<group>"; };
-		20325BB518A921C0001FDBFF /* episode2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode2.plist; sourceTree = "<group>"; };
-		20325BB618A921C0001FDBFF /* episode3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episode3.plist; sourceTree = "<group>"; };
+		20325BB418A921C0001FDBFF /* episodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episodes.plist; sourceTree = "<group>"; };
 		20325BBA18A9225A001FDBFF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		208C97F61892A6160008749C /* Cagliostro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cagliostro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208C97F91892A6160008749C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -139,9 +135,7 @@
 				208C98021892A6160008749C /* InfoPlist.strings */,
 				208C98051892A6160008749C /* main.m */,
 				208C98071892A6160008749C /* Cagliostro-Prefix.pch */,
-				20325BB418A921C0001FDBFF /* episode1.plist */,
-				20325BB518A921C0001FDBFF /* episode2.plist */,
-				20325BB618A921C0001FDBFF /* episode3.plist */,
+				20325BB418A921C0001FDBFF /* episodes.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -232,11 +226,9 @@
 			files = (
 				20325BBB18A9225A001FDBFF /* www in Resources */,
 				200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */,
-				20325BB918A921C0001FDBFF /* episode3.plist in Resources */,
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				208C980C1892A6160008749C /* Images.xcassets in Resources */,
-				20325BB718A921C0001FDBFF /* episode1.plist in Resources */,
-				20325BB818A921C0001FDBFF /* episode2.plist in Resources */,
+				20325BB718A921C0001FDBFF /* episodes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
