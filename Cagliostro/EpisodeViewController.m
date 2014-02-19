@@ -66,10 +66,35 @@ CSLinearLayoutView *mainLinearLayout;
     [self addNextButton:self.epid+1 title:[data[self.epid+1] objectForKey:@"title"]];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
     self.player.view.alpha = 1 - (scrollView.contentOffset.y + 64) / self.player.view.frame.size.height;
     [self.player.view setFrame: CGRectMake(0, (scrollView.contentOffset.y + 64) / 3, 768, self.player.view.frame.size.height)];
-    self.updatePins;
+    [self updatePins];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [webView sizeToFit];
+    [self placePins:webView];
+    [self performSelector:@selector(updatePins) withObject:nil afterDelay:1.0];
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
+}
+
+-(void)placePins:(UIWebView *)webView
+{
+    for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
+        NSString *js = [NSString stringWithFormat:@"document.getElementsByTagName('p')[%d].getBoundingClientRect().top", [[pin objectForKey:@"pid"] intValue] - 1];
+        NSString *jsresult = [webView stringByEvaluatingJavaScriptFromString:js];
+        NSString *pinImageName = [NSString stringWithFormat:@"anon%@", [pin objectForKey:@"gender"]];
+        UIImage * pinImage = [UIImage imageNamed:pinImageName];
+        UIButton *pinView = [UIButton buttonWithType:UIButtonTypeCustom];
+        pinView.frame = CGRectMake(768 - 130, [jsresult intValue] + webView.frame.origin.y, 70, 70);
+        [pinView setBackgroundImage:pinImage forState:UIControlStateNormal];
+        [mainLinearLayout addSubview:pinView ];
+        [pin setObject:pinView forKey:@"pinView"];
+        [pin setObject:@"anon" forKey:@"state"];
+    }
 }
 
 -(void)updatePins
@@ -79,47 +104,27 @@ CSLinearLayoutView *mainLinearLayout;
     visibleRect.origin = mainLinearLayout.contentOffset;
     
     for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
-        UIImageView *anon = [pin objectForKey:@"imageView"];
+        UIButton *pinView = [pin objectForKey:@"pinView"];
         
-        if (CGRectContainsRect(visibleRect, anon.frame) && ![[pin objectForKey:@"state"] isEqual: @"flipped"] ) {
+        if (CGRectContainsRect(visibleRect, pinView.frame) && ![[pin objectForKey:@"state"] isEqual: @"flipped"] ) {
             [pin setValue:@"flipped" forKey:@"state"];
             
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void){
-                [UIView transitionWithView:anon
+                [UIView transitionWithView:pinView
                                   duration:1.0
                                    options:UIViewAnimationOptionTransitionFlipFromRight
                                 animations:^{
                                     NSString *anonImageName = [NSString stringWithFormat:@"character%d", 1];
-                                    anon.image = [UIImage imageNamed:anonImageName];
+                                    UIImage *pinImage = [UIImage imageNamed:anonImageName];
+                                    [pinView setBackgroundImage:pinImage forState:UIControlStateNormal];
                                 } completion:^(BOOL finished) {}];
             });
-            
-
-            
         }
     }
 }
 
--(void)webViewDidFinishLoad:(UIWebView *)webView {
-    [webView sizeToFit];
-    
-    for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
-        NSString *js = [NSString stringWithFormat:@"document.getElementsByTagName('p')[%d].getBoundingClientRect().top", [[pin objectForKey:@"pid"] intValue] - 1];
-        NSString *jsresult = [webView stringByEvaluatingJavaScriptFromString:js];
-        NSString *anonImageName = [NSString stringWithFormat:@"anon%@", [pin objectForKey:@"gender"]];
-        UIImageView *anon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:anonImageName]];
-        anon.frame = CGRectMake(768 - 130, [jsresult intValue] + webView.frame.origin.y, 70, 70);
-        [mainLinearLayout addSubview:anon];
-        [pin setObject:anon forKey:@"imageView"];
-        [pin setObject:@"anon" forKey:@"state"];
-    }
-
-    [self performSelector:@selector(updatePins) withObject:nil afterDelay:1.0];
-    
-    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
-}
-
--(void)updateButton:(NSTimer *)timer {
+-(void)updateButton:(NSTimer *)timer
+{
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
 
