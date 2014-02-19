@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "EpisodeViewController.h"
+#import "CharacterViewController.h"
 #import "CSLinearLayoutView.h"
 
 @interface EpisodeViewController ()
@@ -47,11 +48,11 @@ CSLinearLayoutView *mainLinearLayout;
     mainLinearLayout.orientation = CSLinearLayoutViewOrientationVertical;
     mainLinearLayout.delegate = self;
     [self.view addSubview:mainLinearLayout];
-
-    [self addHeader:self.epid+1 title:[data[self.epid] objectForKey:@"title"] subtitle:[data[self.epid] objectForKey:@"subtitle"]];
     
     self.navigationItem.title = [data[self.epid] objectForKey:@"title"];
 
+    [self addHeader:self.epid+1 title:[data[self.epid] objectForKey:@"title"] subtitle:[data[self.epid] objectForKey:@"subtitle"]];
+    
     UIWebView *wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 768, 768)];
     wv.backgroundColor = self.view.backgroundColor;
     wv.delegate = self;
@@ -88,11 +89,11 @@ CSLinearLayoutView *mainLinearLayout;
         NSString *jsresult = [webView stringByEvaluatingJavaScriptFromString:js];
         NSString *pinImageName = [NSString stringWithFormat:@"anon%@", [pin objectForKey:@"gender"]];
         UIImage * pinImage = [UIImage imageNamed:pinImageName];
-        UIButton *pinView = [UIButton buttonWithType:UIButtonTypeCustom];
-        pinView.frame = CGRectMake(768 - 130, [jsresult intValue] + webView.frame.origin.y, 70, 70);
-        [pinView setBackgroundImage:pinImage forState:UIControlStateNormal];
-        [mainLinearLayout addSubview:pinView ];
-        [pin setObject:pinView forKey:@"pinView"];
+        UIButton *pinButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        pinButton.frame = CGRectMake(768 - 130, [jsresult intValue] + webView.frame.origin.y, 70, 70);
+        [pinButton setBackgroundImage:pinImage forState:UIControlStateNormal];
+        [mainLinearLayout addSubview:pinButton ];
+        [pin setObject:pinButton forKey:@"pinButton"];
         [pin setObject:@"anon" forKey:@"state"];
     }
 }
@@ -104,19 +105,20 @@ CSLinearLayoutView *mainLinearLayout;
     visibleRect.origin = mainLinearLayout.contentOffset;
     
     for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
-        UIButton *pinView = [pin objectForKey:@"pinView"];
+        UIButton *pinButton = [pin objectForKey:@"pinButton"];
         
-        if (CGRectContainsRect(visibleRect, pinView.frame) && ![[pin objectForKey:@"state"] isEqual: @"flipped"] ) {
+        if (CGRectContainsRect(visibleRect, pinButton.frame) && ![[pin objectForKey:@"state"] isEqual: @"flipped"] ) {
             [pin setValue:@"flipped" forKey:@"state"];
             
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void){
-                [UIView transitionWithView:pinView
+                [UIView transitionWithView:pinButton
                                   duration:1.0
                                    options:UIViewAnimationOptionTransitionFlipFromRight
                                 animations:^{
                                     NSString *anonImageName = [NSString stringWithFormat:@"character%d", 1];
                                     UIImage *pinImage = [UIImage imageNamed:anonImageName];
-                                    [pinView setBackgroundImage:pinImage forState:UIControlStateNormal];
+                                    [pinButton setBackgroundImage:pinImage forState:UIControlStateNormal];
+                                    [pinButton addTarget:self action:@selector(didPressPinButton:) forControlEvents:UIControlEventTouchUpInside];
                                 } completion:^(BOOL finished) {}];
             });
         }
@@ -134,7 +136,7 @@ CSLinearLayoutView *mainLinearLayout;
         [self.nextButtonTitle sizeToFit];
     } else {
         self.nextButtonTitle.text = [data[self.epid + 1] objectForKey:@"title"];
-        [self.nextButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
+        [self.nextButton addTarget:self action:@selector(didPressNextButton:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
@@ -210,10 +212,16 @@ CSLinearLayoutView *mainLinearLayout;
     [mainLinearLayout addItem:item];
 }
 
-- (void)didPressButton:(UIButton *)sender
+- (void)didPressNextButton:(UIButton *)sender
 {
     EpisodeViewController *nextEpisodeController = [[EpisodeViewController alloc] initWithEpid:self.epid+1];
     [self.navigationController pushViewController:nextEpisodeController animated:YES];
+}
+
+- (void)didPressPinButton:(UIButton *)sender
+{
+    CharacterViewController *characterController = [[CharacterViewController alloc] initWithCid:0];
+    [self.navigationController pushViewController:characterController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

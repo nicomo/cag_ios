@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
 		200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200FA79E18B393CC00AAD523 /* pins.xcassets */; };
+		20187B5618B4EFEB00FD27A1 /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20187B5518B4EFEB00FD27A1 /* CharacterViewController.m */; };
 		20325BB718A921C0001FDBFF /* episodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB418A921C0001FDBFF /* episodes.plist */; };
 		20325BBB18A9225A001FDBFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 20325BBA18A9225A001FDBFF /* www */; };
 		208C97FA1892A6160008749C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97F91892A6160008749C /* Foundation.framework */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		200FA79E18B393CC00AAD523 /* pins.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pins.xcassets; sourceTree = "<group>"; };
+		20187B5418B4EFEB00FD27A1 /* CharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewController.h; sourceTree = "<group>"; };
+		20187B5518B4EFEB00FD27A1 /* CharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewController.m; sourceTree = "<group>"; };
 		20325BB418A921C0001FDBFF /* episodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episodes.plist; sourceTree = "<group>"; };
 		20325BBA18A9225A001FDBFF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		208C97F61892A6160008749C /* Cagliostro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cagliostro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +126,8 @@
 				208C98091892A6160008749C /* AppDelegate.m */,
 				208C982B1892A73C0008749C /* EpisodeViewController.h */,
 				208C982C1892A73C0008749C /* EpisodeViewController.m */,
+				20187B5418B4EFEB00FD27A1 /* CharacterViewController.h */,
+				20187B5518B4EFEB00FD27A1 /* CharacterViewController.m */,
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 				208C980B1892A6160008749C /* Images.xcassets */,
 				200FA79E18B393CC00AAD523 /* pins.xcassets */,
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				208C980A1892A6160008749C /* AppDelegate.m in Sources */,
+				20187B5618B4EFEB00FD27A1 /* CharacterViewController.m in Sources */,
 				208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */,
 				208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */,
 				208C98061892A6160008749C /* main.m in Sources */,
