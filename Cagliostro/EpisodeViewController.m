@@ -84,17 +84,22 @@ CSLinearLayoutView *mainLinearLayout;
 
 -(void)placePins:(UIWebView *)webView
 {
+    int lastp = 0;
+    int offset = 0;
     for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
-        NSString *js = [NSString stringWithFormat:@"document.getElementsByTagName('p')[%d].getBoundingClientRect().top", [[pin objectForKey:@"pid"] intValue] - 1];
+        int pid = [[pin objectForKey:@"pid"] intValue];
+        offset = (pid == lastp) ? offset + 80 : 0;
+        NSString *js = [NSString stringWithFormat:@"document.getElementsByTagName('p')[%d].getBoundingClientRect().top", pid - 1];
         NSString *jsresult = [webView stringByEvaluatingJavaScriptFromString:js];
         NSString *pinImageName = [NSString stringWithFormat:@"anon%@", [pin objectForKey:@"gender"]];
         UIImage * pinImage = [UIImage imageNamed:pinImageName];
         UIButton *pinButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        pinButton.frame = CGRectMake(768 - 130, [jsresult intValue] + webView.frame.origin.y, 70, 70);
+        pinButton.frame = CGRectMake(768 - 130, [jsresult intValue] + webView.frame.origin.y + offset, 70, 70);
         [pinButton setBackgroundImage:pinImage forState:UIControlStateNormal];
         [mainLinearLayout addSubview:pinButton ];
         [pin setObject:pinButton forKey:@"pinButton"];
         [pin setObject:@"anon" forKey:@"state"];
+        lastp = pid;
     }
 }
 
