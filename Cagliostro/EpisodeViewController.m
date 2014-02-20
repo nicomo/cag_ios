@@ -120,7 +120,7 @@ CSLinearLayoutView *mainLinearLayout;
                                   duration:1.0
                                    options:UIViewAnimationOptionTransitionFlipFromRight
                                 animations:^{
-                                    NSString *anonImageName = [NSString stringWithFormat:@"character%d", 1];
+                                    NSString *anonImageName = [NSString stringWithFormat:@"character%d", [[pin objectForKey:@"cid"] intValue]];
                                     UIImage *pinImage = [UIImage imageNamed:anonImageName];
                                     [pinButton setBackgroundImage:pinImage forState:UIControlStateNormal];
                                     [pinButton addTarget:self action:@selector(didPressPinButton:) forControlEvents:UIControlEventTouchUpInside];
