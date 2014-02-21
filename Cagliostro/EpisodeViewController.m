@@ -136,7 +136,7 @@ CSLinearLayoutView *mainLinearLayout;
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
 
     double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
-    if (self.epid > minElapsed && delayedEps) {
+    if (self.epid+1 > minElapsed && delayedEps) {
         self.nextButtonTitle.text = [NSString stringWithFormat:@"A paraitre dans %5.2f minutes", self.epid - minElapsed];
         [self.nextButtonTitle sizeToFit];
     } else {
