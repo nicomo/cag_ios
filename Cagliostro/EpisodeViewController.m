@@ -67,6 +67,11 @@ CSLinearLayoutView *mainLinearLayout;
     [self addNextButton:self.epid+1 title:[data[self.epid+1] objectForKey:@"title"]];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self.player play];
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     self.player.view.alpha = 1 - (scrollView.contentOffset.y + 64) / self.player.view.frame.size.height;
