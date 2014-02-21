@@ -64,7 +64,7 @@ CSLinearLayoutView *mainLinearLayout;
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:wv];
     [mainLinearLayout addItem:item];
 
-    [self addNextButton:self.epid+1 title:[data[self.epid+1] objectForKey:@"title"]];
+    [self addNextButton:self.epid+2 title:[data[self.epid+1] objectForKey:@"title"]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
