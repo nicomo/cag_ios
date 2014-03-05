@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "TitleCell.h"
+#import "EpisodesCell.h"
 
 @interface HomeViewController ()
 
@@ -56,7 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -72,6 +73,13 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"titleCell"];
         if (cell == nil) {
             cell = [[TitleCell alloc] initWithFrame:CGRectZero];
+        }
+        return cell;
+    } else if (indexPath.row == 1) {
+        EpisodesCell *cell;
+        cell = [tableView dequeueReusableCellWithIdentifier:@"titleCell"];
+        if (cell == nil) {
+            cell = [[EpisodesCell alloc] initWithFrame:CGRectZero];
         }
         return cell;
     } else if (indexPath.row == 2) {

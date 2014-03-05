@@ -14,6 +14,7 @@
 		203166E118C6237100853998 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166E018C6237100853998 /* TitleCell.m */; };
 		203166E418C62F7900853998 /* EpisodesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166E318C62F7900853998 /* EpisodesCell.m */; };
 		203166E718C6313200853998 /* EpisodesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166E618C6313200853998 /* EpisodesCollectionViewController.m */; };
+		203166EA18C63F1E00853998 /* EpisodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166E918C63F1E00853998 /* EpisodeCell.m */; };
 		20325BB718A921C0001FDBFF /* episodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB418A921C0001FDBFF /* episodes.plist */; };
 		20325BBB18A9225A001FDBFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 20325BBA18A9225A001FDBFF /* www */; };
 		208C97FA1892A6160008749C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97F91892A6160008749C /* Foundation.framework */; };
@@ -53,6 +54,8 @@
 		203166E318C62F7900853998 /* EpisodesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodesCell.m; sourceTree = "<group>"; };
 		203166E518C6313200853998 /* EpisodesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodesCollectionViewController.h; sourceTree = "<group>"; };
 		203166E618C6313200853998 /* EpisodesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodesCollectionViewController.m; sourceTree = "<group>"; };
+		203166E818C63F1E00853998 /* EpisodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeCell.h; sourceTree = "<group>"; };
+		203166E918C63F1E00853998 /* EpisodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeCell.m; sourceTree = "<group>"; };
 		20325BB418A921C0001FDBFF /* episodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episodes.plist; sourceTree = "<group>"; };
 		20325BBA18A9225A001FDBFF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		208C97F61892A6160008749C /* Cagliostro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cagliostro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +147,8 @@
 				203166E318C62F7900853998 /* EpisodesCell.m */,
 				203166E518C6313200853998 /* EpisodesCollectionViewController.h */,
 				203166E618C6313200853998 /* EpisodesCollectionViewController.m */,
+				203166E818C63F1E00853998 /* EpisodeCell.h */,
+				203166E918C63F1E00853998 /* EpisodeCell.m */,
 				208C982B1892A73C0008749C /* EpisodeViewController.h */,
 				208C982C1892A73C0008749C /* EpisodeViewController.m */,
 				20187B5418B4EFEB00FD27A1 /* CharacterViewController.h */,
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				208C980A1892A6160008749C /* AppDelegate.m in Sources */,
+				203166EA18C63F1E00853998 /* EpisodeCell.m in Sources */,
 				20187B5618B4EFEB00FD27A1 /* CharacterViewController.m in Sources */,
 				208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */,
 				203166E118C6237100853998 /* TitleCell.m in Sources */,

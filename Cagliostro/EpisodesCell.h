@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EpisodesCollectionViewController.h"
 
-@interface EpisodesCell : UITableViewCell
-
+@interface EpisodesCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource> {
+    UICollectionView* epcv;
+}
 @end
