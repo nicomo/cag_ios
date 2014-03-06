@@ -40,6 +40,9 @@ CSLinearLayoutView *mainLinearLayout;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    if (self.epid >= 51)
+        return;
+    
     self.view.backgroundColor = [UIColor colorWithRed:0.96 green:0.94 blue:0.89 alpha:1.0];
     
     // create the linear layout view
@@ -49,19 +52,17 @@ CSLinearLayoutView *mainLinearLayout;
     mainLinearLayout.delegate = self;
     [self.view addSubview:mainLinearLayout];
     
-    self.navigationItem.title = [data[self.epid] objectForKey:@"title"];
-
     [self addHeader:self.epid+1 title:[data[self.epid] objectForKey:@"title"] subtitle:[data[self.epid] objectForKey:@"subtitle"]];
     
-    UIWebView *wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 768, 768)];
-    wv.backgroundColor = self.view.backgroundColor;
-    wv.delegate = self;
-    wv.opaque = NO;
-    wv.scrollView.scrollEnabled = NO;
-    wv.scrollView.bounces = NO;
+    self.wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 768, 768)];
+    self.wv.backgroundColor = self.view.backgroundColor;
+    self.wv.delegate = self;
+    self.wv.opaque = NO;
+    self.wv.scrollView.scrollEnabled = NO;
+    self.wv.scrollView.bounces = NO;
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.epid+1] ofType:@"html" inDirectory:@"www"]];
-    [wv loadRequest:[NSURLRequest requestWithURL:url]];
-    CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:wv];
+    [self.wv loadRequest:[NSURLRequest requestWithURL:url]];
+    CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:self.wv];
     [mainLinearLayout addItem:item];
 
     [self addNextButton:self.epid+2 title:[data[self.epid+1] objectForKey:@"title"]];
@@ -69,7 +70,12 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self.player play];
+    self.parentViewController.navigationItem.title = [data[self.epid] objectForKey:@"title"];
+
+    if (self.epid > 0)
+    {
+        [self.parentViewController.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:[data[self.epid-1] objectForKey:@"title"] style:UIBarButtonItemStyleBordered target:self action:@selector(didPressPreviousButton:)]];
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -81,10 +87,10 @@ CSLinearLayoutView *mainLinearLayout;
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [webView sizeToFit];
+    [self.wv sizeToFit];
     [self placePins:webView];
     [self performSelector:@selector(updatePins) withObject:nil afterDelay:1.0];
-    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
 }
 
 -(void)placePins:(UIWebView *)webView
@@ -157,10 +163,8 @@ CSLinearLayoutView *mainLinearLayout;
     
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"bg" ofType:@"mp4" inDirectory:@"www"]];
     
-    self.player = [[MPMoviePlayerController alloc] initWithContentURL: url];
-    [self.player prepareToPlay];
-    self.player.controlStyle = MPMovieControlStyleNone;
-    self.player.scalingMode=MPMovieScalingModeFill;
+    self.player = [[VideoPlayerViewController alloc] init];
+    self.player.URL = url;
     [header addSubview: self.player.view];
     
     UITextView *title = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 768, 0)];
@@ -186,8 +190,7 @@ CSLinearLayoutView *mainLinearLayout;
     [header addSubview:subtitle];
     
     header.frame = CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height);
-    [self.player.view setFrame: CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height + 100)];
-    [self.player play];
+    [self.player.view setFrame: CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height)];
     
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:header];
     [mainLinearLayout addItem:item];
@@ -224,8 +227,22 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)didPressNextButton:(UIButton *)sender
 {
+    [self.timer invalidate];
+    self.timer = nil;
+    
     EpisodeViewController *nextEpisodeController = [[EpisodeViewController alloc] initWithEpid:self.epid+1];
-    [self.navigationController pushViewController:nextEpisodeController animated:YES];
+    
+    [(UIPageViewController *)self.parentViewController setViewControllers:@[nextEpisodeController] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:Nil];
+}
+
+- (void)didPressPreviousButton:(UIButton *)sender
+{
+    [self.timer invalidate];
+    self.timer = nil;
+    
+    EpisodeViewController *nextEpisodeController = [[EpisodeViewController alloc] initWithEpid:self.epid-1];
+
+    [(UIPageViewController *)self.parentViewController setViewControllers:@[nextEpisodeController] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:Nil];
 }
 
 - (void)didPressPinButton:(UIButton *)sender
@@ -238,6 +255,11 @@ CSLinearLayoutView *mainLinearLayout;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc
+{
+    NSLog(@"dealloc %d", self.epid);
 }
 
 @end

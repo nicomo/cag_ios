@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VideoPlayerViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface EpisodeViewController : UIViewController <UIWebViewDelegate, MPMediaPickerControllerDelegate, UIScrollViewDelegate>
+- (id) initWithEpid:(int) epid;
 @property (nonatomic) int epid;
 @property (strong, nonatomic) UIButton *nextButton;
 @property (strong, nonatomic) UITextView *nextButtonTitle;
-@property (strong, nonatomic) MPMoviePlayerController *player;
+@property (strong, nonatomic) VideoPlayerViewController *player;
+@property (strong, nonatomic) UIWebView *wv;
+@property (strong, nonatomic) NSTimer *timer;
 @end

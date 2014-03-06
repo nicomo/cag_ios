@@ -14,7 +14,7 @@ NSDate *firstLaunchDate;
 extern NSMutableArray *data;
 NSMutableArray *data;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
 		200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200FA79E18B393CC00AAD523 /* pins.xcassets */; };
+		201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 201159D618C8CE100053FEFB /* VideoPlayerView.m */; };
+		201159DA18C8CE100053FEFB /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201159D818C8CE100053FEFB /* VideoPlayerViewController.m */; };
 		20187B5618B4EFEB00FD27A1 /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20187B5518B4EFEB00FD27A1 /* CharacterViewController.m */; };
 		203166DE18C621B800853998 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166DD18C621B800853998 /* HomeViewController.m */; };
 		203166E118C6237100853998 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166E018C6237100853998 /* TitleCell.m */; };
@@ -44,6 +46,10 @@
 /* Begin PBXFileReference section */
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		200FA79E18B393CC00AAD523 /* pins.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pins.xcassets; sourceTree = "<group>"; };
+		201159D518C8CE100053FEFB /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerView.h; sourceTree = "<group>"; };
+		201159D618C8CE100053FEFB /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerView.m; sourceTree = "<group>"; };
+		201159D718C8CE100053FEFB /* VideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
+		201159D818C8CE100053FEFB /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
 		20187B5418B4EFEB00FD27A1 /* CharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewController.h; sourceTree = "<group>"; };
 		20187B5518B4EFEB00FD27A1 /* CharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewController.m; sourceTree = "<group>"; };
 		203166DC18C621B800853998 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -102,11 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201159D418C8CE100053FEFB /* VideoPlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				201159D518C8CE100053FEFB /* VideoPlayerView.h */,
+				201159D618C8CE100053FEFB /* VideoPlayerView.m */,
+				201159D718C8CE100053FEFB /* VideoPlayerViewController.h */,
+				201159D818C8CE100053FEFB /* VideoPlayerViewController.m */,
+			);
+			path = VideoPlayerController;
+			sourceTree = "<group>";
+		};
 		208C97ED1892A6160008749C = {
 			isa = PBXGroup;
 			children = (
 				20325BBA18A9225A001FDBFF /* www */,
 				200D2BEB18A90E7500D5C53D /* Settings.bundle */,
+				201159D418C8CE100053FEFB /* VideoPlayerController */,
 				208C982E1892A8340008749C /* CSLinearLayoutView */,
 				208C97FF1892A6160008749C /* Cagliostro */,
 				208C97F81892A6160008749C /* Frameworks */,
@@ -288,6 +306,8 @@
 				203166E718C6313200853998 /* EpisodesCollectionViewController.m in Sources */,
 				208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */,
 				203166E418C62F7900853998 /* EpisodesCell.m in Sources */,
+				201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */,
+				201159DA18C8CE100053FEFB /* VideoPlayerViewController.m in Sources */,
 				208C98061892A6160008749C /* main.m in Sources */,
 				203166DE18C621B800853998 /* HomeViewController.m in Sources */,
 			);

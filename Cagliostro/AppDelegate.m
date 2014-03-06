@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
+#import "EpisodeViewController.h"
 
 @implementation AppDelegate
 
@@ -31,15 +31,53 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    //HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    //UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    EpisodeViewController *epViewController = [[EpisodeViewController alloc] init];
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     
+    
+    UIPageViewController *pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:Nil];
+    
+    [pageController setViewControllers:[NSArray arrayWithObjects:epViewController, nil] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:Nil];
+    
+    pageController.dataSource = self;
+    pageController.delegate = self;
+    
+    for (UIScrollView *view in pageController.view.subviews) {
+        if ([view isKindOfClass:[UIScrollView class]]) {
+            view.scrollEnabled = NO;
+        }
+    }
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:pageController];
+    
     self.window.rootViewController = navController;
     
     return YES;
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    int epid = ((EpisodeViewController*)viewController).epid;
+    if (epid < 52) {
+        return [[EpisodeViewController alloc] initWithEpid:epid+1];
+    } else {
+        return Nil;
+    }
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+    int epid = ((EpisodeViewController*)viewController).epid;
+    if (epid > 0) {
+        return [[EpisodeViewController alloc] initWithEpid:epid-1];
+    } else {
+        return Nil;
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
