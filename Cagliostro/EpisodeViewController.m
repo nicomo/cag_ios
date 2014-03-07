@@ -10,6 +10,7 @@
 #import "EpisodeViewController.h"
 #import "CharacterViewController.h"
 #import "CSLinearLayoutView.h"
+#import "CustomPageViewController.h"
 
 @interface EpisodeViewController ()
 - (void) addHeader:(int)partNumber title:(NSString*)titleText subtitle:(NSString*)subtitleText;
@@ -174,7 +175,7 @@ CSLinearLayoutView *mainLinearLayout;
     title.backgroundColor = [UIColor clearColor];
     title.userInteractionEnabled = NO;
     title.scrollEnabled = NO;
-    title.textContainerInset = UIEdgeInsetsMake(85*2, 85, 0, 0);
+    title.textContainerInset = UIEdgeInsetsMake(85*2+64, 85, 0, 0);
     [title sizeToFit];
     [header addSubview:title];
     
@@ -229,20 +230,18 @@ CSLinearLayoutView *mainLinearLayout;
 {
     [self.timer invalidate];
     self.timer = nil;
-    
-    EpisodeViewController *nextEpisodeController = [[EpisodeViewController alloc] initWithEpid:self.epid+1];
-    
-    [(UIPageViewController *)self.parentViewController setViewControllers:@[nextEpisodeController] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:Nil];
+
+    CustomPageViewController* cpvp = (CustomPageViewController *)self.parentViewController;
+    [cpvp nextPage:self.epid+1];
 }
 
 - (void)didPressPreviousButton:(UIButton *)sender
 {
     [self.timer invalidate];
     self.timer = nil;
-    
-    EpisodeViewController *nextEpisodeController = [[EpisodeViewController alloc] initWithEpid:self.epid-1];
 
-    [(UIPageViewController *)self.parentViewController setViewControllers:@[nextEpisodeController] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:Nil];
+    CustomPageViewController* cpvp = (CustomPageViewController *)self.parentViewController;
+    [cpvp previousPage:self.epid-1];
 }
 
 - (void)didPressPinButton:(UIButton *)sender

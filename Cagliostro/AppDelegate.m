@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "EpisodeViewController.h"
+#import "CustomPageViewController.h"
 
 @implementation AppDelegate
 
@@ -35,26 +36,13 @@
     //UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     EpisodeViewController *epViewController = [[EpisodeViewController alloc] init];
     
-    
-    
-    UIPageViewController *pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:Nil];
-    
-    [pageController setViewControllers:[NSArray arrayWithObjects:epViewController, nil] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:Nil];
-    
-    pageController.dataSource = self;
-    pageController.delegate = self;
-    
-    for (UIScrollView *view in pageController.view.subviews) {
-        if ([view isKindOfClass:[UIScrollView class]]) {
-            view.scrollEnabled = NO;
-        }
-    }
-
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:pageController];
+    CustomPageViewController *cpvc = [[CustomPageViewController alloc] init];
     
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:cpvc];
+
     self.window.rootViewController = navController;
     
     return YES;
