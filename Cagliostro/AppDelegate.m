@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "EpisodeViewController.h"
 #import "CustomPageViewController.h"
+#import "HomeViewController.h"
 
 @implementation AppDelegate
 
@@ -32,16 +33,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    //HomeViewController *homeViewController = [[HomeViewController alloc] init];
-    //UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
-    EpisodeViewController *epViewController = [[EpisodeViewController alloc] init];
-    
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+
     self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
-    
-    CustomPageViewController *cpvc = [[CustomPageViewController alloc] init];
-    
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:cpvc];
+
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
 
     self.window.rootViewController = navController;
     

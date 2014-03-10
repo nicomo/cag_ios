@@ -15,12 +15,26 @@
 
 @implementation CustomPageViewController
 
+- (id)init
+{
+    self = [super init];
+    self.currentEpisodeController = [[EpisodeViewController alloc] initWithEpid:0];
+    return self;
+}
+
+
+- (id)initWithEpid:(int) epid
+{
+    self = [super init];
+    self.currentEpisodeController = [[EpisodeViewController alloc] initWithEpid:epid];
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    self.currentEpisodeController = [[EpisodeViewController alloc] init];
+
     [self addChildViewController:self.currentEpisodeController];
     [self.view addSubview:self.currentEpisodeController.view];
     [self.currentEpisodeController didMoveToParentViewController:self];

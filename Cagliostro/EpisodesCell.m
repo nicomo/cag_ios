@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Jean-André Santoni. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "EpisodesCell.h"
-#import "EpisodesCollectionViewController.h"
+#import "CustomPageViewController.h"
 
 @implementation EpisodesCell
 
@@ -30,15 +31,14 @@
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
         layout.itemSize = CGSizeMake(115, 150);
-        //layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-        
-        //epcvc = [[EpisodesCollectionViewController alloc] initWithCollectionViewLayout:layout];
-        epcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768, 500) collectionViewLayout:layout];
-        epcv.backgroundColor = [UIColor redColor];
+
+        epcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768, 1450) collectionViewLayout:layout];
+        epcv.backgroundColor = [UIColor clearColor];
         epcv.delegate = self;
         epcv.dataSource = self;
-        //epcvc.collectionView.showsVerticalScrollIndicator = NO;
-        [epcv registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"FlickrCell"];
+        epcv.showsVerticalScrollIndicator = NO;
+        epcv.scrollEnabled = NO;
+        [epcv registerClass:[EpisodeCell class] forCellWithReuseIdentifier:@"EpisodeCell"];
         
         [self.contentView addSubview:epcv];
     }
@@ -61,9 +61,24 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickrCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
+    UICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"EpisodeCell" forIndexPath:indexPath];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)cv didSelectItemAtIndexPath:(NSIndexPath *)indexPath  {
+    CustomPageViewController *cpvc = [[CustomPageViewController alloc] initWithEpid:indexPath.row];
+    AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [(UINavigationController *)ad.window.rootViewController pushViewController:cpvc animated:YES];
+}
+
+- (BOOL)collectionView:(UICollectionView *)cv shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (BOOL)collectionView:(UICollectionView *)cv shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath;
+{
+    return YES;
 }
 
 @end

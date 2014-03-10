@@ -41,9 +41,6 @@ CSLinearLayoutView *mainLinearLayout;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    if (self.epid >= 51)
-        return;
-    
     self.view.backgroundColor = [UIColor colorWithRed:0.96 green:0.94 blue:0.89 alpha:1.0];
     
     // create the linear layout view
@@ -66,17 +63,18 @@ CSLinearLayoutView *mainLinearLayout;
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:self.wv];
     [mainLinearLayout addItem:item];
 
-    [self addNextButton:self.epid+2 title:[data[self.epid+1] objectForKey:@"title"]];
+    if (self.epid < 51)
+        [self addNextButton:self.epid+2 title:[data[self.epid+1] objectForKey:@"title"]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     self.parentViewController.navigationItem.title = [data[self.epid] objectForKey:@"title"];
 
-    if (self.epid > 0)
+    /*if (self.epid > 0)
     {
         [self.parentViewController.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:[data[self.epid-1] objectForKey:@"title"] style:UIBarButtonItemStyleBordered target:self action:@selector(didPressPreviousButton:)]];
-    }
+    }*/
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -91,7 +89,8 @@ CSLinearLayoutView *mainLinearLayout;
     [self.wv sizeToFit];
     [self placePins:webView];
     [self performSelector:@selector(updatePins) withObject:nil afterDelay:1.0];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
+    if (self.epid < 51)
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
 }
 
 -(void)placePins:(UIWebView *)webView
@@ -233,6 +232,12 @@ CSLinearLayoutView *mainLinearLayout;
 
     CustomPageViewController* cpvp = (CustomPageViewController *)self.parentViewController;
     [cpvp nextPage:self.epid+1];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [self.timer invalidate];
+    self.timer = nil;
 }
 
 - (void)didPressPreviousButton:(UIButton *)sender

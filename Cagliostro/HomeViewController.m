@@ -29,17 +29,13 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor colorWithRed:0.96 green:0.94 blue:0.89 alpha:1.0];
     
     episodesExpanded = NO;
-    episodesHeight = 300;
+    episodesHeight = 490;
+    
+    self.navigationItem.title = @"LE JOURNAL";
 }
 
 - (void)didReceiveMemoryWarning
@@ -103,10 +99,10 @@
 {
     if (indexPath.row == 2) {
         if (episodesExpanded) {
-            episodesHeight = 300;
+            episodesHeight = 490;
             episodesExpanded = NO;
         } else {
-            episodesHeight = 500;
+            episodesHeight = 1450;
             episodesExpanded = YES;
         }
         [tableView beginUpdates];

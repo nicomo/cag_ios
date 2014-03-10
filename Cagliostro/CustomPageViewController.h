@@ -10,6 +10,7 @@
 #import "EpisodeViewController.h"
 
 @interface CustomPageViewController : UIViewController
+- (id) initWithEpid:(int) epid;
 - (void)nextPage:(int)epid;
 - (void)previousPage:(int)epid;
 @property (strong, nonatomic) EpisodeViewController *currentEpisodeController;

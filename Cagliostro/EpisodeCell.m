@@ -12,9 +12,10 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+    NSLog(@"ini");
+    if (self = [super initWithFrame:frame])
+    {
+        self.backgroundColor = [UIColor yellowColor];
     }
     return self;
 }
