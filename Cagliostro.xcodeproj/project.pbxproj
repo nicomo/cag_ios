@@ -31,6 +31,7 @@
 		208C98151892A6160008749C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FD1892A6160008749C /* UIKit.framework */; };
 		208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C982C1892A73C0008749C /* EpisodeViewController.m */; };
 		208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C98301892A8340008749C /* CSLinearLayoutView.m */; };
+		20A5406A18CDFB5400AECD99 /* SixColumnsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5406918CDFB5400AECD99 /* SixColumnsFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		208C982F1892A8340008749C /* CSLinearLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLinearLayoutView.h; sourceTree = "<group>"; };
 		208C98301892A8340008749C /* CSLinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLinearLayoutView.m; sourceTree = "<group>"; };
 		208C9833189326E20008749C /* SuperClarendon_7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperClarendon_7.otf; sourceTree = "<group>"; };
+		20A5406818CDFB5400AECD99 /* SixColumnsFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixColumnsFlowLayout.h; sourceTree = "<group>"; };
+		20A5406918CDFB5400AECD99 /* SixColumnsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixColumnsFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				203166E018C6237100853998 /* TitleCell.m */,
 				203166E218C62F7900853998 /* EpisodesCell.h */,
 				203166E318C62F7900853998 /* EpisodesCell.m */,
+				20A5406818CDFB5400AECD99 /* SixColumnsFlowLayout.h */,
+				20A5406918CDFB5400AECD99 /* SixColumnsFlowLayout.m */,
 				203166E818C63F1E00853998 /* EpisodeCell.h */,
 				203166E918C63F1E00853998 /* EpisodeCell.m */,
 				208C982B1892A73C0008749C /* EpisodeViewController.h */,
@@ -305,6 +310,7 @@
 				203166E118C6237100853998 /* TitleCell.m in Sources */,
 				208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */,
 				203166E418C62F7900853998 /* EpisodesCell.m in Sources */,
+				20A5406A18CDFB5400AECD99 /* SixColumnsFlowLayout.m in Sources */,
 				201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */,
 				201159DA18C8CE100053FEFB /* VideoPlayerViewController.m in Sources */,
 				204E1C3D18C9D9AC00DB433D /* CustomPageViewController.m in Sources */,

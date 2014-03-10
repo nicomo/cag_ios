@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "EpisodeCell.h"
+#import "SixColumnsFlowLayout.h"
 
 @interface EpisodesCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource> {
     UICollectionView* epcv;

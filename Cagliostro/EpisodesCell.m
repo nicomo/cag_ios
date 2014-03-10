@@ -28,9 +28,13 @@
         self.backgroundColor = [UIColor clearColor];
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        /*UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
-        layout.itemSize = CGSizeMake(115, 150);
+        layout.itemSize = CGSizeMake(115, 150);*/
+        
+        SixColumnsFlowLayout *layout = [[SixColumnsFlowLayout alloc] init];
+        //layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+        //layout.itemSize = CGSizeMake(115, 150);
 
         epcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768, 1450) collectionViewLayout:layout];
         epcv.backgroundColor = [UIColor clearColor];
@@ -61,7 +65,9 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"EpisodeCell" forIndexPath:indexPath];
+    EpisodeCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"EpisodeCell" forIndexPath:indexPath];
+    int epid = indexPath.row;
+    cell.title.text = [NSString stringWithFormat:@"%d. %@", epid+1, [data[epid] objectForKey:@"title"]];
     return cell;
 }
 

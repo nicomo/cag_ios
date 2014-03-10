@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface EpisodeCell : UICollectionViewCell
-
+@property (strong, nonatomic) UILabel *title;
 @end
