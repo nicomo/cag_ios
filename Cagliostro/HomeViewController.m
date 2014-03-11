@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "TitleCell.h"
 #import "EpisodesCell.h"
+#import "MapCell.h"
 
 @interface HomeViewController ()
 
@@ -53,7 +54,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -80,6 +81,13 @@
         return cell;
     } else if (indexPath.row == 2) {
         cell.textLabel.text = @"TOUS LES EPISODES";
+    } else if (indexPath.row == 3) {
+        MapCell *cell;
+        cell = [tableView dequeueReusableCellWithIdentifier:@"mapCell"];
+        if (cell == nil) {
+            cell = [[MapCell alloc] initWithFrame:CGRectZero];
+        }
+        return cell;
     }
     
     return cell;
@@ -91,7 +99,10 @@
         return 335;
     } else if (indexPath.row == 1) {
         return episodesHeight;
+    } else if (indexPath.row == 3) {
+        return 620;
     }
+    
     return 100;
 }
 
