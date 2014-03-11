@@ -68,6 +68,8 @@
     EpisodeCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"EpisodeCell" forIndexPath:indexPath];
     int epid = indexPath.row;
     cell.title.text = [NSString stringWithFormat:@"%d. %@", epid+1, [data[epid] objectForKey:@"title"]];
+    cell.layer.shouldRasterize = YES;
+    cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
     return cell;
 }
 
