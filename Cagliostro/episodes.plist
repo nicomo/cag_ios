@@ -42,7 +42,7 @@
 				<key>gender</key>
 				<string>Male</string>
 			</dict>
-            <dict>
+			<dict>
 				<key>pid</key>
 				<integer>48</integer>
 				<key>cid</key>
@@ -57,7 +57,7 @@
 		<string>Une conspiration</string>
 		<key>subtitle</key>
 		<string>Paru le 12 décembre 1923</string>
-        <key>pins</key>
+		<key>pins</key>
 		<array>
 			<dict>
 				<key>pid</key>
@@ -83,7 +83,7 @@
 				<key>gender</key>
 				<string>Male</string>
 			</dict>
-            <dict>
+			<dict>
 				<key>pid</key>
 				<integer>18</integer>
 				<key>cid</key>
@@ -91,7 +91,7 @@
 				<key>gender</key>
 				<string>Male</string>
 			</dict>
-            <dict>
+			<dict>
 				<key>pid</key>
 				<integer>21</integer>
 				<key>cid</key>
@@ -99,7 +99,7 @@
 				<key>gender</key>
 				<string>Male</string>
 			</dict>
-            <dict>
+			<dict>
 				<key>pid</key>
 				<integer>36</integer>
 				<key>cid</key>
@@ -107,7 +107,7 @@
 				<key>gender</key>
 				<string>Male</string>
 			</dict>
-            <dict>
+			<dict>
 				<key>pid</key>
 				<integer>36</integer>
 				<key>cid</key>
@@ -115,7 +115,7 @@
 				<key>gender</key>
 				<string>Male</string>
 			</dict>
-            <dict>
+			<dict>
 				<key>pid</key>
 				<integer>63</integer>
 				<key>cid</key>
