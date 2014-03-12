@@ -35,6 +35,8 @@
 	// Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor colorWithRed:0.96 green:0.94 blue:0.89 alpha:1.0];
+    
+    self.navigationItem.title = [chardata[self.cid] objectForKey:@"name"];
 }
 
 - (void)didReceiveMemoryWarning

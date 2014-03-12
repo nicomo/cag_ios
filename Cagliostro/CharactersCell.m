@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CharactersCell.h"
+#import "CharacterViewController.h"
 
 @implementation CharactersCell
 
@@ -63,9 +64,9 @@
 }
 
 - (void)collectionView:(UICollectionView *)cv didSelectItemAtIndexPath:(NSIndexPath *)indexPath  {
-    /*CustomPageViewController *cpvc = [[CustomPageViewController alloc] initWithEpid:indexPath.row];
+    CharacterViewController *cvc = [[CharacterViewController alloc] initWithCid:indexPath.row];
     AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [(UINavigationController *)ad.window.rootViewController pushViewController:cpvc animated:YES];*/
+    [(UINavigationController *)ad.window.rootViewController pushViewController:cvc animated:YES];
 }
 
 - (BOOL)collectionView:(UICollectionView *)cv shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
