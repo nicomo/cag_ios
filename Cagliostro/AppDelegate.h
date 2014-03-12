@@ -11,8 +11,11 @@
 extern NSDate *firstLaunchDate;
 NSDate *firstLaunchDate;
 
-extern NSMutableArray *data;
-NSMutableArray *data;
+extern NSMutableArray *epdata;
+NSMutableArray *epdata;
+
+extern NSMutableArray *chardata;
+NSMutableArray *chardata;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 

@@ -63,7 +63,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     EpisodeCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"EpisodeCell" forIndexPath:indexPath];
     int epid = indexPath.row;
-    cell.title.text = [NSString stringWithFormat:@"%d. %@", epid+1, [data[epid] objectForKey:@"title"]];
+    cell.title.text = [NSString stringWithFormat:@"%d. %@", epid+1, [epdata[epid] objectForKey:@"title"]];
     cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"homecard%d", epid+1]];
     cell.layer.shouldRasterize = YES;
     cell.layer.rasterizationScale = [UIScreen mainScreen].scale;

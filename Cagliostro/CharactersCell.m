@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Jean-André Santoni. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "CharactersCell.h"
 
 @implementation CharactersCell
@@ -48,14 +49,14 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
-    return 32;
+    return [chardata count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CharacterCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"CharacterCell" forIndexPath:indexPath];
-
-    //cell.title.text = [NSString stringWithFormat:@"%d. %@", epid+1, [data[epid] objectForKey:@"title"]];
-    //cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"homecard%d", epid+1]];
+    int cid = indexPath.row;
+    cell.title.text = [chardata[cid] objectForKey:@"name"];
+    cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid+1]];
     cell.layer.shouldRasterize = YES;
     cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
     return cell;

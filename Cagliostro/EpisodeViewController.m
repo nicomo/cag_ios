@@ -50,7 +50,7 @@ CSLinearLayoutView *mainLinearLayout;
     mainLinearLayout.delegate = self;
     [self.view addSubview:mainLinearLayout];
     
-    [self addHeader:self.epid+1 title:[data[self.epid] objectForKey:@"title"] subtitle:[data[self.epid] objectForKey:@"subtitle"]];
+    [self addHeader:self.epid+1 title:[epdata[self.epid] objectForKey:@"title"] subtitle:[epdata[self.epid] objectForKey:@"subtitle"]];
     
     self.wv = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 768, 768)];
     self.wv.backgroundColor = self.view.backgroundColor;
@@ -64,12 +64,12 @@ CSLinearLayoutView *mainLinearLayout;
     [mainLinearLayout addItem:item];
 
     if (self.epid < 51)
-        [self addNextButton:self.epid+2 title:[data[self.epid+1] objectForKey:@"title"]];
+        [self addNextButton:self.epid+2 title:[epdata[self.epid+1] objectForKey:@"title"]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    self.parentViewController.navigationItem.title = [data[self.epid] objectForKey:@"title"];
+    self.parentViewController.navigationItem.title = [epdata[self.epid] objectForKey:@"title"];
 
     /*if (self.epid > 0)
     {
@@ -97,7 +97,7 @@ CSLinearLayoutView *mainLinearLayout;
 {
     int lastp = 0;
     int offset = 0;
-    for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
+    for (NSMutableDictionary *pin in [epdata[self.epid] objectForKey:@"pins"]) {
         int pid = [[pin objectForKey:@"pid"] intValue];
         offset = (pid == lastp) ? offset + 80 : 0;
         NSString *js = [NSString stringWithFormat:@"document.getElementsByTagName('p')[%d].getBoundingClientRect().top", pid - 1];
@@ -120,7 +120,7 @@ CSLinearLayoutView *mainLinearLayout;
     visibleRect.size = mainLinearLayout.bounds.size;
     visibleRect.origin = mainLinearLayout.contentOffset;
     
-    for (NSMutableDictionary *pin in [data[self.epid] objectForKey:@"pins"]) {
+    for (NSMutableDictionary *pin in [epdata[self.epid] objectForKey:@"pins"]) {
         UIButton *pinButton = [pin objectForKey:@"pinButton"];
         
         if (CGRectContainsRect(visibleRect, pinButton.frame) && ![[pin objectForKey:@"state"] isEqual: @"flipped"] ) {
@@ -151,7 +151,7 @@ CSLinearLayoutView *mainLinearLayout;
         self.nextButtonTitle.text = [NSString stringWithFormat:@"A paraitre dans %5.2f minutes", self.epid+1 - minElapsed];
         [self.nextButtonTitle sizeToFit];
     } else {
-        self.nextButtonTitle.text = [data[self.epid + 1] objectForKey:@"title"];
+        self.nextButtonTitle.text = [epdata[self.epid + 1] objectForKey:@"title"];
         [self.nextButton addTarget:self action:@selector(didPressNextButton:) forControlEvents:UIControlEventTouchUpInside];
     }
 }

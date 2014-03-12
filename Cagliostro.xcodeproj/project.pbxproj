@@ -22,6 +22,7 @@
 		204E1C3D18C9D9AC00DB433D /* CustomPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E1C3C18C9D9AC00DB433D /* CustomPageViewController.m */; };
 		206DA5B018D087690055ECAA /* CharactersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 206DA5AF18D087690055ECAA /* CharactersCell.m */; };
 		206DA5B318D089680055ECAA /* CharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 206DA5B218D089680055ECAA /* CharacterCell.m */; };
+		206DA5B518D08F6C0055ECAA /* characters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 206DA5B418D08F6C0055ECAA /* characters.plist */; };
 		20741F6418CF3721001BA72B /* MapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20741F6318CF3721001BA72B /* MapCell.m */; };
 		20741F6718CF3B86001BA72B /* ExpanderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20741F6618CF3B86001BA72B /* ExpanderCell.m */; };
 		208C97FA1892A6160008749C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97F91892A6160008749C /* Foundation.framework */; };
@@ -75,6 +76,7 @@
 		206DA5AF18D087690055ECAA /* CharactersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersCell.m; sourceTree = "<group>"; };
 		206DA5B118D089680055ECAA /* CharacterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterCell.h; sourceTree = "<group>"; };
 		206DA5B218D089680055ECAA /* CharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterCell.m; sourceTree = "<group>"; };
+		206DA5B418D08F6C0055ECAA /* characters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = characters.plist; sourceTree = "<group>"; };
 		20741F6218CF3721001BA72B /* MapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCell.h; sourceTree = "<group>"; };
 		20741F6318CF3721001BA72B /* MapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCell.m; sourceTree = "<group>"; };
 		20741F6518CF3B86001BA72B /* ExpanderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanderCell.h; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				208C98051892A6160008749C /* main.m */,
 				208C98071892A6160008749C /* Cagliostro-Prefix.pch */,
 				20325BB418A921C0001FDBFF /* episodes.plist */,
+				206DA5B418D08F6C0055ECAA /* characters.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				20325BBB18A9225A001FDBFF /* www in Resources */,
 				200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */,
+				206DA5B518D08F6C0055ECAA /* characters.plist in Resources */,
 				200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */,
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				208C980C1892A6160008749C /* Images.xcassets in Resources */,

@@ -28,7 +28,10 @@
     }
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"episodes" ofType:@"plist"];
-    data = [NSMutableArray arrayWithContentsOfFile:path];
+    epdata = [NSMutableArray arrayWithContentsOfFile:path];
+    
+    NSString *path2 = [[NSBundle mainBundle] pathForResource:@"characters" ofType:@"plist"];
+    chardata = [NSMutableArray arrayWithContentsOfFile:path2];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
