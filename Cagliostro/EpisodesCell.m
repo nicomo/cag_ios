@@ -27,24 +27,20 @@
     {
         self.backgroundColor = [UIColor clearColor];
         self.selectionStyle = UITableViewCellSelectionStyleNone;
-        
-        /*UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
-        layout.itemSize = CGSizeMake(115, 150);*/
-        
-        SixColumnsFlowLayout *layout = [[SixColumnsFlowLayout alloc] init];
-        //layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
-        //layout.itemSize = CGSizeMake(115, 150);
 
-        epcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768, 1450) collectionViewLayout:layout];
-        epcv.backgroundColor = [UIColor clearColor];
-        epcv.delegate = self;
-        epcv.dataSource = self;
-        epcv.showsVerticalScrollIndicator = NO;
-        epcv.scrollEnabled = NO;
-        [epcv registerClass:[EpisodeCell class] forCellWithReuseIdentifier:@"EpisodeCell"];
+        SixColumnsFlowLayout *layout = [[SixColumnsFlowLayout alloc] init];
+
+        self.epcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768, 1450) collectionViewLayout:layout];
+        self.epcv.backgroundColor = [UIColor clearColor];
+        self.epcv.delegate = self;
+        self.epcv.dataSource = self;
+        self.epcv.showsVerticalScrollIndicator = NO;
+        self.epcv.scrollEnabled = NO;
+        [self.epcv registerClass:[EpisodeCell class] forCellWithReuseIdentifier:@"EpisodeCell"];
         
-        [self.contentView addSubview:epcv];
+        self.layer.masksToBounds = YES;
+        
+        [self.contentView addSubview:self.epcv];
     }
     return self;
 }

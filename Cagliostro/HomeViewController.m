@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "ExpanderCell.h"
 #import "TitleCell.h"
 #import "EpisodesCell.h"
 #import "MapCell.h"
@@ -80,7 +81,19 @@
         }
         return cell;
     } else if (indexPath.row == 2) {
-        cell.textLabel.text = @"TOUS LES EPISODES";
+        ExpanderCell *cell;
+        cell = [tableView dequeueReusableCellWithIdentifier:@"titleCell"];
+        if (cell == nil) {
+            cell = [[ExpanderCell alloc] initWithFrame:CGRectZero];
+        }
+        if (episodesExpanded) {
+            cell.title.text = @"CACHER LES EPISODES";
+            cell.expandIcon.image = [UIImage imageNamed:@"expanderUp"];
+        } else {
+            cell.title.text = @"TOUS LES EPISODES";
+            cell.expandIcon.image = [UIImage imageNamed:@"expanderDown"];
+        }
+        return cell;
     } else if (indexPath.row == 3) {
         MapCell *cell;
         cell = [tableView dequeueReusableCellWithIdentifier:@"mapCell"];
@@ -99,6 +112,8 @@
         return 335;
     } else if (indexPath.row == 1) {
         return episodesHeight;
+    } else if (indexPath.row == 2) {
+        return 135;
     } else if (indexPath.row == 3) {
         return 620;
     }
@@ -109,6 +124,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 2) {
+        
+        [tableView reloadData];
+
         if (episodesExpanded) {
             episodesHeight = 490;
             episodesExpanded = NO;
@@ -116,6 +134,7 @@
             episodesHeight = 1450;
             episodesExpanded = YES;
         }
+
         [tableView beginUpdates];
         [tableView endUpdates];
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200664A418D0470800CA09AB /* homecards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200664A318D0470800CA09AB /* homecards.xcassets */; };
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
 		200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200FA79E18B393CC00AAD523 /* pins.xcassets */; };
 		201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 201159D618C8CE100053FEFB /* VideoPlayerView.m */; };
@@ -20,6 +21,7 @@
 		20325BBB18A9225A001FDBFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 20325BBA18A9225A001FDBFF /* www */; };
 		204E1C3D18C9D9AC00DB433D /* CustomPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E1C3C18C9D9AC00DB433D /* CustomPageViewController.m */; };
 		20741F6418CF3721001BA72B /* MapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20741F6318CF3721001BA72B /* MapCell.m */; };
+		20741F6718CF3B86001BA72B /* ExpanderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20741F6618CF3B86001BA72B /* ExpanderCell.m */; };
 		208C97FA1892A6160008749C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97F91892A6160008749C /* Foundation.framework */; };
 		208C97FC1892A6160008749C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FB1892A6160008749C /* CoreGraphics.framework */; };
 		208C97FE1892A6160008749C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FD1892A6160008749C /* UIKit.framework */; };
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200664A318D0470800CA09AB /* homecards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = homecards.xcassets; sourceTree = "<group>"; };
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		200FA79E18B393CC00AAD523 /* pins.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pins.xcassets; sourceTree = "<group>"; };
 		201159D518C8CE100053FEFB /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerView.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 		204E1C3C18C9D9AC00DB433D /* CustomPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPageViewController.m; sourceTree = "<group>"; };
 		20741F6218CF3721001BA72B /* MapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCell.h; sourceTree = "<group>"; };
 		20741F6318CF3721001BA72B /* MapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCell.m; sourceTree = "<group>"; };
+		20741F6518CF3B86001BA72B /* ExpanderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanderCell.h; sourceTree = "<group>"; };
+		20741F6618CF3B86001BA72B /* ExpanderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpanderCell.m; sourceTree = "<group>"; };
 		208C97F61892A6160008749C /* Cagliostro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cagliostro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208C97F91892A6160008749C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		208C97FB1892A6160008749C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -165,6 +170,8 @@
 				208C98091892A6160008749C /* AppDelegate.m */,
 				203166DC18C621B800853998 /* HomeViewController.h */,
 				203166DD18C621B800853998 /* HomeViewController.m */,
+				20741F6518CF3B86001BA72B /* ExpanderCell.h */,
+				20741F6618CF3B86001BA72B /* ExpanderCell.m */,
 				204E1C3B18C9D9AC00DB433D /* CustomPageViewController.h */,
 				204E1C3C18C9D9AC00DB433D /* CustomPageViewController.m */,
 				203166DF18C6237100853998 /* TitleCell.h */,
@@ -184,6 +191,7 @@
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 				208C980B1892A6160008749C /* Images.xcassets */,
 				200FA79E18B393CC00AAD523 /* pins.xcassets */,
+				200664A318D0470800CA09AB /* homecards.xcassets */,
 				208C98001892A6160008749C /* Supporting Files */,
 			);
 			path = Cagliostro;
@@ -291,6 +299,7 @@
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				208C980C1892A6160008749C /* Images.xcassets in Resources */,
 				20325BB718A921C0001FDBFF /* episodes.plist in Resources */,
+				200664A418D0470800CA09AB /* homecards.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +327,7 @@
 				203166E418C62F7900853998 /* EpisodesCell.m in Sources */,
 				20A5406A18CDFB5400AECD99 /* SixColumnsFlowLayout.m in Sources */,
 				201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */,
+				20741F6718CF3B86001BA72B /* ExpanderCell.m in Sources */,
 				201159DA18C8CE100053FEFB /* VideoPlayerViewController.m in Sources */,
 				204E1C3D18C9D9AC00DB433D /* CustomPageViewController.m in Sources */,
 				208C98061892A6160008749C /* main.m in Sources */,
@@ -436,6 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cagliostro/Cagliostro-Prefix.pch";
 				INFOPLIST_FILE = "Cagliostro/Cagliostro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = app;
 			};
@@ -449,6 +460,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cagliostro/Cagliostro-Prefix.pch";
 				INFOPLIST_FILE = "Cagliostro/Cagliostro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = app;
 			};

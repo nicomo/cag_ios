@@ -10,7 +10,6 @@
 #import "EpisodeCell.h"
 #import "SixColumnsFlowLayout.h"
 
-@interface EpisodesCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource> {
-    UICollectionView* epcv;
-}
+@interface EpisodesCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource>
+@property (strong, nonatomic) UICollectionView *epcv;
 @end
