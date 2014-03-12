@@ -11,6 +11,8 @@
 @interface HomeViewController : UITableViewController {
     int episodesHeight;
     bool episodesExpanded;
+    int charactersHeight;
+    bool charactersExpanded;
 }
 
 @end

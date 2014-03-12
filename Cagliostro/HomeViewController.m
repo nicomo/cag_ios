@@ -11,6 +11,7 @@
 #import "TitleCell.h"
 #import "EpisodesCell.h"
 #import "MapCell.h"
+#import "CharactersCell.h"
 
 @interface HomeViewController ()
 
@@ -37,6 +38,9 @@
     episodesExpanded = NO;
     episodesHeight = 490;
     
+    charactersExpanded = NO;
+    charactersHeight = 460;
+    
     self.navigationItem.title = @"LE JOURNAL";
 }
 
@@ -55,7 +59,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -101,6 +105,27 @@
             cell = [[MapCell alloc] initWithFrame:CGRectZero];
         }
         return cell;
+    } else if (indexPath.row == 4) {
+        CharactersCell *cell;
+        cell = [tableView dequeueReusableCellWithIdentifier:@"charactersCell"];
+        if (cell == nil) {
+            cell = [[CharactersCell alloc] initWithFrame:CGRectZero];
+        }
+        return cell;
+    } else if (indexPath.row == 5) {
+        ExpanderCell *cell;
+        cell = [tableView dequeueReusableCellWithIdentifier:@"expanderCell"];
+        if (cell == nil) {
+            cell = [[ExpanderCell alloc] initWithFrame:CGRectZero];
+        }
+        if (charactersExpanded) {
+            cell.title.text = @"CACHER LES PERSONNAGES";
+            cell.expandIcon.image = [UIImage imageNamed:@"expanderUp"];
+        } else {
+            cell.title.text = @"TOUS LES PERSONNAGES";
+            cell.expandIcon.image = [UIImage imageNamed:@"expanderDown"];
+        }
+        return cell;
     }
     
     return cell;
@@ -116,8 +141,12 @@
         return 135;
     } else if (indexPath.row == 3) {
         return 620;
+    } else if (indexPath.row == 4) {
+        return charactersHeight;
+    } else if (indexPath.row == 5) {
+        return 135;
     }
-    
+
     return 100;
 }
 
@@ -126,7 +155,7 @@
     if (indexPath.row == 2) {
         
         [tableView reloadData];
-
+        
         if (episodesExpanded) {
             episodesHeight = 490;
             episodesExpanded = NO;
@@ -134,7 +163,23 @@
             episodesHeight = 1450;
             episodesExpanded = YES;
         }
-
+        
+        [tableView beginUpdates];
+        [tableView endUpdates];
+    }
+    
+    if (indexPath.row == 5) {
+        
+        [tableView reloadData];
+        
+        if (charactersExpanded) {
+            charactersHeight = 460;
+            charactersExpanded = NO;
+        } else {
+            charactersHeight = 1340;
+            charactersExpanded = YES;
+        }
+        
         [tableView beginUpdates];
         [tableView endUpdates];
     }

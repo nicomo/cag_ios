@@ -26,8 +26,14 @@
         UIImageView* map = [[UIImageView alloc] initWithFrame:CGRectMake(0, 120, 768, 768*(2100.0f/2580.0f))];
         map.image = [UIImage imageNamed:@"map"];
         
+        UIView* separator = [[UIView alloc] initWithFrame:CGRectMake(0, 619, 768, 1)];
+        separator.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
+        
+        self.layer.masksToBounds = YES;
+        
         [self.contentView addSubview:title];
         [self.contentView addSubview:map];
+        [self.contentView addSubview:separator];
     }
     return self;
 }
