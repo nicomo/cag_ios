@@ -11,4 +11,5 @@
 
 @interface CharactersCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (strong, nonatomic) UICollectionView *charcv;
+@property (strong, nonatomic) NSTimer *timer;
 @end

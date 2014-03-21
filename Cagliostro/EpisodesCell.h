@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "EpisodeCell.h"
-#import "SixColumnsFlowLayout.h"
 #import "CHTCollectionViewWaterfallLayout.h"
 
 @interface EpisodesCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout>

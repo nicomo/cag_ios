@@ -41,8 +41,15 @@
         
         [self.contentView addSubview:title];
         [self.contentView addSubview:self.charcv];
+        
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateCharacters:) userInfo:nil repeats:YES];
     }
     return self;
+}
+
+-(void)updateCharacters:(NSTimer *)timer
+{
+    [self.charcv reloadItemsAtIndexPaths:self.charcv.indexPathsForVisibleItems];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView: (UICollectionView *)collectionView {
@@ -57,16 +64,22 @@
     CharacterCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"CharacterCell" forIndexPath:indexPath];
     int cid = indexPath.row;
     cell.title.text = [chardata[cid] objectForKey:@"name"];
-    cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid+1]];
+    if ([self published:cid]) {
+        cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid+1]];
+    } else {
+        cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"anon%@", [chardata[cid] objectForKey:@"gender"]]];
+    }
     cell.layer.shouldRasterize = YES;
     cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)cv didSelectItemAtIndexPath:(NSIndexPath *)indexPath  {
-    CharacterViewController *cvc = [[CharacterViewController alloc] initWithCid:indexPath.row];
-    AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [(UINavigationController *)ad.window.rootViewController pushViewController:cvc animated:YES];
+    if ([self published:(int)indexPath.row]) {
+        CharacterViewController *cvc = [[CharacterViewController alloc] initWithCid:indexPath.row];
+        AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        [(UINavigationController *)ad.window.rootViewController pushViewController:cvc animated:YES];
+    }
 }
 
 - (BOOL)collectionView:(UICollectionView *)cv shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
@@ -77,6 +90,19 @@
 - (BOOL)collectionView:(UICollectionView *)cv shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath;
 {
     return YES;
+}
+
+- (int)epidforcid:(int) cid
+{
+    return [[chardata[cid] objectForKey:@"epid"] intValue];
+}
+
+- (BOOL)published:(int) cid
+{
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    bool delayedEps = [prefs boolForKey:@"delayedEps"];
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    return !delayedEps || [self epidforcid:cid] < minElapsed;
 }
 
 @end
