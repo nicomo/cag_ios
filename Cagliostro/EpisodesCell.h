@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "EpisodeCell.h"
 #import "SixColumnsFlowLayout.h"
+#import "CHTCollectionViewWaterfallLayout.h"
 
-@interface EpisodesCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface EpisodesCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout>
 @property (strong, nonatomic) UICollectionView *epcv;
+@property (strong, nonatomic) NSTimer *timer;
 @end

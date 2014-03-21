@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		200664A418D0470800CA09AB /* homecards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200664A318D0470800CA09AB /* homecards.xcassets */; };
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
+		200D733418DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 200D733318DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m */; };
 		200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200FA79E18B393CC00AAD523 /* pins.xcassets */; };
 		201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 201159D618C8CE100053FEFB /* VideoPlayerView.m */; };
 		201159DA18C8CE100053FEFB /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201159D818C8CE100053FEFB /* VideoPlayerViewController.m */; };
@@ -37,7 +38,6 @@
 		208C98151892A6160008749C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FD1892A6160008749C /* UIKit.framework */; };
 		208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C982C1892A73C0008749C /* EpisodeViewController.m */; };
 		208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C98301892A8340008749C /* CSLinearLayoutView.m */; };
-		20A5406A18CDFB5400AECD99 /* SixColumnsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5406918CDFB5400AECD99 /* SixColumnsFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,8 @@
 /* Begin PBXFileReference section */
 		200664A318D0470800CA09AB /* homecards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = homecards.xcassets; sourceTree = "<group>"; };
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		200D733218DC458B000154F8 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		200D733318DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 		200FA79E18B393CC00AAD523 /* pins.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pins.xcassets; sourceTree = "<group>"; };
 		201159D518C8CE100053FEFB /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerView.h; sourceTree = "<group>"; };
 		201159D618C8CE100053FEFB /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerView.m; sourceTree = "<group>"; };
@@ -99,8 +101,6 @@
 		208C982F1892A8340008749C /* CSLinearLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLinearLayoutView.h; sourceTree = "<group>"; };
 		208C98301892A8340008749C /* CSLinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLinearLayoutView.m; sourceTree = "<group>"; };
 		208C9833189326E20008749C /* SuperClarendon_7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperClarendon_7.otf; sourceTree = "<group>"; };
-		20A5406818CDFB5400AECD99 /* SixColumnsFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixColumnsFlowLayout.h; sourceTree = "<group>"; };
-		20A5406918CDFB5400AECD99 /* SixColumnsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixColumnsFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200D733118DC458B000154F8 /* CHTCollectionViewWaterfallLayout */ = {
+			isa = PBXGroup;
+			children = (
+				200D733218DC458B000154F8 /* CHTCollectionViewWaterfallLayout.h */,
+				200D733318DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m */,
+			);
+			path = CHTCollectionViewWaterfallLayout;
+			sourceTree = "<group>";
+		};
 		201159D418C8CE100053FEFB /* VideoPlayerController */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +153,7 @@
 				20325BBA18A9225A001FDBFF /* www */,
 				200D2BEB18A90E7500D5C53D /* Settings.bundle */,
 				201159D418C8CE100053FEFB /* VideoPlayerController */,
+				200D733118DC458B000154F8 /* CHTCollectionViewWaterfallLayout */,
 				208C982E1892A8340008749C /* CSLinearLayoutView */,
 				208C97FF1892A6160008749C /* Cagliostro */,
 				208C97F81892A6160008749C /* Frameworks */,
@@ -190,8 +200,6 @@
 				20741F6318CF3721001BA72B /* MapCell.m */,
 				206DA5AE18D087690055ECAA /* CharactersCell.h */,
 				206DA5AF18D087690055ECAA /* CharactersCell.m */,
-				20A5406818CDFB5400AECD99 /* SixColumnsFlowLayout.h */,
-				20A5406918CDFB5400AECD99 /* SixColumnsFlowLayout.m */,
 				203166E818C63F1E00853998 /* EpisodeCell.h */,
 				203166E918C63F1E00853998 /* EpisodeCell.m */,
 				206DA5B118D089680055ECAA /* CharacterCell.h */,
@@ -332,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20741F6418CF3721001BA72B /* MapCell.m in Sources */,
+				200D733418DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				208C980A1892A6160008749C /* AppDelegate.m in Sources */,
 				203166EA18C63F1E00853998 /* EpisodeCell.m in Sources */,
 				20187B5618B4EFEB00FD27A1 /* CharacterViewController.m in Sources */,
@@ -339,7 +348,6 @@
 				203166E118C6237100853998 /* TitleCell.m in Sources */,
 				208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */,
 				203166E418C62F7900853998 /* EpisodesCell.m in Sources */,
-				20A5406A18CDFB5400AECD99 /* SixColumnsFlowLayout.m in Sources */,
 				201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */,
 				20741F6718CF3B86001BA72B /* ExpanderCell.m in Sources */,
 				206DA5B018D087690055ECAA /* CharactersCell.m in Sources */,
