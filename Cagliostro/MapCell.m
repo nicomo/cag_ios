@@ -23,7 +23,7 @@
         title.font = [UIFont fontWithName:@"SuperClarendon-Black" size:40];
         title.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
 
-        UIImageView* map = [[UIImageView alloc] initWithFrame:CGRectMake(0, 120, 768, 768*(2100.0f/2580.0f))];
+        UIImageView* map = [[UIImageView alloc] initWithFrame:CGRectMake(0, 120, 768, 548)];
         map.image = [UIImage imageNamed:@"map"];
         
         UIView* separator = [[UIView alloc] initWithFrame:CGRectMake(0, 619, 768, 1)];
