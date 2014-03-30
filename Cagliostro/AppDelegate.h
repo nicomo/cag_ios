@@ -17,6 +17,9 @@ NSMutableArray *epdata;
 extern NSMutableArray *chardata;
 NSMutableArray *chardata;
 
+extern NSMutableArray *pldata;
+NSMutableArray *pldata;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

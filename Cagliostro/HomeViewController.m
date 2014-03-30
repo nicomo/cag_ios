@@ -140,7 +140,7 @@
     } else if (indexPath.row == 2) {
         return 135;
     } else if (indexPath.row == 3) {
-        return 620;
+        return 668;
     } else if (indexPath.row == 4) {
         return charactersHeight;
     } else if (indexPath.row == 5) {
