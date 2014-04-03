@@ -4,43 +4,144 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Paris</string>
+		<string>Abbaye de Boscherville</string>
 		<key>x</key>
-		<real>0.3</real>
+		<real>0.66</real>
 		<key>y</key>
-		<real>0.2</real>
+		<real>0.58</real>
 		<key>epid</key>
 		<integer>0</integer>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Rouen</string>
+		<string>Abbaye de Fécamp</string>
 		<key>x</key>
-		<real>0.6</real>
+		<real>0.31</real>
+		<key>y</key>
+		<real>0.16</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Abbaye Gruchet le Valasse</string>
+		<key>x</key>
+		<real>0.37</real>
+		<key>y</key>
+		<real>0.43</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Abbaye de Jumièges</string>
+		<key>x</key>
+		<real>0.57</real>
+		<key>y</key>
+		<real>0.60</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Abbaye Montivilliers</string>
+		<key>x</key>
+		<real>0.18</real>
+		<key>y</key>
+		<real>0.46</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Abbaye St Wandrille</string>
+		<key>x</key>
+		<real>0.56</real>
 		<key>y</key>
 		<real>0.45</real>
 		<key>epid</key>
 		<integer>0</integer>
 	</dict>
-    <dict>
+	<dict>
 		<key>name</key>
-		<string>Château de la Haie d'Etigue</string>
+		<string>Abbaye de Valmont</string>
 		<key>x</key>
-		<real>0.8</real>
+		<real>0.36</real>
 		<key>y</key>
-		<real>0.75</real>
+		<real>0.17</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Caudebec en Caux</string>
+		<key>x</key>
+		<real>0.51</real>
+		<key>y</key>
+		<real>0.46</real>
 		<key>epid</key>
 		<integer>0</integer>
 	</dict>
     <dict>
 		<key>name</key>
-		<string>Abbaye de Saint-Wandrille</string>
+		<string>Côte des Deux Amants</string>
 		<key>x</key>
-		<real>0.24</real>
+		<real>0.84</real>
 		<key>y</key>
-		<real>0.85</real>
+		<real>0.74</real>
 		<key>epid</key>
 		<integer>0</integer>
 	</dict>
+    <dict>
+		<key>name</key>
+		<string>Duclair</string>
+		<key>x</key>
+		<real>0.62</real>
+		<key>y</key>
+		<real>0.51</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+    <dict>
+		<key>name</key>
+		<string>Etretat</string>
+		<key>x</key>
+		<real>0.20</real>
+		<key>y</key>
+		<real>0.23</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+    <dict>
+		<key>name</key>
+		<string>La Haie d'Etigues</string>
+		<key>x</key>
+		<real>0.25</real>
+		<key>y</key>
+		<real>0.21</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+    <dict>
+		<key>name</key>
+		<string>La Bouille</string>
+		<key>x</key>
+		<real>0.65</real>
+		<key>y</key>
+		<real>0.70</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+    <dict>
+		<key>name</key>
+		<string>Paris</string>
+		<key>x</key>
+		<real>0.83</real>
+		<key>y</key>
+		<real>0.93</real>
+		<key>epid</key>
+		<integer>0</integer>
+	</dict>
+    
 </array>
 </plist>
