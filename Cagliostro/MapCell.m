@@ -41,10 +41,14 @@
         for (NSMutableDictionary *place in pldata) {
             double x = [[place objectForKey:@"x"] doubleValue];
             double y = [[place objectForKey:@"y"] doubleValue];
-            UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*768) - 15, (y*548) - 15 + 120, 30, 30)];
-            [placebtn setBackgroundImage:[UIImage imageNamed:@"anonMale"] forState:UIControlStateNormal];
+            UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*768) - 20, (y*548) - 20 + 120, 40, 40)];
+            if (i < 7) {
+                [placebtn setBackgroundImage:[UIImage imageNamed:@"place_abbey"] forState:UIControlStateNormal];
+            } else {
+                [placebtn setBackgroundImage:[UIImage imageNamed:@"place_other"] forState:UIControlStateNormal];
+            }
             placebtn.tag = i;
-            placebtn.alpha = 0.75;
+            //placebtn.alpha = 0.75;
             [placebtn addTarget:self action:@selector(didPressPlacePin:) forControlEvents:UIControlEventTouchUpInside];
             [self.contentView addSubview:placebtn];
             i++;
