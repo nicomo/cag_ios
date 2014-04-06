@@ -11,6 +11,8 @@
 		<real>0.58</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -21,6 +23,8 @@
 		<real>0.16</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -31,6 +35,8 @@
 		<real>0.43</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -38,9 +44,11 @@
 		<key>x</key>
 		<real>0.57</real>
 		<key>y</key>
-		<real>0.60</real>
+		<real>0.6</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -51,6 +59,8 @@
 		<real>0.46</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -61,6 +71,8 @@
 		<real>0.45</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -71,8 +83,9 @@
 		<real>0.17</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    
 	<dict>
 		<key>name</key>
 		<string>Caudebec en Caux</string>
@@ -82,18 +95,22 @@
 		<real>0.44</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    <dict>
+	<dict>
 		<key>name</key>
 		<string>Côte des Deux Amants</string>
 		<key>x</key>
 		<real>0.84</real>
 		<key>y</key>
-		<real>0.72</real>
+		<real>0.7</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    <dict>
+	<dict>
 		<key>name</key>
 		<string>Duclair</string>
 		<key>x</key>
@@ -102,28 +119,34 @@
 		<real>0.49</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    <dict>
+	<dict>
 		<key>name</key>
 		<string>Etretat</string>
 		<key>x</key>
-		<real>0.20</real>
+		<real>0.2</real>
 		<key>y</key>
 		<real>0.21</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    <dict>
+	<dict>
 		<key>name</key>
-		<string>La Haie d'Etigues</string>
+		<string>La Haie d&apos;Etigues</string>
 		<key>x</key>
 		<real>0.25</real>
 		<key>y</key>
 		<real>0.19</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    <dict>
+	<dict>
 		<key>name</key>
 		<string>La Bouille</string>
 		<key>x</key>
@@ -132,27 +155,68 @@
 		<real>0.67</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    <dict>
+	<dict>
 		<key>name</key>
 		<string>Paris</string>
 		<key>x</key>
 		<real>0.83</real>
 		<key>y</key>
-		<real>0.91</real>
+		<real>0.9</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    <dict>
+	<dict>
 		<key>name</key>
-		<string>Pont de l'Arche</string>
+		<string>Pont de l&apos;Arche</string>
 		<key>x</key>
-		<real>0.74</real>
+		<real>0.78</real>
 		<key>y</key>
 		<real>0.72</real>
 		<key>epid</key>
 		<integer>0</integer>
+        <key>page</key>
+		<true/>
 	</dict>
-    
+	<dict>
+		<key>name</key>
+		<string>Rouen</string>
+		<key>x</key>
+		<real>0.73</real>
+		<key>y</key>
+		<real>0.56</real>
+		<key>epid</key>
+		<integer>0</integer>
+        <key>page</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tancarville</string>
+		<key>x</key>
+		<real>0.355</real>
+		<key>y</key>
+		<real>0.49</real>
+		<key>epid</key>
+		<integer>0</integer>
+        <key>page</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Yvetot</string>
+		<key>x</key>
+		<real>0.53</real>
+		<key>y</key>
+		<real>0.32</real>
+		<key>epid</key>
+		<integer>0</integer>
+        <key>page</key>
+		<true/>
+	</dict>
 </array>
 </plist>
