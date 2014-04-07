@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "pin_lieux_autres.png"
+      "filename" : "place_other.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "pin_lieux_autres@2x.png"
+      "filename" : "place_other@2x.png"
     }
   ],
   "info" : {
