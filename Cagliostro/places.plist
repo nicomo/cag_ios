@@ -10,9 +10,7 @@
 		<key>y</key>
 		<real>0.58</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>17</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -23,56 +21,46 @@
 		<real>0.16</real>
 		<key>epid</key>
 		<integer>0</integer>
-        <key>page</key>
-		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Abbaye Gruchet le Valasse</string>
 		<key>x</key>
-		<real>0.37</real>
+		<real>0.34</real>
 		<key>y</key>
-		<real>0.43</real>
+		<real>0.42</real>
 		<key>epid</key>
 		<integer>0</integer>
-        <key>page</key>
-		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Abbaye de Jumièges</string>
 		<key>x</key>
-		<real>0.57</real>
+		<real>0.5600000000000001</real>
 		<key>y</key>
-		<real>0.6</real>
+		<real>0.57</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>43</integer>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Abbaye Montivilliers</string>
+		<string>Abbaye de Montivilliers</string>
 		<key>x</key>
 		<real>0.18</real>
 		<key>y</key>
 		<real>0.46</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>17</integer>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Abbaye St Wandrille</string>
+		<string>Abbaye de St Wandrille</string>
 		<key>x</key>
-		<real>0.56</real>
+		<real>0.5600000000000001</real>
 		<key>y</key>
 		<real>0.45</real>
 		<key>epid</key>
 		<integer>0</integer>
-        <key>page</key>
-		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -83,20 +71,16 @@
 		<real>0.17</real>
 		<key>epid</key>
 		<integer>0</integer>
-        <key>page</key>
-		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Caudebec en Caux</string>
+		<string>Caudebec-en-Caux</string>
 		<key>x</key>
 		<real>0.51</real>
 		<key>y</key>
 		<real>0.44</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>43</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -106,9 +90,7 @@
 		<key>y</key>
 		<real>0.7</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>27</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -118,9 +100,7 @@
 		<key>y</key>
 		<real>0.49</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>30</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -130,9 +110,7 @@
 		<key>y</key>
 		<real>0.21</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>1</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -143,8 +121,6 @@
 		<real>0.19</real>
 		<key>epid</key>
 		<integer>0</integer>
-        <key>page</key>
-		<true/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -154,9 +130,7 @@
 		<key>y</key>
 		<real>0.67</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>17</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -166,21 +140,17 @@
 		<key>y</key>
 		<real>0.9</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>18</integer>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Pont de l&apos;Arche</string>
+		<string>Pont-de-l&apos;Arche</string>
 		<key>x</key>
 		<real>0.78</real>
 		<key>y</key>
 		<real>0.72</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>17</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -188,11 +158,9 @@
 		<key>x</key>
 		<real>0.73</real>
 		<key>y</key>
-		<real>0.56</real>
+		<real>0.5600000000000001</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>17</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -202,9 +170,7 @@
 		<key>y</key>
 		<real>0.49</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>33</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -214,9 +180,47 @@
 		<key>y</key>
 		<real>0.32</real>
 		<key>epid</key>
-		<integer>0</integer>
-        <key>page</key>
-		<true/>
+		<integer>14</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Château de Gueures</string>
+		<key>x</key>
+		<real>0.65</real>
+		<key>y</key>
+		<real>0.1</real>
+		<key>epid</key>
+		<integer>12</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Doudeville</string>
+		<key>x</key>
+		<real>0.54</real>
+		<key>y</key>
+		<real>0.17</real>
+		<key>epid</key>
+		<integer>14</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lillebonne</string>
+		<key>x</key>
+		<real>0.38</real>
+		<key>y</key>
+		<real>0.44</real>
+		<key>epid</key>
+		<integer>29</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Le Mesnil-sous-Jumièges</string>
+		<key>x</key>
+		<real>0.6</real>
+		<key>y</key>
+		<real>0.59</real>
+		<key>epid</key>
+		<integer>43</integer>
 	</dict>
 </array>
 </plist>
