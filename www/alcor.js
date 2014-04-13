@@ -404,6 +404,31 @@ $( document ).ready(function() {
         $(".alcor_26").animate({opacity: 0},2000);
         $(".alcor_27").animate({opacity: 0},2000);
         $(".alcor_28").animate({opacity: 0},2000);
+                    
+        $(".alcor_1").animate({opacity: 1},3000);
+        $(".alcor_2").animate({opacity: 1},3000);
+        $(".alcor_3").animate({opacity: 1},3000);
+        $(".alcor_4").animate({opacity: 1},3000);
+        $(".alcor_5").animate({opacity: 1},3000);
+        $(".alcor_7").animate({opacity: 1},3000);
+        $(".alcor_8").animate({opacity: 1},3000);
+        $(".alcor_10").animate({opacity: 1},3000);
+        $(".alcor_11").animate({opacity: 1},3000);
+        $(".alcor_12").animate({opacity: 1},3000);
+        $(".alcor_13").animate({opacity: 1},3000);
+        $(".alcor_14").animate({opacity: 1},3000);
+        $(".alcor_15").animate({opacity: 1},3000);
+        $(".alcor_17").animate({opacity: 1},3000);
+        $(".alcor_18").animate({opacity: 1},3000);
+        $(".alcor_19").animate({opacity: 1},3000);
+        $(".alcor_20").animate({opacity: 1},3000);
+        $(".alcor_21").animate({opacity: 1},3000);
+        $(".alcor_23").animate({opacity: 1},3000);
+        $(".alcor_24").animate({opacity: 1},3000);
+        $(".alcor_25").animate({opacity: 1},3000);
+        $(".alcor_26").animate({opacity: 1},3000);
+        $(".alcor_27").animate({opacity: 1},3000);
+        $(".alcor_28").animate({opacity: 1},3000);
 
         // launch animation for star Two
         setTimeout (function(){
@@ -417,10 +442,7 @@ $( document ).ready(function() {
     function touchStarSeven( event ) {
 
         console.log("touch starSeven");
-        // stop animation on star
-
-
-
+        
         // dim letters not present in  name of star
         $(".alcor_2").animate({opacity: 0},4000);
         $(".alcor_4").animate({opacity: 0},4000);
