@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MapCell : UITableViewCell
-
+@property (strong, nonatomic) NSTimer *timer;
 @end

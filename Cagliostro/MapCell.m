@@ -39,6 +39,33 @@
         
         int i = 0;
         for (NSMutableDictionary *place in pldata) {
+            if ([self published:i]) {
+                double x = [[place objectForKey:@"x"] doubleValue];
+                double y = [[place objectForKey:@"y"] doubleValue];
+                UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*768) - 20, (y*548) - 20 + 120, 40, 40)];
+                if (i < 7) {
+                    [placebtn setBackgroundImage:[UIImage imageNamed:@"place_abbey"] forState:UIControlStateNormal];
+                } else {
+                    [placebtn setBackgroundImage:[UIImage imageNamed:@"place_other"] forState:UIControlStateNormal];
+                }
+                placebtn.tag = i;
+                [placebtn addTarget:self action:@selector(didPressPlacePin:) forControlEvents:UIControlEventTouchUpInside];
+                [self.contentView addSubview:placebtn];
+                [place setValue:@"YES" forKey:@"published"];
+            }
+            i++;
+        }
+        
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updatePlaces:) userInfo:nil repeats:YES];
+    }
+    return self;
+}
+
+-(void)updatePlaces:(NSTimer *)timer
+{
+    int i = 0;
+    for (NSMutableDictionary *place in pldata) {
+        if ([self published:i] && ![[place objectForKey:@"published"] isEqual: @"YES"]) {
             double x = [[place objectForKey:@"x"] doubleValue];
             double y = [[place objectForKey:@"y"] doubleValue];
             UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*768) - 20, (y*548) - 20 + 120, 40, 40)];
@@ -48,13 +75,12 @@
                 [placebtn setBackgroundImage:[UIImage imageNamed:@"place_other"] forState:UIControlStateNormal];
             }
             placebtn.tag = i;
-            //placebtn.alpha = 0.75;
             [placebtn addTarget:self action:@selector(didPressPlacePin:) forControlEvents:UIControlEventTouchUpInside];
             [self.contentView addSubview:placebtn];
-            i++;
+            [place setValue:@"YES" forKey:@"published"];
         }
+        i++;
     }
-    return self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -134,6 +160,19 @@
         [[pl objectForKey:@"bubble"] removeFromSuperview];
         [pl setValue:nil forKey:@"bubble"];
     }
+}
+
+- (int)epidforplid:(int) plid
+{
+    return [[pldata[plid] objectForKey:@"epid"] intValue];
+}
+
+- (BOOL)published:(int) plid
+{
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    bool delayedEps = [prefs boolForKey:@"delayedEps"];
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    return !delayedEps || [self epidforplid:plid] < minElapsed;
 }
 
 @end
