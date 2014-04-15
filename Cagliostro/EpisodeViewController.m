@@ -11,6 +11,7 @@
 #import "CharacterViewController.h"
 #import "CSLinearLayoutView.h"
 #import "CustomPageViewController.h"
+#import "PlaceViewController.h"
 
 @interface EpisodeViewController ()
 - (void) addHeader:(int)partNumber title:(NSString*)titleText subtitle:(NSString*)subtitleText;
@@ -62,9 +63,105 @@ CSLinearLayoutView *mainLinearLayout;
     [self.wv loadRequest:[NSURLRequest requestWithURL:url]];
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:self.wv];
     [mainLinearLayout addItem:item];
+    
+    self.map = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 548)];
+    
+    UIImageView *mapimg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 548)];
+    mapimg.image = [UIImage imageNamed:@"map"];
+    [self.map addSubview:mapimg];
+    
+    CSLinearLayoutItem *item2 = [CSLinearLayoutItem layoutItemForView:self.map];
+    [mainLinearLayout addItem:item2];
+    
+    for (NSNumber *plid in [epdata[self.epid] objectForKey:@"places"]) {
+        NSMutableDictionary *place = pldata[[plid intValue]];
+        double x = [[place objectForKey:@"x"] doubleValue];
+        double y = [[place objectForKey:@"y"] doubleValue];
+        UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*768) - 20, (y*548) - 20, 40, 40)];
+        if ([plid intValue] < 7) {
+            [placebtn setBackgroundImage:[UIImage imageNamed:@"place_abbey"] forState:UIControlStateNormal];
+        } else {
+            [placebtn setBackgroundImage:[UIImage imageNamed:@"place_other"] forState:UIControlStateNormal];
+        }
+        placebtn.tag = [plid intValue];
+        [placebtn addTarget:self action:@selector(didPressPlacePin:) forControlEvents:UIControlEventTouchUpInside];
+        [self.map addSubview:placebtn];
+    }
 
     if (self.epid < 51)
         [self addNextButton:self.epid+2 title:[epdata[self.epid+1] objectForKey:@"title"]];
+}
+
+- (void)didPressPlacePin:(UIButton *)sender
+{
+    int plid = sender.tag;
+    
+    NSMutableDictionary *place = pldata[plid];
+    double x = [[place objectForKey:@"x"] doubleValue];
+    double y = [[place objectForKey:@"y"] doubleValue];
+    NSString *name = [place objectForKey:@"name"];
+    
+    if (![place objectForKey:@"bubble"]) {
+        
+        [self clearBubbles];
+        
+        UIButton *bubble = [[UIButton alloc] init];
+        bubble.tag = plid;
+        [bubble addTarget:self action:@selector(didPressBubble:) forControlEvents:UIControlEventTouchUpInside];
+        
+        UITextView *buttonTitle = [[UITextView alloc] initWithFrame:CGRectMake(20, 10, 210, 90)];
+        buttonTitle.text = name;
+        buttonTitle.font = [UIFont fontWithName:@"Georgia" size:15];
+        buttonTitle.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
+        buttonTitle.backgroundColor = [UIColor clearColor];
+        buttonTitle.userInteractionEnabled = NO;
+        buttonTitle.scrollEnabled = NO;
+        [buttonTitle sizeToFit];
+        [bubble addSubview:buttonTitle];
+        
+        if (x < 0.5 && y < 0.5 ) {
+            bubble.frame = CGRectMake((x*768)+15, (y*548) -20, 250, 100);
+            [bubble setBackgroundImage:[UIImage imageNamed:@"bubblerightbottom"] forState:UIControlStateNormal];
+            [self.map addSubview:bubble];
+        }
+        if (x > 0.5 && y < 0.5 ) {
+            bubble.frame = CGRectMake((x*768)-15-250, (y*548) -20, 250, 100);
+            [bubble setBackgroundImage:[UIImage imageNamed:@"bubbleleftbottom"] forState:UIControlStateNormal];
+            [self.map addSubview:bubble];
+        }
+        if (x > 0.5 && y > 0.5 ) {
+            bubble.frame = CGRectMake((x*768)-15-250, (y*548) -100 +20, 250, 100);
+            [bubble setBackgroundImage:[UIImage imageNamed:@"bubblelefttop"] forState:UIControlStateNormal];
+            [self.map addSubview:bubble];
+        }
+        if (x < 0.5 && y > 0.5 ) {
+            bubble.frame = CGRectMake((x*768)+15, (y*548) -100 +20, 250, 100);
+            [bubble setBackgroundImage:[UIImage imageNamed:@"bubblerighttop"] forState:UIControlStateNormal];
+            [self.map addSubview:bubble];
+        }
+        
+        [place setValue:bubble forKey:@"bubble"];
+    } else {
+        [[place objectForKey:@"bubble"] removeFromSuperview];
+        [place setValue:nil forKey:@"bubble"];
+    }
+}
+
+- (void)didPressBubble:(UIButton *)sender
+{
+    [self clearBubbles];
+    int plid = sender.tag;
+    PlaceViewController *pvc = [[PlaceViewController alloc] initWithPlid:plid];
+    AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [(UINavigationController *)ad.window.rootViewController pushViewController:pvc animated:YES];
+}
+
+- (void)clearBubbles
+{
+    for (NSMutableDictionary *pl in pldata) {
+        [[pl objectForKey:@"bubble"] removeFromSuperview];
+        [pl setValue:nil forKey:@"bubble"];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -264,6 +361,19 @@ CSLinearLayoutView *mainLinearLayout;
 - (void)dealloc
 {
     NSLog(@"dealloc %d", self.epid);
+}
+
+- (int)epidforplid:(int) plid
+{
+    return [[pldata[plid] objectForKey:@"epid"] intValue];
+}
+
+- (BOOL)published:(int) plid
+{
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    bool delayedEps = [prefs boolForKey:@"delayedEps"];
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    return !delayedEps || [self epidforplid:plid] < minElapsed;
 }
 
 @end

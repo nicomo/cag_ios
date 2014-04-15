@@ -17,5 +17,6 @@
 @property (strong, nonatomic) UITextView *nextButtonTitle;
 @property (strong, nonatomic) VideoPlayerViewController *player;
 @property (strong, nonatomic) UIWebView *wv;
+@property (strong, nonatomic) UIView *map;
 @property (strong, nonatomic) NSTimer *timer;
 @end

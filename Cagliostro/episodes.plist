@@ -252,7 +252,7 @@
 		<key>places</key>
 		<array>
 			<integer>17</integer>
-			<string>19</string>
+			<integer>19</integer>
 		</array>
 		<key>title</key>
 		<string>Policiers et gendarmes</string>
@@ -286,7 +286,7 @@
 			<integer>4</integer>
 			<integer>12</integer>
 			<integer>14</integer>
-			<string>15</string>
+			<integer>15</integer>
 		</array>
 		<key>title</key>
 		<string>Les délices de Capoue</string>
