@@ -61,23 +61,56 @@ CSLinearLayoutView *mainLinearLayout;
     self.wv.scrollView.bounces = NO;
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.epid+1] ofType:@"html" inDirectory:@"www"]];
     [self.wv loadRequest:[NSURLRequest requestWithURL:url]];
-    CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:self.wv];
-    [mainLinearLayout addItem:item];
+    CSLinearLayoutItem *wvitem = [CSLinearLayoutItem layoutItemForView:self.wv];
     
-    self.map = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 548)];
+    [mainLinearLayout addItem:wvitem];
     
-    UIImageView *mapimg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 548)];
+    UIView *separator = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 150, 1)];
+    [separator setBackgroundColor:[UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0]];
+    CSLinearLayoutItem *sepitem = [CSLinearLayoutItem layoutItemForView:separator];
+    sepitem.padding = CSLinearLayoutMakePadding(0, 85, 0, 85);
+    [mainLinearLayout addItem:sepitem];
+    
+    UILabel *footertitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150, 40)];
+    footertitle.text = @"DANS CET EPISODE";
+    footertitle.font = [UIFont fontWithName:@"Georgia" size:15];
+    CSLinearLayoutItem *ftitem = [CSLinearLayoutItem layoutItemForView:footertitle];
+    ftitem.padding = CSLinearLayoutMakePadding(0, 85, 0, 85);
+    [mainLinearLayout addItem:ftitem];
+    
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize = CGSizeMake(60, 60);
+    layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 5);
+    
+    self.charcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2),
+                                                                     (60 * (int)(([[epdata[self.epid] objectForKey:@"pins"] count] + 1)/8))
+                                                                     ) collectionViewLayout:layout];
+    self.charcv.backgroundColor = [UIColor clearColor];
+    self.charcv.delegate = self;
+    self.charcv.dataSource = self;
+    self.charcv.showsVerticalScrollIndicator = NO;
+    self.charcv.scrollEnabled = NO;
+    [self.charcv registerClass:[FooterCharacterCell class] forCellWithReuseIdentifier:@"FooterCharacterCell"];
+
+    CSLinearLayoutItem *charsitem = [CSLinearLayoutItem layoutItemForView:self.charcv];
+    charsitem.padding = CSLinearLayoutMakePadding(10, 85, 20, 85);
+    [mainLinearLayout addItem:charsitem];
+    
+    self.map = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2), 428)];
+    
+    UIImageView *mapimg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2), 428)];
     mapimg.image = [UIImage imageNamed:@"map"];
     [self.map addSubview:mapimg];
     
-    CSLinearLayoutItem *item2 = [CSLinearLayoutItem layoutItemForView:self.map];
-    [mainLinearLayout addItem:item2];
+    CSLinearLayoutItem *mapitem = [CSLinearLayoutItem layoutItemForView:self.map];
+    mapitem.padding = CSLinearLayoutMakePadding(0, 85, 40, 85);
+    [mainLinearLayout addItem:mapitem];
     
     for (NSNumber *plid in [epdata[self.epid] objectForKey:@"places"]) {
         NSMutableDictionary *place = pldata[[plid intValue]];
         double x = [[place objectForKey:@"x"] doubleValue];
         double y = [[place objectForKey:@"y"] doubleValue];
-        UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*768) - 20, (y*548) - 20, 40, 40)];
+        UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*598) - 20, (y*428) - 20, 40, 40)];
         if ([plid intValue] < 7) {
             [placebtn setBackgroundImage:[UIImage imageNamed:@"place_abbey"] forState:UIControlStateNormal];
         } else {
@@ -90,6 +123,59 @@ CSLinearLayoutView *mainLinearLayout;
 
     if (self.epid < 51)
         [self addNextButton:self.epid+2 title:[epdata[self.epid+1] objectForKey:@"title"]];
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    FooterCharacterCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FooterCharacterCell" forIndexPath:indexPath];
+    int cid = [[[[epdata[self.epid] objectForKey:@"pins"] objectAtIndex:indexPath.row] objectForKey:@"cid"] intValue] -1;
+    if ([self charpublished:cid]) {
+        cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid+1]];
+    } else {
+        cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"anon%@", [chardata[cid] objectForKey:@"gender"]]];
+    }
+    cell.layer.shouldRasterize = YES;
+    cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    return cell;
+}
+
+- (NSInteger)numberOfSectionsInCollectionView: (UICollectionView *)collectionView {
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
+    return [[epdata[self.epid] objectForKey:@"pins"] count];
+}
+
+- (void)collectionView:(UICollectionView *)cv didSelectItemAtIndexPath:(NSIndexPath *)indexPath  {
+    int cid = [[[[epdata[self.epid] objectForKey:@"pins"] objectAtIndex:indexPath.row] objectForKey:@"cid"] intValue] -1;
+    if ([self charpublished:cid]) {
+        CharacterViewController *cvc = [[CharacterViewController alloc] initWithCid:cid];
+        AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        [(UINavigationController *)ad.window.rootViewController pushViewController:cvc animated:YES];
+    }
+}
+
+- (BOOL)collectionView:(UICollectionView *)cv shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (BOOL)collectionView:(UICollectionView *)cv shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath;
+{
+    return YES;
+}
+
+- (int)epidforcid:(int) cid
+{
+    return [[chardata[cid] objectForKey:@"epid"] intValue];
+}
+
+- (BOOL)charpublished:(int) cid
+{
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    bool delayedEps = [prefs boolForKey:@"delayedEps"];
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    return !delayedEps || [self epidforcid:cid] < minElapsed;
 }
 
 - (void)didPressPlacePin:(UIButton *)sender
@@ -120,22 +206,22 @@ CSLinearLayoutView *mainLinearLayout;
         [bubble addSubview:buttonTitle];
         
         if (x < 0.5 && y < 0.5 ) {
-            bubble.frame = CGRectMake((x*768)+15, (y*548) -20, 250, 100);
+            bubble.frame = CGRectMake((x*598)+15, (y*428) -20, 250, 100);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblerightbottom"] forState:UIControlStateNormal];
             [self.map addSubview:bubble];
         }
         if (x > 0.5 && y < 0.5 ) {
-            bubble.frame = CGRectMake((x*768)-15-250, (y*548) -20, 250, 100);
+            bubble.frame = CGRectMake((x*598)-15-250, (y*428) -20, 250, 100);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubbleleftbottom"] forState:UIControlStateNormal];
             [self.map addSubview:bubble];
         }
         if (x > 0.5 && y > 0.5 ) {
-            bubble.frame = CGRectMake((x*768)-15-250, (y*548) -100 +20, 250, 100);
+            bubble.frame = CGRectMake((x*598)-15-250, (y*428) -100 +20, 250, 100);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblelefttop"] forState:UIControlStateNormal];
             [self.map addSubview:bubble];
         }
         if (x < 0.5 && y > 0.5 ) {
-            bubble.frame = CGRectMake((x*768)+15, (y*548) -100 +20, 250, 100);
+            bubble.frame = CGRectMake((x*598)+15, (y*428) -100 +20, 250, 100);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblerighttop"] forState:UIControlStateNormal];
             [self.map addSubview:bubble];
         }
@@ -368,7 +454,7 @@ CSLinearLayoutView *mainLinearLayout;
     return [[pldata[plid] objectForKey:@"epid"] intValue];
 }
 
-- (BOOL)published:(int) plid
+- (BOOL)placepublished:(int) plid
 {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     bool delayedEps = [prefs boolForKey:@"delayedEps"];

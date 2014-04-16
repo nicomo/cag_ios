@@ -21,6 +21,7 @@
 		203166EA18C63F1E00853998 /* EpisodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166E918C63F1E00853998 /* EpisodeCell.m */; };
 		20325BB718A921C0001FDBFF /* episodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20325BB418A921C0001FDBFF /* episodes.plist */; };
 		20325BBB18A9225A001FDBFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 20325BBA18A9225A001FDBFF /* www */; };
+		204949F118FE2DF70086F368 /* FooterCharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204949F018FE2DF70086F368 /* FooterCharacterCell.m */; };
 		204E1C3D18C9D9AC00DB433D /* CustomPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E1C3C18C9D9AC00DB433D /* CustomPageViewController.m */; };
 		206DA5B018D087690055ECAA /* CharactersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 206DA5AF18D087690055ECAA /* CharactersCell.m */; };
 		206DA5B318D089680055ECAA /* CharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 206DA5B218D089680055ECAA /* CharacterCell.m */; };
@@ -76,6 +77,8 @@
 		203166E918C63F1E00853998 /* EpisodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeCell.m; sourceTree = "<group>"; };
 		20325BB418A921C0001FDBFF /* episodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = episodes.plist; sourceTree = "<group>"; };
 		20325BBA18A9225A001FDBFF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		204949EF18FE2DF70086F368 /* FooterCharacterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterCharacterCell.h; sourceTree = "<group>"; };
+		204949F018FE2DF70086F368 /* FooterCharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterCharacterCell.m; sourceTree = "<group>"; };
 		204E1C3B18C9D9AC00DB433D /* CustomPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPageViewController.h; sourceTree = "<group>"; };
 		204E1C3C18C9D9AC00DB433D /* CustomPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPageViewController.m; sourceTree = "<group>"; };
 		206DA5AE18D087690055ECAA /* CharactersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactersCell.h; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 				203166E918C63F1E00853998 /* EpisodeCell.m */,
 				206DA5B118D089680055ECAA /* CharacterCell.h */,
 				206DA5B218D089680055ECAA /* CharacterCell.m */,
+				204949EF18FE2DF70086F368 /* FooterCharacterCell.h */,
+				204949F018FE2DF70086F368 /* FooterCharacterCell.m */,
 				208C982B1892A73C0008749C /* EpisodeViewController.h */,
 				208C982C1892A73C0008749C /* EpisodeViewController.m */,
 				20187B5418B4EFEB00FD27A1 /* CharacterViewController.h */,
@@ -350,6 +355,7 @@
 			files = (
 				20295CD918E8489A006D1103 /* PlaceViewController.m in Sources */,
 				20741F6418CF3721001BA72B /* MapCell.m in Sources */,
+				204949F118FE2DF70086F368 /* FooterCharacterCell.m in Sources */,
 				200D733418DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				208C980A1892A6160008749C /* AppDelegate.m in Sources */,
 				203166EA18C63F1E00853998 /* EpisodeCell.m in Sources */,
