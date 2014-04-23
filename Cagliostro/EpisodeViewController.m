@@ -317,6 +317,7 @@ CSLinearLayoutView *mainLinearLayout;
                                     NSString *anonImageName = [NSString stringWithFormat:@"character%d", [[pin objectForKey:@"cid"] intValue]];
                                     UIImage *pinImage = [UIImage imageNamed:anonImageName];
                                     [pinButton setBackgroundImage:pinImage forState:UIControlStateNormal];
+                                    [pinButton setTag:[[pin objectForKey:@"cid"] intValue] - 1];
                                     [pinButton addTarget:self action:@selector(didPressPinButton:) forControlEvents:UIControlEventTouchUpInside];
                                 } completion:^(BOOL finished) {}];
             });
@@ -434,7 +435,8 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)didPressPinButton:(UIButton *)sender
 {
-    CharacterViewController *characterController = [[CharacterViewController alloc] initWithCid:0];
+    int cid = sender.tag;
+    CharacterViewController *characterController = [[CharacterViewController alloc] initWithCid:cid];
     [self.navigationController pushViewController:characterController animated:YES];
 }
 
