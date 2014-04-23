@@ -83,7 +83,7 @@ CSLinearLayoutView *mainLinearLayout;
     layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 5);
     
     self.charcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2),
-                                                                     (60 * (int)(([[epdata[self.epid] objectForKey:@"pins"] count] + 1)/8))
+                                                                     (60 * (int)(([[epdata[self.epid] objectForKey:@"pins"] count]/8)+1))
                                                                      ) collectionViewLayout:layout];
     self.charcv.backgroundColor = [UIColor clearColor];
     self.charcv.delegate = self;
