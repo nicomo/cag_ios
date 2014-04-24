@@ -7,10 +7,10 @@
 		<array>
 			<integer>11</integer>
 		</array>
-        <key>chars</key>
+		<key>chars</key>
 		<array>
+			<integer>0</integer>
 			<integer>1</integer>
-            <integer>2</integer>
 		</array>
 		<key>title</key>
 		<string>Arsène Lupin a vingt ans</string>
@@ -42,12 +42,12 @@
 			<integer>10</integer>
 			<integer>11</integer>
 		</array>
-        <key>chars</key>
+		<key>chars</key>
 		<array>
+			<integer>0</integer>
 			<integer>1</integer>
-            <integer>2</integer>
-            <integer>3</integer>
-            <integer>4</integer>
+			<integer>2</integer>
+			<integer>3</integer>
 		</array>
 		<key>title</key>
 		<string>A l&apos;ombre de l&apos;Aiguille</string>
@@ -78,18 +78,18 @@
 		<array>
 			<integer>11</integer>
 		</array>
-        <key>chars</key>
+		<key>chars</key>
 		<array>
-			<integer>1</integer>
-            <integer>3</integer>
-            <integer>4</integer>
-            <integer>5</integer>
-            <integer>6</integer>
-            <integer>8</integer>
-            <integer>9</integer>
-            <integer>10</integer>
-            <integer>11</integer>
-            <integer>12</integer>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
+			<integer>6</integer>
+			<integer>7</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+			<integer>10</integer>
 		</array>
 		<key>title</key>
 		<string>Une conspiration</string>
@@ -164,6 +164,19 @@
 		</array>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
+			<integer>6</integer>
+			<integer>7</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -174,6 +187,19 @@
 		<string>Paru le 13 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
+			<integer>6</integer>
+			<integer>7</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -184,6 +210,19 @@
 		<string>Paru le 14 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
+			<integer>6</integer>
+			<integer>7</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -194,6 +233,19 @@
 		<string>Paru le 15 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
+			<integer>6</integer>
+			<integer>7</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -204,6 +256,19 @@
 		<string>Paru le 16 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
+			<integer>6</integer>
+			<integer>7</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -214,6 +279,19 @@
 		<string>Paru le 17 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
+			<integer>6</integer>
+			<integer>7</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -224,6 +302,15 @@
 		<string>Paru le 18 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>10</integer>
@@ -234,6 +321,13 @@
 		<string>Paru le 19 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>10</integer>
@@ -244,6 +338,11 @@
 		<string>Paru le 20 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>10</integer>
@@ -254,6 +353,15 @@
 		<string>Paru le 21 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>6</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>18</integer>
@@ -264,6 +372,16 @@
 		<string>Paru le 22 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>6</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>18</integer>
@@ -274,6 +392,14 @@
 		<string>Paru le 23 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+			<integer>12</integer>
+			<integer>13</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>17</integer>
@@ -285,6 +411,13 @@
 		<string>Paru le 24 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+			<integer>13</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>17</integer>
@@ -295,6 +428,11 @@
 		<string>Paru le 25 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>17</integer>
@@ -305,6 +443,12 @@
 		<string>Paru le 26 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>14</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>0</integer>
@@ -319,6 +463,15 @@
 		<string>Paru le 27 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>6</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -329,6 +482,14 @@
 		<string>Paru le 28 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+			<integer>15</integer>
+			<integer>16</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -339,6 +500,15 @@
 		<string>Paru le 29 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+			<integer>15</integer>
+			<integer>16</integer>
+			<integer>17</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -349,6 +519,11 @@
 		<string>Paru le 30 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -359,6 +534,11 @@
 		<string>Paru le 31 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -369,6 +549,11 @@
 		<string>Paru le 1er janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -379,6 +564,14 @@
 		<string>Paru le 2 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+			<integer>15</integer>
+			<integer>16</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -389,6 +582,13 @@
 		<string>Paru le 3 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>6</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -399,6 +599,13 @@
 		<string>Paru le 4 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>6</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -409,6 +616,14 @@
 		<string>Paru le 5 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>6</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>13</integer>
@@ -419,6 +634,11 @@
 		<string>Paru le 6 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>8</integer>
@@ -430,6 +650,12 @@
 		<string>Paru le 7 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>8</integer>
@@ -442,6 +668,12 @@
 		<string>Paru le 8 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>9</integer>
@@ -452,6 +684,12 @@
 		<string>Paru le 9 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>9</integer>
@@ -462,6 +700,12 @@
 		<string>Paru le 10 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>9</integer>
@@ -473,6 +717,11 @@
 		<string>Paru le 11 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>6</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -484,6 +733,12 @@
 		<string>Paru le 12 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>6</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -494,6 +749,13 @@
 		<string>Paru le 13 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>6</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -504,6 +766,14 @@
 		<string>Paru le 14 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>6</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -514,6 +784,12 @@
 		<string>Paru le 15 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -524,6 +800,13 @@
 		<string>Paru le 16 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -534,6 +817,13 @@
 		<string>Paru le 17 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -544,6 +834,11 @@
 		<string>Paru le 18 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -554,6 +849,14 @@
 		<string>Paru le 19 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>6</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+			<integer>17</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -564,6 +867,13 @@
 		<string>Paru le 20 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>6</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>16</integer>
@@ -574,6 +884,14 @@
 		<string>Paru le 21 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>6</integer>
+			<integer>19</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>3</integer>
@@ -587,6 +905,13 @@
 		<string>Paru le 22 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>6</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>21</integer>
@@ -597,6 +922,13 @@
 		<string>Paru le 23 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>10</integer>
@@ -608,6 +940,12 @@
 		<string>Paru le 24 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -618,6 +956,13 @@
 		<string>Paru le 25 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+			<integer>17</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -628,6 +973,11 @@
 		<string>Paru le 26 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -638,6 +988,11 @@
 		<string>Paru le 27 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -648,6 +1003,11 @@
 		<string>Paru le 28 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
@@ -658,6 +1018,12 @@
 		<string>Paru le 29 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>chars</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>10</integer>
+		</array>
 		<key>places</key>
 		<array>
 			<integer>11</integer>
