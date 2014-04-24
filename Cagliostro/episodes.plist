@@ -7,6 +7,11 @@
 		<array>
 			<integer>11</integer>
 		</array>
+        <key>chars</key>
+		<array>
+			<integer>1</integer>
+            <integer>2</integer>
+		</array>
 		<key>title</key>
 		<string>Arsène Lupin a vingt ans</string>
 		<key>subtitle</key>
@@ -37,6 +42,13 @@
 			<integer>10</integer>
 			<integer>11</integer>
 		</array>
+        <key>chars</key>
+		<array>
+			<integer>1</integer>
+            <integer>2</integer>
+            <integer>3</integer>
+            <integer>4</integer>
+		</array>
 		<key>title</key>
 		<string>A l&apos;ombre de l&apos;Aiguille</string>
 		<key>subtitle</key>
@@ -65,6 +77,19 @@
 		<key>places</key>
 		<array>
 			<integer>11</integer>
+		</array>
+        <key>chars</key>
+		<array>
+			<integer>1</integer>
+            <integer>3</integer>
+            <integer>4</integer>
+            <integer>5</integer>
+            <integer>6</integer>
+            <integer>8</integer>
+            <integer>9</integer>
+            <integer>10</integer>
+            <integer>11</integer>
+            <integer>12</integer>
 		</array>
 		<key>title</key>
 		<string>Une conspiration</string>
