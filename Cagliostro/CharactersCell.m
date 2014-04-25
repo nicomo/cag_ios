@@ -65,7 +65,7 @@
     int cid = indexPath.row;
     cell.title.text = [chardata[cid] objectForKey:@"name"];
     if ([self published:cid]) {
-        cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid+1]];
+        cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid]];
     } else {
         cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"anon%@", [chardata[cid] objectForKey:@"gender"]]];
     }

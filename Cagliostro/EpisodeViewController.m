@@ -127,9 +127,9 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     FooterCharacterCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FooterCharacterCell" forIndexPath:indexPath];
-    int cid = [[[epdata[self.epid] objectForKey:@"chars"] objectAtIndex:indexPath.row] intValue] -1;
+    int cid = [[[epdata[self.epid] objectForKey:@"chars"] objectAtIndex:indexPath.row] intValue];
     if ([self charpublished:cid]) {
-        cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid+1]];
+        cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid]];
     } else {
         cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"anon%@", [chardata[cid] objectForKey:@"gender"]]];
     }
@@ -147,7 +147,7 @@ CSLinearLayoutView *mainLinearLayout;
 }
 
 - (void)collectionView:(UICollectionView *)cv didSelectItemAtIndexPath:(NSIndexPath *)indexPath  {
-    int cid = [[[epdata[self.epid] objectForKey:@"chars"] objectAtIndex:indexPath.row] intValue] -1;
+    int cid = [[[epdata[self.epid] objectForKey:@"chars"] objectAtIndex:indexPath.row] intValue];
     if ([self charpublished:cid]) {
         CharacterViewController *cvc = [[CharacterViewController alloc] initWithCid:cid];
         AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
@@ -317,7 +317,7 @@ CSLinearLayoutView *mainLinearLayout;
                                     NSString *anonImageName = [NSString stringWithFormat:@"character%d", [[pin objectForKey:@"cid"] intValue]];
                                     UIImage *pinImage = [UIImage imageNamed:anonImageName];
                                     [pinButton setBackgroundImage:pinImage forState:UIControlStateNormal];
-                                    [pinButton setTag:[[pin objectForKey:@"cid"] intValue] - 1];
+                                    [pinButton setTag:[[pin objectForKey:@"cid"] intValue]];
                                     [pinButton addTarget:self action:@selector(didPressPinButton:) forControlEvents:UIControlEventTouchUpInside];
                                 } completion:^(BOOL finished) {}];
             });
