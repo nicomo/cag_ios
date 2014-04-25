@@ -176,7 +176,7 @@
             charactersHeight = 460;
             charactersExpanded = NO;
         } else {
-            charactersHeight = 1340;
+            charactersHeight = 900;
             charactersExpanded = YES;
         }
         
