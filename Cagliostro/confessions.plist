@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Q1</key>
+	<dict>
+		<key>question</key>
+		<string>Ma plus grande qualité.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Je reste un excellent avocat, surtout de mes causes.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Je n’abandonne jamais la trace d’une proie.</string>
+		<key>2</key>
+		<string>Baron.</string>
+		<key>1</key>
+		<string>Je sais aimer.</string>
+		<key>0</key>
+		<string>Le charme.</string>
+	</dict>
+	<key>Q2</key>
+	<dict>
+		<key>question</key>
+		<string>Ce que j’apprécie le plus chez mes amis.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Je n’ai pas d’amis. Comme disait Rivarol, dans chaque ami, il y a la moitié d’un traître.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Un bon terrain de chasse.</string>
+		<key>2</key>
+		<string>Un bel arbre généalogique.</string>
+		<key>1</key>
+		<string>La gaieté !</string>
+		<key>0</key>
+		<string>L&apos;admiration.</string>
+	</dict>
+	<key>Q3</key>
+	<dict>
+		<key>question</key>
+		<string>Mon principal défaut.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>La comtesse, ma faiblesse.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>La brutalité.</string>
+		<key>2</key>
+		<string>Il paraît que je ne sens pas ma force.</string>
+		<key>1</key>
+		<string>La naïveté.</string>
+		<key>0</key>
+		<string>L’immodestie.</string>
+	</dict>
+	<key>Q4</key>
+	<dict>
+		<key>question</key>
+		<string>Mon occupation préférée.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Réciter le code civil, en pensant au jugement dernier.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Dépecer des chats.</string>
+		<key>2</key>
+		<string>La lutte gréco-romaine.</string>
+		<key>1</key>
+		<string>Lire des romans.</string>
+		<key>0</key>
+		<string>Marcher sur les mains en récitant Homère dans le Grec.</string>
+	</dict>
+	<key>Q5</key>
+	<dict>
+		<key>question</key>
+		<string>Mon rêve de bonheur.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Résoudre l’énigme des moines.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Une Smith &amp; Remington, calibre 6, à détente mexicaine.</string>
+		<key>2</key>
+		<string>Écraser la tête du jeune gringalet qui tourne autour de ma fille. Avec un seul poing.</string>
+		<key>1</key>
+		<string>Epouser Raoul.</string>
+		<key>0</key>
+		<string>Aimer et me faire aimer.</string>
+	</dict>
+	<key>Q6</key>
+	<dict>
+		<key>question</key>
+		<string>Quel serait mon plus grand malheur.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Échouer.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Ne plus tuer.</string>
+		<key>2</key>
+		<string>Me faire voler par mes gens.</string>
+		<key>1</key>
+		<string>Ne pas épouser Raoul.</string>
+		<key>0</key>
+		<string>Perdre ma liberté.</string>
+	</dict>
+	<key>Q7</key>
+	<dict>
+		<key>question</key>
+		<string>Ce que je voudrais être.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Pape.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Tranquille, si possible.</string>
+		<key>2</key>
+		<string>Riche. On n’est jamais assez riche.</string>
+		<key>1</key>
+		<string>La femme de Raoul.</string>
+		<key>0</key>
+		<string>Général ? Ministre ? Ambassadeur ? Arsène Lupin ?</string>
+	</dict>
+	<key>Q8</key>
+	<dict>
+		<key>question</key>
+		<string>Mes héros dans la vie réelle.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Son éminence le cardinal de Richelieu. Louis XIII ne fut guère plus qu’une poupée entre ses mains…
+</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Mes chiens.</string>
+		<key>2</key>
+		<string>Jules-Jacques-Philibert-Marie de Caux de Praslin-Chabrillac, comte de Fitz-Montguyon, troisième du nom.</string>
+		<key>1</key>
+		<string>Le beau, l’intrépide Raoul d’Andrésy.</string>
+		<key>0</key>
+		<string>Papa.</string>
+	</dict>
+	<key>Q9</key>
+	<dict>
+		<key>question</key>
+		<string>Mes héroïnes dans la vie réelle</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>La machiavélique et maîtresse femme, Catherine de Médicis. Admirables, ces armoires à poison du château de Blois…</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>La flibustière Anne Bonny, une sacrée bonne femme.</string>
+		<key>2</key>
+		<string>La reine Victoria.</string>
+		<key>1</key>
+		<string>L’infirmière Florence Nightingale.</string>
+		<key>0</key>
+		<string>Maman.</string>
+	</dict>
+	<key>Q10</key>
+	<dict>
+		<key>question</key>
+		<string>Mon héros dans l’histoire.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Bernard Gui, auteur du fameux Manuel de l’Inquisiteur, en vente dans toutes les bonnes librairies.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Brutus.</string>
+		<key>2</key>
+		<string>Néron, très incompris.</string>
+		<key>1</key>
+		<string>Sainte Blandine, jetée aux lions.</string>
+		<key>0</key>
+		<string>Les canailles flamboyantes : Robin des bois, Cartouche, chef de bande à la cour des miracles, Mandrin, le bandit justicier !</string>
+	</dict>
+	<key>Q11</key>
+	<dict>
+		<key>question</key>
+		<string>Mon livre de chevet.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>La Bibliothèque des Croisades, en 16 volumes.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>La Gazette illustrée du chien de chasse. Je suis abonné.</string>
+		<key>2</key>
+		<string>Armoiries, terriers et cartulaires de France, 11e édition augmentée.</string>
+		<key>1</key>
+		<string>J’hésite entre Mortel amour et La Roche sanglante (tome I. Fille de millionnaire, tome  II. Sans pitié).</string>
+		<key>0</key>
+		<string>Essai pratique et théorique sur le vélocipède, d’Alphonse Marchegay.</string>
+	</dict>
+	<key>Q12</key>
+	<dict>
+		<key>question</key>
+		<string>Comment j’aimerais mourir</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Entre la crosse et la mitre.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Sans bavures.</string>
+		<key>2</key>
+		<string>Duc.</string>
+		<key>1</key>
+		<string>Dans les bras de Raoul.</string>
+		<key>0</key>
+		<string>Glorieusement.</string>
+	</dict>
+	<key>Q13</key>
+	<dict>
+		<key>question</key>
+		<string>Fautes qui m’inspirent le plus d’indulgence.</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Les miennes.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>L’abus de bénédictine.</string>
+		<key>2</key>
+		<string>L’indulgence est une faiblesse.</string>
+		<key>1</key>
+		<string>Les faiblesses de Raoul.</string>
+		<key>0</key>
+		<string>Les erreurs de jeunesse.</string>
+	</dict>
+	<key>Q14</key>
+	<dict>
+		<key>question</key>
+		<string>Ma devise</string>
+		<key>20</key>
+		<string></string>
+		<key>19</key>
+		<string></string>
+		<key>18</key>
+		<string></string>
+		<key>17</key>
+		<string></string>
+		<key>16</key>
+		<string></string>
+		<key>15</key>
+		<string></string>
+		<key>14</key>
+		<string></string>
+		<key>13</key>
+		<string></string>
+		<key>12</key>
+		<string></string>
+		<key>11</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>6</key>
+		<string>Paris vaut bien une messe.</string>
+		<key>5</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>3</key>
+		<string>Discute pas.</string>
+		<key>2</key>
+		<string>C’est comme ça, et pas autrement.</string>
+		<key>1</key>
+		<string>Celui qui m&apos;enflamme à le pouvoir de m&apos;éteindre.</string>
+		<key>0</key>
+		<string>Impossible n’est pas français !</string>
+	</dict>
+</dict>
+</plist>
