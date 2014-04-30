@@ -363,7 +363,7 @@ CSLinearLayoutView *mainLinearLayout;
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 0)];
     header.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0];
     
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"bg" ofType:@"mp4" inDirectory:@"www"]];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"header_%d", self.epid] ofType:@"m4v" inDirectory:@"www"]];
     
     self.player = [[VideoPlayerViewController alloc] init];
     self.player.URL = url;
