@@ -36,6 +36,9 @@
     NSString *path3 = [[NSBundle mainBundle] pathForResource:@"places" ofType:@"plist"];
     pldata = [NSMutableArray arrayWithContentsOfFile:path3];
     
+    NSString *path4 = [[NSBundle mainBundle] pathForResource:@"messages" ofType:@"plist"];
+    messdata = [NSMutableArray arrayWithContentsOfFile:path4];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     

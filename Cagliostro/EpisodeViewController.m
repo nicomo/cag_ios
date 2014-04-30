@@ -12,6 +12,7 @@
 #import "CSLinearLayoutView.h"
 #import "CustomPageViewController.h"
 #import "PlaceViewController.h"
+#import "UIView+Toast.h"
 
 @interface EpisodeViewController ()
 - (void) addHeader:(int)partNumber title:(NSString*)titleText subtitle:(NSString*)subtitleText;
@@ -265,6 +266,23 @@ CSLinearLayoutView *mainLinearLayout;
     self.player.view.alpha = 1 - (scrollView.contentOffset.y + 64) / self.player.view.frame.size.height;
     [self.player.view setFrame: CGRectMake(0, (scrollView.contentOffset.y + 64) / 3, 768, self.player.view.frame.size.height)];
     [self updatePins];
+    
+    float offset = scrollView.contentOffset.y / (scrollView.contentSize.height - 1024.0);
+    
+    int cid = 0;
+    for (NSArray *charmessagelist in messdata) {
+        for (NSMutableDictionary *message in charmessagelist) {
+            if ([message objectForKey:@"toast"] && [[message objectForKey:@"epid"] intValue] == self.epid && offset >= [[message objectForKey:@"para"] floatValue] && ! [message objectForKey:@"shown"]) {
+                [self.view makeToast:[message objectForKey:@"msg"]
+                            duration:2.0
+                            position:@"bottom"
+                               title:[chardata[cid] objectForKey:@"name"]
+                               image:[UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid]]];
+                [message setValue:@"YES" forKey:@"shown"];
+            }
+        }
+        cid++;
+    }
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView

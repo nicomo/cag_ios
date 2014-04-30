@@ -14,6 +14,9 @@
 		201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 201159D618C8CE100053FEFB /* VideoPlayerView.m */; };
 		201159DA18C8CE100053FEFB /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201159D818C8CE100053FEFB /* VideoPlayerViewController.m */; };
 		20187B5618B4EFEB00FD27A1 /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20187B5518B4EFEB00FD27A1 /* CharacterViewController.m */; };
+		2021B54A1910D8FF00173FAD /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2021B5491910D8FF00173FAD /* messages.plist */; };
+		2021B54E1910D9CA00173FAD /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2021B54D1910D9CA00173FAD /* UIView+Toast.m */; };
+		2021B54F1910DACC00173FAD /* UIView+Toast.h in Sources */ = {isa = PBXBuildFile; fileRef = 2021B54C1910D9CA00173FAD /* UIView+Toast.h */; };
 		20295CD918E8489A006D1103 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20295CD818E8489A006D1103 /* PlaceViewController.m */; };
 		203166DE18C621B800853998 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166DD18C621B800853998 /* HomeViewController.m */; };
 		203166E118C6237100853998 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203166E018C6237100853998 /* TitleCell.m */; };
@@ -67,6 +70,9 @@
 		201159D818C8CE100053FEFB /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
 		20187B5418B4EFEB00FD27A1 /* CharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewController.h; sourceTree = "<group>"; };
 		20187B5518B4EFEB00FD27A1 /* CharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewController.m; sourceTree = "<group>"; };
+		2021B5491910D8FF00173FAD /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
+		2021B54C1910D9CA00173FAD /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		2021B54D1910D9CA00173FAD /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		20295CD718E8489A006D1103 /* PlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
 		20295CD818E8489A006D1103 /* PlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
 		203166DC18C621B800853998 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -159,6 +165,15 @@
 			path = VideoPlayerController;
 			sourceTree = "<group>";
 		};
+		2021B54B1910D9B100173FAD /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				2021B54C1910D9CA00173FAD /* UIView+Toast.h */,
+				2021B54D1910D9CA00173FAD /* UIView+Toast.m */,
+			);
+			name = Toast;
+			sourceTree = "<group>";
+		};
 		208C97ED1892A6160008749C = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +181,7 @@
 				200D2BEB18A90E7500D5C53D /* Settings.bundle */,
 				201159D418C8CE100053FEFB /* VideoPlayerController */,
 				200D733118DC458B000154F8 /* CHTCollectionViewWaterfallLayout */,
+				2021B54B1910D9B100173FAD /* Toast */,
 				208C982E1892A8340008749C /* CSLinearLayoutView */,
 				208C97FF1892A6160008749C /* Cagliostro */,
 				208C97F81892A6160008749C /* Frameworks */,
@@ -243,6 +259,7 @@
 				208C98071892A6160008749C /* Cagliostro-Prefix.pch */,
 				20325BB418A921C0001FDBFF /* episodes.plist */,
 				206DA5B418D08F6C0055ECAA /* characters.plist */,
+				2021B5491910D8FF00173FAD /* messages.plist */,
 				20C6866618E456ED00BAAFC7 /* places.plist */,
 				374498CD190EDA430075B074 /* confessions.plist */,
 			);
@@ -341,6 +358,7 @@
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				207D674F190FAC4C004187F7 /* charbg.xcassets in Resources */,
 				208C980C1892A6160008749C /* Images.xcassets in Resources */,
+				2021B54A1910D8FF00173FAD /* messages.plist in Resources */,
 				374498CE190EDA430075B074 /* confessions.plist in Resources */,
 				20325BB718A921C0001FDBFF /* episodes.plist in Resources */,
 				200664A418D0470800CA09AB /* homecards.xcassets in Resources */,
@@ -361,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2021B54F1910DACC00173FAD /* UIView+Toast.h in Sources */,
 				20295CD918E8489A006D1103 /* PlaceViewController.m in Sources */,
 				20741F6418CF3721001BA72B /* MapCell.m in Sources */,
 				204949F118FE2DF70086F368 /* FooterCharacterCell.m in Sources */,
@@ -369,6 +388,7 @@
 				203166EA18C63F1E00853998 /* EpisodeCell.m in Sources */,
 				20187B5618B4EFEB00FD27A1 /* CharacterViewController.m in Sources */,
 				208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */,
+				2021B54E1910D9CA00173FAD /* UIView+Toast.m in Sources */,
 				203166E118C6237100853998 /* TitleCell.m in Sources */,
 				208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */,
 				203166E418C62F7900853998 /* EpisodesCell.m in Sources */,
