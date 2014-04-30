@@ -11,6 +11,31 @@
 		<real>0.58</real>
 		<key>epid</key>
 		<integer>17</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -21,6 +46,31 @@
 		<real>0.16</real>
 		<key>epid</key>
 		<integer>0</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -31,6 +81,31 @@
 		<real>0.42</real>
 		<key>epid</key>
 		<integer>0</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -41,6 +116,31 @@
 		<real>0.57</real>
 		<key>epid</key>
 		<integer>43</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -51,6 +151,31 @@
 		<real>0.46</real>
 		<key>epid</key>
 		<integer>17</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -61,6 +186,31 @@
 		<real>0.45</real>
 		<key>epid</key>
 		<integer>0</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -71,6 +221,31 @@
 		<real>0.17</real>
 		<key>epid</key>
 		<integer>0</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -81,6 +256,31 @@
 		<real>0.44</real>
 		<key>epid</key>
 		<integer>43</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -91,6 +291,31 @@
 		<real>0.7</real>
 		<key>epid</key>
 		<integer>27</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -101,6 +326,31 @@
 		<real>0.49</real>
 		<key>epid</key>
 		<integer>30</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -111,6 +361,31 @@
 		<real>0.21</real>
 		<key>epid</key>
 		<integer>1</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -121,6 +396,31 @@
 		<real>0.19</real>
 		<key>epid</key>
 		<integer>0</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -131,6 +431,31 @@
 		<real>0.67</real>
 		<key>epid</key>
 		<integer>17</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -141,6 +466,31 @@
 		<real>0.9</real>
 		<key>epid</key>
 		<integer>18</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -151,6 +501,31 @@
 		<real>0.72</real>
 		<key>epid</key>
 		<integer>17</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -161,6 +536,31 @@
 		<real>0.5600000000000001</real>
 		<key>epid</key>
 		<integer>17</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -171,6 +571,31 @@
 		<real>0.49</real>
 		<key>epid</key>
 		<integer>33</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -181,6 +606,31 @@
 		<real>0.32</real>
 		<key>epid</key>
 		<integer>14</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -191,6 +641,31 @@
 		<real>0.1</real>
 		<key>epid</key>
 		<integer>12</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -201,6 +676,31 @@
 		<real>0.17</real>
 		<key>epid</key>
 		<integer>14</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -211,6 +711,31 @@
 		<real>0.44</real>
 		<key>epid</key>
 		<integer>29</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -221,6 +746,31 @@
 		<real>0.59</real>
 		<key>epid</key>
 		<integer>43</integer>
+		<key>intro</key>
+		<string>some lame text for now</string>
+		<key>itineraire</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>historique</key>
+		<string>some lame text for now</string>
+		<key>celebs</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>conversation</key>
+		<array>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+			<string>some lame text for now</string>
+		</array>
+		<key>savoir</key>
+		<string>some lame text for now</string>
+		<key>events</key>
+		<string>some lame text for now</string>
 	</dict>
 </array>
 </plist>
