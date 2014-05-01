@@ -14,7 +14,6 @@
 {
     if (self = [super initWithFrame:frame])
     {
-
         self.title = [[UILabel alloc] initWithFrame:CGRectMake(90, 0, frame.size.width-100, frame.size.height)];
         self.title.font = [UIFont fontWithName:@"Georgia" size:16];
         self.title.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];

@@ -3,6 +3,14 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>friends</key>
+		<array>
+			<string>1</string>
+			<string>10</string>
+			<string>18</string>
+			<string>19</string>
+			<string>5</string>
+		</array>
 		<key>name</key>
 		<string>Raoul d’Andrésy</string>
 		<key>gender</key>
@@ -11,6 +19,10 @@
 		<integer>0</integer>
 	</dict>
 	<dict>
+		<key>friends</key>
+		<array>
+			<string>0</string>
+		</array>
 		<key>name</key>
 		<string>Clarisse d’Étigues</string>
 		<key>gender</key>

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CharacterViewController : UIViewController
+@interface CharacterViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic) int cid;
 - (id) initWithCid:(int) cid;
+@property (strong, nonatomic) UICollectionView *charcv;
 @end
