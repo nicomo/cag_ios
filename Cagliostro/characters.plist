@@ -7,9 +7,6 @@
 		<array>
 			<string>1</string>
 			<string>10</string>
-			<string>18</string>
-			<string>19</string>
-			<string>5</string>
 		</array>
 		<key>name</key>
 		<string>Raoul d’Andrésy</string>
@@ -22,6 +19,11 @@
 		<key>friends</key>
 		<array>
 			<string>0</string>
+			<string>15</string>
+			<string>18</string>
+			<string>12</string>
+			<string>19</string>
+			<string>2</string>
 		</array>
 		<key>name</key>
 		<string>Clarisse d’Étigues</string>
@@ -37,6 +39,18 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>1</integer>
+		<key>friends</key>
+		<array>
+			<string>3</string>
+			<string>8</string>
+			<string>4</string>
+			<string>5</string>
+			<string>6</string>
+			<string>7</string>
+			<string>9</string>
+			<string>1</string>
+			<string>18</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -45,6 +59,16 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>1</integer>
+		<key>friends</key>
+		<array>
+			<string>2</string>
+			<string>4</string>
+			<string>5</string>
+			<string>6</string>
+			<string>7</string>
+			<string>8</string>
+			<string>9</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -53,6 +77,16 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>2</integer>
+		<key>friends</key>
+		<array>
+			<string>2</string>
+			<string>3</string>
+			<string>5</string>
+			<string>6</string>
+			<string>7</string>
+			<string>8</string>
+			<string>9</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -61,6 +95,16 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>2</integer>
+		<key>friends</key>
+		<array>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>6</string>
+			<string>7</string>
+			<string>8</string>
+			<string>9</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -69,6 +113,16 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>2</integer>
+		<key>friends</key>
+		<array>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>5</string>
+			<string>7</string>
+			<string>8</string>
+			<string>9</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -77,6 +131,17 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>2</integer>
+		<key>friends</key>
+		<array>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>5</string>
+			<string>6</string>
+			<string>8</string>
+			<string>9</string>
+			<string>15</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -85,6 +150,16 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>2</integer>
+		<key>friends</key>
+		<array>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>5</string>
+			<string>6</string>
+			<string>7</string>
+			<string>9</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -93,6 +168,16 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>2</integer>
+		<key>friends</key>
+		<array>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>5</string>
+			<string>6</string>
+			<string>7</string>
+			<string>8</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -101,6 +186,15 @@
 		<string>Female</string>
 		<key>epid</key>
 		<integer>2</integer>
+		<key>friends</key>
+		<array>
+			<string>11</string>
+			<string>20</string>
+			<string>17</string>
+			<string>0</string>
+			<string>12</string>
+			<string>14</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -109,60 +203,128 @@
 		<string>Male</string>
 		<key>epid</key>
 		<integer>14</integer>
+		<key>friends</key>
+		<array>
+			<string>10</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Eugénie Vasseur</string>
+		<string>Eugénie Vasseur</string>
 		<key>gender</key>
 		<string>Female</string>
+		<key>friends</key>
+		<array>
+			<string>14</string>
+			<string>18</string>
+			<string>13</string>
+			<string>11</string>
+			<string>17</string>
+			<string>10</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La maréchaussée de Doudeville</string>
 		<key>gender</key>
 		<string>Male</string>
+		<key>friends</key>
+		<array>
+			<string>14</string>
+			<string>18</string>
+			<string>19</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Albertine Delâtre</string>
+		<string>Albertine Delâtre</string>
 		<key>gender</key>
 		<string>Female</string>
+		<key>friends</key>
+		<array>
+			<string>13</string>
+			<string>18</string>
+			<string>19</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Brigitte Rousselin</string>
 		<key>gender</key>
 		<string>Female</string>
+		<key>friends</key>
+		<array>
+			<string>13</string>
+			<string>1</string>
+			<string>7</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Valentine Petipeton</string>
 		<key>gender</key>
 		<string>Female</string>
+		<key>friends</key>
+		<array>
+			<string>14</string>
+			<string>12</string>
+			<string>13</string>
+			<string>15</string>
+			<string>7</string>
+			<string>18</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Dominique Caillé</string>
 		<key>gender</key>
 		<string>Male</string>
+		<key>friends</key>
+		<array>
+			<string>0</string>
+			<string>10</string>
+			<string>11</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Marthe Rousselin</string>
 		<key>gender</key>
 		<string>Female</string>
+		<key>friends</key>
+		<array>
+			<string>1</string>
+			<string>15</string>
+			<string>12</string>
+			<string>14</string>
+			<string>19</string>
+			<string>13</string>
+		</array>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Mgr d&apos;Ambricourt</string>
 		<key>gender</key>
 		<string>Male</string>
+		<key>friends</key>
+		<array>
+			<string>13</string>
+			<string>14</string>
+			<string>18</string>
+			<string>6</string>
+			<string>2</string>
+		</array>
 	</dict>
 	<dict>
 		<key>gender</key>
 		<string>Male</string>
 		<key>name</key>
 		<string>Joseph Pellegrini</string>
+		<key>friends</key>
+		<array>
+			<string>10</string>
+			<string>11</string>
+		</array>
 	</dict>
 </array>
 </plist>
