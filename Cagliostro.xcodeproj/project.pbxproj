@@ -29,6 +29,7 @@
 		206DA5B018D087690055ECAA /* CharactersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 206DA5AF18D087690055ECAA /* CharactersCell.m */; };
 		206DA5B318D089680055ECAA /* CharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 206DA5B218D089680055ECAA /* CharacterCell.m */; };
 		206DA5B518D08F6C0055ECAA /* characters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 206DA5B418D08F6C0055ECAA /* characters.plist */; };
+		206F981819139CF80029D581 /* ConfessionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206F981719139CF80029D581 /* ConfessionsViewController.m */; };
 		20741F6418CF3721001BA72B /* MapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20741F6318CF3721001BA72B /* MapCell.m */; };
 		20741F6718CF3B86001BA72B /* ExpanderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20741F6618CF3B86001BA72B /* ExpanderCell.m */; };
 		207D674F190FAC4C004187F7 /* charbg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207D674E190FAC4C004187F7 /* charbg.xcassets */; };
@@ -94,6 +95,8 @@
 		206DA5B118D089680055ECAA /* CharacterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterCell.h; sourceTree = "<group>"; };
 		206DA5B218D089680055ECAA /* CharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterCell.m; sourceTree = "<group>"; };
 		206DA5B418D08F6C0055ECAA /* characters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = characters.plist; sourceTree = "<group>"; };
+		206F981619139CF80029D581 /* ConfessionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfessionsViewController.h; sourceTree = "<group>"; };
+		206F981719139CF80029D581 /* ConfessionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfessionsViewController.m; sourceTree = "<group>"; };
 		20741F6218CF3721001BA72B /* MapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCell.h; sourceTree = "<group>"; };
 		20741F6318CF3721001BA72B /* MapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCell.m; sourceTree = "<group>"; };
 		20741F6518CF3B86001BA72B /* ExpanderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanderCell.h; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 				20187B5518B4EFEB00FD27A1 /* CharacterViewController.m */,
 				20295CD718E8489A006D1103 /* PlaceViewController.h */,
 				20295CD818E8489A006D1103 /* PlaceViewController.m */,
+				206F981619139CF80029D581 /* ConfessionsViewController.h */,
+				206F981719139CF80029D581 /* ConfessionsViewController.m */,
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 				208C980B1892A6160008749C /* Images.xcassets */,
 				200FA79E18B393CC00AAD523 /* pins.xcassets */,
@@ -390,6 +395,7 @@
 				208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */,
 				2021B54E1910D9CA00173FAD /* UIView+Toast.m in Sources */,
 				203166E118C6237100853998 /* TitleCell.m in Sources */,
+				206F981819139CF80029D581 /* ConfessionsViewController.m in Sources */,
 				208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */,
 				203166E418C62F7900853998 /* EpisodesCell.m in Sources */,
 				201159D918C8CE100053FEFB /* VideoPlayerView.m in Sources */,

@@ -10,6 +10,7 @@
 #import "CharacterViewController.h"
 #import "CSLinearLayoutView.h"
 #import "CharacterCell.h"
+#import "ConfessionsViewController.h"
 
 @interface CharacterViewController ()
 
@@ -49,6 +50,8 @@ CSLinearLayoutView *mainLinearLayout;
     [self.view addSubview:mainLinearLayout];
     
     [self addHeader];
+    
+    [self addConfessions];
     
     UILabel *friendslabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 668, 25)];
     [friendslabel setText:@"Mes connaissances"];
@@ -105,6 +108,42 @@ CSLinearLayoutView *mainLinearLayout;
     CSLinearLayoutItem *friendsitem = [CSLinearLayoutItem layoutItemForView:self.charcv];
     friendsitem.padding = CSLinearLayoutMakePadding(25, 50, 50, 50);
     [mainLinearLayout addItem:friendsitem];
+}
+
+- (void)addConfessions
+{
+    self.confpages = [[NSMutableArray alloc] init];
+    int i = 0;
+    for (NSDictionary *qr in confdata) {
+        ConfessionsViewController *pvc = [[ConfessionsViewController alloc] init];
+        pvc.pageindex = i;
+
+        UILabel *q = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 309, 20)];
+        [q setText:[qr objectForKey:@"question"]];
+        [q setFont:[UIFont fontWithName:@"georgia" size:20]];
+        q.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
+        q.userInteractionEnabled = NO;
+        q.numberOfLines = 1;
+        
+        [pvc.view addSubview:q];
+        
+        
+        
+        [self.confpages addObject:pvc];
+        i++;
+    }
+    
+    self.confpvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.confpvc.view.backgroundColor = [UIColor redColor];
+    self.confpvc.view.frame = CGRectMake(0, 0, 309, 300);
+    self.confpvc.dataSource = self;
+    self.confpvc.delegate = self;
+
+    [self.confpvc setViewControllers:@[[self.confpages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    
+    CSLinearLayoutItem *confitem = [CSLinearLayoutItem layoutItemForView:self.confpvc.view];
+    confitem.padding = CSLinearLayoutMakePadding(50, 50, 0, 50);
+    [mainLinearLayout addItem:confitem];
 }
 
 - (void)didReceiveMemoryWarning
@@ -167,6 +206,52 @@ CSLinearLayoutView *mainLinearLayout;
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
     double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
     return !delayedEps || [self epidforcid:cid] < minElapsed;
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    NSUInteger index = ((ConfessionsViewController*) viewController).pageindex;
+    
+    if (index == NSNotFound) {
+        return nil;
+    }
+    
+    index++;
+    if (index == [self.confpages count]) {
+        return nil;
+    }
+    return [self viewControllerAtIndex:index];
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+    NSUInteger index = ((ConfessionsViewController*) viewController).pageindex;
+    
+    if ((index == 0) || (index == NSNotFound)) {
+        return nil;
+    }
+    
+    index--;
+    return [self viewControllerAtIndex:index];
+}
+
+- (UIViewController *)viewControllerAtIndex:(NSUInteger)index
+{
+    if (([self.confpages count] == 0) || (index >= [self.confpages count])) {
+        return nil;
+    }
+    
+    return [self.confpages objectAtIndex:index];
+}
+
+- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
+{
+    return [self.confpages count];
+}
+
+- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
+{
+    return 0;
 }
 
 @end

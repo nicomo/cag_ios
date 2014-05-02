@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CharacterViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface CharacterViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 @property (nonatomic) int cid;
 - (id) initWithCid:(int) cid;
 @property (strong, nonatomic) UICollectionView *charcv;
+@property (strong, nonatomic) UIPageViewController *confpvc;
+@property (strong, nonatomic) NSMutableArray *confpages;
 @end

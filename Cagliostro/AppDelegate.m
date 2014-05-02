@@ -39,6 +39,9 @@
     NSString *path4 = [[NSBundle mainBundle] pathForResource:@"messages" ofType:@"plist"];
     messdata = [NSMutableArray arrayWithContentsOfFile:path4];
     
+    NSString *path5 = [[NSBundle mainBundle] pathForResource:@"confessions" ofType:@"plist"];
+    confdata = [NSMutableArray arrayWithContentsOfFile:path5];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     

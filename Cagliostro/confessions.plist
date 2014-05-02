@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Q1</key>
+<array>
 	<dict>
 		<key>question</key>
 		<string>Ma plus grande qualité.</string>
@@ -31,7 +30,6 @@
 			<string>Débrider les lourdes.</string>
 		</array>
 	</dict>
-	<key>Q2</key>
 	<dict>
 		<key>question</key>
 		<string>Ce que j’apprécie le plus chez mes amis.</string>
@@ -60,7 +58,6 @@
 			<string>La discrétion.</string>
 		</array>
 	</dict>
-	<key>Q3</key>
 	<dict>
 		<key>question</key>
 		<string>Mon principal défaut.</string>
@@ -89,7 +86,6 @@
 			<string>Trop sentimental.</string>
 		</array>
 	</dict>
-	<key>Q4</key>
 	<dict>
 		<key>question</key>
 		<string>Mon occupation préférée.</string>
@@ -118,7 +114,6 @@
 			<string>Rincer le bourgeois.</string>
 		</array>
 	</dict>
-	<key>Q5</key>
 	<dict>
 		<key>question</key>
 		<string>Mon rêve de bonheur.</string>
@@ -147,7 +142,6 @@
 			<string>Retourner à Golden City.</string>
 		</array>
 	</dict>
-	<key>Q6</key>
 	<dict>
 		<key>question</key>
 		<string>Quel serait mon plus grand malheur.</string>
@@ -176,7 +170,6 @@
 			<string>Epouser la veuve au bout d’une corde.</string>
 		</array>
 	</dict>
-	<key>Q7</key>
 	<dict>
 		<key>question</key>
 		<string>Ce que je voudrais être.</string>
@@ -205,7 +198,6 @@
 			<string>Gagnant du gros lot.</string>
 		</array>
 	</dict>
-	<key>Q8</key>
 	<dict>
 		<key>question</key>
 		<string>Mes héros dans la vie réelle.</string>
@@ -234,7 +226,6 @@
 			<string>Butch Cassidy, Jesse James, des braqueurs de première classe. En France on ne peut pas lutter avec ça !</string>
 		</array>
 	</dict>
-	<key>Q9</key>
 	<dict>
 		<key>question</key>
 		<string>Mes héroïnes dans la vie réelle</string>
@@ -263,7 +254,6 @@
 			<string>Calamity Jane.</string>
 		</array>
 	</dict>
-	<key>Q10</key>
 	<dict>
 		<key>question</key>
 		<string>Mon héros dans l’histoire.</string>
@@ -292,7 +282,6 @@
 			<string>Connais pas.</string>
 		</array>
 	</dict>
-	<key>Q11</key>
 	<dict>
 		<key>question</key>
 		<string>Mon livre de chevet.</string>
@@ -321,7 +310,6 @@
 			<string>L’Encyclopédie des armes à feu, vol. 2 : les gros calibres.</string>
 		</array>
 	</dict>
-	<key>Q12</key>
 	<dict>
 		<key>question</key>
 		<string>Comment j’aimerais mourir</string>
@@ -350,7 +338,6 @@
 			<string>Dans mon lit, en bourgeois.</string>
 		</array>
 	</dict>
-	<key>Q13</key>
 	<dict>
 		<key>question</key>
 		<string>Fautes qui m’inspirent le plus d’indulgence.</string>
@@ -379,7 +366,6 @@
 			<string>Aucune : les indulgences, ça s&apos;achète.</string>
 		</array>
 	</dict>
-	<key>Q14</key>
 	<dict>
 		<key>question</key>
 		<string>Ma devise</string>
@@ -408,5 +394,5 @@
 			<string>Le franc-or, le bon du trésor, le dollar.</string>
 		</array>
 	</dict>
-</dict>
+</array>
 </plist>
