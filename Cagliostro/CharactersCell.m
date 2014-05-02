@@ -63,11 +63,12 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CharacterCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"CharacterCell" forIndexPath:indexPath];
     int cid = indexPath.row;
-    cell.title.text = [chardata[cid] objectForKey:@"name"];
     if ([self published:cid]) {
         cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid]];
+        cell.title.text = [chardata[cid] objectForKey:@"name"];
     } else {
         cell.thumb.image = [UIImage imageNamed:[NSString stringWithFormat:@"anon%@", [chardata[cid] objectForKey:@"gender"]]];
+        cell.title.text = @"À paraître";
     }
     cell.layer.shouldRasterize = YES;
     cell.layer.rasterizationScale = [UIScreen mainScreen].scale;

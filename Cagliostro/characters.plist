@@ -202,7 +202,7 @@
 		<key>gender</key>
 		<string>Male</string>
 		<key>epid</key>
-		<integer>14</integer>
+		<integer>13</integer>
 		<key>friends</key>
 		<array>
 			<string>10</string>
@@ -213,6 +213,8 @@
 		<string>Eugénie Vasseur</string>
 		<key>gender</key>
 		<string>Female</string>
+        <key>epid</key>
+		<integer>14</integer>
 		<key>friends</key>
 		<array>
 			<string>14</string>
@@ -228,6 +230,8 @@
 		<string>La maréchaussée de Doudeville</string>
 		<key>gender</key>
 		<string>Male</string>
+        <key>epid</key>
+		<integer>14</integer>
 		<key>friends</key>
 		<array>
 			<string>14</string>
@@ -240,6 +244,8 @@
 		<string>Albertine Delâtre</string>
 		<key>gender</key>
 		<string>Female</string>
+        <key>epid</key>
+		<integer>17</integer>
 		<key>friends</key>
 		<array>
 			<string>13</string>
@@ -252,6 +258,8 @@
 		<string>Brigitte Rousselin</string>
 		<key>gender</key>
 		<string>Female</string>
+        <key>epid</key>
+		<integer>19</integer>
 		<key>friends</key>
 		<array>
 			<string>13</string>
@@ -264,6 +272,8 @@
 		<string>Valentine Petipeton</string>
 		<key>gender</key>
 		<string>Female</string>
+        <key>epid</key>
+		<integer>19</integer>
 		<key>friends</key>
 		<array>
 			<string>14</string>
@@ -279,6 +289,8 @@
 		<string>Dominique Caillé</string>
 		<key>gender</key>
 		<string>Male</string>
+        <key>epid</key>
+		<integer>20</integer>
 		<key>friends</key>
 		<array>
 			<string>0</string>
@@ -291,6 +303,8 @@
 		<string>Marthe Rousselin</string>
 		<key>gender</key>
 		<string>Female</string>
+        <key>epid</key>
+		<integer>30</integer>
 		<key>friends</key>
 		<array>
 			<string>1</string>
@@ -306,6 +320,8 @@
 		<string>Mgr d&apos;Ambricourt</string>
 		<key>gender</key>
 		<string>Male</string>
+        <key>epid</key>
+		<integer>43</integer>
 		<key>friends</key>
 		<array>
 			<string>13</string>
@@ -320,6 +336,8 @@
 		<string>Male</string>
 		<key>name</key>
 		<string>Joseph Pellegrini</string>
+        <key>epid</key>
+		<integer>51</integer>
 		<key>friends</key>
 		<array>
 			<string>10</string>
