@@ -112,36 +112,49 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)addConfessions
 {
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 309, 300)];
+    
+    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, 304, 50)];
+    [l setText:@"Confessions"];
+    [l setFont:[UIFont fontWithName:@"georgia" size:25]];
+    l.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
+    l.userInteractionEnabled = NO;
+    
+    UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(5, 50, 299, 2)];
+    sep.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
+    
     self.confpages = [[NSMutableArray alloc] init];
-    int i = 0;
-    for (NSDictionary *qr in confdata) {
+    int j = 0;
+    for (int i = 0; i < [confdata count]; i = i + 2) {
         ConfessionsViewController *pvc = [[ConfessionsViewController alloc] init];
-        pvc.pageindex = i;
-
-        UILabel *q = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 309, 20)];
-        [q setText:[qr objectForKey:@"question"]];
-        [q setFont:[UIFont fontWithName:@"georgia" size:20]];
-        q.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
-        q.userInteractionEnabled = NO;
-        q.numberOfLines = 1;
-        
-        [pvc.view addSubview:q];
-        
-        
-        
+        pvc.pageindex = j;
+        [pvc.view addSubview:pvc.mainLinearLayout];
+        NSDictionary *qr1 = [confdata objectAtIndex:i];
+        [pvc addQuestionWithText:[qr1 objectForKey:@"question"]];
+        [pvc addAnswerWithText:[[qr1 objectForKey:@"reponses"] objectAtIndex:self.cid]];
+        NSDictionary *qr2 = [confdata objectAtIndex:i+1];
+        [pvc addQuestionWithText:[qr2 objectForKey:@"question"]];
+        [pvc addAnswerWithText:[[qr2 objectForKey:@"reponses"] objectAtIndex:self.cid]];
         [self.confpages addObject:pvc];
-        i++;
+        j++;
     }
     
     self.confpvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.confpvc.view.backgroundColor = [UIColor redColor];
-    self.confpvc.view.frame = CGRectMake(0, 0, 309, 300);
+    self.confpvc.view.frame = CGRectMake(0, 60, 309, 250);
     self.confpvc.dataSource = self;
     self.confpvc.delegate = self;
 
     [self.confpvc setViewControllers:@[[self.confpages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
-    CSLinearLayoutItem *confitem = [CSLinearLayoutItem layoutItemForView:self.confpvc.view];
+    UIView *sep2 = [[UIView alloc] initWithFrame:CGRectMake(334, 0, 1, 300)];
+    sep2.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
+    
+    [container addSubview:l];
+    [container addSubview:sep];
+    [container addSubview:self.confpvc.view];
+    [container addSubview:sep2];
+    
+    CSLinearLayoutItem *confitem = [CSLinearLayoutItem layoutItemForView:container];
     confitem.padding = CSLinearLayoutMakePadding(50, 50, 0, 50);
     [mainLinearLayout addItem:confitem];
 }

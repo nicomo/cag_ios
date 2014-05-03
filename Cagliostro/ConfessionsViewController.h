@@ -13,4 +13,5 @@
 @property (nonatomic) int pageindex;
 @property (strong, nonatomic) CSLinearLayoutView *mainLinearLayout;
 - (void)addQuestionWithText:(NSString *)text;
+- (void)addAnswerWithText:(NSString *)text;
 @end

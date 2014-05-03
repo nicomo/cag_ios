@@ -54,6 +54,11 @@
 
     self.window.rootViewController = navController;
     
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
+    pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
+    pageControl.backgroundColor = [UIColor clearColor];
+    
     return YES;
 }
 
