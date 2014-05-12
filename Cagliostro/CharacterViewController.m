@@ -11,6 +11,7 @@
 #import "CSLinearLayoutView.h"
 #import "CharacterCell.h"
 #import "ConfessionsViewController.h"
+#import "MessagesViewController.h"
 
 @interface CharacterViewController ()
 
@@ -51,7 +52,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     [self addHeader];
     
-    [self addConfessions];
+    [self addConfessionsAndMessages];
     
     UILabel *friendslabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 668, 25)];
     [friendslabel setText:@"Mes connaissances"];
@@ -110,9 +111,9 @@ CSLinearLayoutView *mainLinearLayout;
     [mainLinearLayout addItem:friendsitem];
 }
 
-- (void)addConfessions
+- (void)addConfessionsAndMessages
 {
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 309, 300)];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 668, 300)];
     
     UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, 304, 50)];
     [l setText:@"Confessions"];
@@ -139,12 +140,35 @@ CSLinearLayoutView *mainLinearLayout;
         j++;
     }
     
+    self.messpages = [[NSMutableArray alloc] init];
+    int k = 0;
+    for (int i = 0; i < [[messdata objectAtIndex:self.cid] count]; i = i + 3) {
+        MessagesViewController *mvc = [[MessagesViewController alloc] init];
+        mvc.pageindex = k;
+        [mvc.view addSubview:mvc.mainLinearLayout];
+        NSDictionary *m1 = [[messdata objectAtIndex:self.cid] objectAtIndex:i];
+        [mvc addMessageWithText:[m1 objectForKey:@"msg"] cid:self.cid];
+        NSDictionary *m2 = [[messdata objectAtIndex:self.cid] objectAtIndex:i+1];
+        [mvc addMessageWithText:[m2 objectForKey:@"msg"] cid:self.cid];
+        NSDictionary *m3 = [[messdata objectAtIndex:self.cid] objectAtIndex:i+2];
+        [mvc addMessageWithText:[m3 objectForKey:@"msg"] cid:self.cid];
+        [self.messpages addObject:mvc];
+        k++;
+    }
+    
     self.confpvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.confpvc.view.frame = CGRectMake(0, 60, 309, 250);
     self.confpvc.dataSource = self;
     self.confpvc.delegate = self;
-
+    
     [self.confpvc setViewControllers:@[[self.confpages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    
+    self.messpvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.messpvc.view.frame = CGRectMake(359, 0, 309, 310);
+    self.messpvc.dataSource = self;
+    self.messpvc.delegate = self;
+    
+    [self.messpvc setViewControllers:@[[self.messpages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     UIView *sep2 = [[UIView alloc] initWithFrame:CGRectMake(334, 0, 1, 300)];
     sep2.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
@@ -153,6 +177,7 @@ CSLinearLayoutView *mainLinearLayout;
     [container addSubview:sep];
     [container addSubview:self.confpvc.view];
     [container addSubview:sep2];
+    [container addSubview:self.messpvc.view];
     
     CSLinearLayoutItem *confitem = [CSLinearLayoutItem layoutItemForView:container];
     confitem.padding = CSLinearLayoutMakePadding(50, 50, 0, 50);
@@ -164,7 +189,6 @@ CSLinearLayoutView *mainLinearLayout;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (NSInteger)numberOfSectionsInCollectionView: (UICollectionView *)collectionView {
     return 1;
@@ -223,43 +247,79 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSUInteger index = ((ConfessionsViewController*) viewController).pageindex;
-    
-    if (index == NSNotFound) {
-        return nil;
+    if (pageViewController == self.confpvc) {
+        NSUInteger index = ((ConfessionsViewController*) viewController).pageindex;
+        
+        if (index == NSNotFound) {
+            return nil;
+        }
+        
+        index++;
+        if (index == [self.confpages count]) {
+            return nil;
+        }
+        if (([self.confpages count] == 0) || (index >= [self.confpages count])) {
+            return nil;
+        }
+        
+        return [self.confpages objectAtIndex:index];
+    } else {
+        NSUInteger index = ((MessagesViewController*) viewController).pageindex;
+        
+        if (index == NSNotFound) {
+            return nil;
+        }
+        
+        index++;
+        if (index == [self.messpages count]) {
+            return nil;
+        }
+        if (([self.messpages count] == 0) || (index >= [self.messpages count])) {
+            return nil;
+        }
+        
+        return [self.messpages objectAtIndex:index];
     }
-    
-    index++;
-    if (index == [self.confpages count]) {
-        return nil;
-    }
-    return [self viewControllerAtIndex:index];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSUInteger index = ((ConfessionsViewController*) viewController).pageindex;
-    
-    if ((index == 0) || (index == NSNotFound)) {
-        return nil;
+    if (pageViewController == self.confpvc) {
+        NSUInteger index = ((ConfessionsViewController*) viewController).pageindex;
+        
+        if ((index == 0) || (index == NSNotFound)) {
+            return nil;
+        }
+        
+        index--;
+        if (([self.confpages count] == 0) || (index >= [self.confpages count])) {
+            return nil;
+        }
+        
+        return [self.confpages objectAtIndex:index];
+    } else {
+        NSUInteger index = ((MessagesViewController*) viewController).pageindex;
+        
+        if ((index == 0) || (index == NSNotFound)) {
+            return nil;
+        }
+        
+        index--;
+        if (([self.messpages count] == 0) || (index >= [self.messpages count])) {
+            return nil;
+        }
+        
+        return [self.messpages objectAtIndex:index];
     }
-    
-    index--;
-    return [self viewControllerAtIndex:index];
-}
-
-- (UIViewController *)viewControllerAtIndex:(NSUInteger)index
-{
-    if (([self.confpages count] == 0) || (index >= [self.confpages count])) {
-        return nil;
-    }
-    
-    return [self.confpages objectAtIndex:index];
 }
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [self.confpages count];
+    if (pageViewController == self.confpvc) {
+        return [self.confpages count];
+    } else {
+        return [self.messpages count];
+    }
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController

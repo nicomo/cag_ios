@@ -13,5 +13,7 @@
 - (id) initWithCid:(int) cid;
 @property (strong, nonatomic) UICollectionView *charcv;
 @property (strong, nonatomic) UIPageViewController *confpvc;
+@property (strong, nonatomic) UIPageViewController *messpvc;
 @property (strong, nonatomic) NSMutableArray *confpages;
+@property (strong, nonatomic) NSMutableArray *messpages;
 @end
