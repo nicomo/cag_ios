@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		200664A418D0470800CA09AB /* homecards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200664A318D0470800CA09AB /* homecards.xcassets */; };
 		200D22FE1920DFBA00863EEB /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200D22FD1920DFBA00863EEB /* MessagesViewController.m */; };
+		200D23001920F0FB00863EEB /* buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200D22FF1920F0FB00863EEB /* buttons.xcassets */; };
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
 		200D733418DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 200D733318DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m */; };
 		200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200FA79E18B393CC00AAD523 /* pins.xcassets */; };
@@ -64,6 +65,7 @@
 		200664A318D0470800CA09AB /* homecards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = homecards.xcassets; sourceTree = "<group>"; };
 		200D22FC1920DFBA00863EEB /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
 		200D22FD1920DFBA00863EEB /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		200D22FF1920F0FB00863EEB /* buttons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = buttons.xcassets; sourceTree = "<group>"; };
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		200D733218DC458B000154F8 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		200D733318DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				200FA79E18B393CC00AAD523 /* pins.xcassets */,
 				200664A318D0470800CA09AB /* homecards.xcassets */,
 				207D674E190FAC4C004187F7 /* charbg.xcassets */,
+				200D22FF1920F0FB00863EEB /* buttons.xcassets */,
 				208C98001892A6160008749C /* Supporting Files */,
 			);
 			path = Cagliostro;
@@ -364,6 +367,7 @@
 				200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */,
 				20C6866718E456ED00BAAFC7 /* places.plist in Resources */,
 				206DA5B518D08F6C0055ECAA /* characters.plist in Resources */,
+				200D23001920F0FB00863EEB /* buttons.xcassets in Resources */,
 				200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */,
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				207D674F190FAC4C004187F7 /* charbg.xcassets in Resources */,

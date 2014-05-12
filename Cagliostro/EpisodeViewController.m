@@ -402,6 +402,7 @@ CSLinearLayoutView *mainLinearLayout;
 {
     self.nextButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 768, 300)];
     self.nextButton.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0];
+    [self.nextButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"next_%d", self.epid]] forState:UIControlStateNormal];
 
     UITextView *nextPartLabel = [[UITextView alloc] initWithFrame:CGRectMake(85, 100, 768-85, 0)];
     nextPartLabel.text = [NSString stringWithFormat:@"Episode %d.", partNumber];
