@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		200664A418D0470800CA09AB /* homecards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200664A318D0470800CA09AB /* homecards.xcassets */; };
+		200D22FE1920DFBA00863EEB /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200D22FD1920DFBA00863EEB /* MessagesViewController.m */; };
 		200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 200D2BEB18A90E7500D5C53D /* Settings.bundle */; };
 		200D733418DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 200D733318DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m */; };
 		200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200FA79E18B393CC00AAD523 /* pins.xcassets */; };
@@ -61,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		200664A318D0470800CA09AB /* homecards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = homecards.xcassets; sourceTree = "<group>"; };
+		200D22FC1920DFBA00863EEB /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		200D22FD1920DFBA00863EEB /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
 		200D2BEB18A90E7500D5C53D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		200D733218DC458B000154F8 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		200D733318DC458B000154F8 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 				20295CD818E8489A006D1103 /* PlaceViewController.m */,
 				206F981619139CF80029D581 /* ConfessionsViewController.h */,
 				206F981719139CF80029D581 /* ConfessionsViewController.m */,
+				200D22FC1920DFBA00863EEB /* MessagesViewController.h */,
+				200D22FD1920DFBA00863EEB /* MessagesViewController.m */,
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 				208C980B1892A6160008749C /* Images.xcassets */,
 				200FA79E18B393CC00AAD523 /* pins.xcassets */,
@@ -394,6 +399,7 @@
 				20187B5618B4EFEB00FD27A1 /* CharacterViewController.m in Sources */,
 				208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */,
 				2021B54E1910D9CA00173FAD /* UIView+Toast.m in Sources */,
+				200D22FE1920DFBA00863EEB /* MessagesViewController.m in Sources */,
 				203166E118C6237100853998 /* TitleCell.m in Sources */,
 				206F981819139CF80029D581 /* ConfessionsViewController.m in Sources */,
 				208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */,
