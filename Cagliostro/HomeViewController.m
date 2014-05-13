@@ -12,6 +12,7 @@
 #import "EpisodesCell.h"
 #import "MapCell.h"
 #import "CharactersCell.h"
+#import "VideosCell.h"
 
 @interface HomeViewController ()
 
@@ -59,7 +60,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -126,6 +127,13 @@
             cell.expandIcon.image = [UIImage imageNamed:@"expanderDown"];
         }
         return cell;
+    } else if (indexPath.row == 6) {
+        VideosCell *cell;
+        cell = [tableView dequeueReusableCellWithIdentifier:@"videosCell"];
+        if (cell == nil) {
+            cell = [[VideosCell alloc] initWithFrame:CGRectZero];
+        }
+        return cell;
     }
     
     return cell;
@@ -145,6 +153,8 @@
         return charactersHeight;
     } else if (indexPath.row == 5) {
         return 135;
+    } else if (indexPath.row == 6) {
+        return 350;
     }
 
     return 100;
