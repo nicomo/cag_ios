@@ -11,4 +11,5 @@
 @interface PlaceViewController : UIViewController
 @property (nonatomic) int plid;
 - (id) initWithPlid:(int) plid;
+@property (strong, nonatomic) UIView *map;
 @end
