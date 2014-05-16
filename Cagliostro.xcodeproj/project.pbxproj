@@ -49,6 +49,8 @@
 		208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C982C1892A73C0008749C /* EpisodeViewController.m */; };
 		208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C98301892A8340008749C /* CSLinearLayoutView.m */; };
 		20C6866718E456ED00BAAFC7 /* places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20C6866618E456ED00BAAFC7 /* places.plist */; };
+		20E0B2FD192610CE009DF817 /* placeSlideshow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E0B2FC192610CE009DF817 /* placeSlideshow.xcassets */; };
+		20E0B300192611EB009DF817 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0B2FF192611EB009DF817 /* PhotoViewController.m */; };
 		374498CE190EDA430075B074 /* confessions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 374498CD190EDA430075B074 /* confessions.plist */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +131,9 @@
 		208C98301892A8340008749C /* CSLinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLinearLayoutView.m; sourceTree = "<group>"; };
 		208C9833189326E20008749C /* SuperClarendon_7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperClarendon_7.otf; sourceTree = "<group>"; };
 		20C6866618E456ED00BAAFC7 /* places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = places.plist; sourceTree = "<group>"; };
+		20E0B2FC192610CE009DF817 /* placeSlideshow.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = placeSlideshow.xcassets; sourceTree = "<group>"; };
+		20E0B2FE192611EB009DF817 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		20E0B2FF192611EB009DF817 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		374498CD190EDA430075B074 /* confessions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = confessions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,9 +266,12 @@
 				200664A318D0470800CA09AB /* homecards.xcassets */,
 				207D674E190FAC4C004187F7 /* charbg.xcassets */,
 				200D22FF1920F0FB00863EEB /* buttons.xcassets */,
+				20E0B2FC192610CE009DF817 /* placeSlideshow.xcassets */,
 				208C98001892A6160008749C /* Supporting Files */,
 				2040A5EF19225D5E005395AF /* VideosCell.h */,
 				2040A5F019225D5E005395AF /* VideosCell.m */,
+				20E0B2FE192611EB009DF817 /* PhotoViewController.h */,
+				20E0B2FF192611EB009DF817 /* PhotoViewController.m */,
 			);
 			path = Cagliostro;
 			sourceTree = "<group>";
@@ -376,6 +384,7 @@
 				200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */,
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				207D674F190FAC4C004187F7 /* charbg.xcassets in Resources */,
+				20E0B2FD192610CE009DF817 /* placeSlideshow.xcassets in Resources */,
 				208C980C1892A6160008749C /* Images.xcassets in Resources */,
 				2021B54A1910D8FF00173FAD /* messages.plist in Resources */,
 				374498CE190EDA430075B074 /* confessions.plist in Resources */,
@@ -422,6 +431,7 @@
 				204E1C3D18C9D9AC00DB433D /* CustomPageViewController.m in Sources */,
 				208C98061892A6160008749C /* main.m in Sources */,
 				203166DE18C621B800853998 /* HomeViewController.m in Sources */,
+				20E0B300192611EB009DF817 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

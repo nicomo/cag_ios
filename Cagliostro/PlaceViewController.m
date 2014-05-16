@@ -9,6 +9,7 @@
 #import "PlaceViewController.h"
 #import "AppDelegate.h"
 #import "CSLinearLayoutView.h"
+#import "PhotoViewController.h"
 
 @interface PlaceViewController ()
 
@@ -47,6 +48,32 @@ CSLinearLayoutView *mainLinearLayout;
     
     self.navigationItem.title = [pldata[self.plid] objectForKey:@"name"];
     
+    // Slideshow
+
+    self.photopages = [[NSMutableArray alloc] init];
+    int j = 0;
+    for (int i = 0; i < [[pldata[self.plid] objectForKey:@"numphotos"] integerValue]; i++) {
+        PhotoViewController *pvc = [[PhotoViewController alloc] init];
+        pvc.pageindex = j;
+        UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 350)];
+        [img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"place_%d_image_%d", self.plid, i]]];
+        [pvc.view addSubview:img];
+        [self.photopages addObject:pvc];
+        j++;
+    }
+    
+    self.photopvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.photopvc.view.frame = CGRectMake(0, 0, 768, 350);
+    self.photopvc.dataSource = self;
+    self.photopvc.delegate = self;
+    
+    [self.photopvc setViewControllers:@[[self.photopages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    
+    CSLinearLayoutItem *photoitem = [CSLinearLayoutItem layoutItemForView:self.photopvc.view];
+    [mainLinearLayout addItem:photoitem];
+    
+    // Map
+    
     self.map = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2), 428)];
     
     UIImageView *mapimg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2), 428)];
@@ -70,6 +97,52 @@ CSLinearLayoutView *mainLinearLayout;
     [self.map addSubview:placebtn];
 
 }
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    NSUInteger index = ((PhotoViewController*) viewController).pageindex;
+    
+    if (index == NSNotFound) {
+        return nil;
+    }
+    
+    index++;
+    if (index == [self.photopages count]) {
+        return nil;
+    }
+    if (([self.photopages count] == 0) || (index >= [self.photopages count])) {
+        return nil;
+    }
+    
+    return [self.photopages objectAtIndex:index];
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+    NSUInteger index = ((PhotoViewController*) viewController).pageindex;
+    
+    if ((index == 0) || (index == NSNotFound)) {
+        return nil;
+    }
+    
+    index--;
+    if (([self.photopages count] == 0) || (index >= [self.photopages count])) {
+        return nil;
+    }
+    
+    return [self.photopages objectAtIndex:index];
+}
+
+- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
+{
+    return [self.photopages count];
+}
+
+- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
+{
+    return 0;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
