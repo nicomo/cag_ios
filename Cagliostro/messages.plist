@@ -83,7 +83,7 @@
 			<key>para</key>
 			<real>0.25</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Non mon Raoul, non!</string>
 			<key>msg_ref</key>
@@ -95,7 +95,7 @@
 			<key>para</key>
 			<real>0.1</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Que je suis malheureuse! J&apos;en ai la nausée!</string>
 			<key>msg_ref</key>
@@ -119,7 +119,7 @@
 			<key>para</key>
 			<real>0.45</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>&quot;Je cherche une bonne couturière pour agrandir mes robes. Réponse en billet privé svp.&quot;</string>
 			<key>msg_ref</key>
@@ -131,7 +131,7 @@
 			<key>para</key>
 			<real>0.35</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Mise à jour de mon statut : mariée à Raoul d&apos;Andrésy.</string>
 			<key>msg_ref</key>
@@ -145,7 +145,7 @@
 			<key>para</key>
 			<real>0.5</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Oui ! Qu’il donne une preuve ! Ou je lui brûle la cervelle!</string>
 			<key>msg_ref</key>
@@ -157,7 +157,7 @@
 			<key>para</key>
 			<real>0.4</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>J’en étais sûr… Il en veut à sa dot.</string>
 			<key>msg_ref</key>
@@ -169,7 +169,7 @@
 			<key>para</key>
 			<real>0.2</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Désiré ! je t’avais pourtant dit de ne pas le répéter !</string>
 			<key>msg_ref</key>
@@ -181,7 +181,7 @@
 			<key>para</key>
 			<real>0.8</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Je vous recommande à ce sujet ‘Les Sermons de Monseigneur d’Ambricourt’, 1893. Très beaux passages sur le jugement dernier.</string>
 			<key>msg_ref</key>
@@ -193,7 +193,7 @@
 			<key>para</key>
 			<real>0.65</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Il faut bien vivre. Disparus, les impôts seigneuriaux et leur poésie sonnante et trébuchante : le cens, l’abeillage, le champart...</string>
 			<key>msg_ref</key>
@@ -207,7 +207,7 @@
 			<key>para</key>
 			<real>0.9</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Mise à jour de mon statut : a un penchant certain pour Joséphine Balsamo</string>
 			<key>msg_ref</key>
@@ -219,7 +219,7 @@
 			<key>para</key>
 			<real>0.55</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Vivement qu’on en finisse. J’ai soif.</string>
 			<key>msg_ref</key>
@@ -231,7 +231,7 @@
 			<key>para</key>
 			<real>0.45</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>C’est qui, cette Regina ?</string>
 			<key>msg_ref</key>
@@ -243,7 +243,7 @@
 			<key>para</key>
 			<real>0.5</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Godefroy, ça te dirait une partie de pêche?</string>
 			<key>msg_ref</key>
@@ -257,7 +257,7 @@
 			<key>para</key>
 			<real>0.7</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Joli ! Je commencerais bien une collection de miniatures représentant Joséphine de Cagliostro.</string>
 			<key>msg_ref</key>
@@ -269,7 +269,7 @@
 			<key>para</key>
 			<real>0.1</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Un si beau chandelier ! J’aurais pu commencer une collection…</string>
 			<key>msg_ref</key>
@@ -281,7 +281,7 @@
 			<key>para</key>
 			<real>0.65</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Mon canard ! Ils ont rôti mon canard de collection ! Un authentique Vauquerville à huppe bleue !!!</string>
 			<key>msg_ref</key>
@@ -293,7 +293,7 @@
 			<key>para</key>
 			<real>0.6</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Sept bagues médiévales trouvées pour rien dans la loge d’une danseuse du théâtre des Variétés. Mieux que les enchères à Drouot !</string>
 			<key>msg_ref</key>
@@ -305,7 +305,7 @@
 			<key>para</key>
 			<real>0.2</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Et dire que j’ai toujours détesté les versions latines !</string>
 			<key>msg_ref</key>
@@ -319,7 +319,7 @@
 			<key>para</key>
 			<real>0.35</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Juste ciel ! C’est donc à cette intriguante qu’on doit la perte de l’Alsace-Lorraine. Et dire que certains ont incriminé l’Etat-Major !</string>
 			<key>msg_ref</key>
@@ -331,7 +331,7 @@
 			<key>para</key>
 			<real>0.45</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Faiblesses ? Crises nerveuses ? Essayez la pâte Vaupalière ! De qualité supérieure, elle guérit les courbatures, l’insomnie, la tuberculose, la mauvaise haleine et les cors au pied !</string>
 			<key>msg_ref</key>
@@ -343,7 +343,7 @@
 			<key>para</key>
 			<real>0.2</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Décidemment, quelle maîtrise remarquable de l’emploi des narcotiques !</string>
 			<key>msg_ref</key>
@@ -355,7 +355,7 @@
 			<key>para</key>
 			<real>0.3</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>Crises nerveuses ? Phobies ? Parents abusifs ? Le docteur S. Freud vous reçoit du lundi ou vendredi au 19 de la rue Berggasse. Sur rendez-vous.</string>
 			<key>msg_ref</key>
@@ -369,7 +369,7 @@
 			<key>para</key>
 			<real>0.7</real>
 			<key>toast</key>
-			<true/>
+			<false/>
 			<key>msg</key>
 			<string>L’assassinat du président Carnot, le suicide du général Boulanger, le vin bouchonné, c’est elle ! L’arnaque de Panama, l’affaire Dreyfus, les douillons trop cuits, c’est encore elle !</string>
 			<key>msg_ref</key>
@@ -577,621 +577,625 @@
 	<array>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.45</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Me voilà comme la princesse égyptienne Tahoser étouffant sous ses bandelettes. Prochaine étape, le sarcophage ?</string>
+			<key>msg_ref</key>
+			<string>Une femme dont les jambes et les mains étaient attachées, et dont une écharpe de gaze enveloppait la tête.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>10</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.7</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Mais il ne s’arrête donc jamais de parler !</string>
+			<key>msg_ref</key>
+			<string>Ce qui ne l’empêcha pas d’ailleurs de monologuer avec toute la satisfaction de quelqu’un qui est enchanté de soi-même et de ses moindres actes.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>10</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.9</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Le bougre profite un peu de la situation…</string>
+			<key>msg_ref</key>
+			<string>il acheva l’ascension en serrant ainsi contre sa poitrine le corps charmant dont ses mains sentaient les formes souples.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>11</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.1</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Le bougre profite un peu BEAUCOUP de la situation!</string>
+			<key>msg_ref</key>
+			<string>Lentement il écarta l’étoffe.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>11</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.4</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Encore heureux qu’il ne se soit pas permis davantage !</string>
+			<key>msg_ref</key>
+			<string>Le baiser dérobé fut l’unique caresse qu’il se permit.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>14</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.2</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
+			<string>Je vais t’appeler Rouroul, moi, tu vas voir !</string>
+			<key>msg_ref</key>
+			<string>Du respect, d’abord, dit-elle, en souriant de son enfantillage, je ne suis pas votre Josine.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>15</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.2</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
+			<string>Madonna! Ma che vergogna! Bugiardo ! Farabutto !</string>
+			<key>msg_ref</key>
+			<string>Ils échangèrent quelques mots rapides en une langue que Raoul ne comprenait pas. </string>
 		</dict>
 	</array>
 	<array>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>19</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.95</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Zut!</string>
+			<key>msg_ref</key>
+			<string>Il murmura avec stupeur : Léonard… Léonard…</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>28</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.1</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Le colis est livré, n&apos;en parlons plus.</string>
+			<key>msg_ref</key>
+			<string>Déjà les hommes le précipitaient à l’intérieur d’une maison.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>19</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.25</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>La pie est arrivée. Le coucou se dirige vers le nid. Je répète : la pie est arrivée.</string>
+			<key>msg_ref</key>
+			<string>Fini, s’écria Brigitte Rousselin, en regagnant sa chambre.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>45</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.1</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Comme disait MacMahon : &quot;Que d’eau ! Que d’eau !&quot;</string>
+			<key>msg_ref</key>
+			<string>Aussitôt le prince Lavorneff dirigea son yacht vers le lieu du sinistre.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>48</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.6</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
+			<string>Hum, on dirait que les carottes sont cuites!</string>
+			<key>msg_ref</key>
+			<string>Ma bonne Joséphine, faut-il que tu sois naïve.</string>
 		</dict>
 	</array>
 	<array>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>15</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.1</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Exigez la qualité ! Demandez les douillons de la Mère Vasseur. Méfiez-vous des contrefaçons.</string>
+			<key>msg_ref</key>
+			<string>Plus brave que la mère Vasseur, il n’y en a pas.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>15</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.8</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Allons, messieurs ! Promotion
+
+sur les douillons, 2 francs seulement la douzaine.</string>
+			<key>msg_ref</key>
+			<string>Ils vont interroger la mère Vasseur.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>31</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.99</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Du bon, Du doux, Du douillon !</string>
+			<key>msg_ref</key>
+			<string>Et le break partit au petit trot.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>33</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.15</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
+			<string>Après Londres, New-York, Osaka, ouverture prochaine d’une nouvelle boutique ‘Aux Douillons d’Eugénie’ à Tancarville !</string>
+			<key>msg_ref</key>
+			<string>Si l’on monte au belvédère, c’est la vue la plus grandiose sur le canal de Tancarville et sur l’estuaire du fleuve.</string>
 		</dict>
 	</array>
 	<array>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>14</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.95</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Les gendarmes sont à la poursuite d’une suspecte. Signalement : une jeune femme en robe de laine grise, portant un chapeau orné de violettes.</string>
+			<key>msg_ref</key>
+			<string>On attend les gendarmes… Sauvez-vous, ou vous êtes perdue.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>18</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.4</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Un stock d’arsenic et de vieilles dentelles dérobé à Colletot</string>
+			<key>msg_ref</key>
+			<string>La nuit, Raoul, ayant réussi à ouvrir la trappe, visita les ballots.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>18</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.6</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Vol aggravé d’une vieille tapisserie râpée, de vingt-sept estampes japonaises inconvenantes et d’une boîte à chaussures turque du XVIIe siècle à Bardouville.</string>
+			<key>msg_ref</key>
+			<string>Dès lors, à Pontoise, à Saint-Germain, à Paris, où la Nonchalante, amarrée en face même de la préfecture de police, continuait à leur servir de logis, ils « opérèrent » ensemble.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>18</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.65</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Une collection inestimable de pots de chambre en faïence de Rouen a disparu à Mantes.</string>
+			<key>msg_ref</key>
+			<string>À chaque épreuve, il se découvrait des talents imprévus et des ressources qu’il ignorait.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>18</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.75</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
+			<string>Cambriolage au château de Gueures. Un canard de collection rôti a été retrouvé sur les lieux. Les faits dateraient de plus d’une semaine.</string>
+			<key>msg_ref</key>
+			<string>Ce qui ne l’empêchait pas d’obéir aux multiples précautions exigées par Joséphine Balsamo.</string>
 		</dict>
 	</array>
 	<array>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>5</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.15</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Ils en ont parlé dans la dépêche de Doudeville – ‘Tragique accident à Saint-Valéry. Il meurt en glissant sur du varech.’</string>
+			<key>msg_ref</key>
+			<string>Georges d’Isneauval qui chassait les mouettes de très grand matin, au pied des falaises de Dieppe, glissa sur les algues.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>9</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.95</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>En voilà un qu’a l’air costaud comme ça, mais en fait, rien dans les bras !</string>
+			<key>msg_ref</key>
+			<string>Je ne peux plus… murmura le baron tout défaillant… mes bras refusent.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>16</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.97</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Ils commencent de plus en plus jeune… Et dire qu’on lui aurait donné le bon dieu sans confession !</string>
+			<key>msg_ref</key>
+			<string>Malgré toutes les recherches on ne sut jamais qui était l’auteur de ce vol (...). Moi, je le sais. C’était toi.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>6</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.95</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
+			<string>Quelle horreur ! C’est comme quand Eugénie Vasseur avait été accusée d’avoir empoisonné le sous-préfet avec un douillon.</string>
+			<key>msg_ref</key>
+			<string>Elle apparaissait réellement coupable.</string>
 		</dict>
 	</array>
 	<array>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.65</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Il est bien mignon ce Raoul, mais ce n’est pas la modestie qui l’étouffe…</string>
+			<key>msg_ref</key>
+			<string>Muscles d’acier et cerveau numéro un !</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>4</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.33</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Et dire que tout jeune, celui-là aussi était déjà lourdaud…</string>
+			<key>msg_ref</key>
+			<string>Pour moi, je ne les oublierai jamais.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.8</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Elles ont bon dos, les amies de pension!</string>
+			<key>msg_ref</key>
+			<string>Ils s’aimaient depuis trois mois, depuis le jour de leur rencontre dans le Midi où Clarisse passait quelque temps chez une amie de pension.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>43</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.15</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
-		</dict>
-		<dict>
-			<key>epid</key>
-			<integer>0</integer>
-			<key>para</key>
-			<integer>0</integer>
-			<key>toast</key>
-			<false/>
-			<key>msg</key>
-			<string>test</string>
+			<string>Clarisse, conseil d’amie. Arrête de courir après ce cornichon de Raoul…</string>
+			<key>msg_ref</key>
+			<string>Il faut avouer qu’il renonça instantanément à trouver Clarisse.</string>
 		</dict>
 	</array>
 	<array>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>11</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.33</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Il vous préfère en pleurs que souriante ? Il est jaloux à l’excès ? N’attendez pas ! Contactez La Société de la protection des femmes, 25 rue Montmartre.</string>
+			<key>msg_ref</key>
+			<string>Je comprends qu’on ait envie de vous faire pleurer.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>19</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.45</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Ah ! Monter, descendre, monter, descendre ! Je n’ai plus vingt ans moi !</string>
+			<key>msg_ref</key>
+			<string>La servante descendit. On perçut le claquement de la porte refermée et elle remonta en disant :</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>20</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.2</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>J’en ai vu d’autres, mon petit monsieur !</string>
+			<key>msg_ref</key>
+			<string>C’était une femme de tête. Une fois délivrée, et sachant son agresseur incapable de nuire, elle ne s’affola pas.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>23</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.99</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Il a décidément tous les talents, ce garçon. A quand le numéro pour le Moulin rouge…</string>
+			<key>msg_ref</key>
+			<string>Il se leva de nouveau et pivota deux ou trois fois sur ses talons, petit tournoiement qu’il fit suivre d’une esquisse de danse qui tenait du cancan et de la gigue.</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>epid</key>
+			<integer>46</integer>
+			<key>para</key>
+			<real>0.2</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Avoir l’air d’un chinois en Chine, d’un indien en Inde, d’un égyptien en Égypte, voilà la qualité première d’un explorateur !</string>
+			<key>msg_ref</key>
+			<string>Raoul l’a peut-être aperçu une fois ou deux, mais tu sais à quel point Dominique est habile pour se grimer.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>46</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.95</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>C’est Le Livre de la jungle qu’il lit. Un bouquin très fort qui vient de paraître chez les Anglais. C’est moi qui lui ait prêté.</string>
+			<key>msg_ref</key>
+			<string>Il se réveillait, se forçait à lire et, de nouveau, s’endormait.</string>
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>0</integer>
+			<integer>46</integer>
 			<key>para</key>
-			<integer>0</integer>
+			<real>0.99</real>
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>test</string>
+			<string>Faut dire que j’ai pas mon pareil pour dresser une carte ! Premier prix de géographie au lycée Corneille pour la troisième fois consécutive !</string>
+			<key>msg_ref</key>
+			<string>Elle connaissait si bien les lieux par les croquis que lui avait envoyés Dominique.</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>47</integer>
+			<key>para</key>
+			<real>0.5</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Dans le journal, c’est toujours ce que disent les assassins à leur chef.</string>
+			<key>msg_ref</key>
+			<string>Dominique accourut. (...) Il murmura : C’est fait.</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>47</integer>
+			<key>para</key>
+			<real>0.6</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Voilà mon billet première classe pour Tombouctou!</string>
+			<key>msg_ref</key>
+			<string>Bigre ! Plus de cent mille francs pour moi, hein ?</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>epid</key>
+			<integer>27</integer>
+			<key>para</key>
+			<real>0.15</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Je ne suis pas difficile à trouver : le mardi à Saint-Martin, le mercredi une semaine sur deux à Jumièges, et tous les dimanches au marché aux fromages à Lillebonne.</string>
+			<key>msg_ref</key>
+			<string>Je déniche la veuve Rousselin.</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>50</integer>
+			<key>para</key>
+			<real>0.7</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Des lentilles qui viennent de mon jardin</string>
+			<key>msg_ref</key>
+			<string>ce que j’ai pu prendre dans les sacs de provisions… quelques livres de haricots et de lentilles…</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>31</integer>
+			<key>para</key>
+			<real>0.15</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Mon pauvre Bernard ! Même la farine mexicaine del docteur Benito del Rio del Mexico n’aurait pas pu le sauver !</string>
+			<key>msg_ref</key>
+			<string>Le pauvre homme était malade…</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>31</integer>
+			<key>para</key>
+			<real>0.65</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Adieu ma Brigitte… N’oublie pas de nourrir Marguerite. C’est quand même grâce à elle que j’ai eu la médaille du meilleur Neufchâtel…</string>
+			<key>msg_ref</key>
+			<string>Et puis non… je n’ai pas le droit… j’aime mieux mourir…</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>epid</key>
+			<integer>9</integer>
+			<key>para</key>
+			<real>0.1</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>La ligue antialcoolique de Jumièges se tient à votre disposition.</string>
+			<key>msg_ref</key>
+			<string>Tu aurais dû apporter un flacon de rhum, bougonna Oscar de Bennetot.</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>43</integer>
+			<key>para</key>
+			<real>0.6</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Attention, ce vendredi, la confession sera exceptionnellement assurée par le Père Patelin.</string>
+			<key>msg_ref</key>
+			<string>C’était le curé de Jumièges qui, accompagné d’un enfant, s’en revenait d’administrer l’extrême-onction.</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>44</integer>
+			<key>para</key>
+			<real>0.7</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>La personne ayant volé six bouteilles de vin de messe est priée de venir se confesser sans attendre.</string>
+			<key>msg_ref</key>
+			<string>Il y a quelques années, oui, mais la commune l’a vendu à un de mes paroissiens.</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>1</integer>
+			<key>para</key>
+			<real>0.8</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Vous hésitez entre le bien et le mal ? Vous êtes tenté par le péché, mais attiré par la vertu ? Le curé de Jumièges est à votre écoute.</string>
+			<key>msg_ref</key>
+			<string>Le bien, le mal, l’un et l’autre m’attirent.</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>epid</key>
+			<integer>28</integer>
+			<key>para</key>
+			<real>0.1</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Une affaire sûre et rondement menée. Les vacances gratuites en costume rayé aux frais de l’Etat à Belle-île-en-mer ou à Cayenne, j’ai déjà donné, merci bien.</string>
+			<key>msg_ref</key>
+			<string>Trois hommes se présentèrent de chaque côté, Raoul fut happé brutalement et enlevé avant même d’esquisser un geste de résistance.</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>47</integer>
+			<key>para</key>
+			<real>0.99</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Voilà ce qui passe, frangine, quand on tergiverse ! Fallait lui régler son compte.</string>
+			<key>msg_ref</key>
+			<string>Mon Dieu, oui, moi !</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>27</integer>
+			<key>para</key>
+			<real>0.95</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Gros coup à monter Gare Saint-Lazare. On joue sur du velours, les gars. Contactez-moi en billet privé.</string>
+			<key>msg_ref</key>
+			<string>Cocher, dit Raoul, gare Saint-Lazare, au départ des grandes lignes.</string>
+		</dict>
+		<dict>
+			<key>epid</key>
+			<integer>48</integer>
+			<key>para</key>
+			<real>0.55</real>
+			<key>toast</key>
+			<false/>
+			<key>msg</key>
+			<string>Ca commence à sentir mauvais cette histoire … Je tire ma révérence. Aller-simple pour New-York, en 3e classe.</string>
+			<key>msg_ref</key>
+			<string>Voyons, Joséphine, mais ta visite était inévitable !</string>
 		</dict>
 	</array>
 </array>
