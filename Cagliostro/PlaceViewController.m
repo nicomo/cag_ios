@@ -55,7 +55,7 @@ CSLinearLayoutView *mainLinearLayout;
     for (int i = 0; i < [[pldata[self.plid] objectForKey:@"numphotos"] integerValue]; i++) {
         PhotoViewController *pvc = [[PhotoViewController alloc] init];
         pvc.pageindex = j;
-        UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 350)];
+        UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 488)];
         [img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"place_%d_image_%d", self.plid, i]]];
         [pvc.view addSubview:img];
         [self.photopages addObject:pvc];
@@ -63,7 +63,7 @@ CSLinearLayoutView *mainLinearLayout;
     }
     
     self.photopvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.photopvc.view.frame = CGRectMake(0, 0, 768, 350);
+    self.photopvc.view.frame = CGRectMake(0, 0, 768, 488);
     self.photopvc.dataSource = self;
     self.photopvc.delegate = self;
     
@@ -71,6 +71,19 @@ CSLinearLayoutView *mainLinearLayout;
     
     CSLinearLayoutItem *photoitem = [CSLinearLayoutItem layoutItemForView:self.photopvc.view];
     [mainLinearLayout addItem:photoitem];
+    
+    // Title
+    
+    UILabel *name = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 668, 100)];
+    [name setText:[pldata[self.plid] objectForKey:@"name"]];
+    [name setFont:[UIFont fontWithName:@"SuperClarendon-Black" size:30]];
+    name.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
+    name.userInteractionEnabled = NO;
+    name.numberOfLines = 2;
+    
+    CSLinearLayoutItem *headeritem = [CSLinearLayoutItem layoutItemForView:name];
+    headeritem.padding = CSLinearLayoutMakePadding(0, 85, 0, 85);
+    [mainLinearLayout addItem:headeritem];
     
     // Map
     
@@ -81,7 +94,7 @@ CSLinearLayoutView *mainLinearLayout;
     [self.map addSubview:mapimg];
     
     CSLinearLayoutItem *mapitem = [CSLinearLayoutItem layoutItemForView:self.map];
-    mapitem.padding = CSLinearLayoutMakePadding(0, 85, 40, 85);
+    mapitem.padding = CSLinearLayoutMakePadding(0, 85, 85, 85);
     [mainLinearLayout addItem:mapitem];
     
     NSMutableDictionary *place = pldata[self.plid];
@@ -95,7 +108,6 @@ CSLinearLayoutView *mainLinearLayout;
     }
     placebtn.tag = self.plid;
     [self.map addSubview:placebtn];
-
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController

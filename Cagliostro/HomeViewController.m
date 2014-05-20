@@ -43,6 +43,19 @@
     charactersHeight = 460;
     
     self.navigationItem.title = @"LE JOURNAL";
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSDate *fld = [prefs objectForKey:@"firstLaunchDate"];
+    if (YES) {
+        UIViewController *helpvc = [[UIViewController alloc] init];
+        UIScrollView *helpscroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 540, 620)];
+        UIImageView *help = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"help"]];
+        [helpscroll addSubview:help];
+        [helpscroll setContentSize:help.frame.size];
+        [helpvc.view addSubview:helpscroll];
+        [helpvc setModalPresentationStyle:UIModalPresentationFormSheet];
+        [self presentViewController:helpvc animated:YES completion:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning
