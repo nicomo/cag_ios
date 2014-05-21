@@ -45,17 +45,33 @@
     self.navigationItem.title = @"LE JOURNAL";
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSDate *fld = [prefs objectForKey:@"firstLaunchDate"];
-    if (YES) {
+    BOOL helpshown = [prefs boolForKey:@"helpshown"];
+    if (! helpshown) {
         UIViewController *helpvc = [[UIViewController alloc] init];
         UIScrollView *helpscroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 540, 620)];
+        [helpscroll setShowsHorizontalScrollIndicator:NO];
         UIImageView *help = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"help"]];
         [helpscroll addSubview:help];
         [helpscroll setContentSize:help.frame.size];
         [helpvc.view addSubview:helpscroll];
+
+        UIToolbar *tb = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 540, 44)];
+        NSMutableArray *items = [[NSMutableArray alloc] init];
+        [items addObject:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil]];
+        [items addObject:[[UIBarButtonItem alloc] initWithTitle:@"Fermer" style:UIBarButtonItemStyleBordered target:self action:@selector(hideModal:)]];
+        [tb setItems:items animated:NO];
+        [helpvc.view addSubview:tb];
+        
         [helpvc setModalPresentationStyle:UIModalPresentationFormSheet];
         [self presentViewController:helpvc animated:YES completion:nil];
+        
+        [prefs setBool:YES forKey:@"helpshown"];
     }
+}
+
+- (void)hideModal:(UIView *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
