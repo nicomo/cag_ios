@@ -121,8 +121,17 @@ CSLinearLayoutView *mainLinearLayout;
     l.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
     l.userInteractionEnabled = NO;
     
+    UILabel *l2 = [[UILabel alloc] initWithFrame:CGRectMake(359+5, 0, 304, 50)];
+    [l2 setText:@"Messages"];
+    [l2 setFont:[UIFont fontWithName:@"georgia" size:25]];
+    l2.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
+    l2.userInteractionEnabled = NO;
+    
     UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(5, 50, 299, 2)];
     sep.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
+    
+    UIView *sep3 = [[UIView alloc] initWithFrame:CGRectMake(359+5, 50, 299, 2)];
+    sep3.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
     
     self.confpages = [[NSMutableArray alloc] init];
     int j = 0;
@@ -142,16 +151,13 @@ CSLinearLayoutView *mainLinearLayout;
     
     self.messpages = [[NSMutableArray alloc] init];
     int k = 0;
-    for (int i = 0; i < [[messdata objectAtIndex:self.cid] count]; i = i + 3) {
+    for (int i = 0; i < [[messdata objectAtIndex:self.cid] count]; i++) {
         MessagesViewController *mvc = [[MessagesViewController alloc] init];
         mvc.pageindex = k;
         [mvc.view addSubview:mvc.mainLinearLayout];
         NSDictionary *m1 = [[messdata objectAtIndex:self.cid] objectAtIndex:i];
+        [mvc addReferenceWithText:[m1 objectForKey:@"msg_ref"] cid:self.cid];
         [mvc addMessageWithText:[m1 objectForKey:@"msg"] cid:self.cid];
-        NSDictionary *m2 = [[messdata objectAtIndex:self.cid] objectAtIndex:i+1];
-        [mvc addMessageWithText:[m2 objectForKey:@"msg"] cid:self.cid];
-        NSDictionary *m3 = [[messdata objectAtIndex:self.cid] objectAtIndex:i+2];
-        [mvc addMessageWithText:[m3 objectForKey:@"msg"] cid:self.cid];
         [self.messpages addObject:mvc];
         k++;
     }
@@ -164,7 +170,7 @@ CSLinearLayoutView *mainLinearLayout;
     [self.confpvc setViewControllers:@[[self.confpages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     self.messpvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.messpvc.view.frame = CGRectMake(359, 0, 309, 310);
+    self.messpvc.view.frame = CGRectMake(359, 60, 309, 250);
     self.messpvc.dataSource = self;
     self.messpvc.delegate = self;
     
@@ -174,7 +180,9 @@ CSLinearLayoutView *mainLinearLayout;
     sep2.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
     
     [container addSubview:l];
+    [container addSubview:l2];
     [container addSubview:sep];
+    [container addSubview:sep3];
     [container addSubview:self.confpvc.view];
     [container addSubview:sep2];
     [container addSubview:self.messpvc.view];

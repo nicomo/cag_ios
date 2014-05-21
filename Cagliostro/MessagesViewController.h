@@ -12,5 +12,6 @@
 @interface MessagesViewController : UIViewController
 @property (nonatomic) int pageindex;
 @property (strong, nonatomic) CSLinearLayoutView *mainLinearLayout;
+- (void)addReferenceWithText:(NSString *)text cid:(int) cid;
 - (void)addMessageWithText:(NSString *)text cid:(int) cid;
 @end

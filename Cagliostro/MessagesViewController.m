@@ -33,6 +33,37 @@
     self.mainLinearLayout.orientation = CSLinearLayoutViewOrientationVertical;
 }
 
+- (void)addReferenceWithText:(NSString *)text cid:(int)cid
+{
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 299, 50)];
+
+    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 299, 50)];
+    [l setText:text];
+    [l setFont:[UIFont fontWithName:@"georgia-italic" size:16]];
+    l.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
+    l.userInteractionEnabled = NO;
+    l.numberOfLines = 5;
+    [l sizeToFit];
+
+    CGRect f = container.frame;
+    if (l.frame.size.height > container.frame.size.height)
+        f.size.height = l.frame.size.height;
+    container.frame = f;
+
+    [container addSubview:l];
+    
+    CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:container];
+    item.padding = CSLinearLayoutMakePadding(5, 5, 5, 5);
+    [self.mainLinearLayout addItem:item];
+    
+    UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 299, 1)];
+    sep.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
+    
+    CSLinearLayoutItem *sepitem = [CSLinearLayoutItem layoutItemForView:sep];
+    sepitem.padding = CSLinearLayoutMakePadding(5, 5, 5, 5);
+    [self.mainLinearLayout addItem:sepitem];
+}
+
 - (void)addMessageWithText:(NSString *)text cid:(int)cid
 {
     UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 299, 50)];
@@ -42,7 +73,7 @@
     
     UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(70, 0, 299-70, 50)];
     [l setText:text];
-    [l setFont:[UIFont fontWithName:@"georgia-italic" size:16]];
+    [l setFont:[UIFont fontWithName:@"georgia" size:16]];
     l.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
     l.userInteractionEnabled = NO;
     l.numberOfLines = 5;
