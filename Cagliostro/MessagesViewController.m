@@ -35,9 +35,9 @@
 
 - (void)addReferenceWithText:(NSString *)text cid:(int)cid
 {
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 299, 50)];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 299, 20)];
 
-    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 299, 50)];
+    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 299, 20)];
     [l setText:text];
     [l setFont:[UIFont fontWithName:@"georgia-italic" size:16]];
     l.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
