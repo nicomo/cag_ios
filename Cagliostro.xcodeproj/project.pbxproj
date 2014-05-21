@@ -52,6 +52,7 @@
 		20E0B2FD192610CE009DF817 /* placeSlideshow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E0B2FC192610CE009DF817 /* placeSlideshow.xcassets */; };
 		20E0B300192611EB009DF817 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0B2FF192611EB009DF817 /* PhotoViewController.m */; };
 		374498CE190EDA430075B074 /* confessions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 374498CD190EDA430075B074 /* confessions.plist */; };
+		37AA0234192C8CCC000FA1D0 /* charSlideshow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37AA0233192C8CCC000FA1D0 /* charSlideshow.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		20E0B2FE192611EB009DF817 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		20E0B2FF192611EB009DF817 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		374498CD190EDA430075B074 /* confessions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = confessions.plist; sourceTree = "<group>"; };
+		37AA0233192C8CCC000FA1D0 /* charSlideshow.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = charSlideshow.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 				200D22FD1920DFBA00863EEB /* MessagesViewController.m */,
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 				208C980B1892A6160008749C /* Images.xcassets */,
+				37AA0233192C8CCC000FA1D0 /* charSlideshow.xcassets */,
 				200FA79E18B393CC00AAD523 /* pins.xcassets */,
 				200664A318D0470800CA09AB /* homecards.xcassets */,
 				207D674E190FAC4C004187F7 /* charbg.xcassets */,
@@ -381,6 +384,7 @@
 				20C6866718E456ED00BAAFC7 /* places.plist in Resources */,
 				206DA5B518D08F6C0055ECAA /* characters.plist in Resources */,
 				200D23001920F0FB00863EEB /* buttons.xcassets in Resources */,
+				37AA0234192C8CCC000FA1D0 /* charSlideshow.xcassets in Resources */,
 				200D2BEC18A90E7500D5C53D /* Settings.bundle in Resources */,
 				208C98041892A6160008749C /* InfoPlist.strings in Resources */,
 				207D674F190FAC4C004187F7 /* charbg.xcassets in Resources */,
