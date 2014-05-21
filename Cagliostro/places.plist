@@ -12,32 +12,32 @@
 		<key>epid</key>
 		<integer>17</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Intelligentsia roof party tote bag narwhal, chambray Portland umami actually squid Odd Future blog hashtag disrupt. Chambray pour-over yr American Apparel chia cray, selfies normcore forage swag Wes Anderson pop-up trust fund. Direct trade Odd Future Brooklyn plaid, wayfarers Thundercats kitsch aesthetic mixtape wolf ugh selvage. Austin iPhone hella, +1 yr raw denim VHS brunch ennui. VHS Intelligentsia 8-bit leggings. Master cleanse trust fund farm-to-table, wolf selvage Etsy Banksy Cosby sweater polaroid craft beer. Small batch meh cred YOLO pug.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Oh. You need a little dummy text for your mockup? How quaint.</string>
+			<string>I bet you’re still using Bootstrap too…</string>
+			<string>Tumblr disrupt selvage tofu dreamcatcher cray.</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Farm-to-table sriracha narwhal, shabby chic occupy vegan DIY sustainable gluten-free PBR&amp;B Bushwick 8-bit. Cred chia blog, before they sold out Banksy Thundercats McSweeney&apos;s lomo. Aesthetic mustache beard ugh, quinoa actually swag farm-to-table Truffaut letterpress pickled slow-carb. Twee flannel asymmetrical, bitters +1 paleo Blue Bottle post-ironic biodiesel photo booth mlkshk Williamsburg literally mumblecore. Meh organic messenger bag, Blue Bottle Banksy tousled direct trade kale chips gentrify skateboard swag.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Lebowski ipsum wonderful woman. </string>
+			<string>Mr. Lebowski is in seclusion in the West Wing.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Shoe motif leather tote Céline Luggage relaxed Topshop Givenchy. </string>
+			<string>White neutral A.P.C. skirt Cara D. indigo Céline beanie center part Superga</string>
+			<string>Cotton mint Paris LA Saint Laurent ecru gold collar longline Copenhagen. </string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Look, just because I don&apos;t be givin&apos; no man a foot massage don&apos;t make it right for Marsellus to throw Antwone into a glass motherfuckin&apos; house, fuckin&apos; up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, &apos;cause I&apos;ll kill the motherfucker, know what I&apos;m sayin&apos;?</string>
 		<key>events</key>
-		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<string>Powder pink bandeau Weekday tee white shirt Jil Sander Vasari Prada Saffiano Choupette oversized sweatshirt print.</string>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -73,8 +73,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -110,8 +110,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -147,8 +147,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -184,8 +184,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -221,8 +221,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -258,8 +258,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -295,8 +295,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -332,8 +332,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -369,8 +369,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -406,8 +406,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -443,8 +443,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -480,8 +480,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -517,8 +517,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -554,8 +554,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -591,8 +591,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -628,8 +628,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -665,8 +665,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -702,8 +702,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -739,8 +739,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -776,8 +776,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -813,8 +813,8 @@
 		<string>some lame text for now</string>
 		<key>events</key>
 		<string>some lame text for now</string>
-        <key>numphotos</key>
-        <integer>2</integer>
+		<key>numphotos</key>
+		<integer>2</integer>
 	</dict>
 </array>
 </plist>
