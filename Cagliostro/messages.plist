@@ -743,9 +743,7 @@
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>Allons, messieurs ! Promotion
-
-sur les douillons, 2 francs seulement la douzaine.</string>
+			<string>Allons, messieurs ! Promotion sur les douillons, 2 francs seulement la douzaine.</string>
 			<key>msg_ref</key>
 			<string>Ils vont interroger la mère Vasseur.</string>
 		</dict>
