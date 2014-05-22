@@ -262,6 +262,10 @@
 				206F981719139CF80029D581 /* ConfessionsViewController.m */,
 				200D22FC1920DFBA00863EEB /* MessagesViewController.h */,
 				200D22FD1920DFBA00863EEB /* MessagesViewController.m */,
+				2040A5EF19225D5E005395AF /* VideosCell.h */,
+				2040A5F019225D5E005395AF /* VideosCell.m */,
+				20E0B2FE192611EB009DF817 /* PhotoViewController.h */,
+				20E0B2FF192611EB009DF817 /* PhotoViewController.m */,
 				208C9833189326E20008749C /* SuperClarendon_7.otf */,
 				208C980B1892A6160008749C /* Images.xcassets */,
 				37AA0233192C8CCC000FA1D0 /* charSlideshow.xcassets */,
@@ -271,10 +275,6 @@
 				200D22FF1920F0FB00863EEB /* buttons.xcassets */,
 				20E0B2FC192610CE009DF817 /* placeSlideshow.xcassets */,
 				208C98001892A6160008749C /* Supporting Files */,
-				2040A5EF19225D5E005395AF /* VideosCell.h */,
-				2040A5F019225D5E005395AF /* VideosCell.m */,
-				20E0B2FE192611EB009DF817 /* PhotoViewController.h */,
-				20E0B2FF192611EB009DF817 /* PhotoViewController.m */,
 			);
 			path = Cagliostro;
 			sourceTree = "<group>";

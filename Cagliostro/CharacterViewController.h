@@ -16,4 +16,6 @@
 @property (strong, nonatomic) UIPageViewController *messpvc;
 @property (strong, nonatomic) NSMutableArray *confpages;
 @property (strong, nonatomic) NSMutableArray *messpages;
+@property (strong, nonatomic) UIPageViewController *photopvc;
+@property (strong, nonatomic) NSMutableArray *photopages;
 @end

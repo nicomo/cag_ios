@@ -18,6 +18,8 @@
 		<string>Il nous faut de l&apos;audace, encore de l&apos;audace, toujours de l&apos;audace.</string>
 		<key>quote_auth</key>
 		<string>George Danton</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>friends</key>
@@ -39,6 +41,8 @@
 		<string>Un regard de toi, une seule parole m’en dit plus que toute la sagesse de ce monde.</string>
 		<key>quote_auth</key>
 		<string>J. W. von Goethe</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -63,6 +67,8 @@
 		<string>Un bon gendre est un gendre mort.</string>
 		<key>quote_auth</key>
 		<string>G. d&apos;Étigues</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -85,6 +91,8 @@
 		<string>La loi du plus fort est toujours la meilleure.</string>
 		<key>quote_auth</key>
 		<string>La Fontaine</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -107,6 +115,8 @@
 		<string>Quand on aime, on ne compte pas !</string>
 		<key>quote_auth</key>
 		<string>Josette Dufoin, nourrice.</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -129,6 +139,8 @@
 		<string>L&apos;avantage des médecins, c&apos;est que lorsqu&apos;ils commettent une erreur, ils l&apos;enterrent tout de suite.</string>
 		<key>quote_auth</key>
 		<string>Alphonse Allais</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -151,6 +163,8 @@
 		<string>Tout le mal de ce monde vient de ce qu&apos;on n&apos;est pas assez bon ou pas assez pervers.</string>
 		<key>quote_auth</key>
 		<string>Machiavel</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -174,6 +188,8 @@
 		<string>Dire que j&apos;ai gâché des années de ma vie, que j&apos;ai voulu mourir, que j&apos;ai eu mon plus grand amour, pour une femme qui ne me plaisait pas, qui n&apos;était pas mon genre !</string>
 		<key>quote_auth</key>
 		<string>Un mondain</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -196,6 +212,8 @@
 		<string>Ce qui ne te tue pas te rend plus fort.</string>
 		<key>quote_auth</key>
 		<string>Nietzsche</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -218,6 +236,8 @@
 		<string>Toute machine qui s’arrête est une machine morte.</string>
 		<key>quote_auth</key>
 		<string>Emile Zola</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -239,6 +259,8 @@
 		<string>Il n’y a que les esprits légers pour ne pas juger sur les apparences.</string>
 		<key>quote_auth</key>
 		<string>Oscar Wilde</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -255,6 +277,8 @@
 		<string>Le silence est un ami qui ne trahit jamais.</string>
 		<key>quote_auth</key>
 		<string>Sagesse orientale</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -276,6 +300,8 @@
 		<string>Le meilleur douillon du pays de Caux.</string>
 		<key>quote_auth</key>
 		<string>Monsieur Flochart, sous-préfet</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -294,6 +320,8 @@
 		<string>Gendarme : Rempart de la société.</string>
 		<key>quote_auth</key>
 		<string>Gustave Flaubert, Dictionnaire des idées reçues</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -312,6 +340,8 @@
 		<string>Calomniez, calomniez, il en restera toujours quelque chose ! </string>
 		<key>quote_auth</key>
 		<string>Voltaire</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -330,6 +360,8 @@
 		<string>Diversité, c’est ma devise !</string>
 		<key>quote_auth</key>
 		<string>La Fontaine</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -351,6 +383,8 @@
 		<string>La révolution sera la floraison de l’humanité, comme l’amour est la floraison du cœur.</string>
 		<key>quote_auth</key>
 		<string>Louise Michel</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -369,6 +403,8 @@
 		<string>Quand j’étais gamin, j’avais la passion des cartes. Je restais des heures à considérer l’Amérique du Sud, l’Afrique ou l’Australie – perdu dans toutes les gloires de l’exploration. A cette époque, il y avait pas mal d’espaces blancs sur la terre, et quand j’en apercevais un sur la carte qui avait l’air particulièrement attrayant (mais ils ont tous cet air-là !), je posais le doigt dessus et disais : ‘Quand je serai grand, j’irai là !’</string>
 		<key>quote_auth</key>
 		<string>Rudyard Kipling</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -390,6 +426,8 @@
 		<string>Comment voulez-vous gouverner un pays où il existe 258 variétés de fromage ?</string>
 		<key>quote_auth</key>
 		<string>Sagesse du pays d&apos;Artois</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -410,6 +448,8 @@
 		<string>Faites ce que je dis, mais ne faites pas ce que je fais.</string>
 		<key>quote_auth</key>
 		<string>Évangile selon Saint Matthieu</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>gender</key>
@@ -427,6 +467,8 @@
 		<string>Quand on tire, on raconte pas sa vie.</string>
 		<key>quote_auth</key>
 		<string>Sagesse nord-américaine</string>
+        <key>numphotos</key>
+		<integer>3</integer>
 	</dict>
 </array>
 </plist>

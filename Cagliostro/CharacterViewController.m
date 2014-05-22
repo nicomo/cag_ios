@@ -12,6 +12,7 @@
 #import "CharacterCell.h"
 #import "ConfessionsViewController.h"
 #import "MessagesViewController.h"
+#import "PhotoViewController.h"
 
 @interface CharacterViewController ()
 
@@ -53,6 +54,8 @@ CSLinearLayoutView *mainLinearLayout;
     [self addHeader];
     
     [self addConfessionsAndMessages];
+    
+    [self addSlideshow];
     
     UILabel *friendslabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 668, 25)];
     [friendslabel setText:@"Mes connaissances"];
@@ -192,6 +195,32 @@ CSLinearLayoutView *mainLinearLayout;
     [mainLinearLayout addItem:confitem];
 }
 
+- (void)addSlideshow
+{
+    self.photopages = [[NSMutableArray alloc] init];
+    int j = 0;
+    for (int i = 0; i < [[chardata[self.cid] objectForKey:@"numphotos"] integerValue]; i++) {
+        PhotoViewController *pvc = [[PhotoViewController alloc] init];
+        pvc.pageindex = j;
+        UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 488)];
+        [img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"char_%d_image_%d", self.cid, i]]];
+        [pvc.view addSubview:img];
+        [self.photopages addObject:pvc];
+        j++;
+    }
+    
+    self.photopvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.photopvc.view.frame = CGRectMake(0, 0, 768, 488);
+    self.photopvc.dataSource = self;
+    self.photopvc.delegate = self;
+    
+    [self.photopvc setViewControllers:@[[self.photopages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    
+    CSLinearLayoutItem *photoitem = [CSLinearLayoutItem layoutItemForView:self.photopvc.view];
+    photoitem.padding = CSLinearLayoutMakePadding(50, 0, 0, 0);
+    [mainLinearLayout addItem:photoitem];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -271,7 +300,7 @@ CSLinearLayoutView *mainLinearLayout;
         }
         
         return [self.confpages objectAtIndex:index];
-    } else {
+    } else if (pageViewController == self.messpvc) {
         NSUInteger index = ((MessagesViewController*) viewController).pageindex;
         
         if (index == NSNotFound) {
@@ -287,6 +316,22 @@ CSLinearLayoutView *mainLinearLayout;
         }
         
         return [self.messpages objectAtIndex:index];
+    } else {
+        NSUInteger index = ((PhotoViewController*) viewController).pageindex;
+        
+        if (index == NSNotFound) {
+            return nil;
+        }
+        
+        index++;
+        if (index == [self.photopages count]) {
+            return nil;
+        }
+        if (([self.photopages count] == 0) || (index >= [self.photopages count])) {
+            return nil;
+        }
+        
+        return [self.photopages objectAtIndex:index];
     }
 }
 
@@ -305,7 +350,7 @@ CSLinearLayoutView *mainLinearLayout;
         }
         
         return [self.confpages objectAtIndex:index];
-    } else {
+    } else if (pageViewController == self.messpvc) {
         NSUInteger index = ((MessagesViewController*) viewController).pageindex;
         
         if ((index == 0) || (index == NSNotFound)) {
@@ -318,6 +363,19 @@ CSLinearLayoutView *mainLinearLayout;
         }
         
         return [self.messpages objectAtIndex:index];
+    } else {
+        NSUInteger index = ((PhotoViewController*) viewController).pageindex;
+        
+        if ((index == 0) || (index == NSNotFound)) {
+            return nil;
+        }
+        
+        index--;
+        if (([self.photopages count] == 0) || (index >= [self.photopages count])) {
+            return nil;
+        }
+        
+        return [self.photopages objectAtIndex:index];
     }
 }
 
@@ -325,8 +383,10 @@ CSLinearLayoutView *mainLinearLayout;
 {
     if (pageViewController == self.confpvc) {
         return [self.confpages count];
-    } else {
+    } else if (pageViewController == self.messpvc) {
         return [self.messpages count];
+    } else {
+        return [self.photopages count];
     }
 }
 
