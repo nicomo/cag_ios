@@ -15,26 +15,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSDate *fld = [prefs objectForKey:@"firstLaunchDate"];
-    if (fld) {
-        firstLaunchDate = fld;
-        NSLog(@"Date de premier lancement trouvée.");
-    } else {
-        firstLaunchDate = [NSDate date];
-        [prefs setObject:firstLaunchDate forKey:@"firstLaunchDate"];
-        [prefs setBool:YES forKey:@"delayedEps"];
-        NSLog(@"App lancée pour la première fois. Enregistrement de la date de premier lancement.");
-    }
-    
-    UILocalNotification *localNotif = [[UILocalNotification alloc] init];
-    localNotif.fireDate = [fld dateByAddingTimeInterval:30*60];
-    localNotif.alertBody = @"Bonjour!";
-    localNotif.alertAction = @"View Details";
-    localNotif.soundName = UILocalNotificationDefaultSoundName;
-    localNotif.applicationIconBadgeNumber = 1;
-    [application scheduleLocalNotification:localNotif];
-    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"episodes" ofType:@"plist"];
     epdata = [NSMutableArray arrayWithContentsOfFile:path];
     
@@ -50,6 +30,31 @@
     NSString *path5 = [[NSBundle mainBundle] pathForResource:@"confessions" ofType:@"plist"];
     confdata = [NSMutableArray arrayWithContentsOfFile:path5];
     
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSDate *fld = [prefs objectForKey:@"firstLaunchDate"];
+    if (fld) {
+        firstLaunchDate = fld;
+        NSLog(@"Date de premier lancement trouvée.");
+    } else {
+        firstLaunchDate = [NSDate date];
+        [prefs setObject:firstLaunchDate forKey:@"firstLaunchDate"];
+        [prefs setBool:YES forKey:@"delayedEps"];
+        NSLog(@"App lancée pour la première fois. Enregistrement de la date de premier lancement.");
+        
+        int i = 0;
+        for (NSDictionary *ep in epdata) {
+            UILocalNotification *localNotif = [[UILocalNotification alloc] init];
+            localNotif.fireDate = [firstLaunchDate dateByAddingTimeInterval:60*i];
+            localNotif.timeZone = [NSTimeZone localTimeZone];
+            localNotif.alertBody = [ep objectForKey:@"title"];
+            localNotif.alertAction = @"Voir l'épisode";
+            localNotif.soundName = UILocalNotificationDefaultSoundName;
+            localNotif.userInfo = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:i] forKey:@"epid"];
+            [application scheduleLocalNotification:localNotif];
+            i++;
+        }
+    }
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
@@ -110,6 +115,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -119,13 +125,12 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
-    UIApplicationState state = [application applicationState];
-    if (state == UIApplicationStateActive) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reminder"
-                                                        message:notification.alertBody
-                                                       delegate:self cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
+    if ([application applicationState] != UIApplicationStateActive)
+    {
+        int epid = [[notification.userInfo objectForKey:@"epid"] intValue];
+        CustomPageViewController *cpvc = [[CustomPageViewController alloc] initWithEpid:epid];
+        AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        [(UINavigationController *)ad.window.rootViewController pushViewController:cpvc animated:YES];
     }
 }
 
