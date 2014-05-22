@@ -67,7 +67,7 @@ CSLinearLayoutView *mainLinearLayout;
 - (void)addHeader
 {
     UIImageView *header = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 400)];
-    [header setImage:[UIImage imageNamed:@"charbg"]];
+    [header setImage:[UIImage imageNamed:[NSString stringWithFormat:@"char_%d_bg", self.cid]]];
     
     UIView *whitestripe = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 768, 200)];
     [whitestripe setBackgroundColor:[UIColor whiteColor]];

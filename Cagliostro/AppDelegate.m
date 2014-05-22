@@ -27,6 +27,14 @@
         NSLog(@"App lancée pour la première fois. Enregistrement de la date de premier lancement.");
     }
     
+    UILocalNotification *localNotif = [[UILocalNotification alloc] init];
+    localNotif.fireDate = [fld dateByAddingTimeInterval:30*60];
+    localNotif.alertBody = @"Bonjour!";
+    localNotif.alertAction = @"View Details";
+    localNotif.soundName = UILocalNotificationDefaultSoundName;
+    localNotif.applicationIconBadgeNumber = 1;
+    [application scheduleLocalNotification:localNotif];
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"episodes" ofType:@"plist"];
     epdata = [NSMutableArray arrayWithContentsOfFile:path];
     
@@ -107,6 +115,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reminder"
+                                                        message:notification.alertBody
+                                                       delegate:self cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 @end
