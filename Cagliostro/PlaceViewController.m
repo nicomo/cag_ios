@@ -82,25 +82,25 @@ CSLinearLayoutView *mainLinearLayout;
     name.numberOfLines = 2;
     
     CSLinearLayoutItem *headeritem = [CSLinearLayoutItem layoutItemForView:name];
-    headeritem.padding = CSLinearLayoutMakePadding(0, 85, 0, 85);
+    headeritem.padding = CSLinearLayoutMakePadding(0, 50, 0, 50);
     [mainLinearLayout addItem:headeritem];
     
     // Map
     
-    self.map = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2), 428)];
+    self.map = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 668, 476)];
     
-    UIImageView *mapimg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2), 428)];
+    UIImageView *mapimg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 668, 476)];
     mapimg.image = [UIImage imageNamed:@"map"];
     [self.map addSubview:mapimg];
     
     CSLinearLayoutItem *mapitem = [CSLinearLayoutItem layoutItemForView:self.map];
-    mapitem.padding = CSLinearLayoutMakePadding(0, 85, 85, 85);
+    mapitem.padding = CSLinearLayoutMakePadding(0, 50, 50, 50);
     [mainLinearLayout addItem:mapitem];
     
     NSMutableDictionary *place = pldata[self.plid];
     double x = [[place objectForKey:@"x"] doubleValue];
     double y = [[place objectForKey:@"y"] doubleValue];
-    UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*598) - 20, (y*428) - 20, 40, 40)];
+    UIButton* placebtn = [[UIButton alloc] initWithFrame:CGRectMake((x*668) - 20, (y*476) - 20, 40, 40)];
     if (self.plid < 7) {
         [placebtn setBackgroundImage:[UIImage imageNamed:@"place_abbey"] forState:UIControlStateNormal];
     } else {
@@ -108,6 +108,22 @@ CSLinearLayoutView *mainLinearLayout;
     }
     placebtn.tag = self.plid;
     [self.map addSubview:placebtn];
+    
+    // Bottom images
+    
+    UIView *bic = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 668, 400)];
+    
+    UIImageView *ib1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 400)];
+    [ib1 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"place_%d_imagebottom_0", self.plid]]];
+    [bic addSubview:ib1];
+    
+    UIImageView *ib2 = [[UIImageView alloc] initWithFrame:CGRectMake((668/2)+12, 0, (668/2)-12, 400)];
+    [ib2 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"place_%d_imagebottom_1", self.plid]]];
+    [bic addSubview:ib2];
+    
+    CSLinearLayoutItem *biitem = [CSLinearLayoutItem layoutItemForView:bic];
+    biitem.padding = CSLinearLayoutMakePadding(0, 50, 50, 50);
+    [mainLinearLayout addItem:biitem];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController

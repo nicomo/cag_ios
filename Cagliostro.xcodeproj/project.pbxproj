@@ -48,6 +48,7 @@
 		208C98151892A6160008749C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C97FD1892A6160008749C /* UIKit.framework */; };
 		208C982D1892A73C0008749C /* EpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C982C1892A73C0008749C /* EpisodeViewController.m */; };
 		208C98311892A8340008749C /* CSLinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 208C98301892A8340008749C /* CSLinearLayoutView.m */; };
+		208F26EA1930AE0E008CDB4E /* placeImagebottom.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208F26E91930AE0E008CDB4E /* placeImagebottom.xcassets */; };
 		20C6866718E456ED00BAAFC7 /* places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20C6866618E456ED00BAAFC7 /* places.plist */; };
 		20E0B2FD192610CE009DF817 /* placeSlideshow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E0B2FC192610CE009DF817 /* placeSlideshow.xcassets */; };
 		20E0B300192611EB009DF817 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0B2FF192611EB009DF817 /* PhotoViewController.m */; };
@@ -131,6 +132,7 @@
 		208C982F1892A8340008749C /* CSLinearLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLinearLayoutView.h; sourceTree = "<group>"; };
 		208C98301892A8340008749C /* CSLinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLinearLayoutView.m; sourceTree = "<group>"; };
 		208C9833189326E20008749C /* SuperClarendon_7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperClarendon_7.otf; sourceTree = "<group>"; };
+		208F26E91930AE0E008CDB4E /* placeImagebottom.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = placeImagebottom.xcassets; sourceTree = "<group>"; };
 		20C6866618E456ED00BAAFC7 /* places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = places.plist; sourceTree = "<group>"; };
 		20E0B2FC192610CE009DF817 /* placeSlideshow.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = placeSlideshow.xcassets; sourceTree = "<group>"; };
 		20E0B2FE192611EB009DF817 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				207D674E190FAC4C004187F7 /* charbg.xcassets */,
 				200D22FF1920F0FB00863EEB /* buttons.xcassets */,
 				20E0B2FC192610CE009DF817 /* placeSlideshow.xcassets */,
+				208F26E91930AE0E008CDB4E /* placeImagebottom.xcassets */,
 				208C98001892A6160008749C /* Supporting Files */,
 			);
 			path = Cagliostro;
@@ -381,6 +384,7 @@
 			files = (
 				20325BBB18A9225A001FDBFF /* www in Resources */,
 				200FA79F18B393CC00AAD523 /* pins.xcassets in Resources */,
+				208F26EA1930AE0E008CDB4E /* placeImagebottom.xcassets in Resources */,
 				20C6866718E456ED00BAAFC7 /* places.plist in Resources */,
 				206DA5B518D08F6C0055ECAA /* characters.plist in Resources */,
 				200D23001920F0FB00863EEB /* buttons.xcassets in Resources */,
