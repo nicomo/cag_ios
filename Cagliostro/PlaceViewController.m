@@ -88,7 +88,6 @@ CSLinearLayoutView *mainLinearLayout;
     // First textzone
     
     CSLinearLayoutView *ll1 = [[CSLinearLayoutView alloc] initWithFrame:CGRectMake(0, 0, 668, 100)];
-    ll1.autoresizesSubviews = YES;
     ll1.orientation = CSLinearLayoutViewOrientationHorizontal;
     
     UIImageView *bullhorn = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
@@ -125,6 +124,7 @@ CSLinearLayoutView *mainLinearLayout;
         itin1.font = [UIFont fontWithName:@"Georgia" size:12];
         itin1.backgroundColor = [UIColor clearColor];
         itin1.textContainerInset = UIEdgeInsetsMake(5,5,5,5);
+        itin1.userInteractionEnabled = NO;
         [itin1 sizeToFit];
         itin1.frame = CGRectMake(0, 0, 309-20-40, itin1.frame.size.height);
         CSLinearLayoutItem *itin1item = [CSLinearLayoutItem layoutItemForView:itin1];
@@ -195,6 +195,158 @@ CSLinearLayoutView *mainLinearLayout;
     }
     placebtn.tag = self.plid;
     [self.map addSubview:placebtn];
+    
+    // Bottom textzones
+    
+    CSLinearLayoutView *ll2 = [[CSLinearLayoutView alloc] initWithFrame:CGRectMake(0, 0, 668, 100)];
+    ll2.orientation = CSLinearLayoutViewOrientationHorizontal;
+    
+    CSLinearLayoutView *llv2 = [[CSLinearLayoutView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
+    llv2.autoAdjustFrameSize = YES;
+    llv2.orientation = CSLinearLayoutViewOrientationVertical;
+    
+    UITextView *celebstitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
+    celebstitle.text = @"CELEBRITES";
+    celebstitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    celebstitle.backgroundColor = [UIColor clearColor];
+    celebstitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
+    celebstitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
+    celebstitle.layer.borderWidth = 1;
+    [celebstitle sizeToFit];
+    celebstitle.userInteractionEnabled = NO;
+    celebstitle.frame = CGRectMake(0, 0, (668/2)-13, celebstitle.frame.size.height);
+    CSLinearLayoutItem *ctitem = [CSLinearLayoutItem layoutItemForView:celebstitle];
+    [llv2 addItem:ctitem];
+    
+    CSLinearLayoutView *llvc = [[CSLinearLayoutView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
+    llvc.autoAdjustFrameSize = YES;
+    llvc.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
+    llvc.layer.borderWidth = 1;
+    llvc.orientation = CSLinearLayoutViewOrientationVertical;
+    
+    for (NSString *cs in [pldata[self.plid] objectForKey:@"celebs"]) {
+        UITextView *celeb = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
+        celeb.text = cs;
+        celeb.font = [UIFont fontWithName:@"Georgia" size:12];
+        celeb.backgroundColor = [UIColor clearColor];
+        celeb.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
+        [celeb sizeToFit];
+        celeb.userInteractionEnabled = NO;
+        celeb.frame = CGRectMake(0, 0, (668/2)-13, celeb.frame.size.height);
+        CSLinearLayoutItem *citem = [CSLinearLayoutItem layoutItemForView:celeb];
+        [llvc addItem:citem];
+    }
+    
+    CSLinearLayoutItem *llvcitem = [CSLinearLayoutItem layoutItemForView:llvc];
+    llvcitem.padding = CSLinearLayoutMakePadding(0, 0, 0, 13);
+    [llv2 addItem:llvcitem];
+    
+    UITextView *convtitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
+    convtitle.text = @"GUIDE DE CONVERSATION";
+    convtitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    convtitle.backgroundColor = [UIColor clearColor];
+    convtitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
+    convtitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
+    convtitle.layer.borderWidth = 1;
+    [convtitle sizeToFit];
+    convtitle.frame = CGRectMake(0, 0, (668/2)-13, convtitle.frame.size.height);
+    CSLinearLayoutItem *convtitem = [CSLinearLayoutItem layoutItemForView:convtitle];
+    convtitem.padding = CSLinearLayoutMakePadding(25, 0, 0, 0);
+    [llv2 addItem:convtitem];
+    
+    CSLinearLayoutView *llvconv = [[CSLinearLayoutView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
+    llvconv.autoAdjustFrameSize = YES;
+    llvconv.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
+    llvconv.layer.borderWidth = 1;
+    llvconv.orientation = CSLinearLayoutViewOrientationVertical;
+    
+    for (NSString *cs in [pldata[self.plid] objectForKey:@"conversation"]) {
+        UITextView *conv = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
+        conv.text = cs;
+        conv.font = [UIFont fontWithName:@"Georgia" size:12];
+        conv.backgroundColor = [UIColor clearColor];
+        conv.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
+        [conv sizeToFit];
+        conv.userInteractionEnabled = NO;
+        conv.frame = CGRectMake(0, 0, (668/2)-13, conv.frame.size.height);
+        CSLinearLayoutItem *citem = [CSLinearLayoutItem layoutItemForView:conv];
+        [llvconv addItem:citem];
+    }
+    
+    CSLinearLayoutItem *llvconvitem = [CSLinearLayoutItem layoutItemForView:llvconv];
+    llvconvitem.padding = CSLinearLayoutMakePadding(0, 0, 0, 13);
+    [llv2 addItem:llvconvitem];
+    
+    CSLinearLayoutItem *llv2item = [CSLinearLayoutItem layoutItemForView:llv2];
+    llv2item.padding = CSLinearLayoutMakePadding(0, 0, 0, 13);
+    [ll2 addItem:llv2item];
+    
+    CSLinearLayoutView *llv3 = [[CSLinearLayoutView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-12, 0)];
+    llv3.autoAdjustFrameSize = YES;
+    llv3.orientation = CSLinearLayoutViewOrientationVertical;
+    
+    UITextView *savoirtitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-12, 0)];
+    savoirtitle.text = @"LE SAVIEZ-VOUS ?";
+    savoirtitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    savoirtitle.backgroundColor = [UIColor clearColor];
+    savoirtitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
+    savoirtitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
+    savoirtitle.layer.borderWidth = 1;
+    [savoirtitle sizeToFit];
+    savoirtitle.frame = CGRectMake(0, 0, (668/2)-12, savoirtitle.frame.size.height);
+    CSLinearLayoutItem *stitem = [CSLinearLayoutItem layoutItemForView:savoirtitle];
+    [llv3 addItem:stitem];
+    
+    UITextView *savoir = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-12, 0)];
+    savoir.text = [pldata[self.plid] objectForKey:@"savoir"];
+    savoir.font = [UIFont fontWithName:@"Georgia" size:12];
+    savoir.backgroundColor = [UIColor clearColor];
+    savoir.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
+    savoir.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
+    savoir.layer.borderWidth = 1;
+    [savoir sizeToFit];
+    savoir.frame = CGRectMake(0, 0, (668/2)-12, savoir.frame.size.height);
+    CSLinearLayoutItem *sitem = [CSLinearLayoutItem layoutItemForView:savoir];
+    [llv3 addItem:sitem];
+    
+    if (llv2.frame.size.height > ll2.frame.size.height)
+        ll2.frame = CGRectMake(0, 0, 668, llv2.frame.size.height);
+    if (llv3.frame.size.height > ll2.frame.size.height)
+        ll2.frame = CGRectMake(0, 0, 668, llv3.frame.size.height);
+    
+    CSLinearLayoutItem *llv3item = [CSLinearLayoutItem layoutItemForView:llv3];
+    llv3item.padding = CSLinearLayoutMakePadding(0, 12, 0, 0);
+    [ll2 addItem:llv3item];
+    
+    CSLinearLayoutItem *ll2item = [CSLinearLayoutItem layoutItemForView:ll2];
+    ll2item.padding = CSLinearLayoutMakePadding(0, 50, 50, 50);
+    [mainLinearLayout addItem:ll2item];
+    
+    UITextView *eventstitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 668, 0)];
+    eventstitle.text = @"EVENEMENTS LOCAUX";
+    eventstitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    eventstitle.backgroundColor = [UIColor clearColor];
+    eventstitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
+    eventstitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
+    eventstitle.layer.borderWidth = 1;
+    [eventstitle sizeToFit];
+    eventstitle.frame = CGRectMake(0, 0, 668, eventstitle.frame.size.height);
+    CSLinearLayoutItem *etitem = [CSLinearLayoutItem layoutItemForView:eventstitle];
+    etitem.padding = CSLinearLayoutMakePadding(0, 50, 0, 50);
+    [mainLinearLayout addItem:etitem];
+    
+    UITextView *events = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 668, 0)];
+    events.text = [pldata[self.plid] objectForKey:@"events"];
+    events.font = [UIFont fontWithName:@"Georgia" size:12];
+    events.backgroundColor = [UIColor clearColor];
+    events.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
+    events.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
+    events.layer.borderWidth = 1;
+    [events sizeToFit];
+    events.frame = CGRectMake(0, 0, 668, events.frame.size.height);
+    CSLinearLayoutItem *eitem = [CSLinearLayoutItem layoutItemForView:events];
+    eitem.padding = CSLinearLayoutMakePadding(0, 50, 50, 50);
+    [mainLinearLayout addItem:eitem];
     
     // Bottom images
     
