@@ -97,7 +97,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *intro = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 309, 100)];
     [intro setText:[pldata[self.plid] objectForKey:@"intro"]];
-    [intro setFont:[UIFont fontWithName:@"Georgia" size:12]];
+    [intro setFont:[UIFont fontWithName:@"Georgia" size:16]];
     intro.backgroundColor = [UIColor clearColor];
     intro.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     [intro sizeToFit];
@@ -121,7 +121,7 @@ CSLinearLayoutView *mainLinearLayout;
         
         UITextView *itin1 = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 309-20-40, 0)];
         itin1.text = [[pldata[self.plid] objectForKey:@"itineraire"] objectAtIndex:i];
-        itin1.font = [UIFont fontWithName:@"Georgia" size:12];
+        itin1.font = [UIFont fontWithName:@"Georgia" size:16];
         itin1.backgroundColor = [UIColor clearColor];
         itin1.textContainerInset = UIEdgeInsetsMake(5,5,5,5);
         itin1.userInteractionEnabled = NO;
@@ -137,7 +137,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *histotitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 309, 0)];
     histotitle.text = @"HISTORIQUE";
-    histotitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    histotitle.font = [UIFont fontWithName:@"Georgia" size:16];
     histotitle.backgroundColor = [UIColor clearColor];
     histotitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     histotitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
@@ -150,7 +150,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *historique = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 309, 0)];
     historique.text = [pldata[self.plid] objectForKey:@"historique"];
-    historique.font = [UIFont fontWithName:@"Georgia" size:12];
+    historique.font = [UIFont fontWithName:@"Georgia" size:16];
     historique.backgroundColor = [UIColor clearColor];
     historique.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     historique.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
@@ -207,7 +207,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *celebstitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
     celebstitle.text = @"CELEBRITES";
-    celebstitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    celebstitle.font = [UIFont fontWithName:@"Georgia" size:16];
     celebstitle.backgroundColor = [UIColor clearColor];
     celebstitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     celebstitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
@@ -227,7 +227,7 @@ CSLinearLayoutView *mainLinearLayout;
     for (NSString *cs in [pldata[self.plid] objectForKey:@"celebs"]) {
         UITextView *celeb = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
         celeb.text = cs;
-        celeb.font = [UIFont fontWithName:@"Georgia" size:12];
+        celeb.font = [UIFont fontWithName:@"Georgia" size:16];
         celeb.backgroundColor = [UIColor clearColor];
         celeb.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
         [celeb sizeToFit];
@@ -243,7 +243,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *convtitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
     convtitle.text = @"GUIDE DE CONVERSATION";
-    convtitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    convtitle.font = [UIFont fontWithName:@"Georgia" size:16];
     convtitle.backgroundColor = [UIColor clearColor];
     convtitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     convtitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
@@ -263,7 +263,7 @@ CSLinearLayoutView *mainLinearLayout;
     for (NSString *cs in [pldata[self.plid] objectForKey:@"conversation"]) {
         UITextView *conv = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-13, 0)];
         conv.text = cs;
-        conv.font = [UIFont fontWithName:@"Georgia" size:12];
+        conv.font = [UIFont fontWithName:@"Georgia" size:16];
         conv.backgroundColor = [UIColor clearColor];
         conv.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
         [conv sizeToFit];
@@ -287,7 +287,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *savoirtitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-12, 0)];
     savoirtitle.text = @"LE SAVIEZ-VOUS ?";
-    savoirtitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    savoirtitle.font = [UIFont fontWithName:@"Georgia" size:16];
     savoirtitle.backgroundColor = [UIColor clearColor];
     savoirtitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     savoirtitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
@@ -299,7 +299,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *savoir = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, (668/2)-12, 0)];
     savoir.text = [pldata[self.plid] objectForKey:@"savoir"];
-    savoir.font = [UIFont fontWithName:@"Georgia" size:12];
+    savoir.font = [UIFont fontWithName:@"Georgia" size:16];
     savoir.backgroundColor = [UIColor clearColor];
     savoir.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     savoir.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
@@ -324,7 +324,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *eventstitle = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 668, 0)];
     eventstitle.text = @"EVENEMENTS LOCAUX";
-    eventstitle.font = [UIFont fontWithName:@"Georgia" size:12];
+    eventstitle.font = [UIFont fontWithName:@"Georgia" size:16];
     eventstitle.backgroundColor = [UIColor clearColor];
     eventstitle.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     eventstitle.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
@@ -337,7 +337,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     UITextView *events = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 668, 0)];
     events.text = [pldata[self.plid] objectForKey:@"events"];
-    events.font = [UIFont fontWithName:@"Georgia" size:12];
+    events.font = [UIFont fontWithName:@"Georgia" size:16];
     events.backgroundColor = [UIColor clearColor];
     events.textContainerInset = UIEdgeInsetsMake(10,10,10,10);
     events.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
