@@ -27,6 +27,13 @@
 
         UIImageView* map = [[UIImageView alloc] initWithFrame:CGRectMake(0, 120, 768, 548)];
         map.image = [UIImage imageNamed:@"map"];
+        map.userInteractionEnabled = YES;
+        
+        UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc]
+                                                              initWithTarget:self
+                                                              action:@selector(handleSingleTap:)];
+        [singleTapGestureRecognizer setNumberOfTapsRequired:1];
+        [map addGestureRecognizer:singleTapGestureRecognizer];
         
         UIView* separator = [[UIView alloc] initWithFrame:CGRectMake(0, 667, 768, 1)];
         separator.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
@@ -59,6 +66,10 @@
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updatePlaces:) userInfo:nil repeats:YES];
     }
     return self;
+}
+
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+    [self clearBubbles];
 }
 
 -(void)updatePlaces:(NSTimer *)timer
