@@ -24,6 +24,8 @@ CSLinearLayoutView *mainLinearLayout;
 
 @implementation EpisodeViewController
 
+CGPoint offset;
+
 - (id)init
 {
     self = [super init];
@@ -263,6 +265,8 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    offset = scrollView.contentOffset;
+    
     self.player.view.alpha = 1 - (scrollView.contentOffset.y + 64) / self.player.view.frame.size.height;
     [self.player.view setFrame: CGRectMake(0, (scrollView.contentOffset.y + 64) / 3, 768, self.player.view.frame.size.height)];
     [self updatePins];
@@ -319,13 +323,17 @@ CSLinearLayoutView *mainLinearLayout;
 {
     CGRect visibleRect;
     visibleRect.size = mainLinearLayout.bounds.size;
-    visibleRect.origin = mainLinearLayout.contentOffset;
+    visibleRect.origin = offset;
     
     for (NSMutableDictionary *pin in [epdata[self.epid] objectForKey:@"pins"]) {
         UIButton *pinButton = [pin objectForKey:@"pinButton"];
         
-        if (CGRectContainsRect(visibleRect, pinButton.frame) && ![[pin objectForKey:@"state"] isEqual: @"flipped"] ) {
+        if (CGRectContainsRect(visibleRect, pinButton.frame)) {
+            NSLog(@"%f", visibleRect.origin.y);
+        
+        if (![[pin objectForKey:@"state"] isEqual: @"flipped"] ) {
             [pin setValue:@"flipped" forKey:@"state"];
+                NSLog(@"OOOO");
             
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void){
                 [UIView transitionWithView:pinButton
@@ -339,6 +347,7 @@ CSLinearLayoutView *mainLinearLayout;
                                     [pinButton addTarget:self action:@selector(didPressPinButton:) forControlEvents:UIControlEventTouchUpInside];
                                 } completion:^(BOOL finished) {}];
             });
+        }
         }
     }
 }
