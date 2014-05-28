@@ -378,30 +378,34 @@ CGPoint offset;
     self.player.URL = url;
     [header addSubview: self.player.view];
     
-    UITextView *title = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 768, 0)];
+    int margintop = 85*2+64;
+    
+    UITextView *title = [[UITextView alloc] initWithFrame:CGRectMake(0, margintop, 768, 0)];
     title.text = [NSString stringWithFormat:@"%d. %@", partNumber, titleText];
     title.font = [UIFont fontWithName:@"SuperClarendon-Black" size:50];
     title.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
-    title.backgroundColor = [UIColor clearColor];
+    title.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
     title.userInteractionEnabled = NO;
     title.scrollEnabled = NO;
-    title.textContainerInset = UIEdgeInsetsMake(85*2+64, 85, 0, 0);
+    title.textContainerInset = UIEdgeInsetsMake(85/2, 85, 0, 0);
     [title sizeToFit];
+    title.frame = CGRectMake(0, margintop, 768, title.frame.size.height);
     [header addSubview:title];
     
-    UITextView *subtitle = [[UITextView alloc] initWithFrame:CGRectMake(0, title.frame.size.height, 768, 0)];
+    UITextView *subtitle = [[UITextView alloc] initWithFrame:CGRectMake(0, title.frame.size.height + margintop, 768, 0)];
     subtitle.text = subtitleText;
     subtitle.font = [UIFont fontWithName:@"SuperClarendon-Black" size:30];
     subtitle.textColor = [UIColor colorWithRed:0.24 green:0.24 blue:0.22 alpha:1.0];
-    subtitle.backgroundColor = [UIColor clearColor];
+    subtitle.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
     subtitle.userInteractionEnabled = NO;
     subtitle.scrollEnabled = NO;
     subtitle.textContainerInset = UIEdgeInsetsMake(85/2, 85, 85/2, 0);
     [subtitle sizeToFit];
+    subtitle.frame = CGRectMake(0, title.frame.size.height + margintop, 768, subtitle.frame.size.height);
     [header addSubview:subtitle];
     
-    header.frame = CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height);
-    [self.player.view setFrame: CGRectMake(0, 0, 768, title.frame.size.height + subtitle.frame.size.height)];
+    header.frame = CGRectMake(0, 0, 768, title.frame.size.height + margintop + subtitle.frame.size.height);
+    [self.player.view setFrame: header.frame];
     
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:header];
     [mainLinearLayout addItem:item];
@@ -413,24 +417,26 @@ CGPoint offset;
     self.nextButton.backgroundColor = [UIColor colorWithRed:0.75 green:0.70 blue:0.69 alpha:1.0];
     [self.nextButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"next_%d", self.epid]] forState:UIControlStateNormal];
 
-    UITextView *nextPartLabel = [[UITextView alloc] initWithFrame:CGRectMake(85, 100, 768-85, 0)];
+    UITextView *nextPartLabel = [[UITextView alloc] initWithFrame:CGRectMake(85, 150, 768-85, 0)];
     nextPartLabel.text = [NSString stringWithFormat:@"Episode %d.", partNumber];
     nextPartLabel.font = [UIFont fontWithName:@"SuperClarendon-Black" size:30];
     nextPartLabel.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
-    nextPartLabel.backgroundColor = [UIColor clearColor];
+    nextPartLabel.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
     nextPartLabel.userInteractionEnabled = NO;
     nextPartLabel.scrollEnabled = NO;
     [nextPartLabel sizeToFit];
+    nextPartLabel.frame = CGRectMake(85, 150-nextPartLabel.frame.size.height, 768-85, nextPartLabel.frame.size.height);
     [self.nextButton addSubview:nextPartLabel];
     
     self.nextButtonTitle = [[UITextView alloc] initWithFrame:CGRectMake(85, 150, 768-85, 0)];
     self.nextButtonTitle.text = titleText;
     self.nextButtonTitle.font = [UIFont fontWithName:@"SuperClarendon-Black" size:30];
     self.nextButtonTitle.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
-    self.nextButtonTitle.backgroundColor = [UIColor clearColor];
+    self.nextButtonTitle.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
     self.nextButtonTitle.userInteractionEnabled = NO;
     self.nextButtonTitle.scrollEnabled = NO;
     [self.nextButtonTitle sizeToFit];
+    self.nextButtonTitle.frame = CGRectMake(85, 150, 768-85, nextPartLabel.frame.size.height);
     [self.nextButton addSubview:self.nextButtonTitle];
     
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:self.nextButton];
