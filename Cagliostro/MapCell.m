@@ -107,7 +107,7 @@
         bubble.tag = plid;
         [bubble addTarget:self action:@selector(didPressBubble:) forControlEvents:UIControlEventTouchUpInside];
     
-        UITextView *buttonTitle = [[UITextView alloc] initWithFrame:CGRectMake(20, 10, 210, 90)];
+        UITextView *buttonTitle = [[UITextView alloc] initWithFrame:CGRectMake(20, 10, 210, 45)];
         buttonTitle.text = name;
         buttonTitle.font = [UIFont fontWithName:@"Georgia" size:15];
         buttonTitle.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
@@ -118,22 +118,22 @@
         [bubble addSubview:buttonTitle];
     
         if (x < 0.5 && y < 0.5 ) {
-            bubble.frame = CGRectMake((x*768)+15, (y*548) -20 + 120, 250, 100);
+            bubble.frame = CGRectMake((x*768)+15, (y*548) -20 + 120, 250, 55);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblerightbottom"] forState:UIControlStateNormal];
             [self.contentView addSubview:bubble];
         }
         if (x > 0.5 && y < 0.5 ) {
-            bubble.frame = CGRectMake((x*768)-15-250, (y*548) -20 + 120, 250, 100);
+            bubble.frame = CGRectMake((x*768)-15-250, (y*548) -20 + 120, 250, 55);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubbleleftbottom"] forState:UIControlStateNormal];
             [self.contentView addSubview:bubble];
         }
         if (x > 0.5 && y > 0.5 ) {
-            bubble.frame = CGRectMake((x*768)-15-250, (y*548) -100 +20 + 120, 250, 100);
+            bubble.frame = CGRectMake((x*768)-15-250, (y*548) -55 +20 + 120, 250, 55);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblelefttop"] forState:UIControlStateNormal];
             [self.contentView addSubview:bubble];
         }
         if (x < 0.5 && y > 0.5 ) {
-            bubble.frame = CGRectMake((x*768)+15, (y*548) -100 +20 + 120, 250, 100);
+            bubble.frame = CGRectMake((x*768)+15, (y*548) -55 +20 + 120, 250, 55);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblerighttop"] forState:UIControlStateNormal];
             [self.contentView addSubview:bubble];
         }

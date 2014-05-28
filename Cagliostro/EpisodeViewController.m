@@ -209,22 +209,22 @@ CGPoint offset;
         [bubble addSubview:buttonTitle];
         
         if (x < 0.5 && y < 0.5 ) {
-            bubble.frame = CGRectMake((x*598)+15, (y*428) -20, 250, 100);
+            bubble.frame = CGRectMake((x*598)+15, (y*428) -20, 250, 55);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblerightbottom"] forState:UIControlStateNormal];
             [self.map addSubview:bubble];
         }
         if (x > 0.5 && y < 0.5 ) {
-            bubble.frame = CGRectMake((x*598)-15-250, (y*428) -20, 250, 100);
+            bubble.frame = CGRectMake((x*598)-15-250, (y*428) -20, 250, 55);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubbleleftbottom"] forState:UIControlStateNormal];
             [self.map addSubview:bubble];
         }
         if (x > 0.5 && y > 0.5 ) {
-            bubble.frame = CGRectMake((x*598)-15-250, (y*428) -100 +20, 250, 100);
+            bubble.frame = CGRectMake((x*598)-15-250, (y*428) -55 +20, 250, 55);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblelefttop"] forState:UIControlStateNormal];
             [self.map addSubview:bubble];
         }
         if (x < 0.5 && y > 0.5 ) {
-            bubble.frame = CGRectMake((x*598)+15, (y*428) -100 +20, 250, 100);
+            bubble.frame = CGRectMake((x*598)+15, (y*428) -55 +20, 250, 55);
             [bubble setBackgroundImage:[UIImage imageNamed:@"bubblerighttop"] forState:UIControlStateNormal];
             [self.map addSubview:bubble];
         }
