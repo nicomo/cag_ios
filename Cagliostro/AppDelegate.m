@@ -41,6 +41,8 @@
         [prefs setBool:YES forKey:@"delayedEps"];
         NSLog(@"App lancée pour la première fois. Enregistrement de la date de premier lancement.");
         
+        [application cancelAllLocalNotifications];
+        
         int i = 0;
         for (NSDictionary *ep in epdata) {
             UILocalNotification *localNotif = [[UILocalNotification alloc] init];
@@ -56,8 +58,7 @@
     }
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    
+
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
 
     self.window.backgroundColor = [UIColor blackColor];
@@ -72,7 +73,19 @@
     pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
     pageControl.backgroundColor = [UIColor clearColor];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(defaultsChanged) name:NSUserDefaultsDidChangeNotification object:nil];
+    
     return YES;
+}
+
+- (void)defaultsChanged
+{
+    NSLog(@"defaultsChanded");
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    bool delayedEps = [prefs boolForKey:@"delayedEps"];
+    if (!delayedEps) {
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    }
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
