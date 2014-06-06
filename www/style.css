@@ -43,6 +43,9 @@ p {
 
 img {
     width: 450px;
+    padding: 10px 0px;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
 }
 
 circle {
