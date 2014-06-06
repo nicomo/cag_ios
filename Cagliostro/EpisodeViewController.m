@@ -276,7 +276,7 @@ CGPoint offset;
     int cid = 0;
     for (NSArray *charmessagelist in messdata) {
         for (NSMutableDictionary *message in charmessagelist) {
-            if ([message objectForKey:@"toast"] && [[message objectForKey:@"epid"] intValue] == self.epid && offset >= [[message objectForKey:@"para"] floatValue] && ! [message objectForKey:@"shown"]) {
+            if ([[message objectForKey:@"toast"] boolValue] && [[message objectForKey:@"epid"] intValue] == self.epid && offset >= [[message objectForKey:@"para"] floatValue] && ! [message objectForKey:@"shown"]) {
                 [self.view makeToast:[message objectForKey:@"msg"]
                             duration:2.0
                             position:@"bottom"
