@@ -12,30 +12,31 @@
 		<key>epid</key>
 		<integer>17</integer>
 		<key>intro</key>
-		<string>Intelligentsia roof party tote bag narwhal, chambray Portland umami actually squid Odd Future blog hashtag disrupt. Chambray pour-over yr American Apparel chia cray, selfies normcore forage swag Wes Anderson pop-up trust fund. Direct trade Odd Future Brooklyn plaid, wayfarers Thundercats kitsch aesthetic mixtape wolf ugh selvage. Austin iPhone hella, +1 yr raw denim VHS brunch ennui. VHS Intelligentsia 8-bit leggings. Master cleanse trust fund farm-to-table, wolf selvage Etsy Banksy Cosby sweater polaroid craft beer. Small batch meh cred YOLO pug.</string>
+		<string>A trois lieues de Rouen, sur la pente boisée d’une colline, surgit chemin la façade imposante d’une église du XIe siècle, flanquée de sveltes campaniles. Vous êtes à l’abbaye de Saint-Georges-de-Boscherville, l’une des plus antiques de Normandie. La route 43 (Rouen-Le Havre) vous y conduit. Après avoir tourné à gauche au gros chêne, suivez une route de terre menant vers ce noble et antique édifice. Admirez la très belle vue depuis les jardins en terrasse de l&apos;abbaye.</string>
 		<key>itineraire</key>
 		<array>
-			<string>Oh. You need a little dummy text for your mockup? How quaint.</string>
-			<string>I bet you’re still using Bootstrap too…</string>
-			<string>Tumblr disrupt selvage tofu dreamcatcher cray.</string>
+			<string>Jumièges - Saint-Georges de Boscherville, une heure et quart</string>
+			<string>Rouen - Saint-Georges de Boscherville,  moins d’une heure</string>
+			<string>L’abbaye n’est pas desservie.</string>
 		</array>
 		<key>historique</key>
-		<string>Farm-to-table sriracha narwhal, shabby chic occupy vegan DIY sustainable gluten-free PBR&amp;B Bushwick 8-bit. Cred chia blog, before they sold out Banksy Thundercats McSweeney&apos;s lomo. Aesthetic mustache beard ugh, quinoa actually swag farm-to-table Truffaut letterpress pickled slow-carb. Twee flannel asymmetrical, bitters +1 paleo Blue Bottle post-ironic biodiesel photo booth mlkshk Williamsburg literally mumblecore. Meh organic messenger bag, Blue Bottle Banksy tousled direct trade kale chips gentrify skateboard swag.</string>
+		<string>Les Tancarville possédaient alors un manoir en ces lieux et se faisaient enterrer dans une petite chapelle Saint-Georges, dans l’enceinte du domaine. Au XIe siècle, Raoul de Tancarville, chambellan de Guillaume Le Conquérant, fait bâtir l’église Saint-Georges. Au XIIe siècle, son fils Guillaume y fonde une abbaye bénédictine. On dit que l’abbaye est construite sur le site d’un temple gallo-romain.</string>
 		<key>celebs</key>
 		<array>
-			<string>Lebowski ipsum wonderful woman. </string>
-			<string>Mr. Lebowski is in seclusion in the West Wing.</string>
+			<string>Raoul de Tancarville, chambellan de Guillaume le Conquérant et fondateur de l’église Saint-Georges</string>
+			<string>Jean-Pierre Aumer, directeur du Ballet de l’Opéra de Paris. Il s’éteint à Boscherville en 1833.</string>
+			<string>Augustine-Désirée Frumery, dite ‘le cabri’. Danseuse de Rond cauchois célèbre dans la commune.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>Shoe motif leather tote Céline Luggage relaxed Topshop Givenchy. </string>
-			<string>White neutral A.P.C. skirt Cara D. indigo Céline beanie center part Superga</string>
-			<string>Cotton mint Paris LA Saint Laurent ecru gold collar longline Copenhagen. </string>
+			<string>Voui. Oui</string>
+			<string>Va-t&apos;o. Va !</string>
+			<string>Ch&apos;est rien ben. C&apos;est vraiment bien.</string>
 		</array>
 		<key>savoir</key>
-		<string>Look, just because I don&apos;t be givin&apos; no man a foot massage don&apos;t make it right for Marsellus to throw Antwone into a glass motherfuckin&apos; house, fuckin&apos; up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, &apos;cause I&apos;ll kill the motherfucker, know what I&apos;m sayin&apos;?</string>
+		<string>Autrefois, certains auteurs prétendaient que l’abbaye abritait la dépouille de Guillaume Le Conquérant, recueillie par le chevalier Héluin. Tandis que les autres serviteurs du roi s’adonnaient à l’ivresse du pillage, le fidèle chevalier et les moines de Saint-Georges de Boscherville auraient mené sa dépouille à l’église et accompli les derniers rites funéraires. Guillaume fut en réalité inhumé à Caen, dans l’abbatiale Saint-Étienne.</string>
 		<key>events</key>
-		<string>Powder pink bandeau Weekday tee white shirt Jil Sander Vasari Prada Saffiano Choupette oversized sweatshirt print.</string>
+		<string>Fête médiévale les 6, 7 et 8 juin – marché nocturne tous les mercredis jusqu’à la Saint-Thomas – messes dans l’abbatiale</string>
 		<key>numphotos</key>
 		<integer>3</integer>
 	</dict>
@@ -49,36 +50,37 @@
 		<key>epid</key>
 		<integer>0</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Une forêt de mâts ? Vous êtes donc arrivés à Fécamp. Ancienne résidence des ducs de Normandie, la ville est aujourd&apos;hui un vaste port de pêche qui abrite près de 60 gigantesques et splendides trois-mâts. Devant tant de magnificence, le visiteur en viendrait presque à oublier qu&apos;il est venu admirer la célèbre abbaye. L&apos;abbatiale est l&apos;une des plus importantes de Normandie. Elle est aussi vaste que Notre-Dame de Paris !</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Fécamp-Montivilliers, deux grandes heures</string>
+			<string>Haie d&apos;Étigues - Fécamp, une bonne demi-journée</string>
+			<string>Paris-Fécamp, quelques heures avec la compagnie &apos;Le Chemin de fer de Paris à la mer&apos;</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>On rapporte qu&apos;un Romain, envoyé pour convertir la région au christianisme, installa un autel de la Sainte-Trinité sur un tumulus. Des siècles plus tard, le duc Anséguise découvrit l&apos;humble oratoire au hasard d&apos;une chasse au cerf. L&apos;animal eut un étrange comportement, traçant de ses sabots légers les contours d&apos;un édifice. Frappé par ce miracle, Anséguise fit le vœu de construire à cet endroit un temple à la gloire de Dieu.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Alexandre-Prosper le Grand, négociant.</string>
+			<string>Françoise Lachèvre, alias Rose Anaïs, célèbre pour sa générosité.</string>
+			<string>Alexandre Bertin, peintre.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>V&apos;la eun&apos; bell&apos; cach&apos; eud&apos; pommiers ! Quelle belle rangée de pommiers !</string>
+			<string>Su douillon chitt&apos; est consomé bon ! Ce douillon est excellent !</string>
+			<string>Croche t&apos;n&apos;habit là ! Suspend ton manteau-là !</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Fécamp est célèbre pour la bénédictine, boisson alcoolisée, inventée par le négociant en vin Alexandre le Grand, il y a quelques années. La légende, créée à des fins publicitaires, rapporte que la liqueur aurait été mise au point par un moine vénitien un peu herboriste en 1510 et aurait été goûtée par François 1er.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Visite du Palais-Bénédictine du mardi au samedi  - départ des Terre-Neuvas en octobre - promenade sur les falaises avec un herboriste</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Abbaye Gruchet le Valasse</string>
+		<string>Abbaye de Gruchet le Valasse</string>
 		<key>x</key>
 		<real>0.34</real>
 		<key>y</key>
@@ -86,32 +88,33 @@
 		<key>epid</key>
 		<integer>0</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Située dans la vallée d&apos;Azo, arrosée par le Bolbec, l&apos;abbaye du Valasse est connue pour ses très belles salles gothiques et ses chapiteaux normands. L&apos;abbaye est, de nos jours, la propriété de monsieur Albert Fauquet-Lemaître. Ce riche manufacturier de Bolbec avait fait installer une filature dans l&apos;aile ouest, il y a cinquante ans, avant de transformer les lieux en luxueuse villégiature.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Fécamp - Valasse, une grosse heure et demie.</string>
+			<string>Saint-Wandrille - le Valasse, une grande heure.</string>
+			<string>Lillebonne - Gruchet-le-Valasse, une dizaine de minutes.</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Alors que le comte Galéran de Meulan s&apos;en revenait de Terre Sainte, il fut pris dans une terrible tempête. Saisi de crainte, il fit le vœu de fonder un monastère, si dieu lui prêtait vie. Parvenu sain et sauf en Normandie, il s&apos;associe à la fondation de l&apos;abbaye du Valasse par l&apos;impératrice Mathilde. Il promet de faire don de 20 anguilles et 6000 harengs chaque année.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Mathilde l&apos;Emperessse, petite-fille de Guillaume le Conquérant</string>
+			<string>Albert Fauquet-Lemaître, propriétaire actuel de l&apos;abbaye</string>
+			<string>Galéran de Meulan, croisé</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Chasse-tout-vive ! Poisson frais ! (cri de la marchande)</string>
+			<string>J&apos;sis tout declenqué. Je suis malade.</string>
+			<string>Dessaquez met vos pistoles, que les vaie. Montrez-donc moi votre argent que je le voie.</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Des fosses et des pierres druidiques parsèment la forêt toute proche. On dit que les moines y auraient enterré des trésors. Mais ne vous risquez pas à les chercher. D&apos;inquiétantes dames blanches et de terrifiants cavaliers sans tête montent la garde.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>L&apos;abbaye ne se visite pas - marché trois fois par semaine - promenade en barque sur le Bolbec pendant la belle saison.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -123,32 +126,33 @@
 		<key>epid</key>
 		<integer>43</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Superbes ruines romantiques couvertes de végétation. Ravira les poètes nostalgiques du Moyen âge. 60 cts le portrait photographique dans les ruines de l&apos;abbatiale (nouvel appareil à double objectif). Crâne fourni comme accessoire pour les admirateurs de Shakespeare. Pour des portraits simples, contactez la maison Witz à Rouen. Pour la visite du site, demandez à la concierge, la mère Leducq.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Caudebec - Jumièges, une bonne heure</string>
+			<string>Tancarville – Jumièges, une demi-journée avec la voiture de la Cagliostro</string>
+			<string>Pour l’abbaye, s’arrêter à la station ‘Yainville-Jumièges’</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Fondée au VIIe siècle, l&apos;abbaye de Jumièges devient rapidement puissante. Très tôt, elle fait l’objet de nombreuses légendes, comme celle des &apos;énervés de Jumièges&apos;. On raconte que les fils de Clovis avaient cherché à s&apos;emparer du royaume de leur père, parti guerroyer en Terre Sainte. L&apos;apprenant, Clovis revint et leur fit sectionner les nerfs des jambes. Déposés dans une barque laissée à la dérive, ils s&apos;échouèrent à Jumièges, où Philibert, fondateur de l&apos;abbaye, recueillit les deux infirmes. Dès le Moyen âge, les moines s&apos;emparent de l&apos;histoire. Un gisant du XIIIe siècle représente même les deux jeunes princes.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Monseigneur d&apos;Ambricourt, curé de Jumièges</string>
+			<string>La famille Lepel-Cointet, propriétaire de l&apos;abbaye</string>
+			<string>Maurice Leblanc, jeune littérateur prometteur. Il jouait souvent, enfant, dans les ruines de l&apos;abbaye.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Vas pucher d&apos;l&apos;iaue. Vas puiser de l&apos;eau</string>
+			<string>I ya du fu dauns la qu&apos;minèye. Il y a du feu dans la cheminée</string>
+			<string>Ichite. Ici</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Tous les 23 juin, les habitants de Jumièges célèbrent la fête du loup vert, incarné par un habitant. Le loup de l&apos;année porte un grand habit vert, ainsi qu&apos;un grand chapeau conique de même couleur. Accoutré de la sorte, il se met à la tête d&apos;un cortège salué par des salves de mousquetons. Arrivés à l&apos;église, le curé fait chanter vêpres à tout ce beau monde... Puis tous se rendent chez le loup pour un repas maigre, mais délicieux. Une fois la nuit tombée, un bûcher est allumé par un jeune homme et une jeune fille. Tout le village court autour. Celui qui est touché par le loup sera loup l&apos;année suivante !</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>10 février, sainte Austreberthe, sorcière et patronne des blanchisseuses - 23 juin, fête du loup vert - 26 juillet, fête de sainte Anne, patronne des cloutiers.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -160,32 +164,33 @@
 		<key>epid</key>
 		<integer>17</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Arrosée par la jolie rivière sinueuse appelée ‘la Lézarde’, Montivilliers est située à l&apos;extrémité d&apos;une riante vallée. Au cours de son histoire, elle fut à la fois centre monastique, place forte et centre de tissage. Le drap de Montivilliers, d&apos;un rouge écarlate, était considéré comme ‘le plus beau de France’, selon un manuscrit de Louviers du XIVe siècle. De nos jours, l&apos;abbaye a été convertie en brasserie, après avoir abrité une filature de coton et une raffinerie de sucre.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Jumièges - Montivilliers, plus de trois heures et demie</string>
+			<string>Caudebec - Montivilliers, un peu moins de deux heures et demie</string>
+			<string>Le train est sans arrêt à Montivilliers</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>L&apos;histoire de Montivilliers est toute entière contenue dans celle de son abbaye, fondée par Saint Filbert en 684. Son nom même est dérivé de &apos;Monasterium&apos;. La ville est aussi connue pour son aître (cimetière) de Brisgaret aux sculptures macabres. Il faut gravir un chemin assez escarpé pour y parvenir, d&apos;où son nom dérivé de &apos;brise-jarret&apos; (jarret signifiant mollet).</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Béatrix de Normandie (XIe siècle), première abbesse, fille de Richard sans peur</string>
+			<string>Maud de Montivilliers (XIIe siècle), abbesse. Fille illégitime d&apos;Henri Ier d&apos;Angleterre</string>
+			<string>Marie II Anne de Grossolles de Flamarens, dernière abbesse. Les religieuses abandonnent l&apos;abbaye à la Révolution.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>C&apos;t&apos; effant là s&apos;devient ben. Cet enfant-là grandit bien.</string>
+			<string>Ote-tet ded&apos;là. Ôte-toi de là.</string>
+			<string>I crait ça du&apos; com&apos; fé. Il croit ça dur comme fer.</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Il existe non loin de Montivilliers un mystérieux dolmen qu&apos;on appelle &apos;la pierre grise&apos;, hanté par des dames blanches. - Les habitants de Montivilliers portent le surnom pittoresque de &apos;maqueux d&apos;oeilles&apos; c&apos;est-à-dire &apos;mangeurs d&apos;oreilles&apos;. En effet, un jeune Montivillon aurait arraché l&apos;oreille d&apos;un Harfleurais lors d&apos;une querelle... il y a plus de cent ans ! Quelle mémoire...</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Tournoi de cartes au café-buvette de la rue Casimir-Périer - fête des blanchisseuses, le 31 mai - marché de la place Carnot, tous les dimanches.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -197,32 +202,33 @@
 		<key>epid</key>
 		<integer>0</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Pour se rendre à Saint-Wandrille depuis Caudebec, suivez la route du Havre à Rouen pendant 5 km. Laissez Caudebecquel sur votre gauche. Dépassez le grand orme, dépassez le clos-masure du père Cauchois, puis, arrivé au-delà du ruisseau de Fontenelle, suivez le chemin de Saint-Wandrille. Vous ne pouvez pas vous perdre !</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Montivilliers - Saint-Wandrille, une grande heure</string>
+			<string>Fécamp – Saint-Wandrille, deux heures</string>
+			<string>Pour l’abbaye, s&apos;arrêter à la halte de Gauville</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Bâtie dans les années 1250, l&apos;abbaye de Saint-Wandrille est dévastée par un incendie. Les ruines fameuses que vous admirez aujourd&apos;hui datent du XVe siècle. Á noter : remarquable lavabo de la Renaissance à l&apos;entrée du réfectoire (signalé par notre concurrent, le Guide Joanne).</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Saint Wandrille, premier abbé.</string>
+			<string>Arsène Gouget, maire de Saint-Wandrille-Rançon de 1876 à 1884</string>
+			<string>Visiteurs fameux : Victor Hugo, la duchesse de Berry etc...</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Pou qué fé ? Pour quoi faire ?</string>
+			<string>V&apos;là le tems qui s&apos;essourd ! Voilà le ciel qui s&apos;éclaircit !</string>
+			<string>I va fallé s&apos;naller ! Il va falloir partir !</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>La fameuse comédienne Georgette Leblanc aurait l&apos;intention de louer l&apos;abbaye et d&apos;y séjourner avec l&apos;écrivain Maurice Maeterlinck. Elle rêverait de jouer Macbeth au milieu des ruines. Son projet, nous l’espérons, verra le jour…</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Horaires des offices : le matin 5h25 (vigiles), 7h30 (laudes), 9h45 (messe) - l&apos;après-midi 12h45 (sexte), 2h15 (none), 5h30 (vêpres).</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -234,32 +240,33 @@
 		<key>epid</key>
 		<integer>0</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Au voyageur en villégiature à Fécamp, nous promettons une promenade aussi plaisante que curieuse. Qu&apos;il se rende à Valmont par la vallée. Il pourra admirer des paysages variés : bois, plantations, fraîches prairies arrosées de rivières qui les serpentent. L&apos;abbaye est aujourd&apos;hui une propriété privée. Son terrain de 9 hectares a été converti en parc habilement dessiné, aux superbes pelouses. L&apos;étang artificiel est continuellement alimenté en eau.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Haie d&apos;Étigues - Abbaye de Valmont, une grande heure et demie</string>
+			<string>Haie d&apos;Étigues - Abbaye de Valmont, une vingtaine de minutes</string>
+			<string>Prendre la ligne Dieppe-Fécamp.</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>L&apos;abbaye Sainte-Marie est fondée par Nicolas d&apos;Estouteville en 1169. Ce lieu n&apos;accueillit jamais plus de vingt-cinq moines. Plusieurs fois détruite et reconstruite, l&apos;église abbatiale ne fût vraiment achevée qu&apos;au XVIe siècle. Le château de la famille d&apos;Estouteville est aujourd&apos;hui connu pour son donjon roman du XIe siècle, le mieux conservé de Normandie. Ce château eut de nombreux propriétaires dont les Grimaldi de Monaco et les Barbet de Rouen.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Marie II de Saint-Pol, figure politique de la Renaissance, est inhumée à Valmont.</string>
+			<string>Eugène Delacroix, peintre. Ses cousins étaient propriétaires de l&apos;abbaye de Valmont.</string>
+			<string>Odilon Marc Lannelongue, médecin de Léon Gambetta et actuel propriétaire du château.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Mé qu&apos;est-che que ch&apos;est ? Mais qu&apos;est-ce que c&apos;est ?</string>
+			<string>Qu&apos;est qu&apos;ou voulez ? Qu&apos;est-ce que vous voulez ?</string>
+			<string>Su carnage ! Quelle canaille ! (injure)</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Monsieur Germain, pharmacien de son état et membre distingué de plusieurs sociétés archéologiques, affirme dans son ‘Guide du voyageur à l&apos;abbaye’ de 1836 que les seigneurs d&apos;Estouville auraient reçu François Ier dans leur château. Selon lui, une partie de la bâtisse aurait servi de prison.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Visite des ruines de l&apos;église abbatiale avec leur propriétaire (pourboire) - bal du 14 juillet dans l&apos;hôtel de la gendarmerie - déjeuners sur l&apos;herbe au bord de la Valmont.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -296,7 +303,7 @@
 		<key>events</key>
 		<string>some lame text for now</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -308,32 +315,33 @@
 		<key>epid</key>
 		<integer>27</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>La côte des deux amants tire son nom romanesque d&apos;une légende aux nombreuses variantes. Selon l&apos;une d&apos;entre elles, un roi brutal de la région habitait un vaste château, dont il ne reste aucun vestige, pas même dans les mémoires. Il était défavorable à l&apos;union de sa fille, Calixte, à la beauté sans pareille, avec un jeune paysan, nommé Raoul. Il impose alors cette condition au mariage : le jeune homme doit porter son amante sur la plus haute des collines, par le plus étroit des sentiers, sans jamais s&apos;interrompre, prouesse impossible. Le jeune serf est déjà parti. Ses juges l&apos;attendent, sur une plateforme bâtie au sommet. Il y parvient, mais bientôt chancelle, et finalement succombe. De désespoir, sa belle prend son aimé dans ses bras, et se précipite dans le vide avec lui, plongeant son père dans des regrets tardifs.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Jumièges - Côte des deux amants, 3 heures et quart</string>
+			<string>Rouen - Côte des deux amants, 1 à 2 heures</string>
+			<string>S’arrêter en gare de Pîtres.</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Il existe au sommet de la Côte des deux amants un prieuré dont la fondation ancestrale se mêle avec la légende. Selon la tradition, il aurait été construit par le père de Calixte, rongé par le chagrin. Les pierres, quant à elles, nous apprennent qu&apos;il fut fondé au XIIe siècle par M. de Malmain, dont le prieuré porte les armes : ‘trois mains gauches’.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Calixte et Raoul (parfois Mathilde et Edmond), héros tragiques de la légende.</string>
+			<string>Marie de France, ou Marie de Valois. Elle consacre à la légende un Lai des deux amants (XIIe siècle).</string>
+			<string>M. de Malmain, fondateur du prieuré des deux amants</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Assiésou ! Asseyez vous !</string>
+			<string>Bé mac é té té ! Bois, mange et tais toi !</string>
+			<string>Ben châ !Hé bien çà !</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Du XIIe siècle à nos jours, la légende de la Côte des deux amants n&apos;a jamais cessée d&apos;être vivante dans la mémoire normande et au-delà. Bien des écrivains et des artistes ont donné leur interprétation de l&apos;histoire depuis le poème de Marie de France (XIIe siècle) jusqu&apos;à la variante romancée du philosophe des Lumières, Marmontel. Celui-ci rapporte qu&apos;elle était connue de tous les petits enfants.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Visites des fouilles gallo-romaines d&apos;Amfreville-sous-les-Monts - promenade en barque à Poses - panorama pittoresque au sommet de la côte.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -345,32 +353,33 @@
 		<key>epid</key>
 		<integer>30</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Ce bourg charmant de 2000 habitants environ est connu pour ses caves et habitations troglodytes. Si vous voyagez sur l’eau, admirez les vergers qui fleurissent sur la rive. Ils sont interrompus par une paroi rocheuse calcaire percée de grottes. Les habitants y rangent leurs outils. Hôtel des Trois piliers très propre. Les amateurs de ruines médiévales ne manqueront pas La Porterie et la chapelle Sainte-Austreberthe, sur les hauteurs de Duclair.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Saint-Wandrille – Duclair, 3/4 d’heure</string>
+			<string>Jumièges – Duclair, 20 minutes</string>
+			<string>4 trains-omnibus/jour jusqu’à Barentin</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>La première mention de Duclair (‘Duroclarus’) date de 811 Encore de nos jours, l’étymologie en reste obscure. Nos plus éminents linguistes échouent à se mettre d’accord. Pour certains, ‘Clarus’ signifierait ‘beau, clair’. Pour d’autres, il s’agirait d’un mot d’origine gauloise. Duclair fut un centre important de fabrication de bière aux XVe et XVIe siècles.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Baron de Duclair. Il aurait combattu auprès de Guillaume Le Conquérant à Hastings, en 1066.</string>
+			<string>Berthe Morisot, peintre. Elle aurait peint une chaumière dans la région.</string>
+			<string>Maurice Leblanc, littérateur. Il a publié le 12 décembre dernier une nouvelle qui met Duclair à l’honneur, intitulée ‘Monsieur et madame Jumelin’.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>J’ sis tout trempei ! Je suis tout mouillé !</string>
+			<string>J’sis tout rézous à ça. Je suis résolu.</string>
+			<string>A quey faire ? Pourquoi faire ?</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>On raconte dans la région que Gargantua se soulageait si souvent dans la Seine du côté de l’actuel bourg de Duclair qu’il causait de terribles inondations. Un jour que la maison d’une vieille femme était ainsi cernée par les eaux, le géant l’aida à rentrer chez elle. Mal inspirée, elle lui offrit du cidre pour le remercier. Gargantua en but tant et tant qu’il en eût une violente colique, et qu’en allant à la selle, il fit ‘du clair’, d’où le nom du bourg. Cette étymologie impertinente n’est toutefois pas admise chez les Duclairois.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Pour le mascaret, vérifier l’horaire des marées – Bac toutes les heures – Marché tous les mardis.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -382,32 +391,33 @@
 		<key>epid</key>
 		<integer>1</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Petit port de 2000 habitants, Étretat est situé entre de magnifiques falaises de craie. Les vagues y ont découpé deux portes célèbres par lesquels, dit-on, un bateau toutes voiles déployées pourrait passer. Sa plage en demi-cercle accueille de nos jours plus de baigneurs que de pêcheurs, même si le soir, matelots et matelotes hissent toujours de lourdes barques sur les galets. La mer y est si belle que dans l’Antiquité, les Romains s’y rafraichissaient déjà.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Étretat - Haie d’Étigues, une heure</string>
+			<string>Paris – Étretat, prévoir entre un ou deux jours</string>
+			<string>Saint-Lazare –  Gare d’Étretat, 4 heures</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>D’où vient le nom d’Étretat ? Signifie-t-il ‘lieu étroit’ ? ‘Lieu où se trouvent des huîtres’ ? Le mystère reste entier. Au village, on trouve peu de monuments, à l’exception de la vieille église Notre-Dame du XIIIe siècle. N’oubliez pas d’aller boire un café à la buvette du Fort de Fréfossé. Cet édifice moyenâgeux, perché sur la falaise d’aval, aux tourelles lézardées, a été construit il y a peu par Aimé Dubosc, industriel havrais ayant fait fortune dans les teintures.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Jacques Offenbach, amuseur musical qui bâtit sa villa Orphée avec l’argent de son célèbre air de cancan.</string>
+			<string>Alphonse Karr, littérateur burlesque, fameux pour sa maxime ‘Plus ça change, plus c’est la même chose’.</string>
+			<string>Hortense Schneider, cantatrice canaille, interprète favorite d’Offenbach.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>A va-t-y  ? Ça va ?</string>
+			<string>Allez ! Boujou ! Bonjour, bises !</string>
+			<string>A ré comieu ! Alors ça, c&apos;est la meilleure.</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Les légendes d’Étretat sont si nombreuses que plusieurs pages de ce guide n’y suffiraient pas. Évoquons seulement l’histoire de la Chambre des demoiselles, terrasse suspendue entre trois pointes de rochers. Il y a fort longtemps, habitaient à Étretat trois demoiselles d’une grande beauté. Le chevalier de Fréfossé, seigneur dépourvu d’honneur, les fit enlever. Comme elles se refusaient à lui, elles se jetèrent de la falaise. On dit qu’elles protègent les marins.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Tournoi de cartes au café du fort de Fréfossé, tous les mardis – marché au poisson chaque vendredi – bal du casino le 15 août.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -419,32 +429,33 @@
 		<key>epid</key>
 		<integer>0</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Cette charmante bourgade aux jolies maisons du XVIIIe siècle est toute proche des falaises abruptes et étincelantes de la côte d&apos;albâtre. Ces murailles féeriques peuvent dépasser cent mètres de hauteur. On accède à la mer via un étroit escalier de 283 marches creusé dans la roche, appelé ‘l&apos;Escalier du curé’. La Haie d’Étigues ne possède aucun bâtiment remarquable à l’exception de son château mythique, que seuls les rêveurs peuvent voir.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Haie d&apos;Étigues-Étretat, une heure.</string>
+			<string>Paris - Haie d&apos;Étigues, un ou deux jours.</string>
+			<string>S’arrêter à la gare d’Étretat.</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>‘L’Escalier du curé’ a été bâti il y a un peu plus de dix ans, en 1883. Le curé Desson-de-Saint-Aignan en aurait ordonné la construction à ses paroissiens en pénitence. Légendaire ou non, la punition fut utile à la communauté, car l’escalier permet aux pêcheurs d’atteindre la grève. De nuit, cet endroit glace le cœur. En partie souterrain, l’escalier circulaire, creusé dans la falaise, s’interrompt à cinq mètres de la plage de galet. Gare au promeneur maladroit !</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Le baron Amaury d&apos;Étigues (1311-1357), premier du nom</string>
+			<string>Bathilde d&apos;Étigues (1330-1360), à qui l&apos;on a prêté une liaison avec le Prince noir</string>
+			<string>Godefroy d&apos;Étigues (1843-1895), mort fou.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>La cabane est bas su l&apos;quin. Tout va mal.</string>
+			<string>Argard eul biau paysage ! Regarde ce beau paysage !</string>
+			<string>Versé –z-y une sacrée lampaie d&apos;goutte ! Donnez-en lui une sacrée rasade !</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>On dit que les habitants de la Haie d’Étigues, comme ceux de Bénouville, sont un peu sorciers. Pour certains, ce sont les habitants de Bénouville, qui, grâce à leurs pouvoirs, auraient forcé le curé à creuser l’escalier de la falaise, à raison de trois marches par jour. Il est vrai que l’ancienne magie paraît ensorceler encore les lieux. Les fossés qui rythment la campagne se rapporteraient à d’anciennes et mystérieuses coutumes oubliées.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Tous les jours, promenade à bicyclette, rendez-vous devant le calvaire - pêche à pied, voir horaire des marées - visite de l&apos;Escalier du curé déconseillée.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -456,32 +467,33 @@
 		<key>epid</key>
 		<integer>17</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Située sur un méandre de la Seine, la petite cité est bien connue des voyageurs. Un bac permet de traverser la Seine. Pour patienter, arrêtez-vous au restaurant de l&apos;embarcadère ou profitez de la terrasse du Café de la Place (à côté du coiffeur). Nombreuses curiosités dans les environs : grotte de Caumont, château de Robert le Diable, Manoir des Sources etc.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Rouen - La Bouille, une petite heure et demie</string>
+			<string>Saint-Wandrille - La Bouille, une heure et demie</string>
+			<string>S&apos;arrêter à Jumièges, puis prendre le bac</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>La Bouille ? Un bien curieux nom, qui évoque les marais, pour un si joli endroit ! L’origine de la Bouille remonterait aux Celtes eux-mêmes. Très vite, l’activité des habitants se concentre sur le port. Au XIIIe siècle, on y transporte du vin et au XVIe siècle des marchandises exotiques comme du sucre, des pierreries et des fourrures. On y trouvait plusieurs greniers à sel. Une grande et belle halle aux grains servait même d’auberge jusqu’en 1860.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Hector Malot, auteur du fameux Sans famille, né à la Bouille le 20 mai 1830</string>
+			<string>Gauguin, peintre. Tableau intitulé &apos;La Bouille&apos;, 1884</string>
+			<string>Blanche de Castille. Elle aurait prié dans l&apos;ancienne chapelle</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Iou qu&apos;il est ? Où est-il ?</string>
+			<string>Mes j&apos;veux grisissent biaucoup. Mes cheveux grisonnent beaucoup.</string>
+			<string>Allons, encore une Hepée et j&apos;s&apos;rons arrivés. Allons, encore une côte et nous serons arrivés.</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Certains racontent que c&apos;est à la Bouille que fut repêché le corps d&apos;Arthur de Bretagne, assassiné par Jean sans terre en 1203. - La pierre de Caumont (carrière toute proche) a servi à la construction de Saint-Georges de Boscherville et de la cathédrale de Rouen.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Horaires des bacs (renseignements au Café de Place) - visites des curiosités des environs, rendez-vous devant le coiffeur après le déjeuner - cours de peinture</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -493,32 +505,33 @@
 		<key>epid</key>
 		<integer>18</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Ah Paris ! Est-il seulement nécessaire de présenter l&apos;étincelante Ville-lumière... Quel voyageur n&apos;a jamais rêvé de se promener la nuit sur les Grands Boulevards, d&apos;admirer les étonnantes illuminations des Grands magasins, de flâner sur les Champs-Élysées ornés de lampions, d&apos;admirer les toilettes des élégantes, sur la fameuse avenue du Bois... Visiteur de passage, ne manquez pas d&apos;applaudir une opérette ! C’est tellement Paris ! On me souffle qu&apos;on joue &apos;Chilpéric&apos; aux Variétés...</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Rue de Vaugirard - Gare-Saint-Lazare, une demi-heure</string>
+			<string>Rue de Vaugirard - Gare-Saint-Lazare, une heure et demie</string>
+			<string>Paris - Le Havre, en moins de quatre heures</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Raconter l&apos;histoire de Paris, ce serait donner l&apos;âge de la belle. Nous sommes trop galants pour y songer. Car cette fée est toujours jeune, malgré sa Conciergerie du Moyen âge, son imposant Palais du Louvre, son gracieux Palais-Royal, sa majestueuse avenue de l&apos;Opéra. Tantôt grisette, tantôt comtesse, la cité étincelante aux mille existences ne saurait être résumée en quelques lignes.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>La Goulue, danseuse de cancan</string>
+			<string>Thérèse Humbert, héritière Crawford. Figure du Tout-Paris</string>
+			<string>Sarah Bernhardt, comédienne mondialement connue, surnommée la &apos;divine&apos;</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Veux-tu morfiller de la japhe ? Veux-tu manger de la soupe ?</string>
+			<string>J&apos;ai le béguin pour une mistone. Je suis amoureux d&apos;une demoiselle.</string>
+			<string>J&apos;ai abloqui des empafs pour une roue de derrière. J&apos;ai eu des bottes pour 5 francs.</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Le Paris-Rouen est la première course automobile de l&apos;histoire. Elle est prévue pour le 22 juillet 1894. Ne manquez pas cet événement unique ! L&apos;épreuve est organisée par le journaliste Pierre Giffard, d’origine normande. Le comte Jules de Dion devrait y concourir à bord de sa De Dion-Bouton.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>De juin à octobre, le théâtre des Variétés donne &apos;La revue médiévale&apos; avec en vedette la piquante Brigitte - fuyez la canicule par la gare Saint-Lazare. Trains réguliers vers la Normandie - boutiques de mode</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -530,32 +543,33 @@
 		<key>epid</key>
 		<integer>17</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Petite ville située sur la Seine, Pont-de-l&apos;Arche est remarquable par son pont, qui compta longtemps vingt-deux arches. Ne manquez pas l&apos;abbaye cistercienne de Bonport, fondée par Richard Cœur-de-Lion en 1189. La tradition rapporte que Richard fit le vœu de fonder l&apos;abbaye après avoir manqué de se noyer dans la Seine, alors qu&apos;il poursuivait un cerf. Porté par un fort courant et craignant pour sa vie, il promit de fonder une abbaye à l&apos;endroit où son cheval reprendrait pied. De nos jours, on y fabrique des draps.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Duclair – Pont-de-l’Arche, moins de deux heures et demi sans crevaison.</string>
+			<string>Caudebec - Pont-de-l&apos;Arche, trois heures</string>
+			<string>Prendre la ligne Gisors – Pont-de-l’Arche </string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>La ville de Pont-de-l&apos;Arche tient son nom, dit-on, d&apos;un pont bâti par Charles-le-Chauve au IXe siècle pour lutter contre les Vikings. Deux châteaux défensifs furent élevés à chaque extrémité du pont. Le pont originel fut souvent détruit et remanié, notamment au XVIIe siècle. Les personnes de bon goût s&apos;indignent des constructions précaires qui s&apos;y agglutinent.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Chicot, fou du roi Henri IV.</string>
+			<string>Hyacinthe Langlois, auteur distingué d&apos;une histoire de la peinture sur verre.</string>
+			<string>Jules Massenet, compositeur. L&apos;immortel auteur de Thaïs y possède une maison de campagne.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>A c&apos;soir: Ce soir.</string>
+			<string>Au iou qui va ? Où va-t-il ?</string>
+			<string>A&apos;vous ? Avez-vous ?</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Selon la légende, le pont aurait été bâti par Satan lui-même. Alors que l&apos;architecte désespérait de réussir sa construction, le diable lui apparut. Le pacte était le suivant : Satan achevait le pont, en échange de quoi, il devait obtenir la première âme le traversant. Pour certains, son bon génie fit enlever chaque soir quelques pierres pour laisser l&apos;ouvrage inachevé. Pour d&apos;autres, le matois architecte fit traverser sur le pont tout juste achevé ... un chat !</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Marché chaque dimanche - promenade médiévale, rendez-vous tous les mardis devant l&apos;église - visite des usines de chaussures.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -567,32 +581,33 @@
 		<key>epid</key>
 		<integer>17</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Ah, nostalgie de l&apos;ancien temps... Autrefois, on arrivait à Rouen par la route de Paris. Et, soudain, depuis le sommet de la colline de Bonsecours, le curieux découvrait un colossal musée en plein air : des tours gothiques, des flèches, des maisons à pans de bois et, au milieu, la Seine étincelante. Avec le ‘railway’, on arrive par un tunnel. Rouen s&apos;annonce par un trivial coup de sifflet. Que voulez-vous… Il faut se résoudre à la poésie industrielle du monde moderne !</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Rouen-Jumièges, moins de deux heures</string>
+			<string>Rouen-Étretat, près de quatre heures et demie</string>
+			<string>Paris-Rouen, environ deux heures et quart</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>De fondation gauloise, Rouen est alors connue sous le nom de Rotomagus (&apos;champ de course&apos;), car les Celtes étaient passionnés de courses de char ! Brûlée par les Vikings en 843, Rouen renaît de ses cendres. Le géant Rollon, premier prince de Normandie, s&apos;y installe. Mais bientôt les nuages s&apos;accumulent à nouveau au-dessus de la ville. La place de la Rougemare commémore le sinistre souvenir du carnage des soldats d&apos;Othon, empereur d&apos;Allemagne, et des chevaliers de Louis IV, par le duc de Normandie, Richard Sans-Peur, en 949. Leurs âmes y rôdent encore, dit-on...</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Jeanne d&apos;Arc, brûlée vive sur la place du Vieux-Marché, le 30 mai 1431</string>
+			<string>Gustave Flaubert, écrivain, né le 12 décembre 1821 à Rouen</string>
+			<string>Maurice Leblanc, né le 11 décembre 1864 à Rouen, prometteur littérateur de 30 ans</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>J&apos;nos crais fichus ! Nous sommes perdus!</string>
+			<string>Leu deux. Tous les deux.</string>
+			<string>Du moment, j&apos;nai pin le temps. En ce moment, je n&apos;ai pas le temps.</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Celle que Stendhal a surnommée &apos;l&apos;Athènes du genre gothique&apos; est aussi appelée de nos jours &apos;La Manchester de la France&apos; ! La rive gauche de Rouen est son faubourg le plus moderne. Ses flèches et ses tours sont des cheminées d&apos;usines noires de charbon. Les rues de Saint-Sever bruissent des trépidations des filatures, des imprimeries, des tanneries, des fonderies, des savonneries !</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Les régates de Sotteville au mois de juillet - le marché du Clos, tous les samedis et dimanches - fêtes de Jeanne d&apos;Arc au mois de mai.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -604,32 +619,33 @@
 		<key>epid</key>
 		<integer>33</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Ne manquez pas son château-fort triangulaire qui domine la vallée d&apos;une falaise d’une cinquantaine de mètres. Les deux tours de son imposante entrée auraient respectivement abrité les prisons et le logement du capitaine. Sur la pointe la plus aiguë de la falaise, l’immense tour de l&apos;aigle renfermait coffres et chartrier, précieuse collection de manuscrits attestant l’ancienneté d’une famille et ses titres de propriété. Pour visiter les lieux, demandez les clefs à son propriétaire, M. Toutain, à l&apos;Hôtel du Havre, qui fait accompagner les étrangers. Laissez un pourboire. Joli phare.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Tancarville – Mesnil-sous-Jumièges, deux heures </string>
+			<string>Tancarville – Lillebonne, une grande demi-heure</string>
+			<string>Ligne en projet. Prendre l’omnibus.</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Dès le XIe siècle, murailles et tours sortent du sol. Raoul de Tancarville est le seigneur des lieux. Le château connaît rapidement de nombreuses vicissitudes. Passé de main en main dès le XIVe siècle, il est détruit et reconstruit à de nombreuses reprises. Au XVIIIe siècle, il manque d’être transformé en manufacture par John Law, célèbre pour avoir introduit le papier-monnaie en France et provoqué une retentissante banqueroute.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Raoul de Tancarville, précepteur de Guillaume Le Conquérant.</string>
+			<string>Jeanne de Harcourt, fantôme attitré du château</string>
+			<string>M. Lepont, de Tancarville, architecte.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Donnez-met l’iau. Donnez-moi de l’eau</string>
+			<string>J’y ai dit. Je lui ai dit</string>
+			<string>T’es tannant ! Tu m’ennuies !</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>N&apos;oubliez pas d&apos;aller admirer la chaise de Gargantua, gros rocher situé non loin, où le géant aurait eu coutume de s&apos;asseoir et de se laver les pieds. Dépêchez-vous, les Ponts-et-chaussées, peu sensible à la poésie rabelaisienne, projettent de la détruire.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Marché aux pompons de Tancarville tous les jeudis - visite commentée de l&apos;if remarquable le premier samedi du mois – rencontre avec le diable dans les cachots souterrains à toute heure.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -641,32 +657,33 @@
 		<key>epid</key>
 		<integer>14</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Yvetot est le point de départ d’agréables excursions (trajets réguliers au départ de Paris par omnibus. 20 centimes le billet). Les hôtels y sont très propres. La ville n’est pas connue pour ses curiosités architecturales. Notre concurrent, le guide Joanne, qualifie son église, bâtie en 1771, ‘d’une des plus laides de France’. Nous rétorquerons au grossier plumitif responsable de cette injure ces mots de l’illustre Gustave Flaubert : ‘Yvetot vaut bien Constantinople’ !</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Yvetot - Chapelle du chêne, une demi-heure</string>
+			<string>Paris – Yvetot, deux jours</string>
+			<string>Le Havre-Yvetot, une heure et demie</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>On raconte qu’un seigneur d’Yvetot ayant été tué dans un accès de colère par Clothaire Ier, ce dernier, par crainte de représailles papales, affranchit ses héritiers de leur sujétion au roi de France. C’est ainsi que les seigneurs d’Yvetot devinrent rois. Toutefois, n’espérez pas trouver à Yvetot un noble donjon lézardé. Le manoir seigneurial de la fin du XVIe siècle n’était que bois brut, brique et ardoise. Il fut détruit en 1793.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Pierre Corneille, dramaturge. Il vint souvent en visite au manoir de Fay.</string>
+			<string>Roger Lemitron, pâtissier. Spécialiste de la pièce-montée en forme de château-fort, aussi appelée la ‘Charles et Emma Bovary’.</string>
+			<string>Jeanneton, servante du roi d’Yvetot.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>J&apos;m&apos;en voige. Je m&apos;en vais.</string>
+			<string>Vi-t-en vé ! Viens voir !</string>
+			<string>I piu di chui. Il pleut à seaux.</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Yvetot est connue par son ‘roi d’Yvetot’, personnage très rabelaisien. Coiffé d’un bonnet de coton, ce débonnaire amateur de cidre aurait édicté une seule loi dans son royaume : ‘Fais ce qu’il te plaît’. Non loin d’Yvetot, n’oubliez pas de visiter l’étrange chapelle d’Allouville, entièrement contenue dans un chêne d’une circonférence extraordinaire, qu’on dit être vieux de plus de 1000 ans.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Visite au manoir du Fay au départ de l’église, chaque premier mardi du mois - Atelier ‘pièce-montée château-fort’ du 12 mai au 27 juin, réservation exigée – Bal du 14 juillet, précédé d’un discours du maire.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -678,32 +695,33 @@
 		<key>epid</key>
 		<integer>12</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Situé au confluent de la Saâne et de la Vienne, le château de Gueures, remanié au XVIIIe siècle, est au cœur d&apos;une vallée riante. Il est de nos jours en fort mauvais état. On ne peut que se réjouir de son acquisition par Monsieur de Rolleville. Il y mène quelques travaux fort nécessaires. On dit qu&apos;un trésor serait caché dans les caves du château. Mais à ce jour, on n&apos;y a trouvé que de la poussière et des souris.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Gueures - Haie d&apos;Étigues, prévoir une demi-journée</string>
+			<string>Paris - Gueures, compter une journée et demie.</string>
+			<string>Motteville – Gueures, une heure et 13 minutes</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Des tuiles et des monnaies romaines ont été retrouvées non loin de Gueures. Le nom du village n&apos;est toutefois attesté qu&apos;au VIIe siècle. La première course hippique dieppoise y fut organisée le 27 septembre 1837, dans l&apos;hippodrome privé du comte de Tocqueville.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Le chevalier des Aubes, dépositaire du secret des moines du pays de Caux.</string>
+			<string>Alexis de Tocqueville, homme politique. Bienfaiteur de la commune et ancien propriétaire du château de Gueures.</string>
+			<string>Esmeralda, gagnante du concours hippique.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Manger eun&apos; bouchi. Prendre une légère collation.</string>
+			<string>O d&apos;la f&apos;rine a m&apos;prêter ? Aurais-tu de la farine à me prêter ?</string>
+			<string>Jenn&apos; n&apos;ai brin. J&apos;en n&apos;ai pas du tout.</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Gueures est célèbre dans la région pour son orme pluri-centenaire qu&apos;on dit être le plus vieux de la région. On raconte qu&apos;il dépasse en antiquité les chênes de Windsor. Révéré dans la région, l&apos;orme de Gueures est bien connu des marins, car il est visible depuis la haute mer.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Visite de la fabrique à papier du village - baignades dans la Saâne en été - fête annuelle de la filature de coton.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -715,32 +733,33 @@
 		<key>epid</key>
 		<integer>14</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Célèbre pour sa maréchaussée. Les exploits de la maréchaussée de Doudeville ont inspiré de nombreux feuilletonistes. Conan Doyle, père du fameux Sherlock Holmes, y aurait passé un mois en 1887 comme gratte-papier pour s’imprégner de l&apos;atmosphère. Doudeville est aussi connue pour le commerce du lin, qui emploie de nos jours près de 8000 ouvriers et ouvrières.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Doudeville - Étretat, en trois heures</string>
+			<string>Rouen - Doudeville, une demi-journée avec la méthode Léonard (voiture rapide)</string>
+			<string>Attention, fermeture définitive de la gare le 24 septembre.</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>L&apos;origine du nom de Doudeville est obscure. Certains érudits y voient une origine scandinave, Doudeville étant la déformation de Dudeville, du nom de son fondateur, Dude, chef viking chevelu célèbre pour son goût pour le jeu de quille et le calva au lait. Pour d&apos;autres, Doude serait une forme ancienne de douillon.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Hippolyte de Funès, brigadier</string>
+			<string>Bathilde de Tarttatin, dame de Doudeville</string>
+			<string>Dorothée Ouille, à qui l&apos;on prête l&apos;invention de la recette du Douillon.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Mei itou, tei itou. Moi aussi, toi aussi</string>
+			<string>II est chargè à drié. Il est fin saoûl</string>
+			<string>Quitte cha la. Laisse ça là</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>En 1789, les paisibles Doudevillais ne se distinguent pas par leur ardeur révolutionnaire. Cependant, un bon matin, un petit groupe passablement aviné décide de prendre d’assaut le château de Galleville. Mais arrivés devant la côte, nos rebelles d’opérette s’arrêtent net. Il fait bien chaud. La côte est bien raide. C’est ainsi que le château resta intact.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Défilé annuel de la maréchaussée le 14 juillet - fête du douillon le 25 septembre – grand marché à la Saint-Charlemagne.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -752,32 +771,33 @@
 		<key>epid</key>
 		<integer>29</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Ville pittoresque de 5000 habitants, Lillebonne est située dans la jolie vallée du Bolbec à quelques kilomètres de la Seine. Le théâtre romain, envahi de pommiers et d’arbustes a été déblayé en 1840. Il mesure 110 mètres de long. Les bains antiques sont situés près de la rue Césarine. Jolies promenades sur les coteaux boisées. Hôtel du commerce, très propre.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Tancarville - Lillebonne, en moins d&apos;une petite heure</string>
+			<string>Fécamp - Lillebonne, moins de deux heures</string>
+			<string>Bolbec - Lillebonne, la ligne passe par un tunnel de presque 600 mètres</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>Selon la légende, Lillebonne, capitale des calètes (tribu du Pays de Caux) aurait été complètement détruite par César. Auguste la fit reconstruire et la nomma Juliobona en l&apos;honneur de sa fille Julie. Quasi abandonnée pendant des siècles, la ville reprend vie sous Guillaume le Conquérant, qui y fit construire un château-fort.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Guillaume le Conquérant, duc de Normandie et roi des Anglais</string>
+			<string>Comte de Caylus, fameux amateur d&apos;antiquités. Il découvrit le théâtre romain en 1754</string>
+			<string>Albert Glatigny (1839-1873), poète local.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Je f&apos;rai pin cha, na ! Il n&apos;est pas question que je fasse ça.</string>
+			<string>Ah ! mais, nix ! Je n&apos;veux pas ! Ah mais non, je ne veux pas</string>
+			<string>Oust&apos; et aille ! J&apos;sieus pressé ! Vite ! Je suis pressé !</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Lillebonne était le point de départ de nombreuses voies romaines vers Harfleur, Rouen, Paris, Caudebec et bien d&apos;autres. - C&apos;est dans son château-fort de Lillebonne que Guillaume conçut son projet de conquérir l&apos;Angleterre.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Visite du château sur rendez-vous avec le propriétaire (pourboire au jardinier) - initiation à la bicyclette.</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -789,32 +809,33 @@
 		<key>epid</key>
 		<integer>43</integer>
 		<key>intro</key>
-		<string>some lame text for now</string>
+		<string>Le manoir d&apos;Agnès Sorel. Cette longue bâtisse pourrait passer pour un grand corps de ferme, si on ne prenait garde à la noblesse de la pierre, à l&apos;élégance des hautes fenêtres et à la majestueuse toiture. Vous êtes devant le manoir de la Vigne (XIVe siècle) où séjourna la belle Agnès Sorel, maîtresse de Charles VII. N&apos;est-il pas regrettable, que de nos jours, au XIXe siècle !, cette illustre demeure ne soit plus guère qu&apos;une masure enfumée, balafrée de laides ouvertures et remplie de fumier ? Nous appelons de nos vœux sa restauration.</string>
 		<key>itineraire</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Jumièges - Mesnil-sous-Jumièges, un quart d&apos;heure</string>
+			<string>Tancarville - Mesnil-sous-Jumièges, moins de deux heures avec la voiture de Léonard</string>
+			<string>Pour l&apos;abbaye, s&apos;arrêter à la station ‘Yainville-Jumièges’.</string>
 		</array>
 		<key>historique</key>
-		<string>some lame text for now</string>
+		<string>L&apos;histoire de la construction du manoir reste mystérieuse. Certaines armoiries à moitié effacées laissent à penser qu&apos;Édouard Plantagenêt, plus connu sous le nom de Prince noir, y aurait séjourné. Agnès Sorel y mourut, peut-être empoisonnée, en 1450.</string>
 		<key>celebs</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>Agnès Sorel, maîtresse de Charles VII</string>
+			<string>Le Prince noir, Édouard Plantagenêt, prétendant au trône d&apos;Angleterre</string>
+			<string>Amélie Bosquet, écrivain spécialisée dans les légendes, originaire du Mesnil-sous-Jumièges</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
-			<string>some lame text for now</string>
+			<string>J&apos;n&apos;en veux pin. Je n&apos;en veux pas.</string>
+			<string>Por quoi qu&apos;o z&apos;allez si vite ? Pourquoi allez-vous si vite ?</string>
+			<string>J&apos;ai ti eu pue ... Ce que j&apos;ai eu peur....</string>
 		</array>
 		<key>savoir</key>
-		<string>some lame text for now</string>
+		<string>Selon la légende, un passage souterrain reliait l&apos;abbaye de Jumièges au manoir afin de permettre au roi de retrouver plus discrètement sa bien-aimée. On raconte également que les bijoux d&apos;Agnès seraient cachés dans le parc du manoir.</string>
 		<key>events</key>
-		<string>some lame text for now</string>
+		<string>Visite de l&apos;abbaye de Jumièges, départ tous les vendredis, devant l&apos;église Saint-Philibert - autrefois, la fête de la pelote, un jeu d&apos;une grande violence, avait lieu tous les 25 septembre - chasse aux œufs dans le jardin du manoir à Pâques (réservée aux enfants)</string>
 		<key>numphotos</key>
-		<integer>2</integer>
+		<integer>3</integer>
 	</dict>
 </array>
 </plist>
