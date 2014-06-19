@@ -29,7 +29,7 @@
         UITextView *tv1 = [[UITextView alloc] initWithFrame:CGRectMake(149, 50, (768/2) - 174, 100)];
         tv1.backgroundColor = [UIColor whiteColor];
         tv1.userInteractionEnabled = NO;
-        tv1.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique eu est eu cursus. Etiam sagittis ornare arcu at condimentum. Donec cursus nisi lacus, eget consequat velit elementum et.";
+        tv1.text = @"Jacques Derouard, biographe de Maurice Leblanc, évoque l’amour de l’écrivain pour une invention toute récente, la bicyclette…";
         tv1.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
         tv1.layer.borderWidth = 1.0f;
         
@@ -43,7 +43,7 @@
         UITextView *tv2 = [[UITextView alloc] initWithFrame:CGRectMake((768/2) + 124, 50, (768/2) - 174, 100)];
         tv2.backgroundColor = [UIColor whiteColor];
         tv2.userInteractionEnabled = NO;
-        tv2.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique eu est eu cursus. Etiam sagittis ornare arcu at condimentum. Donec cursus nisi lacus, eget consequat velit elementum et.";
+        tv2.text = @"Maurice Leblanc est-il Arsène Lupin ? Arsène Lupin est-il Maurice Leblanc ? Créature et créateur se confondent…";
         tv2.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
         tv2.layer.borderWidth = 1.0f;
         
@@ -57,7 +57,7 @@
         UITextView *tv3 = [[UITextView alloc] initWithFrame:CGRectMake(149, 200, (768/2) - 174, 100)];
         tv3.backgroundColor = [UIColor whiteColor];
         tv3.userInteractionEnabled = NO;
-        tv3.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique eu est eu cursus. Etiam sagittis ornare arcu at condimentum. Donec cursus nisi lacus, eget consequat velit elementum et.";
+        tv3.text = @"La Comtesse de Cagliostro est publiée en feuilleton dans ‘Le Journal’ en 1923-1924. Á chaque jour son nouvel épisode…";
         tv3.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
         tv3.layer.borderWidth = 1.0f;
         
@@ -71,7 +71,7 @@
         UITextView *tv4 = [[UITextView alloc] initWithFrame:CGRectMake((768/2) + 124, 200, (768/2) - 174, 100)];
         tv4.backgroundColor = [UIColor whiteColor];
         tv4.userInteractionEnabled = NO;
-        tv4.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique eu est eu cursus. Etiam sagittis ornare arcu at condimentum. Donec cursus nisi lacus, eget consequat velit elementum et.";
+        tv4.text = @"La Comtesse de Cagliostro est le récit des origines d’Arsène Lupin. Tout en parcourant le pays de Caux, le lecteur voit Raoul devenir Lupin. ";
         tv4.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
         tv4.layer.borderWidth = 1.0f;
         
