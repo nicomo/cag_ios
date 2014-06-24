@@ -13,6 +13,9 @@
 #import "MapCell.h"
 #import "CharactersCell.h"
 #import "VideosCell.h"
+#import "CreditsCell.h"
+#import "CreditsViewController.h"
+#import "AppDelegate.h"
 
 @interface HomeViewController ()
 
@@ -89,7 +92,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 7;
+    return 8;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -163,8 +166,15 @@
             cell = [[VideosCell alloc] initWithFrame:CGRectZero];
         }
         return cell;
+    } else if (indexPath.row == 7) {
+        CreditsCell *cell;
+        cell = [tableView dequeueReusableCellWithIdentifier:@"creditsCell"];
+        if (cell == nil) {
+            cell = [[CreditsCell alloc] initWithFrame:CGRectZero];
+        }
+        return cell;
     }
-    
+
     return cell;
 }
 
@@ -184,6 +194,8 @@
         return 135;
     } else if (indexPath.row == 6) {
         return 350;
+    } else if (indexPath.row == 7) {
+        return 80;
     }
 
     return 100;
@@ -221,6 +233,12 @@
         
         [tableView beginUpdates];
         [tableView endUpdates];
+    }
+    
+    if (indexPath.row == 7) {
+        CreditsViewController *cvc = [[CreditsViewController alloc] init];
+        AppDelegate *ad = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        [(UINavigationController *)ad.window.rootViewController pushViewController:cvc animated:YES];
     }
 }
 
