@@ -210,7 +210,7 @@
 			<string>Pour l’abbaye, s&apos;arrêter à la halte de Gauville</string>
 		</array>
 		<key>historique</key>
-		<string>Bâtie dans les années 1250, l&apos;abbaye de Saint-Wandrille est dévastée par un incendie. Les ruines fameuses que vous admirez aujourd&apos;hui datent du XVe siècle. Á noter : remarquable lavabo de la Renaissance à l&apos;entrée du réfectoire (signalé par notre concurrent, le Guide Joanne).</string>
+		<string>Bâtie dans les années 1250, l&apos;abbaye de Saint-Wandrille est dévastée par un incendie. Les ruines fameuses que vous admirez aujourd&apos;hui datent du XVe siècle. À noter : remarquable lavabo de la Renaissance à l&apos;entrée du réfectoire (signalé par notre concurrent, le Guide Joanne).</string>
 		<key>celebs</key>
 		<array>
 			<string>Saint Wandrille, premier abbé.</string>
@@ -286,7 +286,7 @@
 			<string>Ligne Barentin-Caudebec, une heure vingt-cinq et de nombreux arrêts.</string>
 		</array>
 		<key>historique</key>
-		<string>Avant l’arrivée de Guillaume le Conquérant, au début du XIe siècle, Caudebec n’est qu’un modeste bourg de pêcheurs sans marché ni foire. La ville prend alors peu à peu son essor. Avec la Guerre de Cent ans, le rôle militaire de Caudebec s’affirme. Des remparts sont construits autour de la ville. Caudebec n’en est pas moins prise par les Anglais en 1419 Plus tard, la ville souffre des Guerres de Religion. On a découvert tout récemment un oppidum (fort) celtique d’une superficie de 26 hectares sur le territoire de la commune.</string>
+		<string>Avant l’arrivée de Guillaume le Conquérant, au début du XIe siècle, Caudebec n’est qu’un modeste bourg de pêcheurs sans marché ni foire. La ville prend alors peu à peu son essor. Avec la Guerre de Cent ans, le rôle militaire de Caudebec s’affirme. Des remparts sont construits autour de la ville. Caudebec n’en est pas moins prise par les Anglais en 1419. Plus tard, la ville souffre des Guerres de Religion. On a découvert tout récemment un oppidum (fort) celtique d’une superficie de 26 hectares sur le territoire de la commune.</string>
 		<key>celebs</key>
 		<array>
 			<string>François-Théodore Licquet, poète né à Caudebec en 1787. Conservateur de la bibliothèque publique de Rouen.</string>
@@ -362,7 +362,7 @@
 			<string>4 trains-omnibus/jour jusqu’à Barentin</string>
 		</array>
 		<key>historique</key>
-		<string>La première mention de Duclair (‘Duroclarus’) date de 811 Encore de nos jours, l’étymologie en reste obscure. Nos plus éminents linguistes échouent à se mettre d’accord. Pour certains, ‘Clarus’ signifierait ‘beau, clair’. Pour d’autres, il s’agirait d’un mot d’origine gauloise. Duclair fut un centre important de fabrication de bière aux XVe et XVIe siècles.</string>
+		<string>La première mention de Duclair (‘Duroclarus’) date de 811. Encore de nos jours, l’étymologie en reste obscure. Nos plus éminents linguistes échouent à se mettre d’accord. Pour certains, ‘Clarus’ signifierait ‘beau, clair’. Pour d’autres, il s’agirait d’un mot d’origine gauloise. Duclair fut un centre important de fabrication de bière aux XVe et XVIe siècles.</string>
 		<key>celebs</key>
 		<array>
 			<string>Baron de Duclair. Il aurait combattu auprès de Guillaume Le Conquérant à Hastings, en 1066.</string>
@@ -561,7 +561,7 @@
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>A c&apos;soir: Ce soir.</string>
+			<string>A c&apos;soir. Ce soir.</string>
 			<string>Au iou qui va ? Où va-t-il ?</string>
 			<string>A&apos;vous ? Avez-vous ?</string>
 		</array>
