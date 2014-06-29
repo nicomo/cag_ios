@@ -111,7 +111,7 @@ CSLinearLayoutView *mainLinearLayout;
     
     for (int i = 0; i < 3; i++) {
         
-        CSLinearLayoutView *lli1 = [[CSLinearLayoutView alloc] initWithFrame:CGRectMake(0, 0, 309, 40)];
+        CSLinearLayoutView *lli1 = [[CSLinearLayoutView alloc] initWithFrame:CGRectMake(0, 0, 309, 60)];
         lli1.autoAdjustFrameSize = YES;
         lli1.orientation = CSLinearLayoutViewOrientationHorizontal;
         
