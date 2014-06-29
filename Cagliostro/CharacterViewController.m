@@ -116,7 +116,7 @@ CSLinearLayoutView *mainLinearLayout;
 
 - (void)addConfessionsAndMessages
 {
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 668, 300)];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 668, 320)];
     
     UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, 304, 50)];
     [l setText:@"Confessions"];
@@ -166,20 +166,20 @@ CSLinearLayoutView *mainLinearLayout;
     }
     
     self.confpvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.confpvc.view.frame = CGRectMake(0, 60, 309, 250);
+    self.confpvc.view.frame = CGRectMake(0, 60, 309, 270);
     self.confpvc.dataSource = self;
     self.confpvc.delegate = self;
     
     [self.confpvc setViewControllers:@[[self.confpages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     self.messpvc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.messpvc.view.frame = CGRectMake(359, 60, 309, 250);
+    self.messpvc.view.frame = CGRectMake(359, 60, 309, 270);
     self.messpvc.dataSource = self;
     self.messpvc.delegate = self;
     
     [self.messpvc setViewControllers:@[[self.messpages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
-    UIView *sep2 = [[UIView alloc] initWithFrame:CGRectMake(334, 0, 1, 300)];
+    UIView *sep2 = [[UIView alloc] initWithFrame:CGRectMake(334, 0, 1, 320)];
     sep2.backgroundColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0];
     
     [container addSubview:l];

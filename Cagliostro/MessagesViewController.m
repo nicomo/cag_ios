@@ -76,7 +76,7 @@
     [l setFont:[UIFont fontWithName:@"georgia" size:16]];
     l.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
     l.userInteractionEnabled = NO;
-    l.numberOfLines = 5;
+    l.numberOfLines = 6;
     [l sizeToFit];
     
     UIView *sep2 = [[UIView alloc] initWithFrame:CGRectMake(60, 0, 1, 50)];
