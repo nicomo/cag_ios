@@ -83,7 +83,7 @@
 			<key>para</key>
 			<real>0.25</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Non mon Raoul, non!</string>
 			<key>msg_ref</key>
@@ -181,7 +181,7 @@
 			<key>para</key>
 			<real>0.8</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Je vous recommande à ce sujet ‘Les Sermons de Monseigneur d’Ambricourt’, 1893. Très beaux passages sur le jugement dernier.</string>
 			<key>msg_ref</key>
@@ -305,7 +305,7 @@
 			<key>para</key>
 			<real>0.2</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Et dire que j’ai toujours détesté les versions latines !</string>
 			<key>msg_ref</key>
@@ -381,7 +381,7 @@
 			<key>para</key>
 			<real>0.8</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Mise à jour de ma situation amoureuse : c&apos;est &quot;filandreux&quot;!</string>
 			<key>msg_ref</key>
@@ -467,7 +467,7 @@
 			<key>para</key>
 			<real>0.95</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Je cherche un quatrième pour le bridge de vendredi.</string>
 			<key>msg_ref</key>
@@ -517,7 +517,7 @@
 			<key>para</key>
 			<real>0.17</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Si elle est vraiment devin, qu’elle nous dise sur qui parier pour le British Open de golf à Sandwich.</string>
 			<key>msg_ref</key>
@@ -555,7 +555,7 @@
 			<key>para</key>
 			<real>0.9</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Nom d’un chien. Ne me dites pas que Beaumagnan est le père de Clarisse !</string>
 			<key>msg_ref</key>
@@ -617,7 +617,7 @@
 			<key>para</key>
 			<real>0.1</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Le bougre profite un peu BEAUCOUP de la situation!</string>
 			<key>msg_ref</key>
@@ -653,7 +653,7 @@
 			<key>para</key>
 			<real>0.2</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Madonna! Ma che vergogna! Bugiardo ! Farabutto !</string>
 			<key>msg_ref</key>
@@ -667,7 +667,7 @@
 			<key>para</key>
 			<real>0.95</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Zut!</string>
 			<key>msg_ref</key>
@@ -779,7 +779,7 @@
 			<key>para</key>
 			<real>0.95</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Les gendarmes sont à la poursuite d’une suspecte. Signalement : une jeune femme en robe de laine grise, portant un chapeau orné de violettes.</string>
 			<key>msg_ref</key>
@@ -891,7 +891,7 @@
 			<key>para</key>
 			<real>0.65</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Il est bien mignon ce Raoul, mais ce n’est pas la modestie qui l’étouffe…</string>
 			<key>msg_ref</key>
@@ -965,7 +965,7 @@
 			<key>para</key>
 			<real>0.2</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>J’en ai vu d’autres, mon petit monsieur !</string>
 			<key>msg_ref</key>
@@ -1039,7 +1039,7 @@
 			<key>para</key>
 			<real>0.6</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Voilà mon billet première classe pour Tombouctou!</string>
 			<key>msg_ref</key>
@@ -1089,7 +1089,7 @@
 			<key>para</key>
 			<real>0.65</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>Adieu ma Brigitte… N’oublie pas de nourrir Marguerite. C’est quand même grâce à elle que j’ai eu la médaille du meilleur Neufchâtel…</string>
 			<key>msg_ref</key>
@@ -1103,7 +1103,7 @@
 			<key>para</key>
 			<real>0.1</real>
 			<key>toast</key>
-			<false/>
+			<true/>
 			<key>msg</key>
 			<string>La ligue antialcoolique de Jumièges se tient à votre disposition.</string>
 			<key>msg_ref</key>
