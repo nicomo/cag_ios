@@ -743,6 +743,14 @@
 		<array>
 			<dict>
 				<key>pid</key>
+				<integer>3</integer>
+				<key>cid</key>
+				<integer>20</integer>
+				<key>gender</key>
+				<string>Male</string>
+			</dict>
+			<dict>
+				<key>pid</key>
 				<integer>37</integer>
 				<key>cid</key>
 				<integer>18</integer>
