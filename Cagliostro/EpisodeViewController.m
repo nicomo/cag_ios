@@ -436,7 +436,7 @@ CGPoint offset;
     self.nextButtonTitle.userInteractionEnabled = NO;
     self.nextButtonTitle.scrollEnabled = NO;
     [self.nextButtonTitle sizeToFit];
-    self.nextButtonTitle.frame = CGRectMake(85, 150, 768-85, nextPartLabel.frame.size.height);
+    self.nextButtonTitle.frame = CGRectMake(85, 150, 768-85, self.nextButtonTitle.frame.size.height);
     [self.nextButton addSubview:self.nextButtonTitle];
     
     CSLinearLayoutItem *item = [CSLinearLayoutItem layoutItemForView:self.nextButton];
