@@ -125,7 +125,7 @@ CSLinearLayoutView *mainLinearLayout;
     l.userInteractionEnabled = NO;
     
     UILabel *l2 = [[UILabel alloc] initWithFrame:CGRectMake(359+5, 0, 304, 50)];
-    [l2 setText:@"Messages"];
+    [l2 setText:@"Billets"];
     [l2 setFont:[UIFont fontWithName:@"georgia" size:25]];
     l2.textColor = [UIColor colorWithRed:0.24 green:0.20 blue:0.12 alpha:1.0];
     l2.userInteractionEnabled = NO;

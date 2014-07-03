@@ -372,6 +372,17 @@
 		<string>Paru le 22 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>pins</key>
+		<array>
+			<dict>
+				<key>pid</key>
+				<integer>15</integer>
+				<key>cid</key>
+				<integer>11</integer>
+				<key>gender</key>
+				<string>Male</string>
+			</dict>
+		</array>
 		<key>chars</key>
 		<array>
 			<integer>0</integer>
@@ -392,6 +403,25 @@
 		<string>Paru le 23 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>pins</key>
+		<array>
+			<dict>
+				<key>pid</key>
+				<integer>67</integer>
+				<key>cid</key>
+				<integer>13</integer>
+				<key>gender</key>
+				<string>Male</string>
+			</dict>
+			<dict>
+				<key>pid</key>
+				<integer>43</integer>
+				<key>cid</key>
+				<integer>12</integer>
+				<key>gender</key>
+				<string>Female</string>
+			</dict>
+		</array>
 		<key>chars</key>
 		<array>
 			<integer>0</integer>
@@ -443,6 +473,17 @@
 		<string>Paru le 26 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>pins</key>
+		<array>
+			<dict>
+				<key>pid</key>
+				<integer>46</integer>
+				<key>cid</key>
+				<integer>14</integer>
+				<key>gender</key>
+				<string>Female</string>
+			</dict>
+		</array>
 		<key>chars</key>
 		<array>
 			<integer>0</integer>
@@ -482,6 +523,25 @@
 		<string>Paru le 28 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>pins</key>
+		<array>
+			<dict>
+				<key>pid</key>
+				<integer>14</integer>
+				<key>cid</key>
+				<integer>16</integer>
+				<key>gender</key>
+				<string>Female</string>
+			</dict>
+			<dict>
+				<key>pid</key>
+				<integer>10</integer>
+				<key>cid</key>
+				<integer>15</integer>
+				<key>gender</key>
+				<string>Female</string>
+			</dict>
+		</array>
 		<key>chars</key>
 		<array>
 			<integer>0</integer>
@@ -500,6 +560,17 @@
 		<string>Paru le 29 décembre 1923</string>
 	</dict>
 	<dict>
+		<key>pins</key>
+		<array>
+			<dict>
+				<key>pid</key>
+				<integer>9</integer>
+				<key>cid</key>
+				<integer>17</integer>
+				<key>gender</key>
+				<string>Male</string>
+			</dict>
+		</array>
 		<key>chars</key>
 		<array>
 			<integer>0</integer>
@@ -544,7 +615,7 @@
 			<integer>13</integer>
 		</array>
 		<key>title</key>
-		<string>La tirelire des moines</string>
+		<string>Le secret du chevalier</string>
 		<key>subtitle</key>
 		<string>Paru le 1er janvier 1924</string>
 	</dict>
@@ -668,6 +739,25 @@
 		<string>Paru le 8 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>pins</key>
+		<array>
+			<dict>
+				<key>pid</key>
+				<integer>3</integer>
+				<key>cid</key>
+				<integer>20</integer>
+				<key>gender</key>
+				<string>Male</string>
+			</dict>
+			<dict>
+				<key>pid</key>
+				<integer>37</integer>
+				<key>cid</key>
+				<integer>18</integer>
+				<key>gender</key>
+				<string>Female</string>
+			</dict>
+		</array>
 		<key>chars</key>
 		<array>
 			<integer>0</integer>
@@ -884,6 +974,17 @@
 		<string>Paru le 21 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>pins</key>
+		<array>
+			<dict>
+				<key>pid</key>
+				<integer>23</integer>
+				<key>cid</key>
+				<integer>19</integer>
+				<key>gender</key>
+				<string>Male</string>
+			</dict>
+		</array>
 		<key>chars</key>
 		<array>
 			<integer>0</integer>

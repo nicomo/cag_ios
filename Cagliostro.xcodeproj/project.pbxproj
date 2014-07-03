@@ -365,7 +365,7 @@
 				ORGANIZATIONNAME = "Jean-André Santoni";
 				TargetAttributes = {
 					208C97F51892A6160008749C = {
-						DevelopmentTeam = ZE9XE938Z2;
+						DevelopmentTeam = 7Y6VWZKGBZ;
 					};
 					208C98101892A6160008749C = {
 						TestTargetID = 208C97F51892A6160008749C;
