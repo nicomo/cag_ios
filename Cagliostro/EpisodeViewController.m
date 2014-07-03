@@ -278,7 +278,7 @@ CGPoint offset;
         for (NSMutableDictionary *message in charmessagelist) {
             if ([[message objectForKey:@"toast"] boolValue] && [[message objectForKey:@"epid"] intValue] == self.epid && offset >= [[message objectForKey:@"para"] floatValue] && ! [message objectForKey:@"shown"]) {
                 [self.view makeToast:[message objectForKey:@"msg"]
-                            duration:2.0
+                            duration:3.0
                             position:@"bottom"
                                title:[chardata[cid] objectForKey:@"name"]
                                image:[UIImage imageNamed:[NSString stringWithFormat:@"character%d", cid]]];
