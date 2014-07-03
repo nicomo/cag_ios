@@ -46,7 +46,7 @@
         
         UILabel* bookTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 234, 768, 100)];
         bookTitle.textAlignment = UITextAlignmentCenter;
-        bookTitle.text = @"La comtesse de Cagliostro";
+        bookTitle.text = @"La Comtesse de Cagliostro";
         bookTitle.font = [UIFont fontWithName:@"SuperClarendon-Black" size:40];
         bookTitle.textColor = [UIColor colorWithRed:0.08 green:0.07 blue:0.07 alpha:1.0];
         
