@@ -11,4 +11,5 @@
 @interface EpisodeCell : UICollectionViewCell
 @property (strong, nonatomic) UILabel *title;
 @property (strong, nonatomic) UIImageView *thumb;
+@property (strong, nonatomic) UIView *bottom;
 @end

@@ -14,8 +14,8 @@
 {
     if (self = [super initWithFrame:frame])
     {
-        UIView *bottom = [[UIView alloc] initWithFrame:CGRectMake(0, frame.size.height - 40, frame.size.width, 40)];
-        bottom.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.75];
+        self.bottom = [[UIView alloc] initWithFrame:CGRectMake(0, frame.size.height - 40, frame.size.width, 40)];
+        self.bottom.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.75];
 
         self.title = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, frame.size.width-10, 40)];
         self.title.font = [UIFont fontWithName:@"SuperClarendon-Black" size:10];
@@ -29,9 +29,9 @@
         self.layer.borderColor = [UIColor colorWithRed:.75 green:.70 blue:.69 alpha:1.0].CGColor;
         self.layer.borderWidth = 1;
         
-        [bottom addSubview:self.title];
+        [self.bottom addSubview:self.title];
         [self.contentView addSubview:self.thumb];
-        [self.contentView addSubview:bottom];
+        [self.contentView addSubview:self.bottom];
     }
     return self;
 }

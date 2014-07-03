@@ -44,7 +44,7 @@
         
         [self.contentView addSubview:self.epcv];
         
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateEpisodes:) userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateEpisodes:) userInfo:nil repeats:YES];
     }
     return self;
 }
@@ -85,6 +85,11 @@
     double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
     if (minElapsed > 1 && minElapsed < 51) {
         [self.epcv reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:(int)minElapsed inSection:0]]];
+        
+        EpisodeCell *c = (EpisodeCell*)[self.epcv cellForItemAtIndexPath:[NSIndexPath indexPathForRow:(int)minElapsed inSection:0]];
+        
+        c.thumb.frame = CGRectMake(c.thumb.frame.origin.x, c.thumb.frame.origin.y, c.frame.size.width, c.frame.size.height);
+        c.bottom.frame = CGRectMake(c.bottom.frame.origin.x, c.frame.size.height - 40, c.frame.size.width, 40);
     }
 }
 

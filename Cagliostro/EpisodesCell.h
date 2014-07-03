@@ -13,4 +13,5 @@
 @interface EpisodesCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout>
 @property (strong, nonatomic) UICollectionView *epcv;
 @property (strong, nonatomic) NSTimer *timer;
+- (CGRect) sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 @end
