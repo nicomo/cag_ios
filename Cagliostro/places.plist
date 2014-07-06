@@ -23,20 +23,20 @@
 		<string>Les Tancarville possédaient alors un manoir en ces lieux et se faisaient enterrer dans une petite chapelle Saint-Georges, dans l’enceinte du domaine. Au XIe siècle, Raoul de Tancarville, chambellan de Guillaume Le Conquérant, fait bâtir l’église Saint-Georges. Au XIIe siècle, son fils Guillaume y fonde une abbaye bénédictine. On dit que l’abbaye est construite sur le site d’un temple gallo-romain.</string>
 		<key>celebs</key>
 		<array>
-			<string>Raoul de Tancarville, chambellan de Guillaume le Conquérant et fondateur de l’église Saint-Georges</string>
+			<string>Raoul de Tancarville, chambellan de Guillaume le Conquérant et fondateur de l’église Saint-Georges.</string>
 			<string>Jean-Pierre Aumer, directeur du Ballet de l’Opéra de Paris. Il s’éteint à Boscherville en 1833.</string>
 			<string>Augustine-Désirée Frumery, dite ‘le cabri’. Danseuse de Rond cauchois célèbre dans la commune.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>Voui. Oui</string>
+			<string>Voui. Oui.</string>
 			<string>Va-t&apos;o. Va !</string>
 			<string>Ch&apos;est rien ben. C&apos;est vraiment bien.</string>
 		</array>
 		<key>savoir</key>
 		<string>Autrefois, certains auteurs prétendaient que l’abbaye abritait la dépouille de Guillaume Le Conquérant, recueillie par le chevalier Héluin. Tandis que les autres serviteurs du roi s’adonnaient à l’ivresse du pillage, le fidèle chevalier et les moines de Saint-Georges de Boscherville auraient mené sa dépouille à l’église et accompli les derniers rites funéraires. Guillaume fut en réalité inhumé à Caen, dans l’abbatiale Saint-Étienne.</string>
 		<key>events</key>
-		<string>Fête médiévale les 6, 7 et 8 juin – marché nocturne tous les mercredis jusqu’à la Saint-Thomas – messes dans l’abbatiale</string>
+		<string>Fête médiévale les 6, 7 et 8 juin – marché nocturne tous les mercredis jusqu’à la Saint-Thomas – messes dans l’abbatiale.</string>
 		<key>numphotos</key>
 		<integer>3</integer>
 	</dict>
@@ -99,13 +99,13 @@
 		<string>Alors que le comte Galéran de Meulan s&apos;en revenait de Terre Sainte, il fut pris dans une terrible tempête. Saisi de crainte, il fit le vœu de fonder un monastère, si dieu lui prêtait vie. Parvenu sain et sauf en Normandie, il s&apos;associe à la fondation de l&apos;abbaye du Valasse par l&apos;impératrice Mathilde. Il promet de faire don de 20 anguilles et 6000 harengs chaque année.</string>
 		<key>celebs</key>
 		<array>
-			<string>Mathilde l&apos;Emperessse, petite-fille de Guillaume le Conquérant</string>
-			<string>Albert Fauquet-Lemaître, propriétaire actuel de l&apos;abbaye</string>
-			<string>Galéran de Meulan, croisé</string>
+			<string>Mathilde l&apos;Emperessse, petite-fille de Guillaume le Conquérant.</string>
+			<string>Albert Fauquet-Lemaître, propriétaire actuel de l&apos;abbaye.</string>
+			<string>Galéran de Meulan, croisé.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>Chasse-tout-vive ! Poisson frais ! (cri de la marchande)</string>
+			<string>Chasse-tout-vive ! Poisson frais ! (cri de la marchande).</string>
 			<string>J&apos;sis tout declenqué. Je suis malade.</string>
 			<string>Dessaquez met vos pistoles, que les vaie. Montrez-donc moi votre argent que je le voie.</string>
 		</array>
@@ -214,7 +214,7 @@
 		<key>celebs</key>
 		<array>
 			<string>Saint Wandrille, premier abbé.</string>
-			<string>Arsène Gouget, maire de Saint-Wandrille-Rançon de 1876 à 1884</string>
+			<string>Arsène Gouget, maire de Saint-Wandrille-Rançon de 1876 à 1884.</string>
 			<string>Visiteurs fameux : Victor Hugo, la duchesse de Berry etc...</string>
 		</array>
 		<key>conversation</key>
@@ -290,7 +290,7 @@
 		<key>celebs</key>
 		<array>
 			<string>François-Théodore Licquet, poète né à Caudebec en 1787. Conservateur de la bibliothèque publique de Rouen.</string>
-			<string>Eustache de Chandoisel de Caumont, maire actuel de Caudebec</string>
+			<string>Eustache de Chandoisel de Caumont, maire actuel de Caudebec.</string>
 			<string>Adrien Sacquespée, peintre et poète né en 1629. Tableaux conservés au musée de Rouen.</string>
 		</array>
 		<key>conversation</key>
@@ -329,7 +329,7 @@
 		<array>
 			<string>Calixte et Raoul (parfois Mathilde et Edmond), héros tragiques de la légende.</string>
 			<string>Marie de France, ou Marie de Valois. Elle consacre à la légende un Lai des deux amants (XIIe siècle).</string>
-			<string>M. de Malmain, fondateur du prieuré des Deux-Amants</string>
+			<string>M. de Malmain, fondateur du prieuré des Deux-Amants.</string>
 		</array>
 		<key>conversation</key>
 		<array>
@@ -479,9 +479,9 @@
 		<string>La Bouille ? Un bien curieux nom, qui évoque les marais, pour un si joli endroit ! L’origine de la Bouille remonterait aux Celtes eux-mêmes. Très vite, l’activité des habitants se concentre sur le port. Au XIIIe siècle, on y transporte du vin et au XVIe siècle des marchandises exotiques comme du sucre, des pierreries et des fourrures. On y trouvait plusieurs greniers à sel. Une grande et belle halle aux grains servait même d’auberge jusqu’en 1860.</string>
 		<key>celebs</key>
 		<array>
-			<string>Hector Malot, auteur du fameux Sans famille, né à la Bouille le 20 mai 1830</string>
-			<string>Gauguin, peintre. Tableau intitulé &apos;La Bouille&apos;, 1884</string>
-			<string>Blanche de Castille. Elle aurait prié dans l&apos;ancienne chapelle</string>
+			<string>Hector Malot, auteur du fameux Sans famille, né à la Bouille le 20 mai 1830.</string>
+			<string>Gauguin, peintre. Tableau intitulé &apos;La Bouille&apos;, 1884.</string>
+			<string>Blanche de Castille. Elle aurait prié dans l&apos;ancienne chapelle.</string>
 		</array>
 		<key>conversation</key>
 		<array>
@@ -492,7 +492,7 @@
 		<key>savoir</key>
 		<string>Certains racontent que c&apos;est à la Bouille que fut repêché le corps d&apos;Arthur de Bretagne, assassiné par Jean sans terre en 1203. - La pierre de Caumont (carrière toute proche) a servi à la construction de Saint-Georges de Boscherville et de la cathédrale de Rouen.</string>
 		<key>events</key>
-		<string>Horaires des bacs (renseignements au Café de Place) - visites des curiosités des environs, rendez-vous devant le coiffeur après le déjeuner - cours de peinture</string>
+		<string>Horaires des bacs (renseignements au Café de Place) - visites des curiosités des environs, rendez-vous devant le coiffeur après le déjeuner - cours de peinture.</string>
 		<key>numphotos</key>
 		<integer>4</integer>
 	</dict>
@@ -517,9 +517,9 @@
 		<string>Raconter l&apos;histoire de Paris, ce serait donner l&apos;âge de la belle. Nous sommes trop galants pour y songer. Car cette fée est toujours jeune, malgré sa Conciergerie du Moyen âge, son imposant Palais du Louvre, son gracieux Palais-Royal, sa majestueuse avenue de l&apos;Opéra. Tantôt grisette, tantôt comtesse, la cité étincelante aux mille existences ne saurait être résumée en quelques lignes.</string>
 		<key>celebs</key>
 		<array>
-			<string>La Goulue, danseuse de cancan</string>
-			<string>Thérèse Humbert, héritière Crawford. Figure du Tout-Paris</string>
-			<string>Sarah Bernhardt, comédienne mondialement connue, surnommée la &apos;divine&apos;</string>
+			<string>La Goulue, danseuse de cancan.</string>
+			<string>Thérèse Humbert, héritière Crawford. Figure du Tout-Paris.</string>
+			<string>Sarah Bernhardt, comédienne mondialement connue, surnommée la &apos;divine&apos;.</string>
 		</array>
 		<key>conversation</key>
 		<array>
@@ -530,7 +530,7 @@
 		<key>savoir</key>
 		<string>Le Paris-Rouen est la première course automobile de l&apos;histoire. Elle est prévue pour le 22 juillet 1894. Ne manquez pas cet événement unique ! L&apos;épreuve est organisée par le journaliste Pierre Giffard, d’origine normande. Le comte Jules de Dion devrait y concourir à bord de sa De Dion-Bouton.</string>
 		<key>events</key>
-		<string>De juin à octobre, le théâtre des Variétés donne &apos;La revue médiévale&apos; avec en vedette la piquante Brigitte - fuyez la canicule par la gare Saint-Lazare. Trains réguliers vers la Normandie - boutiques de mode</string>
+		<string>De juin à octobre, le théâtre des Variétés donne &apos;La revue médiévale&apos; avec en vedette la piquante Brigitte - fuyez la canicule par la gare Saint-Lazare. Trains réguliers vers la Normandie - boutiques de mode.</string>
 		<key>numphotos</key>
 		<integer>4</integer>
 	</dict>
@@ -593,9 +593,9 @@
 		<string>De fondation gauloise, Rouen est alors connue sous le nom de Rotomagus (&apos;champ de course&apos;), car les Celtes étaient passionnés de courses de char ! Brûlée par les Vikings en 843, Rouen renaît de ses cendres. Le géant Rollon, premier prince de Normandie, s&apos;y installe. Mais bientôt les nuages s&apos;accumulent à nouveau au-dessus de la ville. La place de la Rougemare commémore le sinistre souvenir du carnage des soldats d&apos;Othon, empereur d&apos;Allemagne, et des chevaliers de Louis IV, par le duc de Normandie, Richard Sans-Peur, en 949. Leurs âmes y rôdent encore, dit-on...</string>
 		<key>celebs</key>
 		<array>
-			<string>Jeanne d&apos;Arc, brûlée vive sur la place du Vieux-Marché, le 30 mai 1431</string>
-			<string>Gustave Flaubert, écrivain, né le 12 décembre 1821 à Rouen</string>
-			<string>Maurice Leblanc, né le 11 décembre 1864 à Rouen, prometteur littérateur de 30 ans</string>
+			<string>Jeanne d&apos;Arc, brûlée vive sur la place du Vieux-Marché, le 30 mai 1431.</string>
+			<string>Gustave Flaubert, écrivain, né le 12 décembre 1821 à Rouen.</string>
+			<string>Maurice Leblanc, né le 11 décembre 1864 à Rouen, prometteur littérateur de 30 ans.</string>
 		</array>
 		<key>conversation</key>
 		<array>
@@ -632,13 +632,13 @@
 		<key>celebs</key>
 		<array>
 			<string>Raoul de Tancarville, précepteur de Guillaume Le Conquérant.</string>
-			<string>Jeanne de Harcourt, fantôme attitré du château</string>
+			<string>Jeanne de Harcourt, fantôme attitré du château.</string>
 			<string>M. Lepont, de Tancarville, architecte.</string>
 		</array>
 		<key>conversation</key>
 		<array>
 			<string>Donnez-met l’iau. Donnez-moi de l’eau</string>
-			<string>J’y ai dit. Je lui ai dit</string>
+			<string>J’y ai dit. Je lui ai dit.</string>
 			<string>T’es tannant ! Tu m’ennuies !</string>
 		</array>
 		<key>savoir</key>
@@ -745,15 +745,15 @@
 		<string>L&apos;origine du nom de Doudeville est obscure. Certains érudits y voient une origine scandinave, Doudeville étant la déformation de Dudeville, du nom de son fondateur, Dude, chef viking chevelu célèbre pour son goût pour le jeu de quille et le calva au lait. Pour d&apos;autres, Doude serait une forme ancienne de douillon.</string>
 		<key>celebs</key>
 		<array>
-			<string>Hippolyte de Funès, brigadier</string>
-			<string>Bathilde de Tarttatin, dame de Doudeville</string>
+			<string>Hippolyte de Funès, brigadier.</string>
+			<string>Bathilde de Tarttatin, dame de Doudeville.</string>
 			<string>Dorothée Ouille, à qui l&apos;on prête l&apos;invention de la recette du Douillon.</string>
 		</array>
 		<key>conversation</key>
 		<array>
-			<string>Mei itou, tei itou. Moi aussi, toi aussi</string>
-			<string>II est chargè à drié. Il est fin saoûl</string>
-			<string>Quitte cha la. Laisse ça là</string>
+			<string>Mei itou, tei itou. Moi aussi, toi aussi.</string>
+			<string>II est chargè à drié. Il est fin saoûl.</string>
+			<string>Quitte cha la. Laisse ça là.</string>
 		</array>
 		<key>savoir</key>
 		<string>En 1789, les paisibles Doudevillais ne se distinguent pas par leur ardeur révolutionnaire. Cependant, un bon matin, un petit groupe passablement aviné décide de prendre d’assaut le château de Galleville. Mais arrivés devant la côte, nos rebelles d’opérette s’arrêtent net. Il fait bien chaud. La côte est bien raide. C’est ainsi que le château resta intact.</string>
@@ -783,14 +783,14 @@
 		<string>Selon la légende, Lillebonne, capitale des Calètes (tribu du Pays de Caux) aurait été complètement détruite par César. Auguste la fit reconstruire et la nomma Juliobona en l&apos;honneur de sa fille Julie. Quasi abandonnée pendant des siècles, la ville reprend vie sous Guillaume le Conquérant, qui y fit construire un château-fort.</string>
 		<key>celebs</key>
 		<array>
-			<string>Guillaume le Conquérant, duc de Normandie et roi des Anglais</string>
-			<string>Comte de Caylus, fameux amateur d&apos;antiquités. Il découvrit le théâtre romain en 1754</string>
+			<string>Guillaume le Conquérant, duc de Normandie et roi des Anglais.</string>
+			<string>Comte de Caylus, fameux amateur d&apos;antiquités. Il découvrit le théâtre romain en 1754.</string>
 			<string>Albert Glatigny (1839-1873), poète local.</string>
 		</array>
 		<key>conversation</key>
 		<array>
 			<string>Je f&apos;rai pin cha, na ! Il n&apos;est pas question que je fasse ça.</string>
-			<string>Ah ! mais, nix ! Je n&apos;veux pas ! Ah mais non, je ne veux pas</string>
+			<string>Ah ! mais, nix ! Je n&apos;veux pas ! Ah mais non, je ne veux pas.</string>
 			<string>Oust&apos; et aille ! J&apos;sieus pressé ! Vite ! Je suis pressé !</string>
 		</array>
 		<key>savoir</key>
@@ -821,9 +821,9 @@
 		<string>L&apos;histoire de la construction du manoir reste mystérieuse. Certaines armoiries à moitié effacées laissent à penser qu&apos;Édouard Plantagenêt, plus connu sous le nom de Prince noir, y aurait séjourné. Agnès Sorel y mourut, peut-être empoisonnée, en 1450.</string>
 		<key>celebs</key>
 		<array>
-			<string>Agnès Sorel, maîtresse de Charles VII</string>
-			<string>Le Prince noir, Édouard Plantagenêt, prétendant au trône d&apos;Angleterre</string>
-			<string>Amélie Bosquet, écrivain spécialisée dans les légendes, originaire du Mesnil-sous-Jumièges</string>
+			<string>Agnès Sorel, maîtresse de Charles VII.</string>
+			<string>Le Prince noir, Édouard Plantagenêt, prétendant au trône d&apos;Angleterre.</string>
+			<string>Amélie Bosquet, écrivain spécialisée dans les légendes, originaire du Mesnil-sous-Jumièges.</string>
 		</array>
 		<key>conversation</key>
 		<array>
@@ -834,7 +834,7 @@
 		<key>savoir</key>
 		<string>Selon la légende, un passage souterrain reliait l&apos;abbaye de Jumièges au manoir afin de permettre au roi de retrouver plus discrètement sa bien-aimée. On raconte également que les bijoux d&apos;Agnès seraient cachés dans le parc du manoir.</string>
 		<key>events</key>
-		<string>Visite de l&apos;abbaye de Jumièges, départ tous les vendredis, devant l&apos;église Saint-Philibert - autrefois, la fête de la pelote, un jeu d&apos;une grande violence, avait lieu tous les 25 septembre - chasse aux œufs dans le jardin du manoir à Pâques (réservée aux enfants)</string>
+		<string>Visite de l&apos;abbaye de Jumièges, départ tous les vendredis, devant l&apos;église Saint-Philibert - autrefois, la fête de la pelote, un jeu d&apos;une grande violence, avait lieu tous les 25 septembre - chasse aux œufs dans le jardin du manoir à Pâques (réservée aux enfants).</string>
 		<key>numphotos</key>
 		<integer>3</integer>
 	</dict>
