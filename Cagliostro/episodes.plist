@@ -697,6 +697,17 @@
 		<string>Paru le 6 janvier 1924</string>
 	</dict>
 	<dict>
+		<key>pins</key>
+		<array>
+			<dict>
+				<key>pid</key>
+				<integer>3</integer>
+				<key>cid</key>
+				<integer>20</integer>
+				<key>gender</key>
+				<string>Male</string>
+			</dict>
+		</array>
 		<key>chars</key>
 		<array>
 			<integer>0</integer>
@@ -733,14 +744,6 @@
 	<dict>
 		<key>pins</key>
 		<array>
-			<dict>
-				<key>pid</key>
-				<integer>3</integer>
-				<key>cid</key>
-				<integer>20</integer>
-				<key>gender</key>
-				<string>Male</string>
-			</dict>
 			<dict>
 				<key>pid</key>
 				<integer>37</integer>
