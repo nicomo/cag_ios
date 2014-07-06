@@ -50,7 +50,7 @@
 			<integer>3</integer>
 		</array>
 		<key>title</key>
-		<string>A l&apos;ombre de l&apos;Aiguille</string>
+		<string>À l&apos;ombre de l&apos;Aiguille</string>
 		<key>subtitle</key>
 		<string>Paru le 11 décembre 1923</string>
 		<key>pins</key>
@@ -592,7 +592,7 @@
 			<integer>13</integer>
 		</array>
 		<key>title</key>
-		<string>Deux Volontés</string>
+		<string>Deux volontés</string>
 		<key>subtitle</key>
 		<string>Paru le 31 décembre 1923</string>
 	</dict>
