@@ -649,9 +649,9 @@
 		</dict>
 		<dict>
 			<key>epid</key>
-			<integer>14</integer>
+			<integer>24</integer>
 			<key>para</key>
-			<real>0.2</real>
+			<real>0.3</real>
 			<key>toast</key>
 			<true/>
 			<key>msg</key>
