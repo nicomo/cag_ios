@@ -101,14 +101,6 @@
 				<key>pid</key>
 				<integer>16</integer>
 				<key>cid</key>
-				<integer>3</integer>
-				<key>gender</key>
-				<string>Male</string>
-			</dict>
-			<dict>
-				<key>pid</key>
-				<integer>16</integer>
-				<key>cid</key>
 				<integer>4</integer>
 				<key>gender</key>
 				<string>Male</string>
