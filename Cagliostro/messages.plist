@@ -321,7 +321,7 @@
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>Juste ciel ! C’est donc à cette intriguante qu’on doit la perte de l’Alsace-Lorraine. Et dire que certains ont incriminé l’Etat-Major !</string>
+			<string>Juste ciel ! C’est donc à cette intriguante qu’on doit la perte de l’Alsace-Lorraine. Et dire que certains ont incriminé l’État-Major !</string>
 			<key>msg_ref</key>
 			<string>&quot;Je vous ai aperçue dans un café, assise devant une table, buvant et riant avec des officiers allemands.&quot;</string>
 		</dict>
@@ -979,7 +979,7 @@
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>Il a décidément tous les talents, ce garçon. A quand le numéro au Moulin rouge…</string>
+			<string>Il a décidément tous les talents, ce garçon. À quand le numéro au Moulin rouge…</string>
 			<key>msg_ref</key>
 			<string>&quot;Il se leva de nouveau et pivota deux ou trois fois sur ses talons, petit tournoiement qu’il fit suivre d’une esquisse de danse qui tenait du cancan et de la gigue.&quot;</string>
 		</dict>
@@ -993,7 +993,7 @@
 			<key>toast</key>
 			<false/>
 			<key>msg</key>
-			<string>Avoir l’air d’un chinois en Chine, d’un indien en Inde, d’un égyptien en Égypte, voilà la qualité première d’un explorateur !</string>
+			<string>Avoir l’air d’un Chinois en Chine, d’un Indien en Inde, d’un Égyptien en Égypte, voilà la qualité première d’un explorateur !</string>
 			<key>msg_ref</key>
 			<string>&quot;Raoul l’a peut-être aperçu une fois ou deux, mais tu sais à quel point Dominique est habile pour se grimer.&quot;</string>
 		</dict>
