@@ -44,7 +44,7 @@
         
         [self.contentView addSubview:self.epcv];
         
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateEpisodes:) userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(updateEpisodes:) userInfo:nil repeats:YES];
     }
     return self;
 }

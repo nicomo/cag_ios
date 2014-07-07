@@ -85,9 +85,8 @@ CGPoint offset;
     layout.itemSize = CGSizeMake(60, 60);
     layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 5);
     
-    self.charcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2),
-                                                                     (65 * (int)(([[epdata[self.epid] objectForKey:@"pins"] count]/8)+1))
-                                                                     ) collectionViewLayout:layout];
+    self.charcv = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 768 - (85*2), 65) collectionViewLayout:layout];
+    
     self.charcv.backgroundColor = [UIColor clearColor];
     self.charcv.delegate = self;
     self.charcv.dataSource = self;
@@ -95,6 +94,10 @@ CGPoint offset;
     self.charcv.scrollEnabled = NO;
     [self.charcv registerClass:[FooterCharacterCell class] forCellWithReuseIdentifier:@"FooterCharacterCell"];
 
+    self.charcv.frame = CGRectMake(0, 0, 768 - (85*2),
+                                   65*(((int)([self.charcv numberOfItemsInSection:0]/8.0))+1));
+    
+    
     CSLinearLayoutItem *charsitem = [CSLinearLayoutItem layoutItemForView:self.charcv];
     charsitem.padding = CSLinearLayoutMakePadding(10, 85, 20, 85);
     [mainLinearLayout addItem:charsitem];
@@ -295,7 +298,7 @@ CGPoint offset;
     [self placePins:webView];
     [self performSelector:@selector(updatePins) withObject:nil afterDelay:1.0];
     if (self.epid < 51)
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(updateButton:) userInfo:nil repeats:YES];
 }
 
 -(void)placePins:(UIWebView *)webView

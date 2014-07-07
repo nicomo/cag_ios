@@ -63,7 +63,7 @@
             i++;
         }
         
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updatePlaces:) userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(updatePlaces:) userInfo:nil repeats:YES];
     }
     return self;
 }

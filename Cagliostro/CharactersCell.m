@@ -42,7 +42,7 @@
         [self.contentView addSubview:title];
         [self.contentView addSubview:self.charcv];
         
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateCharacters:) userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(updateCharacters:) userInfo:nil repeats:YES];
     }
     return self;
 }
