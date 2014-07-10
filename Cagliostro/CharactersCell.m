@@ -102,7 +102,7 @@
 {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
-    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / (60.0f*60.0f*24.0f);
     return !delayedEps || [self epidforcid:cid] < minElapsed;
 }
 

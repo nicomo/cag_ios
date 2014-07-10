@@ -180,7 +180,7 @@ CGPoint offset;
 {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
-    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / (60.0f*60.0f*24.0f);
     return !delayedEps || [self epidforcid:cid] < minElapsed;
 }
 
@@ -360,9 +360,9 @@ CGPoint offset;
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
 
-    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / (60.0f*60.0f*24.0f);
     if (self.epid+1 > minElapsed && delayedEps) {
-        self.nextButtonTitle.text = [NSString stringWithFormat:@"A paraitre dans %5.2f minutes", self.epid+1 - minElapsed];
+        self.nextButtonTitle.text = [NSString stringWithFormat:@"A paraitre dans %d heures", (int)(((self.epid+1 - minElapsed)*24.0f)+1)];
         [self.nextButtonTitle sizeToFit];
     } else {
         self.nextButtonTitle.text = [epdata[self.epid + 1] objectForKey:@"title"];
@@ -497,7 +497,7 @@ CGPoint offset;
 {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
-    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / (60.0f*60.0f*24.0f);
     return !delayedEps || [self epidforplid:plid] < minElapsed;
 }
 

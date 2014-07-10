@@ -82,7 +82,7 @@
 
 -(void)updateEpisodes:(NSTimer *)timer
 {
-    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / (60.0f*60.0f*24.0f);
     if (minElapsed > 1 && minElapsed < 51) {
         [self.epcv reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:(int)minElapsed inSection:0]]];
         
@@ -146,7 +146,7 @@
 {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     bool delayedEps = [prefs boolForKey:@"delayedEps"];
-    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / 60.0f;
+    double minElapsed = - [firstLaunchDate timeIntervalSinceNow] / (60.0f*60.0f*24.0f);
     return !delayedEps || epid < minElapsed;
 }
 
