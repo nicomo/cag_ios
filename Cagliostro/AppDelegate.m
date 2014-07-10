@@ -46,7 +46,7 @@
         int i = 0;
         for (NSDictionary *ep in epdata) {
             UILocalNotification *localNotif = [[UILocalNotification alloc] init];
-            localNotif.fireDate = [firstLaunchDate dateByAddingTimeInterval:60*i];
+            localNotif.fireDate = [firstLaunchDate dateByAddingTimeInterval:(60*60*24)*i];
             localNotif.timeZone = [NSTimeZone localTimeZone];
             localNotif.alertBody = [ep objectForKey:@"title"];
             localNotif.alertAction = @"Voir l'épisode";
